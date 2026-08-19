@@ -1,0 +1,100 @@
+/* Model page: why Najma exists, fee panel, booking steps.
+   Loaded only on model.html. */
+
+.model-section { background: var(--md-sys-color-primary-container); }
+
+.model-inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(40px, 7vw, 96px);
+}
+
+.model-story h2 { color: var(--md-sys-color-on-primary-container); }
+
+.model-story > p {
+  color: var(--md-sys-color-on-primary-container);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.model-story > .section-label {
+  color: var(--md-sys-color-primary);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.fee-panel {
+  align-self: start;
+  border-radius: var(--md-sys-shape-extra-large);
+  background: var(--md-sys-color-surface-container-lowest);
+  padding: clamp(28px, 4vw, 48px);
+}
+
+.fee-panel h3 { margin-bottom: 28px; }
+
+.fee-row {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 20px;
+  border-top: 1px solid var(--md-sys-color-outline-variant);
+  padding: 24px 0;
+}
+
+.fee-number {
+  color: var(--md-sys-color-primary);
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.fee-number .material-symbols-rounded { font-size: 36px; }
+.fee-row strong { font-size: 17px; }
+.fee-row p { margin: 4px 0 0; line-height: 1.6; }
+.fee-footnote { margin: 8px 0 0; font-size: 12px; line-height: 1.55; }
+
+.compact-heading { margin-bottom: 36px; }
+
+.booking-steps {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  border-radius: var(--md-sys-shape-extra-large);
+  background: var(--md-sys-color-outline-variant);
+}
+
+.booking-steps article {
+  min-height: 280px;
+  background: var(--md-sys-color-surface-container-low);
+  padding: 28px;
+}
+
+.booking-steps article > span {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  margin-bottom: 44px;
+  border-radius: var(--md-sys-shape-large);
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+.booking-steps h3 { font-size: 22px; }
+.booking-steps p { margin: 0; line-height: 1.62; }
+
+@media (max-width: 1120px) {
+  .booking-steps { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 959px) {
+  .model-inner { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  .fee-row { grid-template-columns: 72px 1fr; }
+  .fee-number { font-size: 28px; }
+  .booking-steps { grid-template-columns: 1fr; }
+  .booking-steps article { min-height: 230px; }
+  .booking-steps article > span { margin-bottom: 28px; }
+}

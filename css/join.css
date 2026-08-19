@@ -1,0 +1,100 @@
+/* Join/teach page: recruitment copy + embedded application form.
+   Loaded only on join.html. */
+
+.join-section {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: clamp(40px, 7vw, 96px);
+  align-items: start;
+}
+
+.join-copy > p {
+  max-width: 720px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.join-copy > .section-label {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.join-principles {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.join-principles > div {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 12px;
+  border-radius: var(--md-sys-shape-large);
+  background: var(--md-sys-color-surface-container-low);
+  padding: 16px;
+}
+
+.join-principles > div > .material-symbols-rounded {
+  color: var(--md-sys-color-primary);
+  font-size: 30px;
+}
+
+.join-principles strong { display: block; }
+
+.teacher-cta {
+  border-radius: var(--md-sys-shape-extra-large);
+  background: var(--md-sys-color-secondary-container);
+  padding: clamp(28px, 4vw, 48px);
+}
+
+.teacher-cta h3 { font-size: 32px; }
+.teacher-cta > p:nth-of-type(2) { margin-bottom: 28px; line-height: 1.65; }
+
+.form-support {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 20px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.form-support .material-symbols-rounded { flex: 0 0 auto; font-size: 18px; }
+
+.form-embed-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.form-embed-heading p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.form-embed-container {
+  overflow: hidden;
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: var(--md-sys-shape-large);
+  background: var(--md-sys-color-surface-container-lowest);
+}
+
+.form-embed-container iframe {
+  display: block;
+  width: 100%;
+  height: 940px;
+  border: 0;
+}
+
+@media (max-width: 959px) {
+  .join-section { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  .form-embed-heading { flex-direction: column; align-items: flex-start; }
+  .form-embed-container iframe { height: 1080px; }
+}
