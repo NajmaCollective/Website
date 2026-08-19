@@ -7,9 +7,26 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f8faf5">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#10110e">
   <title>Najma Collective — purpose-led English lessons</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23386a50'/%3E%3Cpath fill='%23ffffff' d='M12 4.6l1.9 4.6 5 .4-3.8 3.3 1.2 4.9L12 15.2l-4.3 2.6 1.2-4.9-3.8-3.3 5-.4z'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Najma Collective — purpose-led English lessons">
+  <meta property="og:description" content="Purpose-led private English lessons with expert teachers, supporting Al-Manarah Society in Bethlehem.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Najma Collective — purpose-led English lessons">
+  <meta name="twitter:description" content="Purpose-led private English lessons with expert teachers, supporting Al-Manarah Society in Bethlehem.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0&family=Roboto+Flex:opsz,wght@8..144,400..700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Najma Collective",
+    "description": "Purpose-led private English lessons with expert teachers, supporting Al-Manarah Society for Culture and Creativity in Bethlehem.",
+    "areaServed": "Worldwide",
+    "sameAs": []
+  }
+  </script>
   <style>
     :root {
       color-scheme: light dark;
@@ -136,8 +153,6 @@
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
-
-    body.menu-open { overflow: hidden; }
 
     button,
     input,
@@ -1521,6 +1536,12 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
+  <noscript>
+    <div style="background:#ba1a1a;color:#fff;padding:12px 24px;text-align:center;font-size:14px;">
+      Enable JavaScript to browse teacher profiles and lesson options on this page.
+    </div>
+  </noscript>
+
   <aside class="navigation-rail" aria-label="Primary navigation">
     <a class="rail-brand" href="#top" aria-label="Najma Collective home">
       <span class="material-symbols-rounded filled" aria-hidden="true">kid_star</span>
@@ -1632,7 +1653,7 @@
       </div>
 
       <div class="lesson-tabs" id="lesson-tabs" role="tablist" aria-label="Lesson types"></div>
-      <div class="lesson-showcase" id="lesson-showcase" aria-live="polite">
+      <div class="lesson-showcase" id="lesson-showcase" role="tabpanel" aria-live="polite" tabindex="0">
         <div class="lesson-showcase-copy">
           <span class="material-symbols-rounded filled" id="lesson-icon" aria-hidden="true"></span>
           <h3 id="lesson-title"></h3>
@@ -1970,17 +1991,30 @@
       });
 
       const lessonTabs = document.getElementById("lesson-tabs");
+      const lessonPanel = document.getElementById("lesson-showcase");
 
       function renderLessonTabs(selectedId) {
-        lessonTabs.innerHTML = lessonTypes.map((lesson) => `<button class="chip" type="button" role="tab" data-lesson-id="${lesson.id}" aria-selected="${lesson.id === selectedId}">${escapeHtml(lesson.label)}</button>`).join("");
-        lessonTabs.querySelectorAll("[data-lesson-id]").forEach((button) => {
+        lessonTabs.innerHTML = lessonTypes.map((lesson) => `<button class="chip" type="button" role="tab" id="lesson-tab-${lesson.id}" aria-controls="lesson-showcase" data-lesson-id="${lesson.id}" aria-selected="${lesson.id === selectedId}" tabindex="${lesson.id === selectedId ? "0" : "-1"}">${escapeHtml(lesson.label)}</button>`).join("");
+        const tabButtons = [...lessonTabs.querySelectorAll("[data-lesson-id]")];
+        tabButtons.forEach((button, index) => {
           button.addEventListener("click", () => renderLesson(button.dataset.lessonId));
+          button.addEventListener("keydown", (event) => {
+            if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
+            event.preventDefault();
+            const nextIndex = event.key === "ArrowRight"
+              ? (index + 1) % tabButtons.length
+              : (index - 1 + tabButtons.length) % tabButtons.length;
+            const nextButton = tabButtons[nextIndex];
+            renderLesson(nextButton.dataset.lessonId);
+            document.getElementById(`lesson-tab-${nextButton.dataset.lessonId}`).focus();
+          });
         });
       }
 
       function renderLesson(id) {
         const lesson = lessonTypes.find((item) => item.id === id) || lessonTypes[0];
         renderLessonTabs(lesson.id);
+        lessonPanel.setAttribute("aria-labelledby", `lesson-tab-${lesson.id}`);
         document.getElementById("lesson-icon").textContent = lesson.icon;
         document.getElementById("lesson-title").textContent = lesson.title;
         document.getElementById("lesson-description").textContent = lesson.description;
