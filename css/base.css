@@ -1,0 +1,283 @@
+/* Shared base primitives — body, typography, buttons, chips, icons,
+   layout shell. Loaded on every page, after tokens.css. */
+
+body {
+  margin: 0;
+  background: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  font-family: "Roboto Flex", Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body.menu-open { overflow: hidden; }
+
+button,
+input,
+select { font: inherit; }
+
+button,
+a { -webkit-tap-highlight-color: transparent; }
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 3px solid var(--md-sys-color-primary);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 96px;
+  z-index: 100;
+  transform: translateY(-160%);
+  border-radius: var(--md-sys-shape-small);
+  background: var(--md-sys-color-inverse-surface);
+  padding: 12px 16px;
+  color: var(--md-sys-color-inverse-on-surface);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skip-link:focus { transform: translateY(0); }
+
+.material-symbols-rounded {
+  display: inline-block;
+  font-family: "Material Symbols Rounded";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: "liga";
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.material-symbols-rounded.filled {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.page-shell {
+  margin-left: 80px;
+  overflow: hidden;
+}
+
+.section {
+  width: min(var(--page-max), calc(100% - 64px));
+  margin-inline: auto;
+  padding-block: 80px;
+}
+
+.section-label,
+.profile-kicker {
+  margin: 0 0 12px;
+  color: var(--md-sys-color-primary);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p { margin-top: 0; }
+
+h1 {
+  max-width: 760px;
+  margin-bottom: 24px;
+  font-size: clamp(48px, 5.1vw, 57px);
+  font-weight: 520;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: clamp(38px, 4.1vw, 45px);
+  font-weight: 520;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+h3 {
+  margin-bottom: 12px;
+  font-size: 32px;
+  font-weight: 560;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+}
+
+h4 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+p { color: var(--md-sys-color-on-surface-variant); }
+
+.button {
+  position: relative;
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--md-sys-shape-full);
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.button.filled {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+
+.button.filled:hover { box-shadow: var(--md-sys-elevation-1); }
+
+.button.tonal {
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+.button.text {
+  background: transparent;
+  color: var(--md-sys-color-primary);
+  padding-inline: 16px;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chip {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--md-sys-color-outline);
+  border-radius: var(--md-sys-shape-small);
+  background: transparent;
+  padding: 0 12px;
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+
+button.chip {
+  min-height: 40px;
+  cursor: pointer;
+}
+
+button.chip[aria-selected="true"] {
+  border-color: transparent;
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+button.chip[aria-selected="true"]::before {
+  content: "check";
+  font-family: "Material Symbols Rounded";
+  font-size: 18px;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+}
+
+.chip-group,
+.lesson-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Material 3 state layers — hover/focus/pressed feedback on interactive
+   components, using each component's own content colour at the standard
+   M3 state opacities so it adapts automatically between themes. */
+.button,
+button.chip,
+.rail-icon,
+.rail-book,
+.mobile-nav a > span {
+  position: relative;
+  isolation: isolate;
+}
+
+.button::after,
+button.chip::after,
+.rail-icon::after,
+.rail-book::after,
+.mobile-nav a > span::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: currentColor;
+  opacity: 0;
+  transition: opacity 120ms cubic-bezier(0.2, 0, 0, 1);
+  pointer-events: none;
+}
+
+.button:hover::after,
+button.chip:hover::after,
+.navigation-rail nav a:hover .rail-icon::after,
+.rail-book:hover::after,
+.mobile-nav a:hover > span::after { opacity: var(--md-sys-state-hover-opacity); }
+
+.button:focus-visible::after,
+button.chip:focus-visible::after,
+.navigation-rail nav a:focus-visible .rail-icon::after,
+.rail-book:focus-visible::after,
+.mobile-nav a:focus-visible > span::after { opacity: var(--md-sys-state-focus-opacity); }
+
+.button:active::after,
+button.chip:active::after,
+.navigation-rail nav a:active .rail-icon::after,
+.rail-book:active::after,
+.mobile-nav a:active > span::after { opacity: var(--md-sys-state-pressed-opacity); }
+
+.section-heading { max-width: 850px; margin-bottom: 44px; }
+
+.section-heading > p:last-child {
+  max-width: 760px;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 1.68;
+}
+
+@media (max-width: 959px) {
+  .page-shell { margin-left: 0; }
+  .skip-link { left: 12px; }
+}
+
+@media (max-width: 760px) {
+  body { padding-bottom: 80px; }
+
+  .section {
+    width: min(100% - 32px, var(--page-max));
+    padding-block: 56px;
+  }
+
+  h1 { font-size: clamp(43px, 13vw, 52px); }
+  h2 { font-size: clamp(34px, 10vw, 40px); }
+  h3 { font-size: 28px; }
+}

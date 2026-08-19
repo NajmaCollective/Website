@@ -1,0 +1,128 @@
+/* Material 3 design tokens — colour roles, shape scale, elevation, state
+   opacities — shared by every page. Load this first. */
+:root {
+  color-scheme: light dark;
+
+  /* Material 3 colour roles — light scheme (baseline) */
+  --md-sys-color-primary: #386a50;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #b9f0cf;
+  --md-sys-color-on-primary-container: #0e5138;
+  --md-sys-color-secondary: #506352;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #d3e8d4;
+  --md-sys-color-on-secondary-container: #394b3b;
+  --md-sys-color-tertiary: #3a656d;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #beeaf3;
+  --md-sys-color-on-tertiary-container: #204d55;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+  --md-sys-color-surface: #f8faf5;
+  --md-sys-color-surface-dim: #d9dbd5;
+  --md-sys-color-surface-bright: #f8faf5;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f2f4ef;
+  --md-sys-color-surface-container: #edefe9;
+  --md-sys-color-surface-container-high: #e7e9e3;
+  --md-sys-color-surface-container-highest: #e1e3de;
+  --md-sys-color-on-surface: #191c1a;
+  --md-sys-color-on-surface-variant: #414943;
+  --md-sys-color-outline: #717973;
+  --md-sys-color-outline-variant: #c1c9c2;
+  --md-sys-color-inverse-surface: #2e312f;
+  --md-sys-color-inverse-on-surface: #f0f1ed;
+  --md-sys-color-inverse-primary: #9ed5b4;
+  --md-sys-color-scrim: #000000;
+
+  /* Material 3 shape scale */
+  --md-sys-shape-extra-small: 4px;
+  --md-sys-shape-small: 8px;
+  --md-sys-shape-medium: 12px;
+  --md-sys-shape-large: 16px;
+  --md-sys-shape-extra-large: 28px;
+  --md-sys-shape-full: 999px;
+
+  /* Material 3 elevation scale (levels 0–5) */
+  --md-sys-elevation-0: none;
+  --md-sys-elevation-1: 0 1px 2px rgba(25, 28, 26, 0.22), 0 1px 3px 1px rgba(25, 28, 26, 0.12);
+  --md-sys-elevation-2: 0 1px 2px rgba(25, 28, 26, 0.22), 0 2px 6px 2px rgba(25, 28, 26, 0.12);
+  --md-sys-elevation-3: 0 1px 3px rgba(25, 28, 26, 0.26), 0 4px 8px 3px rgba(25, 28, 26, 0.15);
+  --md-sys-elevation-4: 0 2px 3px rgba(25, 28, 26, 0.26), 0 6px 10px 4px rgba(25, 28, 26, 0.15);
+  --md-sys-elevation-5: 0 4px 4px rgba(25, 28, 26, 0.26), 0 8px 12px 6px rgba(25, 28, 26, 0.15);
+
+  /* Material 3 state-layer opacities */
+  --md-sys-state-hover-opacity: 0.08;
+  --md-sys-state-focus-opacity: 0.1;
+  --md-sys-state-pressed-opacity: 0.1;
+
+  --page-max: 1280px;
+}
+
+/* Material 3 colour roles — dark scheme, tonal palette derived from the
+   same primary/secondary/tertiary hues as the light scheme above. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --md-sys-color-primary: #9ed5b4;
+    --md-sys-color-on-primary: #0d3122;
+    --md-sys-color-primary-container: #1c4632;
+    --md-sys-color-on-primary-container: #ddf8e8;
+    --md-sys-color-secondary: #c7d1c8;
+    --md-sys-color-on-secondary: #253526;
+    --md-sys-color-secondary-container: #2f3f31;
+    --md-sys-color-on-secondary-container: #deedde;
+    --md-sys-color-tertiary: #bcd7dc;
+    --md-sys-color-on-tertiary: #17343a;
+    --md-sys-color-tertiary-container: #1e454b;
+    --md-sys-color-on-tertiary-container: #d4f1f7;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000a;
+    --md-sys-color-on-error-container: #ffdad6;
+    --md-sys-color-surface: #10110e;
+    --md-sys-color-surface-dim: #10110e;
+    --md-sys-color-surface-bright: #3e4238;
+    --md-sys-color-surface-container-lowest: #0a0b09;
+    --md-sys-color-surface-container-low: #1a1c17;
+    --md-sys-color-surface-container: #1f211c;
+    --md-sys-color-surface-container-high: #2c2f28;
+    --md-sys-color-surface-container-highest: #393d34;
+    --md-sys-color-on-surface: #e4e7e5;
+    --md-sys-color-on-surface-variant: #c9cfcb;
+    --md-sys-color-outline: #949e96;
+    --md-sys-color-outline-variant: #49504b;
+    --md-sys-color-inverse-surface: #e5e6e5;
+    --md-sys-color-inverse-on-surface: #303329;
+    --md-sys-color-inverse-primary: #386a50;
+    --md-sys-color-scrim: #000000;
+
+    --md-sys-elevation-1: 0 1px 2px rgba(0, 0, 0, 0.5), 0 1px 3px 1px rgba(0, 0, 0, 0.32);
+    --md-sys-elevation-2: 0 1px 2px rgba(0, 0, 0, 0.5), 0 2px 6px 2px rgba(0, 0, 0, 0.32);
+    --md-sys-elevation-3: 0 1px 3px rgba(0, 0, 0, 0.52), 0 4px 8px 3px rgba(0, 0, 0, 0.34);
+    --md-sys-elevation-4: 0 2px 3px rgba(0, 0, 0, 0.52), 0 6px 10px 4px rgba(0, 0, 0, 0.34);
+    --md-sys-elevation-5: 0 4px 4px rgba(0, 0, 0, 0.52), 0 8px 12px 6px rgba(0, 0, 0, 0.34);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
