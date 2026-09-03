@@ -9,7 +9,7 @@
   gap: clamp(40px, 7vw, 96px);
 }
 
-.model-story h2 { color: var(--md-sys-color-on-primary-container); }
+.model-story .page-title { color: var(--md-sys-color-on-primary-container); }
 
 .model-story > p {
   color: var(--md-sys-color-on-primary-container);
@@ -30,7 +30,10 @@
   padding: clamp(28px, 4vw, 48px);
 }
 
-.fee-panel h3 { margin-bottom: 28px; }
+.fee-panel h2 {
+  margin-bottom: 28px;
+  font-size: 32px;
+}
 
 .fee-row {
   display: grid;
@@ -92,6 +95,7 @@
 }
 
 @media (max-width: 760px) {
+  .fee-panel h2 { font-size: 28px; }
   .fee-row { grid-template-columns: 72px 1fr; }
   .fee-number { font-size: 28px; }
   .booking-steps { grid-template-columns: 1fr; }
