@@ -1,53 +1,6 @@
-"use strict";
-
-const TEACHERS = [
-  {
-    id: "gabriel",
-    name: "Gabriel Beckford-Tongs",
-    initials: "GB",
-    city: "St Andrews, Scotland",
-    credentials: "British Council Higher Teacher · MSc TESOL candidate",
-    bio: "Gabriel works with learners who need English for a demanding real-world task. He can help you shape academic arguments, prepare presentations and practise high-stakes conversations. Lessons combine careful language feedback with repeated use.",
-    focus: ["Academic writing", "IELTS", "Presentations"],
-    languages: ["French"],
-    rate: 35,
-    live: true,
-    calendar: "https://calendly.com/gabrielbeckfordtongs/60-mins"
-  },
-  {
-    id: "marta",
-    name: "Marta R.",
-    initials: "MR",
-    city: "Lisbon, Portugal",
-    credentials: "DELTA · 11 years of teaching experience",
-    bio: "Marta works with people who use English across organisations and borders. She helps learners contribute clearly in meetings, respond under pressure and build the language they need for regular professional situations.",
-    focus: ["Meetings", "General English", "Conversation"],
-    languages: ["Portuguese", "Spanish"],
-    rate: 26,
-    live: false
-  },
-  {
-    id: "halim",
-    name: "Halim K.",
-    initials: "HK",
-    city: "Amman, Jordan",
-    credentials: "MA Applied Linguistics · CELTA",
-    bio: "Halim supports learners who are preparing to study through English. He combines careful language work with repeated practice, so learners can retrieve and use new language when the pressure rises.",
-    focus: ["IELTS", "Academic writing", "Study skills"],
-    languages: ["French"],
-    rate: 24,
-    live: false
-  },
-  {
-    id: "beatriz",
-    name: "Beatriz M.",
-    initials: "BM",
-    city: "Recife, Brazil",
-    credentials: "MA English Language Teaching · CELTA",
-    bio: "Beatriz has experience with unions and community organisations. She helps learners shape messages for public audiences, prepare briefings and respond to difficult questions with greater control.",
-    focus: ["Advocacy English", "Interviews", "Negotiation"],
-    languages: ["Portuguese", "Spanish"],
-    rate: 22,
-    live: false
-  }
+window.NAJMA_TEACHERS = [
+  {id:'teacher-1',name:'[Teacher 1: confirmed name]',areas:['general','business','academic','ielts','advocacy'],introduction:'[Add a short professional introduction based on verified qualifications and relevant experience. Explain the teacher’s specialist area, including work with Palestinian learners where they approve that description.]',help:'[Three or four specific examples, such as everyday conversation, academic writing, presentations or IELTS speaking.]',options:'[55-minute private lessons · 25-minute lessons if offered · free 20-minute introductory appointment if offered]',teaching:'“[A short paragraph written by the teacher in their own voice. Explain how your experience informs your lessons and how you help learners make progress. Include an example of the work you enjoy teaching.]”'},
+  {id:'teacher-2',name:'[Teacher 2: confirmed name]',areas:['general'],introduction:'[Add a short professional introduction based on verified qualifications and relevant experience. Explain the teacher’s specialist area, including work with Palestinian learners where they approve that description.]',help:'[Three or four specific examples.]',options:'[Confirmed lesson options.]',teaching:'“[A short paragraph written by the teacher in their own voice. Explain how your experience informs your lessons and how you help learners make progress. Include an example of the work you enjoy teaching.]”'},
+  {id:'teacher-3',name:'[Teacher 3: confirmed name]',areas:['business'],introduction:'[Add a short professional introduction based on verified qualifications and relevant experience. Explain the teacher’s specialist area, including work with Palestinian learners where they approve that description.]',help:'[Three or four specific examples.]',options:'[Confirmed lesson options.]',teaching:'“[A short paragraph written by the teacher in their own voice. Explain how your experience informs your lessons and how you help learners make progress. Include an example of the work you enjoy teaching.]”'},
+  {id:'teacher-4',name:'[Teacher 4: confirmed name]',areas:['academic'],introduction:'[Add a short professional introduction based on verified qualifications and relevant experience. Explain the teacher’s specialist area, including work with Palestinian learners where they approve that description.]',help:'[Three or four specific examples.]',options:'[Confirmed lesson options.]',teaching:'“[A short paragraph written by the teacher in their own voice. Explain how your experience informs your lessons and how you help learners make progress. Include an example of the work you enjoy teaching.]”'}
 ];
