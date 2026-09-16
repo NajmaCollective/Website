@@ -1,1 +1,4 @@
-.chips{display:flex;flex-wrap:wrap;gap:.5rem}.teacher-card{padding:1.5rem}.portrait{aspect-ratio:4/3;background:var(--md-sys-color-surface-container-high);display:grid;place-items:center;border-radius:.75rem;margin-bottom:1.5rem}.teacher-card h4{margin-top:1.5rem}
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.5rem; }
+.teacher-card { overflow: hidden; padding: 1.5rem; border-radius: var(--radius); background: var(--md-sys-color-surface-container-lowest); box-shadow: 0 2px 8px rgba(26,27,32,.08); }
+.portrait { aspect-ratio: 4/3; margin: -1.5rem -1.5rem 1.5rem; display: grid; place-items: center; border-radius: 0 0 var(--radius) var(--radius); background: var(--md-sys-color-primary-container); color: var(--md-sys-color-on-primary-container); }
+.teacher-card h4 { margin-top: 1.5rem; }
