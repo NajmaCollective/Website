@@ -1,2 +1,3 @@
-.hero .lede { max-width: 32ch; }
-.hero .actions { margin-top: 2rem; }
+.page-join .brand-panel { background: var(--md-sys-color-tertiary-container); color: var(--md-sys-color-on-tertiary-container); }
+.page-join .brand-art .material-symbols-outlined,.page-join .panel-title span,.page-join .panel-caption { color: var(--md-sys-color-tertiary); }
+.page-join .panel-caption { border-color: var(--md-sys-color-tertiary); }

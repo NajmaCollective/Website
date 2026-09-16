@@ -1,2 +1,3 @@
-.steps { margin-top: 2.5rem; }
-.steps li:nth-child(even) { background: linear-gradient(145deg, var(--md-sys-color-surface-container-lowest), var(--md-sys-color-tertiary-container)); }
+.page-model .hero { grid-template-columns: minmax(0,1.4fr) minmax(0,.7fr); }
+.page-model .price-aside { border-radius: 80px 24px 24px 24px; padding-top: 4rem; }
+@media(max-width: 650px) { .page-model .hero { grid-template-columns: 1fr; } }
