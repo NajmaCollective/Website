@@ -215,7 +215,10 @@
   font-size: 12px;
 }
 
-.profile-top h3 { margin-bottom: 4px; }
+.profile-top h2 {
+  margin-bottom: 4px;
+  font-size: 32px;
+}
 
 .profile-location {
   display: flex;
@@ -285,7 +288,10 @@
   margin-bottom: 16px;
 }
 
-.booking-heading h4 { margin: 0 0 4px; }
+.booking-heading h3 {
+  margin: 0 0 4px;
+  font-size: 22px;
+}
 .booking-heading p { margin-bottom: 0; font-size: 14px; }
 
 .calendar-fallback {
@@ -339,7 +345,12 @@
   font-size: 40px;
 }
 
-.profile-draft-note h4 { margin: 12px 0 8px; }
+.profile-draft-note h3 {
+  margin: 12px 0 8px;
+  font-size: 22px;
+}
+
+.empty-state h2 { font-size: 32px; }
 
 .profile-draft-note p {
   max-width: 520px;
@@ -372,6 +383,8 @@
 }
 
 @media (max-width: 760px) {
+  .profile-top h2,
+  .empty-state h2 { font-size: 28px; }
   .filter-bar { align-items: stretch; }
   .select-field { width: 100%; }
   .result-count { width: 100%; margin-left: 0; }

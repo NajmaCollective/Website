@@ -62,7 +62,7 @@
         <div class="booking-heading">
           <div>
             <p class="profile-kicker">Book with ${escapeHtml(teacher.name.split(" ")[0])}</p>
-            <h4>Choose a day and time.</h4>
+            <h3>Choose a day and time.</h3>
             <p>The calendar is already shown in your local time zone.</p>
           </div>
           <a class="calendar-fallback" href="${escapeHtml(teacher.calendar)}" rel="noreferrer" target="_blank">Calendar help ${icon("open_in_new")}</a>
@@ -74,7 +74,7 @@
       </div>
     ` : `
       <div class="profile-draft-note">
-        <div>${icon("event_busy")}<h4>Founding profile in preparation</h4><p>This example shows how the teacher’s approach and availability will appear. Booking will open after the teacher confirms their profile and calendar.</p></div>
+        <div>${icon("event_busy")}<h3>Founding profile in preparation</h3><p>This example shows how the teacher’s approach and availability will appear. Booking will open after the teacher confirms their profile and calendar.</p></div>
       </div>
     `;
 
@@ -83,7 +83,7 @@
         <span class="avatar avatar-large">${escapeHtml(teacher.initials)}</span>
         <div>
           <p class="profile-kicker">${teacher.live ? "Founding teacher" : "Illustrative founding profile"}</p>
-          <h3>${escapeHtml(teacher.name)}</h3>
+          <h2>${escapeHtml(teacher.name)}</h2>
           <p class="profile-location">${icon("location_on")} ${escapeHtml(teacher.city)}</p>
         </div>
         <div class="profile-rate"><strong>£${teacher.rate}</strong><span>${teacher.live ? "current booking rate" : "illustrative rate"}</span></div>
