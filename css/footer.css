@@ -1,1 +1,8 @@
-footer{background:var(--md-sys-color-surface-container-high);border-top:1px solid var(--md-sys-color-outline-variant)}.footer-inner{max-width:var(--content-width);padding:2.5rem var(--gutter);margin:auto;display:grid;grid-template-columns:1fr 2fr;gap:2rem}.footer-brand{font-size:1.4rem;color:var(--md-sys-color-on-surface)}footer nav{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;align-content:start}@media(max-width:599px){.footer-inner{grid-template-columns:1fr}footer nav{flex-direction:column}}
+footer { background: var(--md-sys-color-surface-container); }
+.footer-inner { max-width: var(--content-width); padding: clamp(3rem, 6vw, 5rem) var(--gutter); margin: auto; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; }
+.footer-brand { color: var(--md-sys-color-on-surface); font-size: 1.5rem; font-weight: 700; letter-spacing: -.025em; }
+footer p { color: var(--md-sys-color-on-surface-variant); }
+footer nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem 1.5rem; align-content: start; }
+footer nav a { color: var(--md-sys-color-on-surface-variant); text-decoration: none; }
+footer nav a:hover { color: var(--md-sys-color-primary); text-decoration: underline; }
+@media (max-width: 599px) { .footer-inner { grid-template-columns: 1fr; } footer nav { grid-template-columns: 1fr; } }

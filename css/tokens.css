@@ -1,1 +1,35 @@
-:root{--md-sys-color-primary:#6750a4;--md-sys-color-on-primary:#fff;--md-sys-color-primary-container:#e9ddff;--md-sys-color-on-primary-container:#22005d;--md-sys-color-surface:#fff7ff;--md-sys-color-on-surface:#1d1b20;--md-sys-color-surface-container:#f3edf7;--md-sys-color-surface-container-high:#ece6f0;--md-sys-color-outline:#79747e;--md-sys-color-outline-variant:#cac4d0;--md-sys-color-error:#ba1a1a;--content-width:1200px;--gutter:clamp(1rem,4vw,2rem);--group-gap:1.5rem;--radius:1rem;--md-ref-typeface-brand:'Roboto',system-ui,sans-serif;--md-ref-typeface-plain:'Roboto',system-ui,sans-serif;--md-sys-typescale-label-large-font:'Roboto',system-ui,sans-serif}
+:root {
+  color-scheme: light;
+  --md-sys-color-primary: #415f91;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #d6e3ff;
+  --md-sys-color-on-primary-container: #001b3e;
+  --md-sys-color-secondary: #565f71;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #dae2f9;
+  --md-sys-color-on-secondary-container: #131c2b;
+  --md-sys-color-tertiary: #705575;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #fad8fd;
+  --md-sys-color-on-tertiary-container: #28132e;
+  --md-sys-color-surface: #f9f9ff;
+  --md-sys-color-surface-dim: #d9d9e0;
+  --md-sys-color-surface-bright: #f9f9ff;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f3f3fa;
+  --md-sys-color-surface-container: #ededf4;
+  --md-sys-color-surface-container-high: #e7e8ee;
+  --md-sys-color-surface-container-highest: #e2e2e9;
+  --md-sys-color-on-surface: #1a1b20;
+  --md-sys-color-on-surface-variant: #44474e;
+  --md-sys-color-outline: #74777f;
+  --md-sys-color-outline-variant: #c4c6d0;
+  --md-sys-color-error: #ba1a1a;
+  --content-width: 1200px;
+  --gutter: clamp(1rem, 4vw, 3rem);
+  --group-gap: clamp(1rem, 2vw, 1.5rem);
+  --radius: 24px;
+  --md-ref-typeface-brand: 'Roboto', system-ui, sans-serif;
+  --md-ref-typeface-plain: 'Roboto', system-ui, sans-serif;
+  --md-sys-typescale-label-large-font: 'Roboto', system-ui, sans-serif;
+}
