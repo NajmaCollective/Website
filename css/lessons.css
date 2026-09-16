@@ -1,1 +1,2 @@
-/* Page-specific layout is intentionally narrow; shared Material roles live in base.css. */
+.cards.three article { min-height: 100%; }
+.cards.three md-filled-button { margin-top: auto; align-self: flex-start; }

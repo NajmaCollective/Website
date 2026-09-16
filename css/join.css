@@ -1,1 +1,2 @@
-/* Page-specific layout is intentionally narrow; shared Material roles live in base.css. */
+.hero .lede { max-width: 32ch; }
+.hero .actions { margin-top: 2rem; }

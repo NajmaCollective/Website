@@ -1,1 +1,3 @@
-/* Page-specific layout is intentionally narrow; shared Material roles live in base.css. */
+/* The landing page hero has room for a more expansive welcome. */
+.hero h1 { max-width: 15ch; }
+.hero .price { display: inline-block; width: fit-content; padding: .45rem .85rem; border-radius: 999px; background: color-mix(in srgb, var(--md-sys-color-primary-container) 72%, transparent); }
