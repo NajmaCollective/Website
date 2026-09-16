@@ -45,6 +45,13 @@ dt { font-weight: 700; } dd { margin: 0; }
 .skip-link { position: fixed; z-index: 100; top: .5rem; left: .5rem; padding: .75rem 1rem; border-radius: 8px; background: var(--md-sys-color-primary); color: white; transform: translateY(-150%); }
 .skip-link:focus { transform: none; }
 md-filled-button, md-outlined-button, md-text-button { --md-filled-button-container-shape: 999px; --md-outlined-button-container-shape: 999px; --md-text-button-container-shape: 999px; }
+.material-symbols-outlined { display: inline-block; flex: 0 0 auto; font-family: "Material Symbols Outlined"; font-size: 1.25rem; line-height: 1; font-weight: normal; font-style: normal; letter-spacing: normal; text-transform: none; white-space: nowrap; word-wrap: normal; direction: ltr; vertical-align: -.2em; font-feature-settings: "liga"; -webkit-font-feature-settings: "liga"; -webkit-font-smoothing: antialiased; }
+.icon-label, .icon-heading, .info-item { display: inline-flex; align-items: center; gap: .5rem; }
+.icon-heading { align-items: flex-start; }
+.icon-heading .material-symbols-outlined { margin-top: .08em; color: var(--md-sys-color-primary); font-size: 1.35em; }
+.info-item { color: var(--md-sys-color-on-surface-variant); }
+.info-item .material-symbols-outlined { color: var(--md-sys-color-primary); }
+md-filled-button .material-symbols-outlined, md-outlined-button .material-symbols-outlined, md-text-button .material-symbols-outlined { font-size: 1.125rem; }
 @media (max-width: 839px) { .three, .split, .steps { grid-template-columns: 1fr; } .hero { min-height: auto; padding-top: 5rem; } .hero::after { width: 45vw; opacity: .35; } }
 @media (max-width: 599px) { .grid, .teacher-grid { grid-template-columns: 1fr; } section { padding: 3rem 0; } .tonal { margin-inline: -.25rem; } dl { grid-template-columns: 1fr; } dd { margin: 0 0 .5rem; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
