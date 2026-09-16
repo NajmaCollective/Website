@@ -1,3 +1,6 @@
-.allocation { height: 3.5rem; display: flex; overflow: hidden; margin: 2.5rem 0; border-radius: 999px; background: var(--md-sys-color-surface-container); box-shadow: inset 0 0 0 1px var(--md-sys-color-outline-variant), var(--shadow-1); }
-.allocation span { width: 80%; background: linear-gradient(90deg, var(--md-sys-color-primary), color-mix(in srgb, var(--md-sys-color-primary) 70%, var(--md-sys-color-tertiary))); }
-.allocation i { width: 5%; border-left: 3px solid var(--md-sys-color-surface); background: linear-gradient(180deg, var(--md-sys-color-tertiary-container), var(--ambient-gold)); }
+.allocation { display: flex; height: 2.5rem; margin: 2rem 0; border-radius: 999px; overflow: hidden; background: var(--md-sys-color-secondary-container); }
+.allocation span { width: 80%; background: var(--md-sys-color-primary); }
+.allocation i { width: 5%; border-left: 3px solid var(--md-sys-color-surface); background: var(--md-sys-color-primary-container); }
+.page-about .brand-panel { background: var(--md-sys-color-primary-container); color: var(--md-sys-color-on-primary-container); }
+.page-about .brand-art .material-symbols-outlined,.page-about .panel-title span,.page-about .panel-caption { color: var(--md-sys-color-primary); }
+.page-about .panel-caption { border-color: var(--md-sys-color-outline); }

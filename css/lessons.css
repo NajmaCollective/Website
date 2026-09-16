@@ -1,2 +1,3 @@
-.cards.three article { min-height: 100%; }
+.cards.three article { min-height: 0; }
 .cards.three md-filled-button { margin-top: auto; align-self: flex-start; }
+.cards.three article:first-child { background: var(--md-sys-color-primary-container); }
