@@ -1,2 +1,12 @@
+@import url('media.css');
+
+.hero {
+  --hero-photo: url('https://images.pexels.com/photos/7034733/pexels-photo-7034733.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  --hero-photo-position: 55% center;
+  --hero-photo-radius: 2.25rem 13rem 2.25rem 13rem;
+  --hero-photo-tint: 145deg;
+  --hero-accent-rotate: 6deg;
+}
+
 .cards.three article { min-height: 100%; }
 .cards.three md-filled-button { margin-top: auto; align-self: flex-start; }
