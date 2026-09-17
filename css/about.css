@@ -1,7 +1,7 @@
 @import url('media.css');
 
 .hero {
-  --hero-photo: url('https://images.pexels.com/photos/2747689/pexels-photo-2747689.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  --hero-photo: url('https://unsplash.com/photos/wl8wlWUm2Js/download?force=true&w=1600');
   --hero-photo-position: center;
   --hero-photo-radius: 3rem 3rem 14rem 3rem;
   --hero-photo-tint: 150deg;
