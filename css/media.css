@@ -1,0 +1,128 @@
+/* Stock-photo composition layer for Najma.
+   Images are treated as editorial atmosphere rather than identity claims.
+   Page styles provide --hero-photo and crop variables. */
+
+.hero {
+  isolation: isolate;
+  overflow: visible;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: clamp(3rem, 7vw, 5.5rem);
+  right: 0;
+  width: min(41vw, 31rem);
+  height: clamp(22rem, 42vw, 34rem);
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 58%, transparent);
+  border-radius: var(--hero-photo-radius, 15rem 15rem 2rem 2rem);
+  background-image:
+    linear-gradient(var(--hero-photo-tint, 180deg), color-mix(in srgb, var(--md-sys-color-surface) 4%, transparent), color-mix(in srgb, var(--md-sys-color-primary-container) 18%, transparent)),
+    var(--hero-photo);
+  background-position: var(--hero-photo-position, center);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: var(--hero-photo-opacity, .96);
+  filter: saturate(.9) contrast(.98);
+  box-shadow: 0 24px 56px rgb(var(--shadow-color) / .16);
+}
+
+.hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: clamp(5rem, 9vw, 7.5rem);
+  right: min(34vw, 25rem);
+  width: clamp(7.5rem, 13vw, 11rem);
+  height: clamp(14rem, 24vw, 20rem);
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-primary) 18%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--md-sys-color-primary-container) 42%, transparent);
+  backdrop-filter: blur(14px);
+  transform: rotate(var(--hero-accent-rotate, -8deg));
+  box-shadow: 0 18px 42px rgb(var(--shadow-color) / .08);
+  pointer-events: none;
+}
+
+.hero:not(.split) {
+  padding-right: min(47vw, 36rem);
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero.split::after {
+  top: 2.5rem;
+  right: 0;
+  width: 43%;
+  height: calc(100% - 5rem);
+  border-radius: var(--hero-photo-radius, 3rem 12rem 3rem 12rem);
+  opacity: var(--hero-photo-opacity, .58);
+}
+
+.hero.split::before {
+  right: 34%;
+}
+
+.hero.split > aside,
+.hero.split > div:last-child {
+  position: relative;
+  z-index: 1;
+}
+
+.hero.split > aside.tonal {
+  border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 56%, transparent);
+  background: color-mix(in srgb, var(--md-sys-color-surface-container-lowest) 78%, transparent);
+  backdrop-filter: blur(18px) saturate(1.08);
+}
+
+/* A translucent wash keeps image-heavy pages within the Material 3 palette. */
+main > section.tonal {
+  backdrop-filter: saturate(1.03);
+}
+
+@media (max-width: 839px) {
+  .hero:not(.split) {
+    padding-right: 0;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .hero::after,
+  .hero.split::after {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: clamp(16rem, 72vw, 24rem);
+    margin-top: 2rem;
+    border-radius: var(--hero-photo-mobile-radius, 2rem 8rem 2rem 2rem);
+    opacity: var(--hero-photo-mobile-opacity, .96);
+  }
+
+  .hero.split::after {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 599px) {
+  .hero::after,
+  .hero.split::after {
+    height: 18rem;
+    border-radius: var(--hero-photo-mobile-radius, 1.5rem 6rem 1.5rem 1.5rem);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .hero.split > aside.tonal {
+    background: var(--md-sys-color-surface-container-lowest);
+    backdrop-filter: none;
+  }
+}
