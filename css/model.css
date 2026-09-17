@@ -1,2 +1,13 @@
+@import url('media.css');
+
+.hero {
+  --hero-photo: url('https://images.pexels.com/photos/1181740/pexels-photo-1181740.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  --hero-photo-position: 55% center;
+  --hero-photo-radius: 3rem 14rem 3rem 14rem;
+  --hero-photo-tint: 160deg;
+  --hero-photo-opacity: .54;
+  --hero-accent-rotate: -5deg;
+}
+
 .steps { margin-top: 2.5rem; }
 .steps li:nth-child(even) { background: linear-gradient(145deg, var(--md-sys-color-surface-container-lowest), var(--md-sys-color-tertiary-container)); }
