@@ -1,3 +1,10 @@
 /* The landing page hero has room for a more expansive welcome. */
+.hero {
+  --hero-photo: url('https://images.pexels.com/photos/5899254/pexels-photo-5899254.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  --hero-photo-position: 58% center;
+  --hero-photo-radius: 15rem 15rem 2.25rem 2.25rem;
+  --hero-photo-tint: 155deg;
+  --hero-accent-rotate: -7deg;
+}
 .hero h1 { max-width: 15ch; }
 .hero .price { display: inline-block; width: fit-content; padding: .45rem .85rem; border-radius: 999px; background: color-mix(in srgb, var(--md-sys-color-primary-container) 72%, transparent); }
