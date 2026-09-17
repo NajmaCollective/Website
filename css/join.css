@@ -1,2 +1,12 @@
+@import url('media.css');
+
+.hero {
+  --hero-photo: url('https://images.pexels.com/photos/6457517/pexels-photo-6457517.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  --hero-photo-position: 53% center;
+  --hero-photo-radius: 16rem 3rem 16rem 3rem;
+  --hero-photo-tint: 165deg;
+  --hero-accent-rotate: 8deg;
+}
+
 .hero .lede { max-width: 32ch; }
 .hero .actions { margin-top: 2rem; }
