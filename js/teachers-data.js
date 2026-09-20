@@ -42,5 +42,26 @@ window.NAJMA_TEACHERS = [
       'Bespoke programmes for organisations · from £40 per 55-minute group session'
     ],
     booking: 'https://calendar.app.google/ZymdzetiFMDiavQT8'
+  },
+  {
+    id: 'hannah-copeland',
+    name: 'Hannah Copeland',
+    headline: 'Teacher and educator specialising in academic, professional and functional English',
+    location: 'Bordeaux, France',
+    photo: 'https://drive.google.com/thumbnail?id=19cG0V6lURgi-XgWqU_SAlKqziR_6jcL9&sz=w1200',
+    areas: ['general', 'academic', 'professional', 'exam', 'advocacy'],
+    about: 'I am an English teacher with over twenty years of experience working with young learners and adults in the UK and internationally. I have taught academic English, English for Specific Purposes, General and functional English, and professional communication. I am passionate about helping people build their confidence and move towards their objectives using English, and I design engaging lessons based on each learner’s goals. This can include real-life academic and professional scenarios, exam preparation, presentations and interview skills. I greatly value the communication opportunities in language lessons and enjoy working alongside people from around the world to exchange ideas.',
+    qualifications: ['MA Education, International Development & Social Justice, University of St Mary’s, London', 'Certificate in ESOL Subject Specialism', 'CELTA', 'Certificate in Education', 'BA (Hons) Italian & French, University of Reading'],
+    experience: 'Over twenty years teaching young and adult learners in the UK and internationally.',
+    help: ['General English', 'Conversation and speaking', 'Academic English', 'Workplace English', 'Professional communication', 'Presentations', 'Meetings', 'Interviews', 'Intercultural communication', 'English for activism and campaigning', 'English for NGOs and civil-society organisations', 'Exam preparation', 'English for medicine, health and nutrition', 'English for sport and science'],
+    highlights: ['Academic English', 'Conversation', 'Presentations'],
+    teaching: 'My lessons are relaxed and engaging. We begin by identifying your learning goals and needs, then design the lessons around them. We can work on an upcoming presentation or exam, or practise discussions to develop your fluency. I give clear, informative feedback and we discuss points to work on next. We can also design lessons backwards from your longer-term objectives and work through the steps needed to get there.',
+    languages: 'English — native; French — fluent; Italian — B2; Spanish — B1; German — A2; Arabic — beginner.',
+    services: [
+      'Private lesson · 55 minutes · £20',
+      'Free individual needs analysis · 20 minutes',
+      'Bespoke programmes for organisations · from £40 per 55-minute group session'
+    ],
+    booking: 'https://calendly.com/hannahcfenzi/30min'
   }
 ];
