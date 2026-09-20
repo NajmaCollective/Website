@@ -1,9 +1,8 @@
 /* The landing page hero has room for a more expansive welcome. */
 .hero {
-  --hero-photo: url('https://images.pexels.com/photos/5899254/pexels-photo-5899254.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  --hero-photo: url('https://images.pexels.com/photos/3867189/pexels-photo-3867189.jpeg?cs=srgb&fm=jpg');
   --hero-photo-position: 58% center;
   --hero-photo-radius: 15rem 15rem 2.25rem 2.25rem;
-  --hero-photo-tint: 155deg;
   --hero-accent-rotate: -7deg;
 }
 .hero h1 { max-width: 15ch; }
