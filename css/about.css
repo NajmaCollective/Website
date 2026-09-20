@@ -1,10 +1,9 @@
 @import url('media.css');
 
 .hero {
-  --hero-photo: url('https://unsplash.com/photos/wl8wlWUm2Js/download?force=true&w=1600');
+  --hero-photo: url('https://images.pexels.com/photos/18999192/pexels-photo-18999192.jpeg?cs=srgb&fm=jpg');
   --hero-photo-position: center;
   --hero-photo-radius: 3rem 3rem 14rem 3rem;
-  --hero-photo-tint: 150deg;
   --hero-accent-rotate: -9deg;
 }
 
