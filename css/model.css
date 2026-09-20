@@ -1,11 +1,10 @@
 @import url('media.css');
 
 .hero {
-  --hero-photo: url('https://images.pexels.com/photos/19915773/pexels-photo-19915773.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  --hero-photo: url('https://images.pexels.com/photos/7550396/pexels-photo-7550396.jpeg?cs=srgb&fm=jpg');
   --hero-photo-position: center;
   --hero-photo-radius: 3rem 14rem 3rem 14rem;
-  --hero-photo-tint: 160deg;
-  --hero-photo-opacity: .72;
+  --hero-photo-opacity: .78;
   --hero-accent-rotate: -5deg;
 }
 
