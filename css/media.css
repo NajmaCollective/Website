@@ -1,10 +1,10 @@
-/* Stock-photo composition layer for Najma.
-   Images are treated as editorial atmosphere rather than identity claims.
-   Page styles provide --hero-photo and crop variables. */
+/* Editorial photography for Najma.
+   Stock images provide atmosphere and context. They do not identify the people pictured as Najma learners, teachers or partners. */
 
 .hero {
   isolation: isolate;
   overflow: visible;
+  position: relative;
 }
 
 .hero::after {
@@ -18,14 +18,13 @@
   height: clamp(22rem, 42vw, 34rem);
   border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 58%, transparent);
   border-radius: var(--hero-photo-radius, 15rem 15rem 2rem 2rem);
-  background-image:
-    linear-gradient(var(--hero-photo-tint, 180deg), color-mix(in srgb, var(--md-sys-color-surface) 4%, transparent), color-mix(in srgb, var(--md-sys-color-primary-container) 18%, transparent)),
-    var(--hero-photo);
+  background-color: var(--md-sys-color-surface-container-low);
+  background-image: var(--hero-photo);
   background-position: var(--hero-photo-position, center);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: var(--hero-photo-opacity, .96);
-  filter: saturate(.9) contrast(.98);
+  filter: saturate(.94) contrast(1.01);
   box-shadow: 0 24px 56px rgb(var(--shadow-color) / .16);
 }
 
@@ -62,7 +61,7 @@
   width: 43%;
   height: calc(100% - 5rem);
   border-radius: var(--hero-photo-radius, 3rem 12rem 3rem 12rem);
-  opacity: var(--hero-photo-opacity, .58);
+  opacity: var(--hero-photo-opacity, .68);
 }
 
 .hero.split::before {
@@ -77,11 +76,37 @@
 
 .hero.split > aside.tonal {
   border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 56%, transparent);
-  background: color-mix(in srgb, var(--md-sys-color-surface-container-lowest) 78%, transparent);
+  background: color-mix(in srgb, var(--md-sys-color-surface-container-lowest) 82%, transparent);
   backdrop-filter: blur(18px) saturate(1.08);
 }
 
-/* A translucent wash keeps image-heavy pages within the Material 3 palette. */
+.editorial-photo {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 2.5rem 0 0;
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 65%, transparent);
+  border-radius: var(--radius);
+  background: var(--md-sys-color-surface-container-low);
+  box-shadow: var(--shadow-2);
+}
+
+.editorial-photo img {
+  display: block;
+  width: 100%;
+  height: clamp(18rem, 42vw, 31rem);
+  object-fit: cover;
+  object-position: var(--editorial-photo-position, center);
+  filter: saturate(.94) contrast(1.01);
+}
+
+.editorial-photo figcaption {
+  padding: .75rem 1rem;
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: .82rem;
+  line-height: 1.45;
+}
+
 main > section.tonal {
   backdrop-filter: saturate(1.03);
 }
@@ -110,6 +135,10 @@ main > section.tonal {
     grid-column: 1;
     grid-row: 2;
   }
+
+  .editorial-photo img {
+    height: clamp(16rem, 62vw, 24rem);
+  }
 }
 
 @media (max-width: 599px) {
@@ -117,6 +146,11 @@ main > section.tonal {
   .hero.split::after {
     height: 18rem;
     border-radius: var(--hero-photo-mobile-radius, 1.5rem 6rem 1.5rem 1.5rem);
+  }
+
+  .editorial-photo {
+    margin-top: 1.75rem;
+    border-radius: var(--radius-small);
   }
 }
 
