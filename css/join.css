@@ -1,9 +1,8 @@
 @import url('media.css');
 
 .hero {
-  --hero-photo: url('https://images.pexels.com/photos/3753009/pexels-photo-3753009.jpeg?cs=srgb&fm=jpg');
-  --hero-photo-position: 53% center;
-  --hero-photo-radius: 16rem 3rem 16rem 3rem;
+  --hero-artwork: url('../assets/illustrations/cafe-conversation.svg');
+  --hero-artwork-radius: 16rem 3rem 16rem 3rem;
   --hero-accent-rotate: 8deg;
 }
 
