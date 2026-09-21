@@ -1,10 +1,9 @@
 @import url('media.css');
 
 .hero {
-  --hero-photo: url('https://images.pexels.com/photos/7550396/pexels-photo-7550396.jpeg?cs=srgb&fm=jpg');
-  --hero-photo-position: center;
-  --hero-photo-radius: 3rem 14rem 3rem 14rem;
-  --hero-photo-opacity: .78;
+  --hero-artwork: url('../assets/illustrations/organisations-team.svg');
+  --hero-artwork-radius: 3rem 14rem 3rem 14rem;
+  --hero-artwork-opacity: 1;
   --hero-accent-rotate: -5deg;
 }
 
