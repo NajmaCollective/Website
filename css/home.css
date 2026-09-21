@@ -1,8 +1,7 @@
 /* The landing page hero has room for a more expansive welcome. */
 .hero {
-  --hero-photo: url('https://images.pexels.com/photos/3867189/pexels-photo-3867189.jpeg?cs=srgb&fm=jpg');
-  --hero-photo-position: 58% center;
-  --hero-photo-radius: 15rem 15rem 2.25rem 2.25rem;
+  --hero-artwork: url('../assets/illustrations/home-learning.svg');
+  --hero-artwork-radius: 15rem 15rem 2.25rem 2.25rem;
   --hero-accent-rotate: -7deg;
 }
 .hero h1 { max-width: 15ch; }
