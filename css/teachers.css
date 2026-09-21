@@ -5,8 +5,11 @@
 .teacher-card-body { padding: clamp(1.4rem, 3vw, 2rem); }
 .portrait { position: relative; aspect-ratio: 4/3; display: grid; place-items: center; overflow: hidden; background: linear-gradient(145deg, var(--md-sys-color-primary-container), var(--md-sys-color-tertiary-container)); color: var(--md-sys-color-on-primary-container); }
 .portrait::after { content: ""; position: absolute; right: -15%; bottom: -35%; width: 70%; aspect-ratio: 1; border-radius: 50%; pointer-events: none; background: color-mix(in srgb, var(--md-sys-color-surface-container-lowest) 30%, transparent); }
-.portrait img { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.portrait-fallback { position: relative; z-index: 1; display: grid; place-items: center; width: 6rem; height: 6rem; border-radius: 50%; background: color-mix(in srgb, var(--md-sys-color-surface-container-lowest) 72%, transparent); font-size: 2rem; font-weight: 700; letter-spacing: .04em; }
+.portrait img { position: absolute; inset: 0; z-index: 1; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.portrait-placeholder { background-image: url('../assets/teachers/amina-placeholder.svg'); background-size: cover; background-position: center; }
+.portrait-placeholder::after { display: none; }
+.portrait-placeholder .portrait-fallback { align-self: end; margin-bottom: 1rem; width: 4.5rem; height: 4.5rem; background: color-mix(in srgb, var(--md-sys-color-surface-container-lowest) 88%, transparent); box-shadow: var(--shadow-1); font-size: 1.35rem; }
+.portrait-fallback { position: relative; z-index: 2; display: grid; place-items: center; width: 6rem; height: 6rem; border-radius: 50%; background: color-mix(in srgb, var(--md-sys-color-surface-container-lowest) 72%, transparent); font-size: 2rem; font-weight: 700; letter-spacing: .04em; }
 .teacher-location { display: flex; align-items: center; gap: .4rem; margin-bottom: .65rem; color: var(--md-sys-color-on-surface-variant); font-size: .92rem; font-weight: 500; }
 .teacher-location .material-symbols-outlined { font-size: 1.15rem; }
 .teacher-card h3 { margin-bottom: .45rem; }
