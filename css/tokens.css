@@ -1,6 +1,9 @@
-/* Material 3 semantic colour, shape and elevation roles. */
+/* Material 3 semantic colour, type, shape and motion roles for Najma. */
+@property --btn-shape { syntax: '<length>'; inherits: true; initial-value: 24px; }
+
 :root {
   color-scheme: light;
+  /* Colour roles */
   --md-sys-color-primary: #315d4b;
   --md-sys-color-on-primary: #ffffff;
   --md-sys-color-primary-container: #c5ebd6;
@@ -29,18 +32,54 @@
   --md-sys-color-outline: #747d72;
   --md-sys-color-outline-variant: #c9cfc1;
   --md-sys-color-error: #ba1a1a;
+  --md-sys-color-surface-tint: #315d4b;
+
+  /* Typeface: Roboto Flex, the variable member of Material's Roboto family */
+  --md-ref-typeface-brand: 'Roboto Flex', 'Roboto', system-ui, sans-serif;
+  --md-ref-typeface-plain: 'Roboto Flex', 'Roboto', system-ui, sans-serif;
+  --md-sys-typescale-label-large-font: var(--md-ref-typeface-plain);
+  --md-sys-typescale-label-large-weight: 600;
+  --md-sys-typescale-label-large-size: .9375rem;
+  --md-sys-typescale-body-large-font: var(--md-ref-typeface-plain);
+  --md-sys-typescale-body-medium-font: var(--md-ref-typeface-plain);
+  --md-sys-typescale-title-medium-font: var(--md-ref-typeface-brand);
+
+  /* Shape scale (Material 3 Expressive corner tokens) */
+  --md-sys-shape-corner-small: 8px;
+  --md-sys-shape-corner-medium: 12px;
+  --md-sys-shape-corner-large: 16px;
+  --md-sys-shape-corner-large-increased: 20px;
+  --md-sys-shape-corner-extra-large: 28px;
+  --md-sys-shape-corner-extra-large-increased: 32px;
+  --md-sys-shape-corner-extra-extra-large: 48px;
+  --md-sys-shape-corner-full: 999px;
+
+  /* Motion: Material 3 Expressive spring tokens as CSS curves */
+  --md-sys-motion-spatial-fast: 350ms cubic-bezier(.42, 1.67, .21, .90);
+  --md-sys-motion-spatial-default: 500ms cubic-bezier(.38, 1.21, .22, 1);
+  --md-sys-motion-spatial-slow: 650ms cubic-bezier(.39, 1.29, .35, .98);
+  --md-sys-motion-effects-fast: 150ms cubic-bezier(.31, .94, .34, 1);
+  --md-sys-motion-effects-default: 200ms cubic-bezier(.34, .80, .34, 1);
+  --md-sys-motion-effects-slow: 300ms cubic-bezier(.34, .88, .34, 1);
+  --md-sys-motion-easing-emphasized-decelerate: cubic-bezier(.05, .7, .1, 1);
+
+  /* Elevation */
+  --shadow-color: 24 46 32;
+  --md-sys-elevation-1: 0 1px 2px rgb(var(--shadow-color) / .14), 0 1px 3px 1px rgb(var(--shadow-color) / .08);
+  --md-sys-elevation-2: 0 1px 2px rgb(var(--shadow-color) / .14), 0 2px 6px 2px rgb(var(--shadow-color) / .08);
+  --md-sys-elevation-3: 0 4px 8px 3px rgb(var(--shadow-color) / .08), 0 1px 3px rgb(var(--shadow-color) / .14);
+
+  /* Layout */
+  --content-width: 1320px;
+  --gutter: clamp(20px, 4vw, 56px);
+  --group-gap: clamp(12px, 1.4vw, 20px);
+  --radius: var(--md-sys-shape-corner-extra-large);
+  --radius-small: var(--md-sys-shape-corner-large);
+
+  /* Kept for older rules that still reference them */
   --ambient-peach: var(--md-sys-color-tertiary-container);
   --ambient-gold: var(--md-sys-color-secondary-container);
   --ambient-rose: var(--md-sys-color-primary-container);
-  --shadow-color: 24 46 32;
-  --shadow-1: 0 1px 3px rgb(var(--shadow-color) / .10), 0 3px 8px rgb(var(--shadow-color) / .05);
-  --shadow-2: 0 4px 8px rgb(var(--shadow-color) / .10), 0 16px 32px rgb(var(--shadow-color) / .08);
-  --content-width: 1320px;
-  --gutter: clamp(20px, 4vw, 56px);
-  --group-gap: 20px;
-  --radius: 28px;
-  --radius-small: 16px;
-  --md-ref-typeface-brand: 'Roboto', system-ui, sans-serif;
-  --md-ref-typeface-plain: 'Roboto', system-ui, sans-serif;
-  --md-sys-typescale-label-large-font: 'Roboto', system-ui, sans-serif;
+  --shadow-1: var(--md-sys-elevation-1);
+  --shadow-2: var(--md-sys-elevation-2);
 }

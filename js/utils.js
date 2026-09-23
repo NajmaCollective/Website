@@ -27,10 +27,15 @@
     ]
   };
 
+  // Heading text without its decorative Material Symbols ligature (e.g. "co_present").
+  const headingText = node => Array.from(node.childNodes)
+    .filter(child => !(child.classList && child.classList.contains('material-symbols-outlined')))
+    .map(child => child.textContent).join('').trim();
+
   const pageMedia = media[page] || [];
   const headings = Array.from(document.querySelectorAll('main h2'));
   pageMedia.forEach((item, index) => {
-    const heading = headings.find(node => node.textContent.trim() === item.heading);
+    const heading = headings.find(node => headingText(node) === item.heading);
     const section = heading?.closest('section');
     if (!section || section.querySelector(`[data-editorial-media="${index}"]`)) return;
     const figure = document.createElement('figure');
@@ -63,7 +68,7 @@
 
   const allProfileHeadings = Array.from(document.querySelectorAll('main h2, main h3'));
   previewLocations.forEach(config => {
-    const heading = allProfileHeadings.find(node => node.textContent.trim() === config.heading);
+    const heading = allProfileHeadings.find(node => headingText(node) === config.heading);
     const section = heading?.closest('section');
     if (!section || section.querySelector('[data-teacher-previews]')) return;
     const placeholders = Array.from(section.querySelectorAll('p')).filter(paragraph => config.prefixes.some(prefix => paragraph.textContent.trim().startsWith(prefix)));
