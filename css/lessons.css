@@ -1,10 +1,3 @@
-@import url('media.css');
-
-.hero {
-  --hero-artwork: url('../assets/illustrations/lessons-learning.svg');
-  --hero-artwork-radius: 2.25rem 13rem 2.25rem 13rem;
-  --hero-accent-rotate: 6deg;
-}
-
-.cards.three article { min-height: 100%; }
-.cards.three md-filled-button { margin-top: auto; align-self: flex-start; }
+/* Lessons and prices */
+.cards.three article .price { margin-bottom: 1rem; font-size: clamp(1.3rem, 1.8vw, 1.6rem); }
+.cards.three article > p:nth-of-type(2) { font-weight: 560; }

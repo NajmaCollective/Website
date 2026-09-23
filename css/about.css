@@ -1,11 +1,26 @@
-@import url('media.css');
+/* About */
+.hero h1 { max-width: 10ch; }
 
-.hero {
-  --hero-artwork: url('../assets/illustrations/about-collective.svg');
-  --hero-artwork-radius: 3rem 3rem 14rem 3rem;
-  --hero-accent-rotate: -9deg;
+/* Income allocation: the bar fills as it scrolls into view */
+.allocation { display: flex; gap: 4px; height: 3.25rem; margin: 2rem 0 1.5rem; }
+.allocation span, .allocation i { display: block; height: 100%; border-radius: var(--md-sys-shape-corner-small); }
+.allocation span { flex: 0 0 calc(80% - 12.8px); border-radius: var(--md-sys-shape-corner-full) var(--md-sys-shape-corner-small) var(--md-sys-shape-corner-small) var(--md-sys-shape-corner-full); background: var(--md-sys-color-primary); }
+.allocation i { flex: 1 1 0; }
+.allocation i:nth-of-type(1) { background: var(--md-sys-color-secondary); }
+.allocation i:nth-of-type(2) { background: #8a9a7c; }
+.allocation i:nth-of-type(3) { background: var(--md-sys-color-tertiary); }
+.allocation i:nth-of-type(4) { border-radius: var(--md-sys-shape-corner-small) var(--md-sys-shape-corner-full) var(--md-sys-shape-corner-full) var(--md-sys-shape-corner-small); background: #d9a58c; }
+.allocation + ul { list-style: none; padding: 0; margin: 0 0 1.5rem; display: grid; gap: .5rem; }
+.allocation + ul li { display: flex; align-items: center; gap: .75rem; }
+.allocation + ul li::before { content: ""; flex: none; width: 1rem; height: 1rem; border-radius: 4px; background: var(--swatch); }
+.allocation + ul li:nth-child(1) { --swatch: var(--md-sys-color-primary); font-weight: 620; }
+.allocation + ul li:nth-child(2) { --swatch: var(--md-sys-color-secondary); }
+.allocation + ul li:nth-child(3) { --swatch: #8a9a7c; }
+.allocation + ul li:nth-child(4) { --swatch: var(--md-sys-color-tertiary); }
+.allocation + ul li:nth-child(5) { --swatch: #d9a58c; }
+@keyframes allocation-fill { from { clip-path: inset(0 100% 0 0 round 999px); } }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .allocation { animation: allocation-fill linear both; animation-timeline: view(); animation-range: entry 20% cover 45%; }
+  }
 }
-
-.allocation { height: 3.5rem; display: flex; overflow: hidden; margin: 2.5rem 0; border-radius: 999px; background: var(--md-sys-color-surface-container); box-shadow: inset 0 0 0 1px var(--md-sys-color-outline-variant), var(--shadow-1); }
-.allocation span { width: 80%; background: linear-gradient(90deg, var(--md-sys-color-primary), color-mix(in srgb, var(--md-sys-color-primary) 70%, var(--md-sys-color-tertiary))); }
-.allocation i { width: 5%; border-left: 3px solid var(--md-sys-color-surface); background: linear-gradient(180deg, var(--md-sys-color-tertiary-container), var(--ambient-gold)); }
