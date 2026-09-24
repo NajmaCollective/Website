@@ -18,7 +18,8 @@ The logo pairs Najma's eight-pointed star, set inside a twelve-lobed Material "c
 ## Maintenance notes
 
 - The Material Symbols stylesheet is subset with `icon_names=` to the icons the site uses, which keeps the font small. When you add a new icon anywhere (HTML or JavaScript), add its name to that list in every page's `<head>`, keeping the list in alphabetical order, or the icon will show as its name in plain text.
-- `assets/illustrations/` is no longer referenced by the stylesheets. `js/utils.js` injects those files as editorial artwork beneath named section headings.
+- Editorial artwork is a "constellation" built by `js/utils.js`: three Material shapes, each holding a filled Material Symbol, joined by fine dashed lines with small Najma stars between them. It is placed beside a named section heading, after its introduction paragraph when there is one, and alternate figures are mirrored. Each page's entry names a motif (`learning`, `conversation`, `organisation`, `online`, `collective`), and each motif sets the three symbols and shapes. Symbols used here must be in the Material Symbols `icon_names=` list. Styles live in `css/media.css`. The artwork is decorative and hidden from assistive technology.
+- The example programme on `model.html` (`section.programme`) has its own grid: a brief with intro, audience and aim tiles on the left, and the sessions as a numbered path on the right. It is excluded from the generic two-column float rules in `css/base.css`.
 
 ## Behaviour and accessibility
 
@@ -26,7 +27,7 @@ The carousel supports touch scrolling and focusable keyboard navigation with Arr
 
 Teacher profiles remain unpublished until `confirmed: true` is explicitly added to verified records in `js/teachers-data.js`. Optional `services` values are `intro` and `short`. Area and service filters combine, including links arriving with query parameters. The current repository contains draft teacher records, so an honest enquiry state is shown. Draft event information is described as awaiting confirmation.
 
-The editorial and teacher-preview injection in `js/utils.js` finds headings by their visible text, ignoring the decorative Material Symbols ligature inside each heading. Teacher previews replace the bracketed placeholder paragraphs in the matching sections. If you rename a heading, update its entry in `js/utils.js` to match.
+The constellation artwork and teacher-preview injection in `js/utils.js` finds headings by their visible text, ignoring the decorative Material Symbols ligature inside each heading. Teacher previews replace the bracketed placeholder paragraphs in the matching sections. If you rename a heading, update its entry in `js/utils.js` to match.
 
 ## Validation
 

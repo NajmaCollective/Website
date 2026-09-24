@@ -105,17 +105,17 @@ main > section.tonal + section, main > section + section.tonal { border-top: 0; 
    Headings take the left column; reading content the right. Grids, card sets
    and steps run the full width. */
 @media (min-width: 1024px) {
-  main > section:not(.hero, .split) { display: flow-root; }
-  main > section:not(.hero, .split) > :is(h2, .eyebrow) { float: left; clear: left; width: 36%; padding-right: 2rem; }
-  main > section:not(.hero, .split) > h2 ~ h2 { clear: both; margin-top: 0; padding-top: 3.5rem; }
-  main > section:not(.hero, .split) > h2 ~ h2 + :is(p, .price, h3) { margin-top: calc(1rem + 3.5rem + 4.25rem + 1.35rem); }
-  main > section:not(.hero, .split) > :not(h2, .eyebrow) { margin-left: 42%; }
-  main > section:not(.hero, .split) > h2:has(+ :is(.grid, .cards, .steps, .teacher-grid)) { float: none; width: auto; }
-  main > section:not(.hero, .split) > :is(.grid, .cards, .steps, .teacher-grid),
-  main > section:not(.hero, .split) > :is(.grid, .cards, .steps, .teacher-grid) ~ * { clear: both; margin-left: 0; }
-  main > section:not(.hero, .split) > h2 + :is(p, .price, h3, .faq, dl) { margin-top: calc(4.25rem + 1.35rem); }
-  main > section:not(.hero, .split) > a { margin-left: calc(42% - .85rem); }
-  main > section:not(.hero, .split) > :is(.grid, .cards, .steps, .teacher-grid) ~ a { margin-left: -.85rem; }
+  main > section:not(.hero, .split, .programme) { display: flow-root; }
+  main > section:not(.hero, .split, .programme) > :is(h2, .eyebrow) { float: left; clear: left; width: 36%; padding-right: 2rem; }
+  main > section:not(.hero, .split, .programme) > h2 ~ h2 { clear: both; margin-top: 0; padding-top: 3.5rem; }
+  main > section:not(.hero, .split, .programme) > h2 ~ h2 + :is(p, .price, h3) { margin-top: calc(1rem + 3.5rem + 4.25rem + 1.35rem); }
+  main > section:not(.hero, .split, .programme) > :not(h2, .eyebrow) { margin-left: 42%; }
+  main > section:not(.hero, .split, .programme) > h2:has(+ :is(.grid, .cards, .steps, .teacher-grid)) { float: none; width: auto; }
+  main > section:not(.hero, .split, .programme) > :is(.grid, .cards, .steps, .teacher-grid),
+  main > section:not(.hero, .split, .programme) > :is(.grid, .cards, .steps, .teacher-grid) ~ * { clear: both; margin-left: 0; }
+  main > section:not(.hero, .split, .programme) > h2 + :is(p, .price, h3, .faq, dl) { margin-top: calc(4.25rem + 1.35rem); }
+  main > section:not(.hero, .split, .programme) > a { margin-left: calc(42% - .85rem); }
+  main > section:not(.hero, .split, .programme) > :is(.grid, .cards, .steps, .teacher-grid) ~ a { margin-left: -.85rem; }
   main > section.tonal:not(.split) > :is(h2, .eyebrow) { width: 38%; }
 }
 main > section > :is(a, md-filled-button, md-outlined-button, md-text-button) { display: flex; width: fit-content; }

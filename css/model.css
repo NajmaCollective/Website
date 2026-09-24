@@ -1,6 +1,68 @@
 /* For organisations */
 .hero h1 { max-width: 14ch; }
-/* Example programme: the sessions form a short sequence */
-.tone-primary > h3 { margin: 1.5rem 0 .25rem; font-size: 1.05rem; }
-.tone-primary > h3 + p { margin-bottom: 0; }
+/* ---------- Example programme ----------
+   A brief on the left (intro, who it is for, aim) and the four sessions as a
+   numbered path on the right, each step marked by a Najma star shape. */
+.programme { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+.programme::after {
+  content: ""; position: absolute; z-index: -1; pointer-events: none;
+  bottom: -8rem; left: -7rem; width: clamp(16rem, 26vw, 22rem); aspect-ratio: 1;
+  background: color-mix(in srgb, var(--md-sys-color-primary) 7%, transparent); clip-path: var(--shape-cookie12);
+}
+.programme-lead > p:not(.eyebrow) { max-width: 40ch; font-size: 1.125rem; }
+.programme-brief { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--group-gap); margin-top: 2rem; }
+.programme-brief > div {
+  padding: 1.35rem 1.5rem; border-radius: var(--md-sys-shape-corner-extra-large);
+  background: color-mix(in srgb, var(--md-sys-color-surface-container-lowest) 62%, transparent);
+}
+.programme-brief h3, .programme-sessions h3 {
+  margin: 0 0 .4rem; color: var(--md-sys-color-primary);
+  font-size: .8125rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+}
+.programme-brief p { margin: 0; }
+
+.programme-sessions {
+  counter-reset: session; list-style: none; margin: 0; padding: 1.75rem clamp(1.5rem, 3vw, 2.5rem);
+  border-radius: var(--md-sys-shape-corner-extra-extra-large);
+  background: var(--md-sys-color-surface-container-lowest); color: var(--md-sys-color-on-surface);
+  box-shadow: var(--md-sys-elevation-1);
+}
+.programme-sessions > li {
+  counter-increment: session; position: relative; max-width: none;
+  display: grid; grid-template-columns: 3.25rem minmax(0, 1fr); column-gap: 1.25rem;
+  padding-block: 1.1rem;
+}
+.programme-sessions > li > * { grid-column: 2; }
+/* The step marker: a numbered star, joined to the next by a line */
+.programme-sessions > li::before {
+  content: counter(session); grid-column: 1; grid-row: 1 / span 2; align-self: start;
+  display: grid; place-items: center; width: 3.25rem; aspect-ratio: 1;
+  background: var(--md-sys-color-primary-container); color: var(--md-sys-color-on-primary-container);
+  clip-path: var(--shape-sunny);
+  font-family: var(--md-ref-typeface-brand); font-size: 1.2rem; font-weight: 700;
+}
+.programme-sessions > li:last-child::before { background: var(--md-sys-color-primary); color: var(--md-sys-color-on-primary); clip-path: var(--shape-star); }
+.programme-sessions > li:not(:last-child)::after {
+  content: ""; position: absolute; left: calc(1.625rem - 1px); top: calc(1.1rem + 3.25rem + .35rem); bottom: calc(-1.1rem + .35rem);
+  width: 2px; border-radius: 2px; background: var(--md-sys-color-outline-variant);
+}
+.programme-sessions p { margin: 0; font-size: 1.0625rem; }
+.programme-sessions > li:first-child { padding-top: .35rem; }
+.programme-sessions > li:last-child { padding-bottom: .35rem; }
+.programme-sessions > li:first-child:not(:last-child)::after { top: calc(.35rem + 3.25rem + .35rem); }
+
+@media (max-width: 1023px) {
+  .programme { grid-template-columns: 1fr; }
+}
+@media (max-width: 599px) {
+  .programme-brief { grid-template-columns: 1fr; }
+  .programme-sessions { margin-inline: -.35rem; padding: 1.25rem 1.1rem; border-radius: var(--md-sys-shape-corner-extra-large); }
+  .programme-sessions > li { grid-template-columns: 2.75rem minmax(0, 1fr); column-gap: 1rem; }
+  .programme-sessions > li::before { width: 2.75rem; font-size: 1.05rem; }
+  .programme-sessions > li:not(:last-child)::after { left: calc(1.375rem - 1px); top: calc(1.1rem + 2.75rem + .35rem); }
+  .programme-sessions > li:first-child:not(:last-child)::after { top: calc(.35rem + 2.75rem + .35rem); }
+}
+@media (forced-colors: active) {
+  .programme-sessions > li::before { clip-path: none; border: 1px solid CanvasText; border-radius: 50%; }
+}
 main > section > .price + .price { margin-top: -.25rem; }

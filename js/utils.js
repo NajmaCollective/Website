@@ -4,33 +4,71 @@
   if (button && menu) button.addEventListener('click', () => { menu.open = !menu.open; });
 
   const page = location.pathname.split('/').pop() || 'index.html';
+
+  // Constellation artwork: Material shapes as stars joined by fine lines, each
+  // carrying a filled symbol for its section. Decorative, so hidden from assistive tech.
+  const motifs = {
+    learning: { icons: ['school', 'translate', 'route'], shapes: ['cookie9', 'circle', 'clover4'] },
+    conversation: { icons: ['forum', 'local_cafe', 'waving_hand'], shapes: ['sunny', 'cookie6', 'clover8'] },
+    organisation: { icons: ['co_present', 'corporate_fare', 'handshake'], shapes: ['cookie12', 'circle', 'cookie4'] },
+    online: { icons: ['videocam', 'record_voice_over', 'trending_up'], shapes: ['softburst', 'circle', 'cookie6'] },
+    collective: { icons: ['diversity_3', 'public', 'volunteer_activism'], shapes: ['verysunny', 'cookie9', 'clover4'] }
+  };
   const media = {
     'index.html': [
-      { heading: 'Meet Najma at the Solidarity Café', src: 'assets/illustrations/cafe-conversation.svg', alt: 'Animated Material-style illustration of conversation and a small group.' },
-      { heading: 'English for your organisation', src: 'assets/illustrations/organisations-team.svg', alt: 'Animated Material-style illustration of a group programme and presentation.' }
+      { heading: 'What would you like to study?', motif: 'learning' },
+      { heading: 'A collective run by its teachers', motif: 'collective' }
     ],
     'lessons.html': [
-      { heading: 'What would you like to study?', src: 'assets/illustrations/lessons-learning.svg', alt: 'Animated Material-style illustration of a learning pathway.' },
-      { heading: 'How lessons develop', src: 'assets/illustrations/home-learning.svg', alt: 'Animated Material-style illustration of online learning and conversation.' }
+      { heading: 'What would you like to study?', motif: 'learning' },
+      { heading: 'How lessons develop', motif: 'online' }
     ],
     'model.html': [
-      { heading: 'What could your group work on?', src: 'assets/illustrations/organisations-team.svg', alt: 'Animated Material-style illustration of group learning for organisations.' },
-      { heading: 'Who we work with', src: 'assets/illustrations/about-collective.svg', alt: 'Animated Material-style illustration of a connected teacher-led collective.' }
+      { heading: 'What could your group work on?', motif: 'organisation' },
+      { heading: 'Who we work with', motif: 'collective' }
     ],
     'join.html': [
-      { heading: 'What happens in a session?', src: 'assets/illustrations/cafe-conversation.svg', alt: 'Animated Material-style illustration of an online group conversation.' },
-      { heading: 'English in the Café', src: 'assets/illustrations/lessons-learning.svg', alt: 'Animated Material-style illustration of learning through conversation.' }
+      { heading: 'What happens in a session?', motif: 'conversation' },
+      { heading: 'English in the Café', motif: 'learning' }
     ],
     'about.html': [
-      { heading: 'Where Najma came from', src: 'assets/illustrations/about-collective.svg', alt: 'Animated Material-style illustration of a connected education collective.' },
-      { heading: 'A collective shaped by its teachers', src: 'assets/illustrations/home-learning.svg', alt: 'Animated Material-style illustration of teaching, conversation and learning.' }
+      { heading: 'Where Najma came from', motif: 'collective' },
+      { heading: 'A collective shaped by its teachers', motif: 'online' }
     ]
   };
+
+  // Node layout as [x %, y %, size as % of width]. The panel is 16:7.
+  const nodes = [[24, 52, 30], [57, 32, 18], [82, 64, 16]];
+  const sparks = [[43, 85, 5.5, 'star'], [91, 17, 4.5, 'star'], [8, 15, 3.5, 'star'], [68, 88, 2.8, 'dot']];
+  const links = [[nodes[0], nodes[1]], [nodes[1], nodes[2]], [nodes[1], sparks[1]], [nodes[0], sparks[0]], [nodes[2], sparks[3]]];
 
   // Heading text without its decorative Material Symbols ligature (e.g. "co_present").
   const headingText = node => Array.from(node.childNodes)
     .filter(child => !(child.classList && child.classList.contains('material-symbols-outlined')))
     .map(child => child.textContent).join('').trim();
+
+  const buildConstellation = (motif, flip) => {
+    const x = value => (flip ? 100 - value : value);
+    const figure = document.createElement('figure');
+    figure.className = 'editorial-artwork';
+    figure.setAttribute('aria-hidden', 'true');
+    const lines = links.map(([a, b]) => `<line x1="${x(a[0])}" y1="${a[1] * .4375}" x2="${x(b[0])}" y2="${b[1] * .4375}"/>`).join('');
+    figure.innerHTML = `<svg class="constellation-lines" viewBox="0 0 100 43.75" preserveAspectRatio="none" focusable="false">${lines}</svg>`;
+    nodes.forEach(([nx, ny, size], index) => {
+      const node = document.createElement('span');
+      node.className = `constellation-node constellation-node--${index + 1} material-symbols-outlined`;
+      node.style.cssText = `--x:${x(nx)};--y:${ny};--s:${size};--node-shape:var(--shape-${motif.shapes[index]})`;
+      node.textContent = motif.icons[index];
+      figure.append(node);
+    });
+    sparks.forEach(([sx, sy, size, kind]) => {
+      const spark = document.createElement('span');
+      spark.className = `constellation-spark constellation-spark--${kind}`;
+      spark.style.cssText = `--x:${x(sx)};--y:${sy};--s:${size}`;
+      figure.append(spark);
+    });
+    return figure;
+  };
 
   const pageMedia = media[page] || [];
   const headings = Array.from(document.querySelectorAll('main h2'));
@@ -38,19 +76,12 @@
     const heading = headings.find(node => headingText(node) === item.heading);
     const section = heading?.closest('section');
     if (!section || section.querySelector(`[data-editorial-media="${index}"]`)) return;
-    const figure = document.createElement('figure');
-    figure.className = 'editorial-artwork';
+    const figure = buildConstellation(motifs[item.motif], index % 2 === 1);
     figure.dataset.editorialMedia = String(index);
-    const image = document.createElement('img');
-    image.src = item.src;
-    image.alt = item.alt;
-    image.loading = 'lazy';
-    image.decoding = 'async';
-    const caption = document.createElement('figcaption');
-    caption.className = 'visually-hidden';
-    caption.textContent = 'Self-hosted vector artwork using Google Material icon source paths under the Apache 2.0 license.';
-    figure.append(image, caption);
-    section.append(figure);
+    // Sit in the right-hand column beside the heading, after its introduction when
+    // there is one, so card grids below keep the full width.
+    const intro = heading.nextElementSibling;
+    (intro && intro.tagName === 'P' ? intro : heading).after(figure);
   });
 
   const teacherPreviews = [

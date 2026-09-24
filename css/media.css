@@ -104,9 +104,60 @@
   .hero-copy > p:not(.price, .lede, .eyebrow) { font-size: 1.0625rem; }
 }
 
+/* ---------- Constellation artwork (built by utils.js) ----------
+   Najma means star. Three Material shapes, each holding a filled symbol, are
+   joined by fine lines with small stars between them. Positions are percentages
+   of a 16:7 panel; sizes are percentages of its width. */
+.editorial-artwork {
+  position: relative; isolation: isolate; container-type: inline-size;
+  aspect-ratio: 16 / 7; max-width: 44rem; margin: clamp(1.75rem, 3vw, 2.5rem) 0;
+  border-radius: var(--md-sys-shape-corner-extra-extra-large);
+  background:
+    radial-gradient(circle at 18% 30%, color-mix(in srgb, var(--md-sys-color-primary-container) 55%, transparent), transparent 55%),
+    radial-gradient(circle at 88% 85%, color-mix(in srgb, var(--md-sys-color-tertiary-container) 60%, transparent), transparent 50%),
+    var(--md-sys-color-surface-container-low);
+}
+.tonal .editorial-artwork { background: color-mix(in srgb, var(--md-sys-color-surface-container-lowest) 42%, transparent); }
+.constellation-lines { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; overflow: visible; }
+.constellation-lines line { stroke: color-mix(in srgb, var(--md-sys-color-primary) 34%, transparent); stroke-width: 1.5; stroke-dasharray: 2 7; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+
+.constellation-node, .constellation-spark {
+  position: absolute; left: calc(var(--x) * 1%); top: calc(var(--y) * 1%);
+  width: calc(var(--s) * 1cqi); aspect-ratio: 1; translate: -50% -50%;
+}
+.constellation-node {
+  isolation: isolate; display: grid; place-items: center;
+  color: var(--node-on); font-size: calc(var(--s) * .4cqi);
+  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48;
+}
+.constellation-node::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--node-bg); clip-path: var(--node-shape); }
+.constellation-node--1 { --node-bg: var(--md-sys-color-primary-container); --node-on: var(--md-sys-color-primary); }
+.constellation-node--1::after { content: ""; position: absolute; inset: -9%; z-index: -2; border: 1.5px solid color-mix(in srgb, var(--md-sys-color-primary) 22%, transparent); border-radius: 50%; }
+.constellation-node--2 { --node-bg: var(--md-sys-color-primary); --node-on: var(--md-sys-color-on-primary); }
+.constellation-node--3 { --node-bg: var(--md-sys-color-tertiary-container); --node-on: var(--md-sys-color-tertiary); }
+.constellation-spark--star { background: var(--md-sys-color-tertiary); clip-path: var(--shape-star); }
+.constellation-spark--star:nth-last-of-type(2) { background: var(--md-sys-color-primary); }
+.constellation-spark--dot { border-radius: 50%; background: var(--md-sys-color-secondary); }
+.tone-tertiary .constellation-node--3 { --node-bg: var(--md-sys-color-surface-container-lowest); }
+
+@keyframes constellation-rise { from { opacity: 0; scale: .4; } }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .constellation-node, .constellation-spark { animation: constellation-rise linear both; animation-timeline: view(); animation-range: entry 10% cover 30%; }
+    .constellation-node--2, .constellation-spark:nth-of-type(odd) { animation-range: entry 25% cover 38%; }
+    .constellation-node::before { animation: najma-turn linear both; animation-timeline: view(); }
+    .constellation-node--2::before { animation-direction: reverse; }
+    .constellation-spark--star { animation-name: constellation-rise, najma-turn; animation-range: entry 10% cover 30%, normal; }
+  }
+}
+@media (max-width: 599px) {
+  .editorial-artwork { aspect-ratio: 16 / 8; border-radius: var(--md-sys-shape-corner-extra-large); }
+}
+@media (forced-colors: active) {
+  .editorial-artwork { display: none; }
+}
+
 /* ---------- Teacher previews (injected by utils.js where a page has them) ---------- */
-.editorial-artwork { max-width: 100%; margin: 2.5rem 0 0; overflow: hidden; border-radius: var(--md-sys-shape-corner-extra-large); background: var(--md-sys-color-surface-container-low); }
-.editorial-artwork img { display: block; width: 100%; height: clamp(18rem, 42vw, 31rem); padding: clamp(1rem, 3vw, 2rem); object-fit: contain; }
 .teacher-preview-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--group-gap); margin: 2rem 0; }
 .teacher-preview-card { overflow: hidden; border-radius: var(--md-sys-shape-corner-extra-large); background: var(--md-sys-color-surface-container-low); }
 .teacher-preview-media { aspect-ratio: 4/3; overflow: hidden; background: var(--md-sys-color-primary-container); }
