@@ -4,30 +4,32 @@
   if (button && menu) button.addEventListener('click', () => { menu.open = !menu.open; });
 
   const page = location.pathname.split('/').pop() || 'index.html';
+  // Editorial illustrations (assets/illustrations, built by tools/illustrations). Each sits
+  // beside the named heading; `beside: 'card'` places it above the split layout's card instead.
   const media = {
     'index.html': [
-      { heading: 'Meet Najma at the Solidarity Café', src: 'assets/illustrations/cafe-conversation.svg', alt: 'Animated Material-style illustration of conversation and a small group.' },
-      { heading: 'English for your organisation', src: 'assets/illustrations/organisations-team.svg', alt: 'Animated Material-style illustration of a group programme and presentation.' }
+      { heading: 'Meet Najma at the Solidarity Café', art: 'cafe-chat', beside: 'card', alt: 'Two people talking over coffee at a café table.' },
+      { heading: 'English for your organisation', art: 'org-team', alt: 'Three colleagues, one using a wheelchair, talking through a plan together.' }
     ],
     'lessons.html': [
-      { heading: 'What would you like to study?', src: 'assets/illustrations/lessons-learning.svg', alt: 'Animated Material-style illustration of a learning pathway.' },
-      { heading: 'How lessons develop', src: 'assets/illustrations/home-learning.svg', alt: 'Animated Material-style illustration of online learning and conversation.' }
+      { heading: 'Check your English level', art: 'lessons-level', alt: 'A learner answering multiple-choice questions on a phone beside a rising level chart.' },
+      { heading: 'How lessons connect over time', art: 'lessons-progress', alt: 'A learner climbing a staircase of books towards a flag marked with a star.' }
     ],
     'model.html': [
-      { heading: 'What could your group work on?', src: 'assets/illustrations/organisations-team.svg', alt: 'Animated Material-style illustration of group learning for organisations.' },
-      { heading: 'Who we work with', src: 'assets/illustrations/about-collective.svg', alt: 'Animated Material-style illustration of a connected teacher-led collective.' }
+      { heading: 'English for international meetings', art: 'model-meeting', alt: 'Six people meeting on a video call while one of them speaks.' },
+      { heading: 'Who we work with', art: 'model-community', alt: 'Four people from community and campaign groups gathered beneath bunting.' }
     ],
     'join.html': [
-      { heading: 'What happens in a session?', src: 'assets/illustrations/cafe-conversation.svg', alt: 'Animated Material-style illustration of an online group conversation.' },
-      { heading: 'English in the Café', src: 'assets/illustrations/lessons-learning.svg', alt: 'Animated Material-style illustration of learning through conversation.' }
+      { heading: 'What happens in a session?', art: 'join-circle', alt: 'Three people sitting around a low table with drinks; one speaks while the others listen.' },
+      { heading: 'English in the Café', art: 'join-language', alt: 'Two people in conversation, their speech bubbles overlapping.' }
     ],
     'about.html': [
-      { heading: 'Where Najma came from', src: 'assets/illustrations/about-collective.svg', alt: 'Animated Material-style illustration of a connected education collective.' },
-      { heading: 'A collective shaped by its teachers', src: 'assets/illustrations/home-learning.svg', alt: 'Animated Material-style illustration of teaching, conversation and learning.' }
+      { heading: 'Where Najma came from', art: 'about-roots', alt: 'An olive tree growing from an open book while two people read and look on.' },
+      { heading: 'A collective shaped by its teachers', art: 'about-vote', alt: 'Four teachers raising their hands as a ballot drops into a box.' }
     ]
   };
 
-  // Heading text without its decorative Material Symbols ligature (e.g. "co_present").
+  // Heading text without any Material Symbols ligature it may contain (e.g. "co_present").
   const headingText = node => Array.from(node.childNodes)
     .filter(child => !(child.classList && child.classList.contains('material-symbols-outlined')))
     .map(child => child.textContent).join('').trim();
@@ -41,16 +43,24 @@
     const figure = document.createElement('figure');
     figure.className = 'editorial-artwork';
     figure.dataset.editorialMedia = String(index);
+    // Animated artwork, with a still copy for anyone who prefers reduced motion.
+    const picture = document.createElement('picture');
+    const still = document.createElement('source');
+    still.srcset = `assets/illustrations/${item.art}-still.svg`;
+    still.media = '(prefers-reduced-motion: reduce)';
     const image = document.createElement('img');
-    image.src = item.src;
+    image.src = `assets/illustrations/${item.art}.svg`;
     image.alt = item.alt;
+    image.width = 600;
+    image.height = 500;
     image.loading = 'lazy';
     image.decoding = 'async';
-    const caption = document.createElement('figcaption');
-    caption.className = 'visually-hidden';
-    caption.textContent = 'Self-hosted vector artwork using Google Material icon source paths under the Apache 2.0 license.';
-    figure.append(image, caption);
-    section.append(figure);
+    picture.append(still, image);
+    figure.append(picture);
+    const card = item.beside === 'card' ? section.lastElementChild : null;
+    if (card && card !== heading.parentElement) section.insertBefore(figure, card);
+    else heading.after(figure);
+    section.classList.add('has-art');
   });
 
   const teacherPreviews = [

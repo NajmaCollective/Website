@@ -11,30 +11,45 @@
 
 .teacher-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); align-items: start; }
 .teacher-card {
-  --portrait-bg: var(--md-sys-color-primary-container); --portrait-shape: var(--shape-cookie12);
+  --portrait-bg: var(--md-sys-color-primary-container); --portrait-shape: var(--shape-sunny);
   overflow: hidden; border-radius: var(--md-sys-shape-corner-extra-large);
   background: var(--md-sys-color-surface-container-low);
   transition: border-radius var(--md-sys-motion-spatial-default), background-color var(--md-sys-motion-effects-default);
 }
-.teacher-card:nth-child(3n+2) { --portrait-bg: var(--md-sys-color-tertiary-container); --portrait-shape: var(--shape-clover4); }
-.teacher-card:nth-child(3n+3) { --portrait-bg: var(--md-sys-color-secondary-container); --portrait-shape: var(--shape-cookie9); }
-.teacher-card:is(:hover, :focus-within) { --portrait-shape: var(--shape-sunny); border-radius: var(--md-sys-shape-corner-extra-extra-large); }
+.teacher-card:nth-child(3n+2) { --portrait-bg: var(--md-sys-color-tertiary-container); --portrait-shape: var(--shape-cookie9); }
+.teacher-card:nth-child(3n+3) { --portrait-bg: var(--md-sys-color-secondary-container); --portrait-shape: var(--shape-clover8); }
+.teacher-card:is(:hover, :focus-within) { border-radius: var(--md-sys-shape-corner-extra-extra-large); }
 
-/* Portrait: the photograph sits inside a Material shape on a tonal panel */
-.portrait { position: relative; display: grid; place-items: center; height: 14rem; background: var(--portrait-bg); color: var(--md-sys-color-on-primary-container); }
+/* Portrait: the photograph stands in an arched window on a tonal panel, echoing the
+   Teachers illustration. A soft Material shape turns behind it on hover. */
+.portrait { position: relative; isolation: isolate; display: flex; align-items: flex-end; justify-content: center; height: 16rem; overflow: hidden; background: var(--portrait-bg); color: var(--md-sys-color-on-primary-container); }
+.portrait::before {
+  content: ""; position: absolute; z-index: -1; left: 50%; bottom: -3.5rem; width: 17rem; aspect-ratio: 1; translate: -50% 0;
+  background: color-mix(in srgb, #ffffff 42%, transparent); clip-path: var(--portrait-shape);
+  transition: rotate var(--md-sys-motion-spatial-slow), scale var(--md-sys-motion-spatial-default);
+}
+.teacher-card:is(:hover, :focus-within) .portrait::before { rotate: 30deg; scale: 1.06; }
 .portrait::after { display: none; }
-.portrait img {
-  position: static; display: block; width: 10.5rem; height: 10.5rem; object-fit: cover; object-position: center;
-  background: var(--md-sys-color-surface-container-lowest);
-  clip-path: var(--portrait-shape); transition: clip-path var(--md-sys-motion-spatial-default);
+.portrait img, .portrait-fallback {
+  position: static; display: block; width: 11.25rem; height: 13.5rem;
+  border-radius: 999px 999px 0 0; box-shadow: inset 0 0 0 1px rgb(0 0 0 / .04);
+  transition: scale var(--md-sys-motion-spatial-default); transform-origin: 50% 100%;
 }
+.portrait img { object-fit: cover; object-position: 50% 22%; background: var(--md-sys-color-surface-container-lowest); }
+.teacher-card:is(:hover, :focus-within) .portrait :is(img, .portrait-fallback) { scale: 1.03; }
 .portrait img[hidden] { display: none; }
+/* Until a photograph is approved, the arch shows the teacher's initial (as in
+   assets/teachers/amina-placeholder.svg): no stand-in likeness. */
 .portrait-fallback {
-  display: grid; place-items: center; width: 10.5rem; height: 10.5rem;
-  background: var(--md-sys-color-surface-container-lowest); color: var(--md-sys-color-primary);
-  clip-path: var(--portrait-shape); transition: clip-path var(--md-sys-motion-spatial-default);
-  font-family: var(--md-ref-typeface-brand); font-size: 2.6rem; font-weight: 650; font-stretch: 104%; letter-spacing: -.02em;
+  position: relative; display: grid; place-items: center; padding-top: 1.75rem;
+  background:
+    radial-gradient(circle at 50% 57%, rgb(255 255 255 / .6) 0 3.9rem, transparent 3.95rem),
+    radial-gradient(circle, color-mix(in srgb, var(--md-sys-color-primary) 20%, transparent) 1.6px, transparent 2.2px) 0 0 / 1.1rem 1.1rem,
+    var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-primary);
+  font-family: var(--md-ref-typeface-brand); font-size: 5.25rem; font-weight: 660; font-stretch: 104%; letter-spacing: -.03em; line-height: 1;
 }
+.portrait-fallback::after { content: ""; position: absolute; top: 27%; right: 17%; width: 1.5rem; aspect-ratio: 1; background: var(--md-sys-color-tertiary); clip-path: var(--shape-star); }
 .portrait-fallback[hidden] { display: none; }
 .portrait-placeholder { background-image: none; }
 
@@ -55,4 +70,4 @@
 .profile-details[hidden] { display: none; }
 .teacher-actions { align-items: stretch; margin: 1.75rem 0 0; }
 .teacher-actions md-filled-button, .teacher-actions md-outlined-button { flex: 1 1 12rem; }
-@media (max-width: 599px) { .portrait { height: 12rem; } .teacher-actions md-filled-button, .teacher-actions md-outlined-button { width: 100%; } }
+@media (max-width: 599px) { .portrait { height: 14.5rem; } .teacher-actions md-filled-button, .teacher-actions md-outlined-button { width: 100%; } }

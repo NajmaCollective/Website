@@ -1,0 +1,698 @@
+{
+ "pose/BlazerBlackTee": [
+  38,
+  412,
+  792,
+  761
+ ],
+ "pose/Shirt": [
+  19,
+  427,
+  783,
+  738
+ ],
+ "pose/ButtonShirt": [
+  24,
+  427,
+  792,
+  764
+ ],
+ "pose/Dress": [
+  16,
+  429,
+  786,
+  756
+ ],
+ "pose/Gaming": [
+  30,
+  414,
+  746,
+  754
+ ],
+ "pose/Geek": [
+  19,
+  435,
+  1002,
+  734
+ ],
+ "pose/Hoodie": [
+  2,
+  425,
+  813,
+  769
+ ],
+ "pose/PointingUp": [
+  31,
+  392,
+  872,
+  765
+ ],
+ "pose/Selena": [
+  -11,
+  427,
+  822,
+  757
+ ],
+ "pose/Thunder": [
+  43,
+  404,
+  744,
+  774
+ ],
+ "pose/Turtleneck": [
+  14,
+  427,
+  817,
+  758
+ ],
+ "pose/ArmsCrossed": [
+  42,
+  419,
+  799,
+  774
+ ],
+ "pose/Coffee": [
+  24,
+  443,
+  784,
+  717
+ ],
+ "pose/Device": [
+  48,
+  426,
+  747,
+  739
+ ],
+ "pose/DotJacket": [
+  47,
+  420,
+  923,
+  738
+ ],
+ "pose/Explaining": [
+  46,
+  410,
+  722,
+  747
+ ],
+ "pose/FurJacket": [
+  12,
+  418,
+  797,
+  770
+ ],
+ "pose/Killer": [
+  42,
+  398,
+  736,
+  760
+ ],
+ "pose/Paper": [
+  35,
+  428,
+  772,
+  742
+ ],
+ "pose/PocketShirt": [
+  -237,
+  429,
+  1171,
+  734
+ ],
+ "pose/PoloSweater": [
+  9,
+  405,
+  788,
+  767
+ ],
+ "pose/ShirtCoat": [
+  37,
+  417,
+  770,
+  774
+ ],
+ "pose/ShirtFilled": [
+  27,
+  420,
+  789,
+  758
+ ],
+ "pose/SportyShirt": [
+  14,
+  427,
+  806,
+  754
+ ],
+ "pose/StripedShirt": [
+  30,
+  434,
+  761,
+  730
+ ],
+ "pose/Sweater": [
+  31,
+  439,
+  821,
+  752
+ ],
+ "pose/SweaterDots": [
+  8,
+  445,
+  803,
+  747
+ ],
+ "pose/Whatever": [
+  -89,
+  437,
+  1165,
+  708
+ ],
+ "pose/Bike": [
+  -1032,
+  460,
+  3320,
+  2768
+ ],
+ "pose/ClosedLegBW": [
+  -2,
+  425,
+  1347,
+  1603
+ ],
+ "pose/ClosedLegWB": [
+  -2,
+  425,
+  1347,
+  1603
+ ],
+ "pose/CrossedLegs": [
+  89,
+  419,
+  1421,
+  1886
+ ],
+ "pose/HandsBackBW": [
+  -88,
+  386,
+  1258,
+  1483
+ ],
+ "pose/HandsBackWB": [
+  -88,
+  386,
+  1258,
+  1483
+ ],
+ "pose/MediumBW": [
+  -285,
+  400,
+  1322,
+  1495
+ ],
+ "pose/MediumWB": [
+  -285,
+  400,
+  1322,
+  1495
+ ],
+ "pose/OneLegUpBW": [
+  -72,
+  379,
+  1305,
+  1603
+ ],
+ "pose/OneLegUpWB": [
+  -172,
+  379,
+  1400,
+  1657
+ ],
+ "pose/WheelChair": [
+  -158,
+  412,
+  1798,
+  2010
+ ],
+ "pose/BlazerBW": [
+  -75,
+  424,
+  1046,
+  2467
+ ],
+ "pose/BlazerPantsBW": [
+  -75,
+  419,
+  1046,
+  2469
+ ],
+ "pose/BlazerPantsWB": [
+  -75,
+  419,
+  1046,
+  2470
+ ],
+ "pose/BlazerWB": [
+  -75,
+  424,
+  1046,
+  2468
+ ],
+ "pose/CrossedArmsBW": [
+  -211,
+  452,
+  1090,
+  2482
+ ],
+ "pose/CrossedArmsWB": [
+  -199,
+  452,
+  1071,
+  2481
+ ],
+ "pose/EasingBW": [
+  -190,
+  438,
+  1075,
+  2508
+ ],
+ "pose/EasingWB": [
+  -190,
+  438,
+  1075,
+  2508
+ ],
+ "pose/PointingFingerBW": [
+  -15,
+  452,
+  1300,
+  2217
+ ],
+ "pose/PointingFingerWB": [
+  -16,
+  454,
+  1300,
+  2215
+ ],
+ "pose/PolkaDots": [
+  42,
+  458,
+  830,
+  2441
+ ],
+ "pose/RestingBW": [
+  7,
+  460,
+  1274,
+  2482
+ ],
+ "pose/RestingWB": [
+  7,
+  460,
+  1274,
+  2481
+ ],
+ "pose/RoboDanceBW": [
+  -146,
+  460,
+  1350,
+  2528
+ ],
+ "pose/RoboDanceOutline": [
+  -146,
+  460,
+  1350,
+  2528
+ ],
+ "pose/RoboDanceWB": [
+  -146,
+  460,
+  1350,
+  2529
+ ],
+ "pose/ShirtBW": [
+  44,
+  434,
+  895,
+  2561
+ ],
+ "pose/ShirtPantsBW": [
+  44,
+  417,
+  894,
+  2579
+ ],
+ "pose/ShirtPantsWB": [
+  44,
+  417,
+  894,
+  2579
+ ],
+ "pose/ShirtWB": [
+  44,
+  435,
+  895,
+  2560
+ ],
+ "pose/WalkingBW": [
+  -83,
+  443,
+  1035,
+  2467
+ ],
+ "pose/WalkingFilled": [
+  -83,
+  443,
+  1035,
+  2467
+ ],
+ "pose/WalkingWB": [
+  -83,
+  443,
+  1035,
+  2467
+ ],
+ "pose/Doc": [
+  3,
+  429,
+  942,
+  2543
+ ],
+ "pose/DocProtectiveClothe": [
+  3,
+  451,
+  932,
+  2520
+ ],
+ "pose/DocStethoscope": [
+  2,
+  423,
+  942,
+  2548
+ ],
+ "hair/Afro": [
+  192,
+  8,
+  506,
+  502
+ ],
+ "hair/Bald": [
+  270,
+  65,
+  383,
+  438
+ ],
+ "hair/BaldSides": [
+  205,
+  56,
+  449,
+  449
+ ],
+ "hair/BaldTop": [
+  272,
+  45,
+  379,
+  457
+ ],
+ "hair/Bangs": [
+  183,
+  56,
+  513,
+  457
+ ],
+ "hair/BangsFilled": [
+  200,
+  50,
+  522,
+  453
+ ],
+ "hair/Bear": [
+  233,
+  24,
+  456,
+  485
+ ],
+ "hair/Bun": [
+  159,
+  -34,
+  490,
+  542
+ ],
+ "hair/BunCurly": [
+  125,
+  -97,
+  545,
+  605
+ ],
+ "hair/Buns": [
+  192,
+  -28,
+  503,
+  539
+ ],
+ "hair/FlatTop": [
+  278,
+  45,
+  374,
+  461
+ ],
+ "hair/FlatTopLong": [
+  280,
+  -3,
+  363,
+  509
+ ],
+ "hair/HatHip": [
+  163,
+  17,
+  582,
+  497
+ ],
+ "hair/Long": [
+  140,
+  32,
+  599,
+  669
+ ],
+ "hair/LongAfro": [
+  75,
+  -120,
+  733,
+  648
+ ],
+ "hair/LongBangs": [
+  151,
+  47,
+  542,
+  754
+ ],
+ "hair/LongCurly": [
+  115,
+  -42,
+  661,
+  588
+ ],
+ "hair/Medium": [
+  149,
+  62,
+  545,
+  476
+ ],
+ "hair/MediumBangs": [
+  168,
+  49,
+  481,
+  483
+ ],
+ "hair/MediumBangsFilled": [
+  120,
+  48,
+  566,
+  493
+ ],
+ "hair/MediumLong": [
+  183,
+  60,
+  605,
+  513
+ ],
+ "hair/MediumShort": [
+  228,
+  58,
+  432,
+  454
+ ],
+ "hair/MediumStraight": [
+  217,
+  42,
+  474,
+  502
+ ],
+ "hair/Mohawk": [
+  266,
+  -13,
+  382,
+  517
+ ],
+ "hair/MohawkDino": [
+  260,
+  0,
+  403,
+  509
+ ],
+ "hair/Pomp": [
+  263,
+  0,
+  456,
+  501
+ ],
+ "hair/ShavedRight": [
+  280,
+  5,
+  423,
+  510
+ ],
+ "hair/ShavedSides": [
+  269,
+  -15,
+  399,
+  517
+ ],
+ "hair/ShavedWavy": [
+  218,
+  -31,
+  503,
+  546
+ ],
+ "hair/Short": [
+  270,
+  65,
+  386,
+  457
+ ],
+ "hair/ShortCurly": [
+  237,
+  68,
+  433,
+  439
+ ],
+ "hair/ShortMessy": [
+  275,
+  55,
+  373,
+  461
+ ],
+ "hair/ShortScratch": [
+  276,
+  62,
+  370,
+  443
+ ],
+ "hair/ShortVolumed": [
+  273,
+  65,
+  376,
+  443
+ ],
+ "hair/ShortWavy": [
+  280,
+  15,
+  384,
+  510
+ ],
+ "hair/BantuKnots": [
+  233,
+  3,
+  418,
+  505
+ ],
+ "hair/Beanie": [
+  210,
+  51,
+  441,
+  466
+ ],
+ "hair/BunFancy": [
+  195,
+  -66,
+  446,
+  574
+ ],
+ "hair/CornRows": [
+  201,
+  28,
+  456,
+  578
+ ],
+ "hair/CornRowsFilled": [
+  176,
+  23,
+  485,
+  557
+ ],
+ "hair/GrayBun": [
+  200,
+  6,
+  459,
+  508
+ ],
+ "hair/GrayMedium": [
+  212,
+  55,
+  451,
+  458
+ ],
+ "hair/GrayShort": [
+  265,
+  52,
+  386,
+  464
+ ],
+ "hair/Hijab": [
+  228,
+  37,
+  442,
+  627
+ ],
+ "hair/MediumShade": [
+  223,
+  14,
+  456,
+  540
+ ],
+ "hair/Turban": [
+  238,
+  1,
+  457,
+  503
+ ],
+ "hair/Twists": [
+  231,
+  1,
+  431,
+  507
+ ],
+ "hair/TwistsVolumed": [
+  219,
+  12,
+  436,
+  493
+ ],
+ "hair/DocBouffant": [
+  215,
+  6,
+  444,
+  508
+ ],
+ "hair/DocSurgery": [
+  209,
+  15,
+  437,
+  522
+ ],
+ "hair/DocShield": [
+  248,
+  55,
+  447,
+  505
+ ]
+}

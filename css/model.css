@@ -1,6 +1,30 @@
 /* For organisations */
 .hero h1 { max-width: 14ch; }
-/* Example programme: the sessions form a short sequence */
-.tone-primary > h3 { margin: 1.5rem 0 .25rem; font-size: 1.05rem; }
-.tone-primary > h3 + p { margin-bottom: 0; }
 main > section > .price + .price { margin-top: -.25rem; }
+
+/* Example programme: the cost reads as a lead-in, who and why as labelled facts,
+   and the four sessions as a timeline. */
+.tone-primary > h2 + .editorial-artwork + p, .tone-primary > h2 + p { font-size: 1.15rem; line-height: 1.6; font-weight: 500; }
+.tone-primary > h3 { margin: 1.6rem 0 .3rem; font-size: .8125rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--md-sys-color-primary); }
+.tone-primary > h3 + p { margin-bottom: 0; }
+.tone-primary > h3:nth-of-type(n+3) {
+  --dot: 1.35rem;
+  position: relative; margin: 0; padding: 1.35rem 0 .2rem 2.35rem;
+  font-size: 1.05rem; letter-spacing: -.005em; text-transform: none; color: var(--md-sys-color-on-primary-container);
+  background: linear-gradient(var(--timeline), var(--timeline)) no-repeat calc(var(--dot) / 2 - 1px) 0 / 2px 100%;
+}
+.tone-primary > h3:nth-of-type(3) { margin-top: 2rem; background-position: calc(var(--dot) / 2 - 1px) 1.9rem; }
+.tone-primary > h3:nth-of-type(n+3) + p { padding-left: 2.35rem; background: linear-gradient(var(--timeline), var(--timeline)) no-repeat calc(1.35rem / 2 - 1px) 0 / 2px 100%; }
+.tone-primary > h3:last-of-type + p { background: none; }
+.tone-primary > h3:nth-of-type(n+3)::before {
+  content: ""; position: absolute; left: 0; top: calc(1.35rem + .78em); width: var(--dot); aspect-ratio: 1; translate: 0 -50%;
+  background: var(--md-sys-color-primary); clip-path: var(--shape-star);
+}
+.tone-primary > h3:nth-of-type(odd)::before { background: var(--md-sys-color-tertiary); }
+.tone-primary { --timeline: color-mix(in srgb, var(--md-sys-color-primary) 32%, transparent); }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .tone-primary > h3:nth-of-type(n+3)::before { animation: session-star linear both; animation-timeline: view(); animation-range: entry 30% cover 45%; }
+  }
+}
+@keyframes session-star { from { rotate: -90deg; scale: .2; } }
