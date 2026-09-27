@@ -69,7 +69,7 @@ window.NAJMA_TEACHERS = [
     name: 'Melanie Ferreira',
     headline: 'Academic English and communication skills tutor with over 25 years’ experience',
     location: 'Cambridgeshire, UK',
-    photo: null,
+    photo: 'assets/teachers/melanie-ferreira.jpg',
     areas: ['general', 'academic', 'professional'],
     about: 'I enjoy supporting adults with their communication skills in English. I have been teaching for over 25 years and specialise in Academic English. I have long been interested in language from a sociolinguistic perspective, including the role of English as a lingua franca globally.',
     qualifications: ['CELTA', 'DELTA', 'MA TESOL specialising in English for Academic Purposes (EAP)'],
