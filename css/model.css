@@ -1,6 +1,3 @@
 /* For organisations */
 .hero h1 { max-width: 14ch; }
-/* Example programme: the sessions form a short sequence */
-.tone-primary > h3 { margin: 1.5rem 0 .25rem; font-size: 1.05rem; }
-.tone-primary > h3 + p { margin-bottom: 0; }
-main > section > .price + .price { margin-top: -.25rem; }
+.section-body > .price + .price { margin-top: -.25rem; }

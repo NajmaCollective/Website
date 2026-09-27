@@ -27,10 +27,14 @@
 
     grid.innerHTML = teachers.map(teacher => `
       <article class="teacher-card" id="${escapeHtml(teacher.id)}">
-        ${portrait(teacher)}
+        <div class="teacher-card-header">
+          ${portrait(teacher)}
+          <div class="teacher-card-title">
+            <p class="teacher-location"><span class="material-symbols-outlined" aria-hidden="true">location_on</span>${escapeHtml(teacher.location)}</p>
+            <h3>${escapeHtml(teacher.name)}</h3>
+          </div>
+        </div>
         <div class="teacher-card-body">
-          <p class="teacher-location"><span class="material-symbols-outlined" aria-hidden="true">location_on</span>${escapeHtml(teacher.location)}</p>
-          <h3>${escapeHtml(teacher.name)}</h3>
           <p class="teacher-headline">${escapeHtml(teacher.headline)}</p>
           ${chips(teacher.highlights)}
           <p>${escapeHtml(teacher.about)}</p>

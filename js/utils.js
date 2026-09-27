@@ -3,59 +3,15 @@
   const menu = document.querySelector('#mobile-menu');
   if (button && menu) button.addEventListener('click', () => { menu.open = !menu.open; });
 
-  const page = location.pathname.split('/').pop() || 'index.html';
-  const media = {
-    'index.html': [
-      { heading: 'Meet Najma at the Solidarity Café', src: 'assets/illustrations/cafe-conversation.svg', alt: 'Animated Material-style illustration of conversation and a small group.' },
-      { heading: 'English for your organisation', src: 'assets/illustrations/organisations-team.svg', alt: 'Animated Material-style illustration of a group programme and presentation.' }
-    ],
-    'lessons.html': [
-      { heading: 'What would you like to study?', src: 'assets/illustrations/lessons-learning.svg', alt: 'Animated Material-style illustration of a learning pathway.' },
-      { heading: 'How lessons develop', src: 'assets/illustrations/home-learning.svg', alt: 'Animated Material-style illustration of online learning and conversation.' }
-    ],
-    'model.html': [
-      { heading: 'What could your group work on?', src: 'assets/illustrations/organisations-team.svg', alt: 'Animated Material-style illustration of group learning for organisations.' },
-      { heading: 'Who we work with', src: 'assets/illustrations/about-collective.svg', alt: 'Animated Material-style illustration of a connected teacher-led collective.' }
-    ],
-    'join.html': [
-      { heading: 'What happens in a session?', src: 'assets/illustrations/cafe-conversation.svg', alt: 'Animated Material-style illustration of an online group conversation.' },
-      { heading: 'English in the Café', src: 'assets/illustrations/lessons-learning.svg', alt: 'Animated Material-style illustration of learning through conversation.' }
-    ],
-    'about.html': [
-      { heading: 'Where Najma came from', src: 'assets/illustrations/about-collective.svg', alt: 'Animated Material-style illustration of a connected education collective.' },
-      { heading: 'A collective shaped by its teachers', src: 'assets/illustrations/home-learning.svg', alt: 'Animated Material-style illustration of teaching, conversation and learning.' }
-    ]
-  };
-
   // Heading text without its decorative Material Symbols ligature (e.g. "co_present").
   const headingText = node => Array.from(node.childNodes)
     .filter(child => !(child.classList && child.classList.contains('material-symbols-outlined')))
     .map(child => child.textContent).join('').trim();
 
-  const pageMedia = media[page] || [];
-  const headings = Array.from(document.querySelectorAll('main h2'));
-  pageMedia.forEach((item, index) => {
-    const heading = headings.find(node => headingText(node) === item.heading);
-    const section = heading?.closest('section');
-    if (!section || section.querySelector(`[data-editorial-media="${index}"]`)) return;
-    const figure = document.createElement('figure');
-    figure.className = 'editorial-artwork';
-    figure.dataset.editorialMedia = String(index);
-    const image = document.createElement('img');
-    image.src = item.src;
-    image.alt = item.alt;
-    image.loading = 'lazy';
-    image.decoding = 'async';
-    const caption = document.createElement('figcaption');
-    caption.className = 'visually-hidden';
-    caption.textContent = 'Self-hosted vector artwork using Google Material icon source paths under the Apache 2.0 license.';
-    figure.append(image, caption);
-    section.append(figure);
-  });
-
+  // Teachers without an approved photograph are shown with a Material monogram avatar.
   const teacherPreviews = [
     { id: 'mondher-yousfi', name: 'Mondher Yousfi', location: 'Sfax, Tunisia', headline: 'English teacher specialising in General English and language test preparation', photo: 'assets/teachers/mondher-yousfi.jpg', alt: 'Portrait of Mondher Yousfi' },
-    { id: 'amina', name: 'Amina', location: 'Algeria', headline: 'Trained English teacher specialising in academic English, General English and conversation', photo: 'assets/teachers/amina-placeholder.svg', alt: 'Illustrated profile placeholder for Amina; photograph pending' },
+    { id: 'amina', name: 'Amina', location: 'Algeria', headline: 'Trained English teacher specialising in academic English, General English and conversation', photo: null },
     { id: 'hannah-copeland', name: 'Hannah Copeland', location: 'Bordeaux, France', headline: 'Teacher and educator specialising in academic, professional and functional English', photo: 'assets/teachers/hannah-copeland.jpg', alt: 'Portrait of Hannah Copeland' }
   ];
 
@@ -65,6 +21,13 @@
     { heading: 'Who teaches organisational programmes?', prefixes: ['[Organisation teacher card'] },
     { heading: 'Our teachers', prefixes: ['[Teacher card'] }
   ];
+
+  const monogram = teacher => {
+    const letter = document.createElement('span');
+    letter.setAttribute('aria-hidden', 'true');
+    letter.textContent = teacher.name.trim().charAt(0).toUpperCase();
+    return letter;
+  };
 
   const allProfileHeadings = Array.from(document.querySelectorAll('main h2, main h3'));
   previewLocations.forEach(config => {
@@ -80,19 +43,25 @@
     teacherPreviews.forEach(teacher => {
       const article = document.createElement('article');
       article.className = 'teacher-preview-card';
-      const mediaWrap = document.createElement('div');
-      mediaWrap.className = 'teacher-preview-media';
-      const image = document.createElement('img');
-      image.src = teacher.photo;
-      image.alt = teacher.alt;
-      image.loading = 'lazy';
-      image.decoding = 'async';
-      image.addEventListener('error', () => { image.src = 'assets/teachers/amina-placeholder.svg'; image.alt = `Illustrated profile placeholder for ${teacher.name}`; }, { once: true });
-      mediaWrap.append(image);
+      const avatar = document.createElement('div');
+      avatar.className = 'teacher-avatar';
+      if (teacher.photo) {
+        const image = document.createElement('img');
+        image.src = teacher.photo;
+        image.alt = teacher.alt;
+        image.width = 152;
+        image.height = 152;
+        image.loading = 'lazy';
+        image.decoding = 'async';
+        image.addEventListener('error', () => { image.replaceWith(monogram(teacher)); }, { once: true });
+        avatar.append(image);
+      } else {
+        avatar.append(monogram(teacher));
+      }
       const body = document.createElement('div');
       body.className = 'teacher-preview-body';
-      body.innerHTML = `<p class="teacher-preview-location">${teacher.location}</p><${headingLevel}>${teacher.name}</${headingLevel}><p>${teacher.headline}</p><a href="teachers.html#${teacher.id}">View ${teacher.name}'s profile</a>`;
-      article.append(mediaWrap, body);
+      body.innerHTML = `<p class="teacher-preview-location"><span class="material-symbols-outlined" aria-hidden="true">location_on</span>${teacher.location}</p><${headingLevel}>${teacher.name}</${headingLevel}><p>${teacher.headline}</p><a href="teachers.html#${teacher.id}">View ${teacher.name}'s profile</a>`;
+      article.append(avatar, body);
       grid.append(article);
     });
     placeholders[0].replaceWith(grid);

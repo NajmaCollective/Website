@@ -1,5 +1,6 @@
 /* Najma · Material 3 base layer.
-   Colour, type, shape and motion come from tokens.css; shapes from shapes.css. */
+   Colour, type, shape and motion roles come from tokens.css. Photography and
+   the media patterns that hold it live in media.css. */
 
 * { box-sizing: border-box; }
 html { overflow-x: clip; scroll-behavior: smooth; scroll-padding-top: 104px; -webkit-text-size-adjust: 100%; }
@@ -11,77 +12,97 @@ body {
 }
 ::selection { background: var(--md-sys-color-primary-container); color: var(--md-sys-color-on-primary-container); }
 main { position: relative; max-width: var(--content-width); margin: auto; padding: 0 var(--gutter) clamp(3rem, 6vw, 5rem); }
+figure { margin: 0; }
 
 /* ---------- Type ---------- */
 h1, h2, h3, h4 { margin: 0 0 1rem; color: inherit; font-family: var(--md-ref-typeface-brand); text-wrap: balance; }
-h1 { max-width: 13ch; font-size: clamp(2.85rem, 6.3vw, 5.75rem); font-weight: 640; font-stretch: 104%; line-height: .98; letter-spacing: -.03em; }
-h2 { max-width: 17ch; font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 610; font-stretch: 102%; line-height: 1.04; letter-spacing: -.032em; }
-h3 { max-width: 30ch; font-size: clamp(1.2rem, 1.55vw, 1.4rem); font-weight: 620; line-height: 1.24; letter-spacing: -.014em; }
+h1 { max-width: 13ch; font-size: clamp(2.75rem, 5.5vw, 5.25rem); font-weight: 650; font-stretch: 104%; line-height: .99; letter-spacing: -.035em; }
+h2 { max-width: 17ch; font-size: clamp(2rem, 3.3vw, 3.1rem); font-weight: 620; font-stretch: 102%; line-height: 1.06; letter-spacing: -.03em; }
+h3 { max-width: 32ch; font-size: clamp(1.2rem, 1.5vw, 1.375rem); font-weight: 630; line-height: 1.25; letter-spacing: -.012em; }
 h4 { font-size: 1.05rem; font-weight: 650; letter-spacing: -.005em; }
 p, li, dd { max-width: 64ch; }
 p { margin: 0 0 1rem; }
-strong { font-weight: 650; }
+main :is(p, li, dd) { color: var(--md-sys-color-on-surface-variant); }
+strong { font-weight: 650; color: var(--md-sys-color-on-surface); }
 
-a { color: var(--md-sys-color-primary); font-weight: 580; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: .22em; text-decoration-color: color-mix(in srgb, currentColor 38%, transparent); transition: text-decoration-color var(--md-sys-motion-effects-fast), color var(--md-sys-motion-effects-fast); }
+a { color: var(--md-sys-color-primary); font-weight: 580; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: .22em; text-decoration-color: color-mix(in srgb, currentColor 38%, transparent); transition: text-decoration-color var(--md-sys-motion-effects-fast), color var(--md-sys-motion-effects-fast), background-color var(--md-sys-motion-effects-fast); }
 a:hover { text-decoration-color: currentColor; }
 :focus-visible { outline: 3px solid var(--md-sys-color-primary); outline-offset: 3px; border-radius: 4px; }
 
-.eyebrow { display: inline-flex; align-items: center; gap: .6rem; margin-bottom: 1.5rem; color: var(--md-sys-color-primary); font-size: .9375rem; font-weight: 640; letter-spacing: .01em; }
+.eyebrow { display: inline-flex; align-items: center; gap: .6rem; margin-bottom: 1.5rem; color: var(--md-sys-color-primary); font-size: .9375rem; font-weight: 650; letter-spacing: .01em; }
 .eyebrow::before { content: ""; width: 1.1rem; aspect-ratio: 1; background: var(--md-sys-color-tertiary); clip-path: var(--shape-star); }
 .lede { max-width: 30ch; color: var(--md-sys-color-primary); font-family: var(--md-ref-typeface-brand); font-size: clamp(1.3rem, 2vw, 1.6rem); font-weight: 600; line-height: 1.3; letter-spacing: -.012em; }
 .price { color: var(--md-sys-color-primary); font-family: var(--md-ref-typeface-brand); font-size: 1.3rem; font-weight: 650; line-height: 1.35; letter-spacing: -.012em; }
 .link-row { font-weight: 580; }
 
-/* ---------- Material Symbols ---------- */
+/* ---------- Material Symbols ----------
+   Icons are Google Material Symbols set directly on the surface in a colour
+   role. They carry no containers or frames. */
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined'; font-weight: normal; font-style: normal; font-size: 24px; line-height: 1;
   letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr;
   font-feature-settings: 'liga'; -webkit-font-smoothing: antialiased;
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
-
-/* Icons sit inside Material shapes. The shape is a pseudo-element so it can turn
-   and morph while the symbol itself stays upright. */
 .decorative-icon {
-  --icon-box: 3rem;
-  position: relative; isolation: isolate; flex: none; display: inline-grid; place-items: center;
-  width: var(--icon-box); height: var(--icon-box); overflow: visible;
-  color: var(--icon-on, var(--md-sys-color-on-primary-container));
-  font-size: calc(var(--icon-box) * .46);
-  font-variation-settings: 'FILL' var(--icon-fill, 0), 'wght' 400, 'GRAD' 0, 'opsz' 24;
-  transition: font-variation-settings var(--md-sys-motion-effects-slow), color var(--md-sys-motion-effects-default);
+  flex: none; display: inline-block; overflow: hidden;
+  width: 1em; height: 1em;
+  color: var(--icon-color, var(--md-sys-color-primary));
+  font-size: var(--icon-size, 1.5rem);
+  font-variation-settings: 'FILL' var(--icon-fill, 0), 'wght' var(--icon-wght, 400), 'GRAD' 0, 'opsz' var(--icon-opsz, 24);
+  transition: font-variation-settings var(--md-sys-motion-effects-slow), color var(--md-sys-motion-effects-default), translate var(--md-sys-motion-spatial-default);
 }
-.decorative-icon::before {
-  content: ""; position: absolute; inset: 0; z-index: -1;
-  background: var(--icon-container, var(--md-sys-color-primary-container));
-  clip-path: var(--icon-shape, var(--shape-circle));
-  transition: clip-path var(--md-sys-motion-spatial-default), rotate var(--md-sys-motion-spatial-slow), background-color var(--md-sys-motion-effects-default);
-}
-
-.icon-heading { display: flex; align-items: center; gap: .85rem; }
-h2.icon-heading { flex-direction: column; align-items: flex-start; gap: 1.35rem; }
-h2 > .decorative-icon { --icon-box: 4.25rem; --icon-shape: var(--shape-sunny); }
-h3.icon-heading > .decorative-icon { --icon-box: 2.4rem; }
-:is(article, li) > h3.icon-heading { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
-:is(article, li) > h3.icon-heading > .decorative-icon { --icon-box: 4rem; }
-.card-icon { margin: 0; }
+.icon-heading { display: flex; align-items: center; gap: .75rem; }
+h2.icon-heading { flex-direction: column; align-items: flex-start; gap: 1.15rem; }
+h2 > .decorative-icon { --icon-size: 2.75rem; --icon-opsz: 48; --icon-wght: 300; margin-left: -.08em; }
+h3.icon-heading > .decorative-icon { --icon-size: 1.75rem; --icon-opsz: 24; --icon-wght: 400; }
+:is(article, li) > h3.icon-heading { flex-direction: column; align-items: flex-start; gap: 1.15rem; }
+h3.icon-heading > .card-icon { --icon-size: 2.5rem; --icon-opsz: 40; --icon-wght: 300; margin-left: -.08em; }
 
 /* ---------- Sections ---------- */
-main > section { position: relative; padding-block: clamp(3.75rem, 7.5vw, 7rem); }
-main > section + section:not(.tonal) { border-top: 1px solid var(--md-sys-color-outline-variant); }
+main > section { position: relative; padding-block: var(--section-space); }
+main > section + section:not(.tonal) { border-top: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant) 75%, transparent); }
 main > section.tonal + section, main > section + section.tonal { border-top: 0; }
+:is(.section-head, .section-body, .section-foot, .split-text, .feature-body, .cta-content, .programme-intro) > :last-child { margin-bottom: 0; }
 
+/* Standalone links read as Material text buttons; standalone buttons sit on their own line. */
+:is(.section-body, .section-foot, .split-text, .feature-body, .cta-content) > a,
+.grid article > a {
+  display: inline-flex; width: fit-content; align-items: center; min-height: 40px; margin: .5rem 0 .5rem -.85rem; padding: 0 .85rem;
+  border-radius: var(--md-sys-shape-corner-full); text-decoration: none;
+}
+:is(.section-body, .section-foot, .split-text, .feature-body, .cta-content) > a:hover,
+.grid article > a:hover { background: color-mix(in srgb, currentColor 9%, transparent); }
+:is(.section-body, .section-foot, .split-text, .feature-body, .cta-content) > a { display: flex; }
+:is(.section-body, .section-foot, .split-text, .feature-body, .cta-content) > :is(md-filled-button, md-outlined-button, md-text-button) { display: flex; width: fit-content; margin-top: 1.75rem; }
+
+.actions { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin: 1.75rem 0 1rem; }
+
+/* ---------- Tonal bands ----------
+   Light bands re-scope the muted text role to their own tone; the dark band
+   re-scopes every colour role, so Material components inside it adapt. */
 .tonal {
   --tone-bg: var(--md-sys-color-surface-container);
-  isolation: isolate; overflow: hidden; margin-block: clamp(.75rem, 2vw, 1.5rem);
-  padding: clamp(2.25rem, 5vw, 4.5rem) clamp(1.5rem, 5vw, 4.5rem);
+  --band-pad-y: clamp(2.75rem, 6vw, 5.5rem); --band-pad-x: clamp(1.5rem, 5.5vw, 5.5rem);
+  isolation: isolate; overflow: clip; margin-block: clamp(1rem, 2vw, 1.5rem);
+  padding: var(--band-pad-y) var(--band-pad-x);
   border-radius: var(--md-sys-shape-corner-extra-extra-large);
   background: var(--tone-bg); color: var(--tone-on, var(--md-sys-color-on-surface));
 }
-.tone-primary { --tone-bg: var(--md-sys-color-primary-container); --tone-on: var(--md-sys-color-on-primary-container); --icon-container: var(--md-sys-color-primary); --icon-on: var(--md-sys-color-on-primary); }
-.tone-secondary { --tone-bg: var(--md-sys-color-secondary-container); --tone-on: var(--md-sys-color-on-secondary-container); --icon-container: var(--md-sys-color-primary); --icon-on: var(--md-sys-color-on-primary); }
-.tone-tertiary { --tone-bg: var(--md-sys-color-tertiary-container); --tone-on: var(--md-sys-color-on-tertiary-container); --icon-container: var(--md-sys-color-tertiary); --icon-on: var(--md-sys-color-on-tertiary); }
-.tone-tertiary .price, .tone-tertiary a { color: var(--md-sys-color-tertiary); }
+.tone-primary {
+  --tone-bg: var(--md-sys-color-primary-container); --tone-on: var(--md-sys-color-on-primary-container);
+  --md-sys-color-on-surface-variant: color-mix(in srgb, var(--md-sys-color-on-primary-container) 84%, var(--md-sys-color-primary-container));
+}
+.tone-secondary {
+  --tone-bg: var(--md-sys-color-secondary-container); --tone-on: var(--md-sys-color-on-secondary-container);
+  --md-sys-color-on-surface-variant: color-mix(in srgb, var(--md-sys-color-on-secondary-container) 84%, var(--md-sys-color-secondary-container));
+}
+/* The warm band takes the tertiary scheme: its buttons, links and icons turn terracotta. */
+.tone-tertiary {
+  --tone-bg: var(--md-sys-color-tertiary-container); --tone-on: var(--md-sys-color-on-tertiary-container);
+  --md-sys-color-primary: var(--md-sys-color-tertiary); --md-sys-color-on-primary: var(--md-sys-color-on-tertiary);
+  --md-sys-color-on-surface-variant: color-mix(in srgb, var(--md-sys-color-on-tertiary-container) 84%, var(--md-sys-color-tertiary-container));
+}
 
 /* A dark band: the colour roles are re-scoped, so Material components follow. */
 .tone-inverse, footer {
@@ -93,126 +114,88 @@ main > section.tonal + section, main > section + section.tonal { border-top: 0; 
   --md-sys-color-outline-variant: #3b5a4d;
   --tone-bg: var(--md-sys-color-inverse-surface); --tone-on: var(--md-sys-color-inverse-on-surface);
 }
-.tone-inverse { --icon-container: var(--md-sys-color-primary-container); --icon-on: var(--md-sys-color-on-primary-container); }
-.tone-inverse::after, footer::after {
-  content: ""; position: absolute; z-index: -1; pointer-events: none;
-  right: -9rem; bottom: -11rem; width: clamp(20rem, 38vw, 34rem); aspect-ratio: 1;
-  background: color-mix(in srgb, var(--md-sys-color-inverse-primary) 11%, transparent);
-  clip-path: var(--shape-verysunny);
-}
 
-/* ---------- Editorial two-column rhythm on wide screens ----------
-   Headings take the left column; reading content the right. Grids, card sets
-   and steps run the full width. */
+/* ---------- Editorial rows ----------
+   From 1024px a section's heading takes the left column and its reading copy
+   the right. Card sets and footers run the full width. */
 @media (min-width: 1024px) {
-  main > section:not(.hero, .split) { display: flow-root; }
-  main > section:not(.hero, .split) > :is(h2, .eyebrow) { float: left; clear: left; width: 36%; padding-right: 2rem; }
-  main > section:not(.hero, .split) > h2 ~ h2 { clear: both; margin-top: 0; padding-top: 3.5rem; }
-  main > section:not(.hero, .split) > h2 ~ h2 + :is(p, .price, h3) { margin-top: calc(1rem + 3.5rem + 4.25rem + 1.35rem); }
-  main > section:not(.hero, .split) > :not(h2, .eyebrow) { margin-left: 42%; }
-  main > section:not(.hero, .split) > h2:has(+ :is(.grid, .cards, .steps, .teacher-grid)) { float: none; width: auto; }
-  main > section:not(.hero, .split) > :is(.grid, .cards, .steps, .teacher-grid),
-  main > section:not(.hero, .split) > :is(.grid, .cards, .steps, .teacher-grid) ~ * { clear: both; margin-left: 0; }
-  main > section:not(.hero, .split) > h2 + :is(p, .price, h3, .faq, dl) { margin-top: calc(4.25rem + 1.35rem); }
-  main > section:not(.hero, .split) > a { margin-left: calc(42% - .85rem); }
-  main > section:not(.hero, .split) > :is(.grid, .cards, .steps, .teacher-grid) ~ a { margin-left: -.85rem; }
-  main > section.tonal:not(.split) > :is(h2, .eyebrow) { width: 38%; }
+  main > section:has(> .section-head) {
+    display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: start;
+    column-gap: clamp(3rem, 6vw, 6.5rem); row-gap: clamp(3rem, 5vw, 4.5rem);
+  }
+  .section-head { grid-column: 1; }
+  .section-body { grid-column: 2; }
+  main > section > :is(.grid, .cards, .teacher-grid, .section-foot) { grid-column: 1 / -1; }
+  /* A sticky grid item is constrained by the whole section, so only a section's sole heading
+     sticks, and only when no second heading or full-width content follows it. */
+  main > section:not(:has(> .section-head ~ .section-head, > :is(.grid, .cards, .teacher-grid, .section-foot))) > .section-head:has(+ .section-body) { position: sticky; top: var(--sticky-top); }
+  /* The reading copy starts level with the heading text rather than its icon. */
+  .section-head:has(> h2 > .decorative-icon) + .section-body { padding-top: calc(2.75rem + 1.15rem); }
+  .section-body + .section-head { margin-top: 0; }
 }
-main > section > :is(a, md-filled-button, md-outlined-button, md-text-button) { display: flex; width: fit-content; }
-main > section > :is(p, ul, dl, .faq, .allocation, .actions, h3):last-child { margin-bottom: 0; }
-
-/* Standalone links read as Material text buttons */
-main > section > a, .grid article > a {
-  display: inline-flex; align-items: center; min-height: 40px; margin: .5rem 0 0 -.85rem; padding: 0 .85rem;
-  border-radius: var(--md-sys-shape-corner-full); text-decoration: none;
-  transition: background-color var(--md-sys-motion-effects-fast);
+@media (max-width: 1023px) {
+  .section-head { margin-bottom: 1.5rem; }
+  .section-body + .section-head { margin-top: 3.5rem; }
+  main > section > :is(.grid, .cards, .teacher-grid) { margin-top: 2.5rem; }
+  .section-foot { margin-top: 2rem; }
 }
-main > section > a:hover, .grid article > a:hover { background: color-mix(in srgb, currentColor 9%, transparent); }
-main > section > a + a { margin-top: 0; }
-
-.actions { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin: 1.75rem 0 1rem; }
 
 /* ---------- Card sets ---------- */
-.grid, .cards, .teacher-grid { display: grid; gap: var(--group-gap); margin-top: clamp(1.75rem, 3vw, 2.75rem); }
-.grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-.grid > article { grid-column: span 3; }
-@media (min-width: 1024px) {
-  .grid:has(> article:nth-child(5):last-child) > article:nth-child(-n+3) { grid-column: span 2; }
-}
-@media (min-width: 600px) and (max-width: 1023px) {
-  .grid > article:last-child:nth-child(odd) { grid-column: span 6; }
-}
+.grid, .cards { display: grid; gap: var(--group-gap); }
+.grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .cards.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
 .grid article, .cards article {
+  --icon-fill: 0;
   position: relative; display: flex; flex-direction: column; min-width: 0;
-  padding: clamp(1.5rem, 2.4vw, 2.1rem);
+  padding: clamp(1.6rem, 2.5vw, 2.35rem);
   border-radius: var(--md-sys-shape-corner-extra-large);
   background: var(--md-sys-color-surface-container-low); color: var(--md-sys-color-on-surface);
   transition: border-radius var(--md-sys-motion-spatial-default), background-color var(--md-sys-motion-effects-default);
 }
-.grid article p, .cards article p { color: var(--md-sys-color-on-surface-variant); }
+.grid article > p:last-of-type { margin-bottom: 1.5rem; }
 .grid article > a { margin-top: auto; align-self: flex-start; }
-.grid article > p:last-of-type { margin-bottom: 1.25rem; }
-.grid article:is(:hover, :focus-within), .cards article:is(:hover, :focus-within) { border-radius: var(--md-sys-shape-corner-extra-extra-large); background: var(--md-sys-color-surface-container); }
-
-/* Each card gets its own shape; on hover it morphs into Sunny and the symbol fills. */
-.grid > article:nth-child(5n+1) { --icon-shape: var(--shape-cookie9); }
-.grid > article:nth-child(5n+2) { --icon-shape: var(--shape-clover4); --icon-container: var(--md-sys-color-tertiary-container); --icon-on: var(--md-sys-color-on-tertiary-container); }
-.grid > article:nth-child(5n+3) { --icon-shape: var(--shape-pentagon); --icon-container: var(--md-sys-color-secondary-container); --icon-on: var(--md-sys-color-on-secondary-container); }
-.grid > article:nth-child(5n+4) { --icon-shape: var(--shape-cookie4); }
-.grid > article:nth-child(5n+5) { --icon-shape: var(--shape-clover8); --icon-container: var(--md-sys-color-tertiary-container); --icon-on: var(--md-sys-color-on-tertiary-container); }
-:is(.grid, .cards) > article:is(:hover, :focus-within), .steps > li:hover { --icon-shape: var(--shape-sunny); --icon-fill: 1; }
-:is(.grid, .cards) > article:is(:hover, :focus-within) .decorative-icon::before, .steps > li:hover .decorative-icon::before { rotate: 22.5deg; }
+.grid article:is(:hover, :focus-within) { border-radius: var(--md-sys-shape-corner-extra-extra-large); background: var(--md-sys-color-surface-container); }
+:is(.grid, .cards) > article:is(:hover, :focus-within) { --icon-fill: 1; }
 
 /* Three-up option cards carry the colour */
-.cards > article.tonal { margin: 0; padding: clamp(1.75rem, 2.6vw, 2.25rem); overflow: visible; border-radius: var(--md-sys-shape-corner-extra-large); --icon-container: var(--md-sys-color-surface-container-lowest); }
-.cards > article.tonal:nth-child(3n+1) { background: var(--md-sys-color-primary-container); color: var(--md-sys-color-on-primary-container); --icon-shape: var(--shape-cookie6); --icon-on: var(--md-sys-color-primary); }
-.cards > article.tonal:nth-child(3n+2) { background: var(--md-sys-color-secondary-container); color: var(--md-sys-color-on-secondary-container); --icon-shape: var(--shape-clover4); --icon-on: var(--md-sys-color-secondary); }
-.cards > article.tonal:nth-child(3n+3) { background: var(--md-sys-color-tertiary-container); color: var(--md-sys-color-on-tertiary-container); --icon-shape: var(--shape-cookie12); --icon-on: var(--md-sys-color-tertiary); }
+.cards > article.tonal { margin: 0; padding: clamp(1.75rem, 2.6vw, 2.5rem); overflow: visible; border-radius: var(--md-sys-shape-corner-extra-large); }
+.cards > article.tonal:nth-child(3n+1) { background: var(--md-sys-color-primary-container); color: var(--md-sys-color-on-primary-container); --icon-color: var(--md-sys-color-primary); }
+.cards > article.tonal:nth-child(3n+2) { background: var(--md-sys-color-secondary-container); color: var(--md-sys-color-on-secondary-container); --icon-color: var(--md-sys-color-secondary); }
+.cards > article.tonal:nth-child(3n+3) { background: var(--md-sys-color-tertiary-container); color: var(--md-sys-color-on-tertiary-container); --icon-color: var(--md-sys-color-tertiary); }
 .cards > article.tonal p { color: inherit; }
+.cards > article.tonal:nth-child(3n+2) .price { color: var(--md-sys-color-secondary); }
 .cards > article.tonal:nth-child(3n+3) .price { color: var(--md-sys-color-tertiary); }
-.cards > article.tonal:is(:hover, :focus-within) { filter: saturate(1.08) brightness(.985); }
+.cards > article.tonal:is(:hover, :focus-within) { border-radius: var(--md-sys-shape-corner-extra-extra-large); }
 .cards.three article > md-filled-button { margin-top: auto; align-self: flex-start; }
-.cards.three article > p:nth-last-child(2) { margin-bottom: 1.5rem; }
+.cards.three article > p:nth-last-child(2) { margin-bottom: 1.75rem; }
 
-/* ---------- Steps ---------- */
-.steps { list-style: none; margin: clamp(1.75rem, 3vw, 2.75rem) 0 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--group-gap); }
-.steps > li {
-  --icon-shape: var(--shape-circle); --icon-container: var(--md-sys-color-secondary-container); --icon-on: var(--md-sys-color-on-secondary-container);
-  grid-column: span 3; max-width: none; padding: clamp(1.5rem, 2.4vw, 2.1rem);
-  border-radius: var(--md-sys-shape-corner-extra-large); background: var(--md-sys-color-surface-container-low);
-  transition: border-radius var(--md-sys-motion-spatial-default), background-color var(--md-sys-motion-effects-default);
-}
-.steps > li:hover { border-radius: var(--md-sys-shape-corner-extra-extra-large); background: var(--md-sys-color-surface-container); }
-@media (min-width: 1024px) {
-  .steps:has(> li:nth-child(5):last-child) > li:nth-child(-n+3) { grid-column: span 2; }
-  .steps:has(> li:nth-child(4):last-child) > li { grid-column: span 3; }
-}
-.steps > li p { margin-bottom: 0; color: var(--md-sys-color-on-surface-variant); }
-.steps + md-filled-button { margin-top: 2rem; }
-.grid + md-filled-button { margin-top: 2rem; }
-
-/* ---------- Split feature (home Café) ---------- */
-.split { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 1fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
-.split > div:last-child {
-  padding: clamp(1.5rem, 3vw, 2.25rem); border-radius: var(--md-sys-shape-corner-extra-large);
-  background: var(--md-sys-color-surface-container-lowest); color: var(--md-sys-color-on-surface); box-shadow: var(--md-sys-elevation-1);
-}
-.split > div:last-child md-filled-button { margin-top: .75rem; }
+/* ---------- Steps: a vertical rail that fills as the reader moves down ---------- */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; }
+.steps > li { position: relative; max-width: none; padding: 0 0 2.5rem 4.5rem; view-timeline-name: --step; }
+.steps > li:last-child { padding-bottom: 0; }
+.steps > li > h3.icon-heading { display: block; margin-bottom: .45rem; padding-top: .35rem; color: var(--md-sys-color-on-surface); }
+.steps > li > h3 > .decorative-icon { position: absolute; left: 0; top: 0; --icon-size: 2.5rem; --icon-opsz: 40; --icon-wght: 300; margin: 0; }
+.steps > li::before, .steps > li::after { content: ""; position: absolute; left: calc(1.25rem - 1px); top: 3.35rem; bottom: .75rem; width: 2px; border-radius: 1px; }
+.steps > li::before { background: var(--md-sys-color-outline-variant); }
+.steps > li::after { background: var(--md-sys-color-primary); transform-origin: top; }
+.steps > li:last-child::before, .steps > li:last-child::after { display: none; }
+.steps > li p { margin-bottom: 0; }
+.steps + md-filled-button { margin-top: 2.5rem; }
 
 /* ---------- FAQ ---------- */
 .faq { max-width: 52rem; }
-.faq section { padding: 1.4rem 0; border: 0; }
+.faq section { padding: 1.5rem 0; border: 0; }
+.faq > section:first-child { padding-top: 0; }
 .faq h3 { max-width: none; margin-bottom: .5rem; font-size: 1.15rem; }
-.faq p { margin-bottom: 0; color: var(--md-sys-color-on-surface-variant); }
+.faq p { margin-bottom: 0; }
 .faq md-divider { --md-divider-color: var(--md-sys-color-outline-variant); }
 
 /* ---------- Details list ---------- */
-dl { display: grid; grid-template-columns: max-content 1fr; gap: .9rem 1.25rem; align-items: center; margin: 1.5rem 0 2rem; }
-dt { display: flex; align-items: center; gap: .75rem; font-weight: 650; }
+dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: .8rem 1.5rem; align-items: center; margin: 1.75rem 0 2rem; }
+dt { display: flex; align-items: center; gap: .7rem; font-weight: 650; }
 dd { margin: 0; }
-.metadata-icon { --icon-box: 2.25rem; margin: 0; --icon-container: var(--md-sys-color-surface-container-lowest); --icon-on: var(--md-sys-color-primary); }
+.metadata-icon { --icon-size: 1.375rem; --icon-opsz: 24; }
 
 /* ---------- Utilities ---------- */
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
@@ -238,35 +221,57 @@ md-filled-button, md-outlined-button, md-text-button, md-filled-tonal-button {
   transition: --btn-shape var(--md-sys-motion-spatial-fast);
 }
 :is(md-filled-button, md-outlined-button, md-text-button):active { --btn-shape: 10px; }
+/* Long labels wrap onto balanced lines on narrow screens or at large text sizes.
+   Material Web pads the container for wrapped labels. */
+:is(md-filled-button, md-outlined-button, md-text-button) { max-width: 100%; text-wrap: balance; }
 md-filled-button .material-symbols-outlined[slot="icon"], md-outlined-button .material-symbols-outlined[slot="icon"], md-text-button .material-symbols-outlined[slot="icon"] {
   width: 20px; overflow: hidden; font-size: 20px; font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 20;
 }
 :is(md-filled-button, md-outlined-button, md-text-button, md-filter-chip, md-icon-button):focus-visible { border-radius: var(--md-sys-shape-corner-full); }
 
-/* ---------- Scroll-linked turning of the section stars ---------- */
-@keyframes najma-turn { from { rotate: -40deg; } to { rotate: 50deg; } }
+/* ---------- Scroll-linked motion (progressive: without scroll timelines the finished state shows) ---------- */
+@keyframes icon-arrive { from { opacity: 0; translate: 0 .75rem; font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 48; } to { opacity: 1; translate: 0 0; font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48; } }
+@keyframes rise { from { opacity: 0; translate: 0 2.25rem; } to { opacity: 1; translate: 0 0; } }
+@keyframes rail-fill { from { scale: 1 0; } to { scale: 1 1; } }
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
-    h2 > .decorative-icon::before { animation: najma-turn linear both; animation-timeline: view(); }
-    .tone-inverse::after { animation: najma-turn linear both; animation-timeline: view(); }
+    h2 > .decorative-icon { animation: icon-arrive linear both; animation-timeline: view(); animation-range: entry 30% cover 35%; }
+    /* Section headings can be sticky, and a sticky element's own view timeline stretches over
+       the distance it stays stuck, so their symbols follow the section's timeline instead. */
+    main > section { view-timeline-name: --section; }
+    main > section > .section-head > h2 > .decorative-icon { animation-timeline: --section; animation-range: entry 120px entry 420px; }
+    :is(.grid, .cards) > *, .teacher-grid > *, .programme-sessions > li, .programme-facts > div {
+      animation: rise linear both; animation-timeline: view(); animation-range: entry 0% entry 70%;
+    }
+    :is(.grid, .cards, .teacher-grid) > :nth-child(3n+2), .programme-sessions > li:nth-child(2), .programme-facts > div:nth-child(2) { animation-range: entry 10% entry 80%; }
+    :is(.grid, .cards, .teacher-grid) > :nth-child(3n+3), .programme-sessions > li:nth-child(3) { animation-range: entry 20% entry 90%; }
+    .programme-sessions > li:nth-child(4) { animation-range: entry 30% entry 100%; }
+    .steps > li::after { animation: rail-fill linear both; animation-timeline: --step; animation-range: cover 30% cover 70%; }
   }
 }
 
 /* ---------- Responsive ---------- */
+/* Option cards hold full-width Material buttons, so they go three-up only when there is room. */
+@media (max-width: 1199px) {
+  .cards.three { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cards.three > article:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
 @media (max-width: 1023px) {
-  .split { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 699px) {
   .cards.three { grid-template-columns: 1fr; }
-  .steps > li { grid-column: span 3; }
-  .steps > li:last-child:nth-child(odd) { grid-column: span 6; }
 }
 @media (max-width: 599px) {
   body { font-size: 1rem; }
-  .grid > article, .steps > li, .steps > li:last-child:nth-child(odd) { grid-column: 1 / -1; }
-  main > section { padding-block: 3.25rem; }
-  .tonal { margin-inline: calc(var(--gutter) * -.5); padding: 2.25rem 1.35rem; border-radius: var(--md-sys-shape-corner-extra-large-increased); }
-  h2 > .decorative-icon { --icon-box: 3.25rem; }
-  dl { grid-template-columns: 1fr; gap: .35rem; }
-  dd { margin: 0 0 .75rem 3rem; }
+  .grid { grid-template-columns: 1fr; }
+  .tonal { --band-pad-y: 2.5rem; --band-pad-x: 1.35rem; margin-inline: calc(var(--gutter) * -.5); border-radius: var(--md-sys-shape-corner-extra-large-increased); }
+  h2 > .decorative-icon { --icon-size: 2.25rem; }
+  .steps > li { padding-left: 3.75rem; }
+  .steps > li > h3 > .decorative-icon { --icon-size: 2.25rem; }
+  .steps > li::before, .steps > li::after { left: calc(1.125rem - 1px); top: 3rem; }
+  dl { grid-template-columns: 1fr; gap: .3rem; }
+  dd { margin: 0 0 .85rem 2.1rem; }
 }
 
 /* ---------- Preferences ---------- */
@@ -275,6 +280,6 @@ md-filled-button .material-symbols-outlined[slot="icon"], md-outlined-button .ma
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
 @media (forced-colors: active) {
-  .decorative-icon::before, .tonal::after, footer::after { display: none; }
-  .tonal, .grid article, .cards article, .steps > li { border: 1px solid CanvasText; }
+  .tonal, .grid article, .cards article { border: 1px solid CanvasText; }
+  .steps > li::before, .steps > li::after { background: CanvasText; }
 }

@@ -9,8 +9,8 @@
     "master_long_edge_min": 3360,
     "master_long_edge_max": 4000,
     "master_short_edge_min": 2100,
-    "asset_files": 150,
-    "total_asset_bytes": 108460477
+    "asset_files": 173,
+    "total_asset_bytes": 115314299
   },
   "assets": [
     {
@@ -109,6 +109,13 @@
           "height": 1440,
           "bytes": 140294,
           "sha256": "028397d5f9e8ef6bd4cca456dfc732cccc2e281011c63041bd8ba9c8de8b14e3"
+        },
+        {
+          "path": "assets/stock/web/collaboration/learning-side-by-side--s2DbUV-yx2A-2560.webp",
+          "width": 2560,
+          "height": 1920,
+          "bytes": 247184,
+          "sha256": "4cc0974073c07b15b10eb30c4bfd67cfb2286a65292befe2bded02fe03555c6c"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -160,6 +167,13 @@
           "height": 1080,
           "bytes": 184226,
           "sha256": "042121d4e30a58f417d308e4abb1db1a4787f8567d277c37d0c0fdb86a815d75"
+        },
+        {
+          "path": "assets/stock/web/collaboration/sharing-a-plan--PSksbOVDhWk-2560.webp",
+          "width": 2560,
+          "height": 1440,
+          "bytes": 258060,
+          "sha256": "d090f33eb3a52a8abe838385b166ac99576cf6c3ee26570a0d49b41e5810bc31"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -261,6 +275,13 @@
           "height": 1080,
           "bytes": 141594,
           "sha256": "a0f56e2e900fba601ff08bb8a47e3ac9cf28c4ba223d974a0bf1ac3f5e53e051"
+        },
+        {
+          "path": "assets/stock/web/collaboration/working-through-an-idea--YDWdxElP3XI-2560.webp",
+          "width": 2560,
+          "height": 1440,
+          "bytes": 198770,
+          "sha256": "2f14216fdf0cf78f242b1880f2417e4788d9596a7d63842789573731bc98d2e1"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -311,6 +332,13 @@
           "height": 1440,
           "bytes": 148604,
           "sha256": "7f5852c39f58369495060beadfe654ca799c4fcac8d2c708b514de1c64af856f"
+        },
+        {
+          "path": "assets/stock/web/collaboration/a-thoughtful-exchange--LVooQvKjLjw-2560.webp",
+          "width": 2560,
+          "height": 1920,
+          "bytes": 253194,
+          "sha256": "29c9205e954758a7c796a6190fa716d3019b822d5b37c9437c255c99393d804a"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -461,6 +489,20 @@
           "height": 1280,
           "bytes": 337658,
           "sha256": "0482577c9277976b6d6c84eb4a512df691d12c4942e7716cb222528917324481"
+        },
+        {
+          "path": "assets/stock/web/conversation/coffee-and-conversation--g86airJZ4Gs-2560.webp",
+          "width": 2560,
+          "height": 1707,
+          "bytes": 697642,
+          "sha256": "a5044a8d2ee8f1338bd3f7115dbfe3d530a25b3553dcefa33e13cdc10efaed25"
+        },
+        {
+          "path": "assets/stock/web/conversation/coffee-and-conversation--g86airJZ4Gs-3200.webp",
+          "width": 3200,
+          "height": 2134,
+          "bytes": 1103882,
+          "sha256": "af3462cfb81e01f9b369258cbd281beb5aab91ca919f3bce3f0390fbe0e92b25"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -561,6 +603,13 @@
           "height": 1080,
           "bytes": 96104,
           "sha256": "f3a67d41e9e1cb38082c7a25083a01f7d1b03420e51b740c2c96b3687a70b724"
+        },
+        {
+          "path": "assets/stock/web/conversation/time-to-connect--gRmyW5p_4lQ-2560.webp",
+          "width": 2560,
+          "height": 1440,
+          "bytes": 142372,
+          "sha256": "c056b78455b26d2b8d19e100adac4c8b230a83fee9a62054d9a3c03927c89dc6"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -712,6 +761,13 @@
           "height": 1280,
           "bytes": 260966,
           "sha256": "175197a5e14587360c99b7b1e72d4d067b7ec0730959ec412c8f96cc406796b1"
+        },
+        {
+          "path": "assets/stock/web/conversation/listening-together--tSyU-mWc010-2560.webp",
+          "width": 2560,
+          "height": 1707,
+          "bytes": 421810,
+          "sha256": "a70882325f12ff6217bc97378376aa50547b66b2e2e8e5ef4b8b387ad0e0a133"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -1365,6 +1421,13 @@
           "height": 1080,
           "bytes": 34982,
           "sha256": "94d8217ac3ef9fa1f957b1090a4ac2da9f8d2164f58568dc1c5646419762af53"
+        },
+        {
+          "path": "assets/stock/web/illustrations/a-small-beginning--G0qTNcwmCaQ-2560.webp",
+          "width": 2560,
+          "height": 1440,
+          "bytes": 49324,
+          "sha256": "268d591fee679f8bbafe84a9f3072062823aabb0656bb35262bf83a07a4a5dca"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -1416,6 +1479,13 @@
           "height": 1080,
           "bytes": 45184,
           "sha256": "be546678d8235d8f38689ede760d48464bf957664b3e6732aed952faa60546fa"
+        },
+        {
+          "path": "assets/stock/web/illustrations/folded-possibilities--XJaPfJz7xW8-2560.webp",
+          "width": 2560,
+          "height": 1440,
+          "bytes": 64166,
+          "sha256": "38f9870a8b98c91b2945834d25afeb777811e9526c8e6ed818b220c395b8a849"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -1566,6 +1636,13 @@
           "height": 1080,
           "bytes": 39394,
           "sha256": "a80d995c0e45e07d0703d116279b7f7d6c4d6bd5863d00d8fb61331aa801b863"
+        },
+        {
+          "path": "assets/stock/web/illustrations/an-unfolding-form--8UP_QbfMfPM-2560.webp",
+          "width": 2560,
+          "height": 1440,
+          "bytes": 56814,
+          "sha256": "157b32befb97454e4b1a3755b3c7832472f3902bbd48c564f7be2458ef748414"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -1667,6 +1744,13 @@
           "height": 1282,
           "bytes": 323832,
           "sha256": "729e6f1ad20c9efb040dd43aa8cd11e7bb057fd67183ccb3c221682caa454c80"
+        },
+        {
+          "path": "assets/stock/web/mentoring/a-conversation-on-the-sofa--dKBTFoarrOU-2560.webp",
+          "width": 2560,
+          "height": 1709,
+          "bytes": 571010,
+          "sha256": "357521cebb342b51287883f2ac708667b510271c7a7a26116207974206e3353e"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -1718,6 +1802,13 @@
           "height": 1280,
           "bytes": 148622,
           "sha256": "c921897ae482e986e39cf90ba36bab5ea93ff171220e05d998edacd9848dac2c"
+        },
+        {
+          "path": "assets/stock/web/mentoring/learning-through-conversation--LQ1t-8Ms5PY-2560.webp",
+          "width": 2560,
+          "height": 1707,
+          "bytes": 247914,
+          "sha256": "23d371c64e1055241e8773edcd4b7c2e9aa1571d52d746092399ed15973f894a"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -1769,6 +1860,13 @@
           "height": 1282,
           "bytes": 156564,
           "sha256": "02ef88e97a12868af4c0f6399e8c0aaf8f9225fac3fceeaf8fcf256e7ded88c8"
+        },
+        {
+          "path": "assets/stock/web/mentoring/planning-the-next-step--4PU-OC8sW98-2560.webp",
+          "width": 2560,
+          "height": 1709,
+          "bytes": 297990,
+          "sha256": "4687f7601ea8b996adedbe39cecc3bd407de15f000b475d5c0a82c19b0520b18"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -1819,6 +1917,13 @@
           "height": 1282,
           "bytes": 204402,
           "sha256": "7f5f5bf88cc72680bcab555c5bf0d20c6bf44d0ac7de66fc7e91035977fba285"
+        },
+        {
+          "path": "assets/stock/web/mentoring/thinking-at-the-whiteboard--PviMD8jDeYE-2560.webp",
+          "width": 2560,
+          "height": 1709,
+          "bytes": 325838,
+          "sha256": "09eac1b1c8319e2967445030871e766fc2c5101dc039c6b540ad8ed773376359"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -1870,6 +1975,13 @@
           "height": 1280,
           "bytes": 141052,
           "sha256": "457ebdff83f2d6bdaeec4539ef90ee229342e46fa852dacc1797c47e84669527"
+        },
+        {
+          "path": "assets/stock/web/online-learning/a-lively-online-conversation--j0dCClyasFk-2560.webp",
+          "width": 2560,
+          "height": 1706,
+          "bytes": 276734,
+          "sha256": "704b921a8df44a974359c2f819f5188266edbddd1b07b20e59dd9229130ea0c8"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -1922,6 +2034,13 @@
           "height": 1080,
           "bytes": 131250,
           "sha256": "30d959fb1b73178bdef2936c859fb5fa7083e3ec558d23c8ef00cee6b8103c0f"
+        },
+        {
+          "path": "assets/stock/web/online-learning/a-welcoming-video-call--s2uH89aClpE-2560.webp",
+          "width": 2560,
+          "height": 1440,
+          "bytes": 186778,
+          "sha256": "3449b45089c683c755b65ae9e0edfb6c18ba5cf99695bbd8287e36cae7b6c9a8"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -1973,6 +2092,13 @@
           "height": 1404,
           "bytes": 151892,
           "sha256": "49af28a242b1ba4e17fa4488ee725774d3e1527e7ae681f3893c4ae5f978c241"
+        },
+        {
+          "path": "assets/stock/web/online-learning/comfortable-with-learning--CPz2KWjCwDQ-2560.webp",
+          "width": 2560,
+          "height": 1872,
+          "bytes": 247640,
+          "sha256": "646754398e70e3afea685181bd602fe5e328b8e04aa760136e2d2137c84527f5"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -2024,6 +2150,20 @@
           "height": 1080,
           "bytes": 107496,
           "sha256": "291f7828e6cd2f8753e8eb74e2122d48baa79e467fdf80aa8951155b241a2b06"
+        },
+        {
+          "path": "assets/stock/web/online-learning/hello-from-home--F4AS3X2swic-2560.webp",
+          "width": 2560,
+          "height": 1440,
+          "bytes": 159562,
+          "sha256": "64413a744f516018641f56837d0a12af5b0ebba4d438df4b8211681dd4a1eed1"
+        },
+        {
+          "path": "assets/stock/web/online-learning/hello-from-home--F4AS3X2swic-3200.webp",
+          "width": 3200,
+          "height": 1800,
+          "bytes": 229942,
+          "sha256": "a2af641a6651fb851ce110f3154aaad11e20ae5763921e86d1644aabbaf2d734"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -2125,6 +2265,13 @@
           "height": 1281,
           "bytes": 107534,
           "sha256": "78ece88b2bbe3886098cba4e2cb623a52af247e8dc251fc85cce5f60bfd6543e"
+        },
+        {
+          "path": "assets/stock/web/online-learning/study-in-your-own-space--12OZwblVQUg-2560.webp",
+          "width": 2560,
+          "height": 1708,
+          "bytes": 233514,
+          "sha256": "4e8b78422da408b77c013daf703be3315352299719fb94e0a487d7e4a11a75fd"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -2176,6 +2323,13 @@
           "height": 1080,
           "bytes": 151870,
           "sha256": "5f38202247a4a3dce66c61d6846b4d93efe09ea2ac77414739a35ddfb10b3761"
+        },
+        {
+          "path": "assets/stock/web/online-learning/a-conversation-across-screens--D8NwgmdkgOY-2560.webp",
+          "width": 2560,
+          "height": 1440,
+          "bytes": 208262,
+          "sha256": "091b96963317f17a73cf031c0b89bf18caac269da4c7abffa48f8ce0d56f387f"
         }
       ],
       "initial_object_position": "50% 50%",
@@ -2378,6 +2532,13 @@
           "height": 1280,
           "bytes": 146446,
           "sha256": "045732bc613d03c7b2172b436f4218fbb6c7329ffa4564abef02c01aa8a3047e"
+        },
+        {
+          "path": "assets/stock/web/online-learning/focus-by-the-window--NLuDzsdyQ6M-2560.webp",
+          "width": 2560,
+          "height": 1707,
+          "bytes": 375420,
+          "sha256": "7252ebe1f80a1cb6794b3535faa6d57378ef69603ff5f88d79da409c13241758"
         }
       ],
       "initial_object_position": "50% 50%",

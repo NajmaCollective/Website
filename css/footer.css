@@ -1,4 +1,4 @@
-/* Footer: a dark closing band with the mark and a large turning star. */
+/* Footer: a dark closing band with the mark. */
 footer { position: relative; isolation: isolate; overflow: hidden; background: var(--md-sys-color-inverse-surface); color: var(--md-sys-color-inverse-on-surface); }
 .footer-inner { position: relative; max-width: var(--content-width); margin: auto; padding: clamp(3.5rem, 7vw, 6rem) var(--gutter) clamp(4rem, 8vw, 7rem); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: clamp(2.5rem, 5vw, 4rem); }
 .footer-brand { display: inline-flex; align-items: center; gap: .9rem; margin-bottom: 1rem; color: var(--md-sys-color-inverse-on-surface); font-family: var(--md-ref-typeface-brand); font-size: clamp(1.5rem, 2.4vw, 2rem); font-weight: 650; font-stretch: 104%; letter-spacing: -.03em; text-decoration: none; }
@@ -17,9 +17,5 @@ footer nav a {
 footer nav a:hover { background: color-mix(in srgb, var(--md-sys-color-inverse-primary) 16%, transparent); color: #ffffff; }
 footer nav a[aria-current=page] { color: var(--md-sys-color-inverse-primary); }
 footer :focus-visible { outline-color: var(--md-sys-color-inverse-primary); }
-@keyframes footer-turn { from { rotate: -30deg; } to { rotate: 30deg; } }
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) { footer::after { animation: footer-turn linear both; animation-timeline: view(); } }
-}
 @media (max-width: 719px) { .footer-inner { grid-template-columns: 1fr; } }
 @media (max-width: 420px) { footer nav { grid-template-columns: 1fr; } }

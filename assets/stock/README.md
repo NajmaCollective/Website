@@ -13,7 +13,7 @@
 | [credits.csv](credits.csv) | Creator credits and original source pages |
 | [Pexels shortlist](PEXELS-SHORTLIST.md) | Optional alternatives whose downloads were blocked during this session |
 | `masters/` | Large JPEG source assets for cropping and new exports |
-| `web/` | 960 px and 1920 px wide WebP versions |
+| `web/` | 960 px and 1920 px wide WebP versions, plus larger exports where the website needs them |
 
 ## Visual direction
 
@@ -48,7 +48,7 @@ All 50 masters were decoded and inspected. Their longest edges range from **3,36
 
 The original aspect ratio is preserved. Sources larger than 4,000 pixels on the long edge were downsampled using Lanczos resampling. Every stored image is at or below its source resolution. Masters use JPEG quality 93 with full chroma resolution. Web exports use WebP quality 88.
 
-The two WebP variants are **960 px** and **1920 px** wide. Use the large master when a layout needs more pixels. Create additional WebP exports from the master when a full-width hero needs an intermediate size.
+The two WebP variants are **960 px** and **1920 px** wide. Use the large master when a layout needs more pixels. Create additional WebP exports from the master when a full-width hero needs an intermediate size: `python3 tools/export_stock_sizes.py ID:WIDTH` uses the same settings and records each new file in the manifest. The photographs the website draws wider than 960 CSS pixels have 2560 px exports, and two have 3200 px exports.
 
 For a crisp 2× display, supply at least twice the rendered CSS width. A 1920 px image therefore supports a 960 CSS-pixel-wide uncropped display. A 4000 px master supports a 2000 CSS-pixel-wide uncropped display. Cropping reduces the usable pixel area, so calculate against the retained crop.
 

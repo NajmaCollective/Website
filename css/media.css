@@ -1,16 +1,33 @@
-/* Hero layout and artwork.
-   Each hero carries a composition of Material 3 Expressive shapes with one
-   Material Symbol. The shapes morph in once on load, then turn as the page scrolls. */
+/* Photography and the patterns that hold it.
+   Every image is a photograph or render from assets/stock, set in a Material 3
+   extra-large rounded container. Images reveal and settle as they scroll into
+   view; without scroll timelines, or with reduced motion, they simply show. */
 
+/* ---------- Shared media container ----------
+   --focus sets the crop's focal point; --zoom tightens a crop around it. */
+.media, .hero-media { position: relative; overflow: clip; background: var(--md-sys-color-surface-container); }
+.media { border-radius: var(--media-radius); }
+:is(.media, .hero-media) > img {
+  position: absolute; inset: 0; display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: var(--focus, 50% 50%);
+  transform: scale(var(--zoom, 1)); transform-origin: var(--focus, 50% 50%);
+}
+/* The hero photograph is slightly taller than its frame so it can drift with the page. */
+.hero-media > img { inset: -5% 0; height: 110%; }
+/* A hairline inner edge keeps bright photographs defined against the page surface. */
+:is(.hero-media, .split-media > .media, .section-media, .grid-media)::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  box-shadow: inset 0 0 0 1px rgb(var(--shadow-color) / .1);
+}
+
+/* ---------- Hero ---------- */
 .hero {
-  display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); align-items: center;
-  column-gap: clamp(2rem, 5vw, 5rem);
-  min-height: min(800px, calc(100svh - 80px));
-  padding-block: clamp(2.5rem, 5vw, 4.5rem) clamp(3.5rem, 7vw, 6rem);
-  border: 0 !important;
+  display: grid; grid-template-columns: minmax(0, 1.06fr) minmax(0, .94fr); align-items: center;
+  column-gap: clamp(2.5rem, 5.5vw, 6rem);
+  padding-block: clamp(1.5rem, 3vw, 2.75rem) clamp(4rem, 7vw, 6.5rem);
 }
 .hero-copy { position: relative; z-index: 1; min-width: 0; }
-.hero-copy > p:not(.price, .lede, .eyebrow) { max-width: 36rem; color: var(--md-sys-color-on-surface-variant); font-size: 1.125rem; }
+.hero-copy > p:not(.price, .lede, .eyebrow) { max-width: 36rem; font-size: 1.125rem; }
 .hero-copy > h1 { margin-bottom: 1.75rem; }
 .hero-copy > .lede { margin-bottom: 1.5rem; }
 .hero-copy > .price {
@@ -23,6 +40,11 @@
 .hero-copy > p:last-child:has(> a:only-child) { margin: 0; }
 .hero-subtitle { max-width: 24ch; margin-bottom: 1.5rem; color: var(--md-sys-color-primary); font-size: clamp(1.4rem, 2.2vw, 1.9rem); font-weight: 580; line-height: 1.2; letter-spacing: -.02em; }
 
+.hero-media {
+  width: 100%; aspect-ratio: 4 / 5; min-height: 28rem; max-height: calc(100svh - 8rem);
+  border-radius: var(--media-radius);
+}
+
 /* Larger, Expressive "medium" buttons in the hero */
 .hero .actions :is(md-filled-button, md-outlined-button, md-text-button) {
   --btn-shape: 28px;
@@ -34,84 +56,207 @@
 }
 .hero .actions :is(md-filled-button, md-outlined-button, md-text-button):active { --btn-shape: 12px; }
 
-/* ---------- Artwork ---------- */
-.hero-art { position: relative; justify-self: end; width: 100%; max-width: 34rem; aspect-ratio: 1; container-type: inline-size; }
-.art-a, .art-b, .art-star, .art-dot { position: absolute; display: block; aspect-ratio: 1; }
-.art-a { top: 0; right: 0; width: 80%; background: var(--a-bg); clip-path: var(--a-shape); }
-.art-a::after { content: ""; position: absolute; inset: 19%; background: var(--a-ring); clip-path: var(--a-shape); }
-.art-b { left: 0; bottom: 2%; width: 46%; display: grid; place-items: center; background: var(--b-bg); clip-path: var(--b-shape); }
-.art-glyph { color: var(--b-on); font-size: 20cqi; font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48; }
-.art-star { top: 5%; left: 9%; width: 17%; background: var(--star-bg); clip-path: var(--shape-star); }
-.art-dot { right: 3%; bottom: 9%; width: 8%; border-radius: 50%; background: var(--dot-bg); }
-
-.hero-art--home { --a-bg: var(--md-sys-color-primary-container); --a-shape: var(--shape-sunny); --a-ring: color-mix(in srgb, var(--md-sys-color-primary-container), var(--md-sys-color-primary) 9%); --b-bg: var(--md-sys-color-primary); --b-shape: var(--shape-cookie9); --b-on: var(--md-sys-color-on-primary); --star-bg: var(--md-sys-color-tertiary); --dot-bg: var(--md-sys-color-tertiary-container); }
-.hero-art--lessons { --a-bg: var(--md-sys-color-tertiary-container); --a-shape: var(--shape-clover4); --a-ring: color-mix(in srgb, var(--md-sys-color-tertiary-container), var(--md-sys-color-tertiary) 10%); --b-bg: var(--md-sys-color-primary); --b-shape: var(--shape-circle); --b-on: var(--md-sys-color-on-primary); --star-bg: var(--md-sys-color-primary); --dot-bg: var(--md-sys-color-secondary-container); }
-.hero-art--teachers { --a-bg: var(--md-sys-color-secondary-container); --a-shape: var(--shape-cookie12); --a-ring: color-mix(in srgb, var(--md-sys-color-secondary-container), var(--md-sys-color-secondary) 10%); --b-bg: var(--md-sys-color-tertiary); --b-shape: var(--shape-sunny); --b-on: var(--md-sys-color-on-tertiary); --star-bg: var(--md-sys-color-primary); --dot-bg: var(--md-sys-color-primary-container); }
-.hero-art--organisations { --a-bg: var(--md-sys-color-primary-container); --a-shape: var(--shape-cookie4); --a-ring: color-mix(in srgb, var(--md-sys-color-primary-container), var(--md-sys-color-primary) 9%); --b-bg: var(--md-sys-color-tertiary); --b-shape: var(--shape-clover8); --b-on: var(--md-sys-color-on-tertiary); --star-bg: var(--md-sys-color-primary); --dot-bg: var(--md-sys-color-tertiary-container); }
-.hero-art--cafe { --a-bg: var(--md-sys-color-tertiary-container); --a-shape: var(--shape-softburst); --a-ring: color-mix(in srgb, var(--md-sys-color-tertiary-container), var(--md-sys-color-tertiary) 10%); --b-bg: var(--md-sys-color-primary); --b-shape: var(--shape-circle); --b-on: var(--md-sys-color-on-primary); --star-bg: var(--md-sys-color-tertiary); --dot-bg: var(--md-sys-color-primary-container); }
-.hero-art--about { --a-bg: var(--md-sys-color-secondary-container); --a-shape: var(--shape-clover8); --a-ring: color-mix(in srgb, var(--md-sys-color-secondary-container), var(--md-sys-color-secondary) 10%); --b-bg: var(--md-sys-color-primary); --b-shape: var(--shape-verysunny); --b-on: var(--md-sys-color-on-primary); --star-bg: var(--md-sys-color-tertiary); --dot-bg: var(--md-sys-color-tertiary-container); }
-
-/* Organisations: the price card sits on the artwork */
-.hero-art--organisations .art-b { top: 3%; bottom: auto; left: 2%; width: 34%; }
-.hero-art--organisations .art-star { top: auto; left: auto; right: 6%; bottom: 36%; width: 14%; }
-.hero-art--organisations .art-dot { right: auto; left: 40%; bottom: auto; top: 6%; }
+/* Organisations: the price card floats on the photograph's lower edge */
+.hero-visual { position: relative; }
+.hero-visual > .hero-media { aspect-ratio: 5 / 6; }
 .hero-card {
-  position: absolute; left: 0; bottom: 2%; z-index: 2; width: min(80%, 22rem);
+  position: absolute; left: clamp(-3rem, -3.5vw, -1.5rem); bottom: clamp(1.5rem, 3vw, 2.5rem); z-index: 2; width: min(78%, 23rem);
   padding: clamp(1.35rem, 2.4vw, 1.85rem);
   border-radius: var(--md-sys-shape-corner-extra-large);
   background: var(--md-sys-color-surface-container-lowest); color: var(--md-sys-color-on-surface);
-  box-shadow: var(--md-sys-elevation-3);
+  box-shadow: var(--md-sys-elevation-3), 0 24px 48px -24px rgb(var(--shadow-color) / .4);
 }
 .hero-card .price { margin-bottom: .75rem; font-size: 1.2rem; }
-.hero-card p:last-child { margin: 0; color: var(--md-sys-color-on-surface-variant); }
+.hero-card p:last-child { margin: 0; }
+
+/* ---------- Feature bands: a tonal band that is half photograph ----------
+   Below 1200px the photograph sits above the copy; from 1200px they sit side
+   by side. Banner bands keep a wide photograph above two columns of copy. */
+.feature { display: grid; grid-template-columns: minmax(0, 1fr); align-items: stretch; padding: 0; }
+.feature > .feature-media { --media-radius: 0px; aspect-ratio: 16 / 10; max-height: min(34rem, 72svh); background: color-mix(in srgb, var(--tone-on) 8%, var(--tone-bg)); }
+.feature > .feature-body { max-width: 48rem; padding: var(--band-pad-y) var(--band-pad-x); }
+.feature-body > h2 { margin-bottom: 1.5rem; }
+.feature-body > .actions { margin-bottom: 0; }
+.feature-body dl { margin-bottom: 2rem; }
+@media (min-width: 1200px) {
+  .feature:not(.feature--banner) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); }
+  .feature:not(.feature--banner) > .feature-media { aspect-ratio: auto; max-height: none; min-height: 30rem; }
+  .feature:not(.feature--banner) > .feature-body { align-self: center; max-width: none; }
+  .feature--reverse > .feature-media { order: 2; }
+}
+.feature--banner > .feature-media { aspect-ratio: 16 / 9; }
+@media (min-width: 1024px) {
+  .feature--banner > .feature-media { aspect-ratio: 21 / 9; }
+  .feature--banner > .feature-body {
+    display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: start;
+    column-gap: clamp(3rem, 6vw, 6.5rem); max-width: none;
+  }
+}
+
+/* A white event card inside a tonal band restores the light-surface roles */
+.event-card {
+  --md-sys-color-on-surface-variant: var(--najma-on-surface-variant);
+  margin-top: 2rem; padding: clamp(1.5rem, 2.6vw, 2rem);
+  border-radius: var(--md-sys-shape-corner-extra-large);
+  background: var(--md-sys-color-surface-container-lowest); color: var(--md-sys-color-on-surface);
+  box-shadow: var(--md-sys-elevation-1);
+}
+.event-card p { margin-bottom: .45rem; }
+.event-card md-filled-button { margin-top: 1.1rem; }
+
+/* ---------- Split sections: photograph beside the copy ---------- */
+.split-media { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; column-gap: clamp(3rem, 7vw, 7.5rem); }
+.split-media > .media { aspect-ratio: 1; }
+.split-media--landscape > .media { aspect-ratio: 4 / 3; }
+.split-media--reverse > .media { order: 2; }
+.split-text > h2 ~ h2 { margin-top: 3.25rem; }
+.split-text > h2 + :is(p, h3) { margin-top: .25rem; }
+
+/* ---------- Photograph beneath a section heading ----------
+   On wide screens it is capped to the viewport so a sticky heading column always
+   shows the whole photograph. */
+.section-media { margin-top: clamp(2rem, 3.5vw, 2.75rem); aspect-ratio: 16 / 10; }
+@media (min-width: 1024px) {
+  .section-media { aspect-ratio: auto; height: clamp(16rem, calc(100svh - 22rem), 34rem); }
+}
+
+/* ---------- A photograph tile completing a card grid ---------- */
+.grid > .grid-media { --media-radius: var(--md-sys-shape-corner-extra-large); min-height: 17rem; }
+
+/* ---------- Example programme ---------- */
+.programme { display: grid; grid-template-columns: minmax(0, 1fr); align-items: stretch; column-gap: clamp(2.5rem, 5vw, 5rem); row-gap: clamp(2.5rem, 4vw, 3.5rem); }
+@media (min-width: 1200px) { .programme { grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); } }
+.programme-intro > h2 { margin-bottom: 1.5rem; }
+.programme-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--group-gap); margin-top: 2rem; }
+.programme-facts > div {
+  padding: 1.35rem 1.5rem; border-radius: var(--md-sys-shape-corner-large);
+  background: color-mix(in srgb, var(--md-sys-color-surface-container-lowest) 58%, transparent);
+}
+.programme-facts h3, .programme-sessions h3 { margin-bottom: .4rem; color: var(--md-sys-color-primary); font-size: .95rem; font-weight: 700; letter-spacing: .01em; }
+.programme-facts p, .programme-sessions p { margin: 0; }
+.programme-media { --media-radius: var(--md-sys-shape-corner-extra-large); aspect-ratio: 16 / 10; }
+@media (min-width: 1200px) { .programme-media { aspect-ratio: auto; min-height: 22rem; } }
+.programme-sessions { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--group-gap); margin: 0; padding: 0; list-style: none; }
+@media (min-width: 1200px) { .programme-sessions { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.programme-sessions > li {
+  --md-sys-color-on-surface-variant: var(--najma-on-surface-variant);
+  position: relative; max-width: none; overflow: clip; padding: 1.75rem 1.6rem 1.85rem;
+  border-radius: var(--md-sys-shape-corner-extra-large);
+  background: var(--md-sys-color-surface-container-lowest); color: var(--md-sys-color-on-surface);
+}
+.programme-sessions > li::before { content: ""; position: absolute; inset: 0 0 auto; height: 4px; background: var(--md-sys-color-primary); transform-origin: left; }
+
+/* ---------- Closing bands: a dark band lit by an abstract render ----------
+   The render has its own column and bleeds to the band's edges, so it never
+   sits behind text. It is screened onto the band: its black ground takes on the
+   band's green and only the light in the artwork shows. */
+.cta-band { display: grid; grid-template-columns: minmax(0, 34rem) minmax(0, 1fr); column-gap: clamp(1.5rem, 3vw, 3rem); align-items: center; min-height: clamp(22rem, 34vw, 30rem); }
+.cta-content { grid-column: 1; grid-row: 1; position: relative; z-index: 1; }
+.cta-content > h2 { margin-bottom: 1.25rem; }
+.cta-art {
+  grid-column: 2; grid-row: 1; align-self: stretch; position: relative; pointer-events: none;
+  margin: calc(-1 * var(--band-pad-y)) calc(-1 * var(--band-pad-x)) calc(-1 * var(--band-pad-y)) 0;
+  mix-blend-mode: screen;
+}
+.cta-art > img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--focus, 50% 50%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 40%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 40%);
+}
+
+/* ---------- Teacher previews on content pages (rendered by utils.js) ---------- */
+.teacher-preview-grid { display: grid; gap: .75rem; margin: 2rem 0; }
+.teacher-preview-card {
+  display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 1.35rem; align-items: start;
+  padding: 1.35rem 1.5rem; border-radius: var(--md-sys-shape-corner-extra-large);
+  background: var(--md-sys-color-surface-container-low); color: var(--md-sys-color-on-surface);
+  transition: background-color var(--md-sys-motion-effects-default), border-radius var(--md-sys-motion-spatial-default);
+}
+.teacher-preview-card:is(:hover, :focus-within) { background: var(--md-sys-color-surface-container); border-radius: var(--md-sys-shape-corner-extra-extra-large); }
+.teacher-preview-body > :last-child { margin-bottom: 0; }
+.teacher-preview-body h3, .teacher-preview-body h4 { margin: 0 0 .35rem; font-size: 1.25rem; }
+.teacher-preview-body p { margin-bottom: .6rem; font-size: 1rem; line-height: 1.55; }
+.teacher-preview-body a { display: inline-flex; align-items: center; min-height: 40px; margin: 0 0 -.4rem -.85rem; padding: 0 .85rem; border-radius: var(--md-sys-shape-corner-full); text-decoration: none; }
+.teacher-preview-body a:hover { background: color-mix(in srgb, currentColor 9%, transparent); }
+.teacher-preview-body .teacher-preview-location { display: flex; align-items: center; gap: .3rem; margin-bottom: .35rem; color: var(--md-sys-color-primary); font-size: .88rem; font-weight: 600; }
+.teacher-preview-location .material-symbols-outlined { font-size: 1.05rem; font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20; }
+.tone-inverse .teacher-preview-card { background: color-mix(in srgb, var(--md-sys-color-inverse-on-surface) 7%, transparent); }
+.tone-inverse .teacher-preview-card:is(:hover, :focus-within) { background: color-mix(in srgb, var(--md-sys-color-inverse-on-surface) 12%, transparent); }
+
+/* Circular avatars: the teacher's own photograph, or a Material monogram while one is pending */
+.teacher-avatar {
+  display: grid; place-items: center; width: 4.75rem; aspect-ratio: 1; overflow: clip; border-radius: 50%;
+  background: var(--md-sys-color-primary-container); color: var(--md-sys-color-on-primary-container);
+  font: 650 1.9rem/1 var(--md-ref-typeface-brand); letter-spacing: -.02em;
+}
+.teacher-avatar img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
 /* ---------- Motion ---------- */
-@keyframes art-grow { from { clip-path: var(--shape-circle); scale: .55; opacity: 0; } 30% { opacity: 1; } }
-@keyframes art-pop { from { scale: .3; opacity: 0; } 40% { opacity: 1; } }
-@keyframes art-spin { from { transform: rotate(-200deg) scale(0); } }
-@keyframes art-fill { from { font-variation-settings: 'FILL' 0, 'wght' 250, 'GRAD' 0, 'opsz' 48; } }
-@keyframes art-turn { to { rotate: 45deg; } }
-@keyframes art-turn-back { to { rotate: -135deg; } }
+@keyframes hero-reveal { from { clip-path: inset(9% 8% 9% 8% round 8rem); } to { clip-path: inset(0 round var(--media-radius)); } }
+@keyframes hero-settle { from { scale: 1.16; } to { scale: 1; } }
+@keyframes hero-drift { to { translate: 0 4.5%; } }
+@keyframes copy-in { from { opacity: 0; translate: 0 1.25rem; } to { opacity: 1; translate: 0 0; } }
+@keyframes card-in { from { opacity: 0; translate: 0 1.5rem; scale: .96; } to { opacity: 1; translate: 0 0; scale: 1; } }
+@keyframes media-reveal { from { clip-path: inset(8% 7% 8% 7% round 7rem); } to { clip-path: inset(0 round var(--media-radius)); } }
+@keyframes media-settle { from { scale: 1.14; } to { scale: 1; } }
+@keyframes art-drift { from { translate: 6% 0; scale: 1.08; } to { translate: -2% 0; scale: 1; } }
+@keyframes bar-draw { from { scale: 0 1; } to { scale: 1 1; } }
+
 @media (prefers-reduced-motion: no-preference) {
-  .art-a { animation: art-grow 1150ms cubic-bezier(.39, 1.29, .35, .98) 60ms both; }
-  .art-a::after { animation: art-grow 1150ms cubic-bezier(.39, 1.29, .35, .98) 220ms both; }
-  .art-b { animation: art-pop 700ms cubic-bezier(.42, 1.67, .21, .90) 420ms both; }
-  .art-star { animation: art-spin 1000ms cubic-bezier(.39, 1.29, .35, .98) 560ms both; }
-  .art-dot { animation: art-pop 600ms cubic-bezier(.42, 1.67, .21, .90) 760ms both; }
-  .art-glyph { animation: art-fill 800ms cubic-bezier(.34, .88, .34, 1) 900ms both; }
+  .hero-media { animation: hero-reveal 1400ms cubic-bezier(.2, .8, .2, 1) 60ms both; }
+  .hero-media > img { animation: hero-settle 2400ms cubic-bezier(.16, .84, .24, 1) both; }
+  .hero-copy > * { animation: copy-in 900ms cubic-bezier(.2, .8, .2, 1) both; }
+  .hero-copy > :nth-child(2) { animation-delay: 70ms; }
+  .hero-copy > :nth-child(3) { animation-delay: 140ms; }
+  .hero-copy > :nth-child(4) { animation-delay: 210ms; }
+  .hero-copy > :nth-child(5) { animation-delay: 280ms; }
+  .hero-copy > :nth-child(n+6) { animation-delay: 350ms; }
+  .hero-card { animation: card-in 900ms cubic-bezier(.2, .8, .2, 1) 650ms both; }
 }
-@supports (animation-timeline: scroll()) {
+@supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
-    .art-a { animation: art-grow 1150ms cubic-bezier(.39, 1.29, .35, .98) 60ms both, art-turn linear both; animation-timeline: auto, scroll(root); animation-range: normal, 0 90vh; }
-    .art-star { animation: art-spin 1000ms cubic-bezier(.39, 1.29, .35, .98) 560ms both, art-turn-back linear both; animation-timeline: auto, scroll(root); animation-range: normal, 0 90vh; }
+    .hero-media > img { animation: hero-settle 2400ms cubic-bezier(.16, .84, .24, 1) both, hero-drift linear both; animation-timeline: auto, scroll(root); animation-range: normal, 0 100vh; }
+    .media { animation: media-reveal linear both; animation-timeline: view(); animation-range: entry 0% entry 85%; }
+    /* Photographs settle to their natural crop by the time they reach mid-screen. */
+    .media > img { animation: media-settle linear both; animation-timeline: view(); animation-range: entry 0% cover 50%; }
+    .cta-art > img { animation: art-drift linear both; animation-timeline: view(); animation-range: entry 0% exit 100%; }
+    .programme-sessions > li::before { animation: bar-draw linear both; animation-timeline: view(); animation-range: entry 60% cover 50%; }
+    .programme-sessions > li:nth-child(2)::before { animation-range: entry 80% cover 55%; }
+    .programme-sessions > li:nth-child(3)::before { animation-range: entry 100% cover 60%; }
+    .programme-sessions > li:nth-child(4)::before { animation-range: cover 20% cover 65%; }
   }
 }
 
 /* ---------- Compact layouts ---------- */
 @media (max-width: 1023px) {
-  .hero { grid-template-columns: 1fr; min-height: 0; padding-top: 1.5rem; }
-  .hero-art { order: -1; justify-self: end; width: min(15rem, 58vw); margin-bottom: .5rem; }
-  .hero--card .hero-art { order: 0; justify-self: stretch; width: 100%; max-width: 30rem; aspect-ratio: auto; min-height: 22rem; margin: 2.5rem 0 0; container-type: normal; }
-  .hero--card .art-a { width: 17rem; }
-  .hero--card .art-b { width: 7.5rem; }
-  .hero--card .art-star { width: 3rem; bottom: 55%; }
-  .hero--card .art-dot { width: 1.6rem; left: 9rem; }
-  .hero--card .art-glyph { font-size: 3.25rem; }
-  .hero--card .hero-card { width: min(92%, 22rem); }
+  /* The hero reads headline → photograph → detail */
+  .hero { grid-template-columns: minmax(0, 1fr); row-gap: 1.25rem; padding-top: 1.25rem; }
+  .hero-copy { display: contents; }
+  .hero .hero-copy > * { order: 3; margin-block: 0; }
+  .hero .hero-copy > :is(.eyebrow, h1, .hero-subtitle, .lede) { order: 1; }
+  .hero .hero-copy > h1 { margin-bottom: .25rem; }
+  .hero .hero-copy > .price { margin-top: .5rem; }
+  .hero .hero-copy > .actions { margin-top: .75rem; }
+  .hero-media, .hero-visual { order: 2; }
+  .hero-media { aspect-ratio: 4 / 3; min-height: 0; max-height: 34rem; margin-block: .75rem 1rem; }
+  .hero-visual > .hero-media { aspect-ratio: 4 / 3; margin-bottom: 0; }
+  .hero-visual { margin-block: .75rem 1rem; }
+  .hero-card { position: relative; left: auto; bottom: auto; width: auto; max-width: 26rem; margin: -3rem 1rem 0; }
+
+  .split-media { grid-template-columns: minmax(0, 1fr); row-gap: 2.25rem; }
+  .split-media > .media { aspect-ratio: 4 / 3; }
+  .split-media--reverse > .media { order: 0; }
+
+
+  .cta-band { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .cta-art { grid-column: 1; grid-row: 1; height: clamp(12rem, 46vw, 19rem); margin: calc(-1 * var(--band-pad-y)) calc(-1 * var(--band-pad-x)) 0; }
+  .cta-content { grid-row: 2; }
+  .cta-art > img { -webkit-mask-image: linear-gradient(180deg, #000 45%, transparent 100%); mask-image: linear-gradient(180deg, #000 45%, transparent 100%); }
 }
 @media (max-width: 599px) {
-  .hero-art { width: min(12.5rem, 52vw); }
   .hero-copy > p:not(.price, .lede, .eyebrow) { font-size: 1.0625rem; }
+  .grid > .grid-media { min-height: 0; aspect-ratio: 4 / 3; }
+  .programme-facts, .programme-sessions { grid-template-columns: minmax(0, 1fr); }
+  .teacher-preview-card { column-gap: 1rem; padding: 1.15rem 1.2rem; }
+  .teacher-avatar { width: 3.75rem; font-size: 1.5rem; }
 }
-
-/* ---------- Teacher previews (injected by utils.js where a page has them) ---------- */
-.editorial-artwork { max-width: 100%; margin: 2.5rem 0 0; overflow: hidden; border-radius: var(--md-sys-shape-corner-extra-large); background: var(--md-sys-color-surface-container-low); }
-.editorial-artwork img { display: block; width: 100%; height: clamp(18rem, 42vw, 31rem); padding: clamp(1rem, 3vw, 2rem); object-fit: contain; }
-.teacher-preview-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--group-gap); margin: 2rem 0; }
-.teacher-preview-card { overflow: hidden; border-radius: var(--md-sys-shape-corner-extra-large); background: var(--md-sys-color-surface-container-low); }
-.teacher-preview-media { aspect-ratio: 4/3; overflow: hidden; background: var(--md-sys-color-primary-container); }
-.teacher-preview-media img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.teacher-preview-body { padding: 1.35rem; }
-.teacher-preview-location { margin-bottom: .5rem !important; color: var(--md-sys-color-primary) !important; font-size: .88rem; font-weight: 580; }
-@media (max-width: 839px) { .teacher-preview-grid { grid-template-columns: 1fr; } }
-.tone-inverse .teacher-preview-card { background: color-mix(in srgb, var(--md-sys-color-inverse-on-surface) 9%, transparent); }

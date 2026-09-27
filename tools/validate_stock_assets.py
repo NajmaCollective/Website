@@ -20,6 +20,7 @@ for asset in assets:
     assert master['height'] <= source['native_height'], asset['id']
     assert source['provider'] == 'Unsplash', asset['id']
     assert source['page_url'].startswith('https://unsplash.com/photos/'), asset['id']
+    assert {960, 1920} <= {version['width'] for version in asset['web']}, asset['id']
     for version in [master, *asset['web']]:
         path = (root / version['path']).resolve()
         assert path.is_relative_to(root / 'assets/stock'), version['path']
@@ -30,5 +31,5 @@ for asset in assets:
         assert version['height'] <= master['height'], version['path']
         checked += 1
 assert len(assets) == manifest['summary']['unique_assets'] == 50
-assert checked == manifest['summary']['asset_files'] == 150
+assert checked == manifest['summary']['asset_files']
 print(f'PASS: {len(assets)} assets, {checked} image files; hashes, resolution and source bounds verified.')
