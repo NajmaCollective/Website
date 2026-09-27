@@ -126,7 +126,9 @@ main > section.tonal + section, main > section + section.tonal { border-top: 0; 
   .section-head { grid-column: 1; }
   .section-body { grid-column: 2; }
   main > section > :is(.grid, .cards, .teacher-grid, .section-foot) { grid-column: 1 / -1; }
-  main > section > .section-head:has(+ .section-body) { position: sticky; top: var(--sticky-top); }
+  /* A sticky grid item is constrained by the whole section, so only a section's sole heading
+     sticks, and only when no second heading or full-width content follows it. */
+  main > section:not(:has(> .section-head ~ .section-head, > :is(.grid, .cards, .teacher-grid, .section-foot))) > .section-head:has(+ .section-body) { position: sticky; top: var(--sticky-top); }
   /* The reading copy starts level with the heading text rather than its icon. */
   .section-head:has(> h2 > .decorative-icon) + .section-body { padding-top: calc(2.75rem + 1.15rem); }
   .section-body + .section-head { margin-top: 0; }
