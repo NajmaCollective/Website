@@ -11,9 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;icon_names=accessibility_new,calendar_add_on,calendar_month,campaign,category,chat,co_present,contact_support,corporate_fare,description,diversity_3,event,event_available,event_seat,expand_less,expand_more,explore,fact_check,flag,forum,groups,handshake,help,history_edu,how_to_vote,lightbulb,local_cafe,location_on,mail,manage_accounts,menu,payments,person,person_search,pie_chart,play_circle,potted_plant,public,quiz,rate_review,record_voice_over,route,schedule,school,sell,stairs,timeline,timer,translate,trending_up,tune,videocam,volunteer_activism,waving_hand,work&amp;display=block">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;icon_names=accessibility_new,calendar_add_on,calendar_month,campaign,category,chat,co_present,contact_support,corporate_fare,description,diversity_3,event,event_available,event_seat,expand_less,expand_more,explore,fact_check,flag,forum,handshake,help,history_edu,how_to_vote,lightbulb,local_cafe,location_on,mail,manage_accounts,menu,payments,person,person_search,pie_chart,play_circle,potted_plant,public,quiz,rate_review,record_voice_over,route,schedule,school,sell,stairs,timeline,timer,translate,trending_up,tune,videocam,volunteer_activism,waving_hand,work&amp;display=block">
   <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/shapes.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -56,70 +55,97 @@
           <md-text-button href="lessons.html"><span slot="icon" class="material-symbols-outlined" aria-hidden="true">sell</span>See lessons and prices</md-text-button>
         </div>
       </div>
-      <div class="hero-art hero-art--teachers" aria-hidden="true"><span class="art-a"></span><span class="art-b"><span class="art-glyph material-symbols-outlined">diversity_3</span></span><span class="art-star"></span><span class="art-dot"></span></div>
-    </section>
-    <section>
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">explore</span>Explore teaching areas</h2>
-      <p>Choose an area to find teachers whose profile includes relevant experience.</p>
-      <div class="chips" role="group" aria-label="Teaching areas">
-        <md-filter-chip data-area="all" label="All teachers"></md-filter-chip>
-        <md-filter-chip data-area="general" label="General English"></md-filter-chip>
-        <md-filter-chip data-area="professional" label="Professional English"></md-filter-chip>
-        <md-filter-chip data-area="academic" label="Academic English"></md-filter-chip>
-        <md-filter-chip data-area="exam" label="Exam preparation"></md-filter-chip>
-        <md-filter-chip data-area="advocacy" label="Advocacy and civil society"></md-filter-chip>
+      <div class="hero-media">
+        <img src="assets/stock/web/reading/reading-by-the-window---8XKPC-lLHU-1920.webp" srcset="assets/stock/web/reading/reading-by-the-window---8XKPC-lLHU-960.webp 960w, assets/stock/web/reading/reading-by-the-window---8XKPC-lLHU-1920.webp 1920w" sizes="(min-width: 1440px) 540px, (min-width: 1200px) 41vw, (min-width: 1024px) 41vw, (min-width: 600px) 93vw, 90vw" width="1920" height="2880" alt="A person holds an open book beside a bright window." fetchpriority="high" decoding="async" style="--focus: 50% 45%">
       </div>
-      <p id="filter-status" class="visually-hidden" aria-live="polite"></p>
     </section>
     <section>
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">co_present</span>Meet the teachers</h2>
+      <div class="section-head">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">explore</span>Explore teaching areas</h2>
+      </div>
+      <div class="section-body">
+        <p>Choose an area to find teachers whose profile includes relevant experience.</p>
+        <div class="chips" role="group" aria-label="Teaching areas">
+          <md-filter-chip data-area="all" label="All teachers"></md-filter-chip>
+          <md-filter-chip data-area="general" label="General English"></md-filter-chip>
+          <md-filter-chip data-area="professional" label="Professional English"></md-filter-chip>
+          <md-filter-chip data-area="academic" label="Academic English"></md-filter-chip>
+          <md-filter-chip data-area="exam" label="Exam preparation"></md-filter-chip>
+          <md-filter-chip data-area="advocacy" label="Advocacy and civil society"></md-filter-chip>
+        </div>
+        <p id="filter-status" class="visually-hidden" aria-live="polite"></p>
+      </div>
+    </section>
+    <section>
+      <div class="section-head">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">co_present</span>Meet the teachers</h2>
+      </div>
       <div id="teacher-grid" class="teacher-grid"></div>
     </section>
-    <section>
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">person_search</span>Choosing a teacher</h2>
-      <p>A teacher’s profile can help you decide whether their experience and approach fit what you want to work on. The teaching highlights give you a quick overview, while the full profile includes qualifications, experience, languages and available services.</p>
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">timeline</span>Continuity as you learn</h2>
-      <p>Working with the same teacher over time allows your lessons to develop as they get to know you. You can revisit earlier learning and change the focus as your English improves.</p>
-      <p>If your schedule or priorities change, you can book another available Najma teacher. They can build on your previous lessons so your learning continues through the change.</p>
-      <a href="lessons.html">See lessons and prices</a>
-    </section>
-    <section class="tonal tone-tertiary">
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">waving_hand</span>Meet a teacher before you book</h2>
-      <p>Both current teachers offer a free 20-minute individual needs analysis. Use the booking button on the teacher’s profile to find an available appointment.</p>
-      <md-filled-button href="#teacher-grid"><span slot="icon" class="material-symbols-outlined" aria-hidden="true">person_search</span>Choose a teacher</md-filled-button>
-    </section>
-    <section>
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">help</span>Frequently asked questions</h2>
-      <div class="faq">
-        <section>
-          <h3>Do all Najma teachers offer the same lessons?</h3>
-          <p>Each profile shows the services that teacher currently offers. The published profiles include private lessons, short private lessons, a free individual needs analysis and bespoke organisational programmes.</p>
-        </section>
-        <md-divider></md-divider>
-        <section>
-          <h3>Do private lessons cost the same with every teacher?</h3>
-          <p>Yes. Standard private lessons cost £20 for 55 minutes during the pilot. A 25-minute lesson costs £10 where a teacher offers it.</p>
-        </section>
-        <md-divider></md-divider>
-        <section>
-          <h3>Can I book lessons with more than one teacher?</h3>
-          <p>Yes. You can continue with one teacher or book another available teacher when you want a different focus or appointment time. Your new teacher can build on what you have already studied.</p>
-        </section>
-        <md-divider></md-divider>
-        <section>
-          <h3>Where does the profile information come from?</h3>
-          <p>The qualifications, experience, teaching approach and services shown on each profile come from information supplied by the teacher for their Najma profile.</p>
-        </section>
-        <md-divider></md-divider>
+    <section class="split-media">
+      <figure class="media">
+        <img src="assets/stock/web/online-learning/focus-by-the-window--NLuDzsdyQ6M-1920.webp" srcset="assets/stock/web/online-learning/focus-by-the-window--NLuDzsdyQ6M-960.webp 960w, assets/stock/web/online-learning/focus-by-the-window--NLuDzsdyQ6M-1920.webp 1920w, assets/stock/web/online-learning/focus-by-the-window--NLuDzsdyQ6M-2560.webp 2560w" sizes="(min-width: 1440px) 830px, (min-width: 1200px) 64vw, (min-width: 1024px) 64vw, (min-width: 600px) 104vw, 102vw" width="1920" height="1280" alt="A woman wearing headphones works at a laptop on a window ledge." loading="lazy" decoding="async" style="--focus: 66% 50%">
+      </figure>
+      <div class="split-text">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">person_search</span>Choosing a teacher</h2>
+        <p>A teacher’s profile can help you decide whether their experience and approach fit what you want to work on. The teaching highlights give you a quick overview, while the full profile includes qualifications, experience, languages and available services.</p>
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">timeline</span>Continuity as you learn</h2>
+        <p>Working with the same teacher over time allows your lessons to develop as they get to know you. You can revisit earlier learning and change the focus as your English improves.</p>
+        <p>If your schedule or priorities change, you can book another available Najma teacher. They can build on your previous lessons so your learning continues through the change.</p>
+        <a href="lessons.html">See lessons and prices</a>
       </div>
     </section>
-    <section class="tonal tone-inverse">
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">event_available</span>Book your lesson</h2>
-      <p>Read the profiles, choose a teacher and open their booking calendar to see available appointments.</p>
-      <div class="actions">
-        <md-filled-button href="#teacher-grid"><span slot="icon" class="material-symbols-outlined" aria-hidden="true">person_search</span>Find a teacher</md-filled-button>
-        <md-text-button href="lessons.html"><span slot="icon" class="material-symbols-outlined" aria-hidden="true">sell</span>See lessons and prices</md-text-button>
+    <section class="tonal tone-tertiary feature feature--reverse">
+      <figure class="feature-media media">
+        <img src="assets/stock/web/online-learning/a-welcoming-video-call--s2uH89aClpE-1920.webp" srcset="assets/stock/web/online-learning/a-welcoming-video-call--s2uH89aClpE-960.webp 960w, assets/stock/web/online-learning/a-welcoming-video-call--s2uH89aClpE-1920.webp 1920w, assets/stock/web/online-learning/a-welcoming-video-call--s2uH89aClpE-2560.webp 2560w" sizes="(min-width: 1440px) 940px, (min-width: 1200px) 72vw, (min-width: 1024px) 95vw, (min-width: 600px) 103vw, 106vw" width="1920" height="1080" alt="A woman smiles and waves at her laptop from a desk with an open notebook." loading="lazy" decoding="async" style="--focus: 56% 50%">
+      </figure>
+      <div class="feature-body">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">waving_hand</span>Meet a teacher before you book</h2>
+        <p>Both current teachers offer a free 20-minute individual needs analysis. Use the booking button on the teacher’s profile to find an available appointment.</p>
+        <md-filled-button href="#teacher-grid"><span slot="icon" class="material-symbols-outlined" aria-hidden="true">person_search</span>Choose a teacher</md-filled-button>
       </div>
+    </section>
+    <section>
+      <div class="section-head">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">help</span>Frequently asked questions</h2>
+      </div>
+      <div class="section-body">
+        <div class="faq">
+          <section>
+            <h3>Do all Najma teachers offer the same lessons?</h3>
+            <p>Each profile shows the services that teacher currently offers. The published profiles include private lessons, short private lessons, a free individual needs analysis and bespoke organisational programmes.</p>
+          </section>
+          <md-divider></md-divider>
+          <section>
+            <h3>Do private lessons cost the same with every teacher?</h3>
+            <p>Yes. Standard private lessons cost £20 for 55 minutes during the pilot. A 25-minute lesson costs £10 where a teacher offers it.</p>
+          </section>
+          <md-divider></md-divider>
+          <section>
+            <h3>Can I book lessons with more than one teacher?</h3>
+            <p>Yes. You can continue with one teacher or book another available teacher when you want a different focus or appointment time. Your new teacher can build on what you have already studied.</p>
+          </section>
+          <md-divider></md-divider>
+          <section>
+            <h3>Where does the profile information come from?</h3>
+            <p>The qualifications, experience, teaching approach and services shown on each profile come from information supplied by the teacher for their Najma profile.</p>
+          </section>
+          <md-divider></md-divider>
+        </div>
+      </div>
+    </section>
+    <section class="tonal tone-inverse cta-band">
+      <div class="cta-content">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">event_available</span>Book your lesson</h2>
+        <p>Read the profiles, choose a teacher and open their booking calendar to see available appointments.</p>
+        <div class="actions">
+          <md-filled-button href="#teacher-grid"><span slot="icon" class="material-symbols-outlined" aria-hidden="true">person_search</span>Find a teacher</md-filled-button>
+          <md-text-button href="lessons.html"><span slot="icon" class="material-symbols-outlined" aria-hidden="true">sell</span>See lessons and prices</md-text-button>
+        </div>
+      </div>
+      <figure class="cta-art" aria-hidden="true">
+        <img src="assets/stock/web/illustrations/building-a-rhythm--LP1_iwrHTrE-1920.webp" srcset="assets/stock/web/illustrations/building-a-rhythm--LP1_iwrHTrE-960.webp 960w, assets/stock/web/illustrations/building-a-rhythm--LP1_iwrHTrE-1920.webp 1920w" sizes="(min-width: 1440px) 860px, (min-width: 1200px) 61vw, (min-width: 1024px) 65vw, (min-width: 600px) 93vw, 95vw" width="1920" height="1080" alt="" loading="lazy" decoding="async" style="--focus: 66% 50%">
+      </figure>
     </section>
   </main>
   <footer>

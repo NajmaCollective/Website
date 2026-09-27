@@ -11,9 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;icon_names=accessibility_new,calendar_add_on,calendar_month,campaign,category,chat,co_present,contact_support,corporate_fare,description,diversity_3,event,event_available,event_seat,expand_less,expand_more,explore,fact_check,flag,forum,groups,handshake,help,history_edu,how_to_vote,lightbulb,local_cafe,location_on,mail,manage_accounts,menu,payments,person,person_search,pie_chart,play_circle,potted_plant,public,quiz,rate_review,record_voice_over,route,schedule,school,sell,stairs,timeline,timer,translate,trending_up,tune,videocam,volunteer_activism,waving_hand,work&amp;display=block">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;icon_names=accessibility_new,calendar_add_on,calendar_month,campaign,category,chat,co_present,contact_support,corporate_fare,description,diversity_3,event,event_available,event_seat,expand_less,expand_more,explore,fact_check,flag,forum,handshake,help,history_edu,how_to_vote,lightbulb,local_cafe,location_on,mail,manage_accounts,menu,payments,person,person_search,pie_chart,play_circle,potted_plant,public,quiz,rate_review,record_voice_over,route,schedule,school,sell,stairs,timeline,timer,translate,trending_up,tune,videocam,volunteer_activism,waving_hand,work&amp;display=block">
   <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/shapes.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -36,10 +35,14 @@
         </div>
         <p><a href="model.html#consultation">For organisations: Arrange a free consultation</a></p>
       </div>
-      <div class="hero-art hero-art--lessons" aria-hidden="true"><span class="art-a"></span><span class="art-b"><span class="art-glyph material-symbols-outlined">school</span></span><span class="art-star"></span><span class="art-dot"></span></div>
+      <div class="hero-media">
+        <img src="assets/stock/web/online-learning/comfortable-with-learning--CPz2KWjCwDQ-1920.webp" srcset="assets/stock/web/online-learning/comfortable-with-learning--CPz2KWjCwDQ-960.webp 960w, assets/stock/web/online-learning/comfortable-with-learning--CPz2KWjCwDQ-1920.webp 1920w, assets/stock/web/online-learning/comfortable-with-learning--CPz2KWjCwDQ-2560.webp 2560w" sizes="(min-width: 1440px) 1000px, (min-width: 1200px) 77vw, (min-width: 1024px) 77vw, (min-width: 600px) 104vw, 102vw" width="1920" height="1404" alt="A woman in a blue headscarf smiles while using a laptop on a sofa." fetchpriority="high" decoding="async" style="--focus: 42% 40%">
+      </div>
     </section>
     <section>
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">sell</span>Private lesson options</h2>
+      <div class="section-head">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">sell</span>Private lesson options</h2>
+      </div>
       <div class="cards three">
         <article class="tonal">
           <h3 class="icon-heading"><span class="card-icon decorative-icon material-symbols-outlined" aria-hidden="true">person</span>Private lessons</h3>
@@ -64,9 +67,16 @@
       </div>
     </section>
     <section>
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">explore</span>What would you like to study?</h2>
-      <p>Your teacher can help you study English more generally or concentrate on one of the areas below. Their profile explains the experience they bring to that work.</p>
+      <div class="section-head">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">explore</span>What would you like to study?</h2>
+      </div>
+      <div class="section-body">
+        <p>Your teacher can help you study English more generally or concentrate on one of the areas below. Their profile explains the experience they bring to that work.</p>
+      </div>
       <div class="grid">
+        <figure class="grid-media media">
+          <img src="assets/stock/web/reading/time-for-a-chapter--GpbEuMKFQew-1920.webp" srcset="assets/stock/web/reading/time-for-a-chapter--GpbEuMKFQew-960.webp 960w, assets/stock/web/reading/time-for-a-chapter--GpbEuMKFQew-1920.webp 1920w" sizes="(min-width: 1440px) 680px, (min-width: 1200px) 51vw, (min-width: 1024px) 71vw, (min-width: 600px) 114vw, 102vw" width="1920" height="1280" alt="A woman reads a book at a wooden table beside a mug." loading="lazy" decoding="async" style="--focus: 50% 62%">
+        </figure>
         <article>
           <h3 class="icon-heading"><span class="card-icon decorative-icon material-symbols-outlined" aria-hidden="true">chat</span>General English</h3>
           <p>Improve your fluency through conversation about everyday life and topics that interest you. As you speak, your teacher can help you express your meaning more clearly and understand language that feels unfamiliar. Reading and writing can also form part of your lessons.</p>
@@ -88,118 +98,167 @@
           <p>Work on the English you use in advocacy and organising, whether you are explaining an issue to partners or preparing to speak in public. You can develop a briefing or rehearse a campaign discussion with your teacher, paying attention to how your message will be understood by different audiences.</p>
         </article>
       </div>
-      <md-filled-button href="teachers.html"><span slot="icon" class="material-symbols-outlined" aria-hidden="true">person_search</span>Find a teacher</md-filled-button>
+      <div class="section-foot">
+        <md-filled-button href="teachers.html"><span slot="icon" class="material-symbols-outlined" aria-hidden="true">person_search</span>Find a teacher</md-filled-button>
+      </div>
+    </section>
+    <section class="split-media split-media--reverse">
+      <figure class="media">
+        <img src="assets/stock/web/mentoring/learning-through-conversation--LQ1t-8Ms5PY-1920.webp" srcset="assets/stock/web/mentoring/learning-through-conversation--LQ1t-8Ms5PY-960.webp 960w, assets/stock/web/mentoring/learning-through-conversation--LQ1t-8Ms5PY-1920.webp 1920w, assets/stock/web/mentoring/learning-through-conversation--LQ1t-8Ms5PY-2560.webp 2560w" sizes="(min-width: 1440px) 830px, (min-width: 1200px) 64vw, (min-width: 1024px) 64vw, (min-width: 600px) 104vw, 102vw" width="1920" height="1280" alt="Two women talk across a small table in a bright room." loading="lazy" decoding="async" style="--focus: 50% 50%">
+      </figure>
+      <div class="split-text">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">trending_up</span>How lessons develop</h2>
+        <p>You and your teacher agree what to work on first. They may suggest an activity or material after hearing how you use English and what you would like to do more easily.</p>
+        <p>As you continue, later lessons can return to earlier work and introduce new language when it becomes useful. Your teacher can adjust the pace and focus as your priorities change.</p>
+      </div>
     </section>
     <section>
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">trending_up</span>How lessons develop</h2>
-      <p>You and your teacher agree what to work on first. They may suggest an activity or material after hearing how you use English and what you would like to do more easily.</p>
-      <p>As you continue, later lessons can return to earlier work and introduce new language when it becomes useful. Your teacher can adjust the pace and focus as your priorities change.</p>
+      <div class="section-head">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">volunteer_activism</span>What your fee supports</h2>
+      </div>
+      <div class="section-body">
+        <p>Najma is run by its teachers. During the pilot, 80% of revenue from a paid lesson goes to the teacher who delivers it. The remaining 20% supports the collective’s shared roles and includes a proposed contribution to Al Manar.</p>
+        <p>The proposed 5% contribution to Al Manar and the public relationship begin once Al Manar approves the arrangement. Revenue shares are calculated after refunds and before payment-processing charges.</p>
+        <a href="about.html">About Najma</a>
+      </div>
     </section>
     <section>
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">volunteer_activism</span>What your fee supports</h2>
-      <p>Najma is run by its teachers. During the pilot, 80% of revenue from a paid lesson goes to the teacher who delivers it. The remaining 20% supports the collective’s shared roles and includes a proposed contribution to Al Manar.</p>
-      <p>The proposed 5% contribution to Al Manar and the public relationship begin once Al Manar approves the arrangement. Revenue shares are calculated after refunds and before payment-processing charges.</p>
-      <a href="about.html">About Najma</a>
+      <div class="section-head">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">route</span>How it works</h2>
+      </div>
+      <div class="section-body">
+        <ol class="steps">
+          <li>
+            <h3 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">flag</span>1. Decide what you want from your lessons</h3>
+            <p>You may have a specific task in mind or want to improve your English over time. A free introductory appointment can help you discuss these priorities with a teacher, where one is offered.</p>
+          </li>
+          <li>
+            <h3 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">person_search</span>2. Find a teacher</h3>
+            <p>Explore each teacher’s professional background and approach to teaching, then check their available appointments.</p>
+          </li>
+          <li>
+            <h3 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">event_available</span>3. Choose a time and book</h3>
+            <p>Choose an appointment in the teacher’s booking calendar and follow the payment instructions to confirm your lesson.</p>
+          </li>
+          <li>
+            <h3 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">videocam</span>4. Meet your teacher online</h3>
+            <p>Use the joining link in your booking details to meet your teacher online. The lesson gives you time to practise the English you have agreed to focus on and discuss the feedback you receive.</p>
+          </li>
+          <li>
+            <h3 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">stairs</span>5. Build on your learning</h3>
+            <p>You can continue with the same teacher or book another available Najma teacher as your needs change. Later lessons can build on your earlier learning.</p>
+          </li>
+        </ol>
+      </div>
     </section>
     <section>
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">route</span>How it works</h2>
-      <ol class="steps">
-        <li>
-          <h3 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">flag</span>1. Decide what you want from your lessons</h3>
-          <p>You may have a specific task in mind or want to improve your English over time. A free introductory appointment can help you discuss these priorities with a teacher, where one is offered.</p>
-        </li>
-        <li>
-          <h3 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">person_search</span>2. Find a teacher</h3>
-          <p>Explore each teacher’s professional background and approach to teaching, then check their available appointments.</p>
-        </li>
-        <li>
-          <h3 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">event_available</span>3. Choose a time and book</h3>
-          <p>Choose an appointment in the teacher’s booking calendar and follow the payment instructions to confirm your lesson.</p>
-        </li>
-        <li>
-          <h3 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">videocam</span>4. Meet your teacher online</h3>
-          <p>Use the joining link in your booking details to meet your teacher online. The lesson gives you time to practise the English you have agreed to focus on and discuss the feedback you receive.</p>
-        </li>
-        <li>
-          <h3 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">stairs</span>5. Build on your learning</h3>
-          <p>You can continue with the same teacher or book another available Najma teacher as your needs change. Later lessons can build on your earlier learning.</p>
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">co_present</span>Meet the teachers</h2>
-      <p>Our teachers bring professional English teaching experience, including work with Palestinian learners in demanding circumstances. Their profiles explain their particular areas of expertise and give you a sense of what it would be like to learn with them.</p>
-      <p>[Teacher card 1: approved photograph · name · verified qualification(s) · relevant experience · teaching focus · available lesson types · booking link]</p>
-      <p>[Teacher card 2: approved photograph · name · verified qualification(s) · relevant experience · teaching focus · available lesson types · booking link]</p>
-      <p>[Teacher card 3 if confirmed]</p>
-      <a href="teachers.html">Find a teacher</a>
+      <div class="section-head">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">co_present</span>Meet the teachers</h2>
+      </div>
+      <div class="section-body">
+        <p>Our teachers bring professional English teaching experience, including work with Palestinian learners in demanding circumstances. Their profiles explain their particular areas of expertise and give you a sense of what it would be like to learn with them.</p>
+        <p>[Teacher card 1: approved photograph · name · verified qualification(s) · relevant experience · teaching focus · available lesson types · booking link]</p>
+        <p>[Teacher card 2: approved photograph · name · verified qualification(s) · relevant experience · teaching focus · available lesson types · booking link]</p>
+        <p>[Teacher card 3 if confirmed]</p>
+        <a href="teachers.html">Find a teacher</a>
+      </div>
     </section>
     <section class="tonal tone-primary">
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">fact_check</span>Check your English level</h2>
-      <p>The British Council’s free online level test gives an approximate guide to your English through questions about grammar and vocabulary. You will need a free LearnEnglish account to take it. You can discuss the result with your teacher when you begin.</p>
+      <div class="section-head">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">fact_check</span>Check your English level</h2>
+      </div>
+      <div class="section-body">
+        <p>The British Council’s free online level test gives an approximate guide to your English through questions about grammar and vocabulary. You will need a free LearnEnglish account to take it. You can discuss the result with your teacher when you begin.</p>
+      </div>
     </section>
     <section>
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">timeline</span>How lessons connect over time</h2>
-      <p>Regular lessons give your teacher time to understand how you learn and what you want to achieve. Together you can return to difficult areas and recognise the progress you make.</p>
-      <p>As your English develops, the focus of your lessons can change with it. You might spend several sessions on an area that needs attention or bring a new task when one arises.</p>
-      <p>If you choose another Najma teacher, they can build on what you have already studied so that your learning continues across the change.</p>
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">pie_chart</span>How your lesson fee supports Najma</h2>
-      <p>Najma keeps shared costs low so that private lessons can remain affordable. During the pilot, 80% of paid revenue is allocated to the teacher delivering the work. The remaining 20% funds shared roles and includes a proposed contribution to Al Manar.</p>
-      <p>Teachers retain professional control over their methods and materials. The About page explains the full allocation of fees and the proposed relationship with Al Manar.</p>
+      <div class="section-head">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">timeline</span>How lessons connect over time</h2>
+      </div>
+      <div class="section-body">
+        <p>Regular lessons give your teacher time to understand how you learn and what you want to achieve. Together you can return to difficult areas and recognise the progress you make.</p>
+        <p>As your English develops, the focus of your lessons can change with it. You might spend several sessions on an area that needs attention or bring a new task when one arises.</p>
+        <p>If you choose another Najma teacher, they can build on what you have already studied so that your learning continues across the change.</p>
+      </div>
+      <div class="section-head">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">pie_chart</span>How your lesson fee supports Najma</h2>
+      </div>
+      <div class="section-body">
+        <p>Najma keeps shared costs low so that private lessons can remain affordable. During the pilot, 80% of paid revenue is allocated to the teacher delivering the work. The remaining 20% funds shared roles and includes a proposed contribution to Al Manar.</p>
+        <p>Teachers retain professional control over their methods and materials. The About page explains the full allocation of fees and the proposed relationship with Al Manar.</p>
+      </div>
     </section>
-    <section class="tonal tone-tertiary">
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">corporate_fare</span>Learning with your organisation</h2>
-      <p class="price">Group sessions: £10 per learner for 55 minutes, with a minimum of four learners. Private lessons: £20 per learner for 55 minutes.</p>
-      <p>Najma offers specialist English teaching for advocacy and organising alongside business English and professional communication training. Your organisation supplies the participant group, or you can arrange private lessons for individual staff or members. After a free consultation, a lead teacher prepares a written proposal covering the programme and its booking terms.</p>
-      <p>Your proposal confirms the number of learners and sessions, together with the total programme fee, before teaching begins. Your lead teacher will normally design and deliver the programme.</p>
-      <p class="link-row"><a href="model.html#consultation">Arrange a free consultation</a> · <a href="model.html">Explore programmes for organisations</a></p>
+    <section class="tonal tone-tertiary feature feature--banner">
+      <figure class="feature-media media">
+        <img src="assets/stock/web/collaboration/a-thoughtful-exchange--LVooQvKjLjw-1920.webp" srcset="assets/stock/web/collaboration/a-thoughtful-exchange--LVooQvKjLjw-960.webp 960w, assets/stock/web/collaboration/a-thoughtful-exchange--LVooQvKjLjw-1920.webp 1920w, assets/stock/web/collaboration/a-thoughtful-exchange--LVooQvKjLjw-2560.webp 2560w" sizes="(min-width: 1440px) 1210px, (min-width: 1200px) 93vw, (min-width: 1024px) 92vw, (min-width: 600px) 93vw, 95vw" width="1920" height="1440" alt="Colleagues talk across a table with open laptops." loading="lazy" decoding="async" style="--focus: 50% 20%">
+      </figure>
+      <div class="feature-body">
+        <div class="section-head">
+          <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">corporate_fare</span>Learning with your organisation</h2>
+        </div>
+        <div class="section-body">
+          <p class="price">Group sessions: £10 per learner for 55 minutes, with a minimum of four learners. Private lessons: £20 per learner for 55 minutes.</p>
+          <p>Najma offers specialist English teaching for advocacy and organising alongside business English and professional communication training. Your organisation supplies the participant group, or you can arrange private lessons for individual staff or members. After a free consultation, a lead teacher prepares a written proposal covering the programme and its booking terms.</p>
+          <p>Your proposal confirms the number of learners and sessions, together with the total programme fee, before teaching begins. Your lead teacher will normally design and deliver the programme.</p>
+          <p class="link-row"><a href="model.html#consultation">Arrange a free consultation</a> · <a href="model.html">Explore programmes for organisations</a></p>
+        </div>
+      </div>
     </section>
-    <section class="tonal tone-inverse">
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">local_cafe</span>Meet Najma at the Solidarity Café</h2>
-      <p class="price">Free during the pilot · Normally 55–75 minutes</p>
-      <p>Meet people who care about solidarity and social change through an informal online conversation. English is our shared language, with B1 or above recommended, and you are welcome to listen as well as speak. You can come to the Café before booking lessons.</p>
-      <a href="join.html">Explore the Solidarity Café</a>
-      <p>Read about the collective’s purpose, teacher-led model and solidarity commitments on our About page.</p>
-      <a href="about.html">About Najma</a>
+    <section class="tonal tone-inverse cta-band">
+      <div class="cta-content">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">local_cafe</span>Meet Najma at the Solidarity Café</h2>
+        <p class="price">Free during the pilot · Normally 55–75 minutes</p>
+        <p>Meet people who care about solidarity and social change through an informal online conversation. English is our shared language, with B1 or above recommended, and you are welcome to listen as well as speak. You can come to the Café before booking lessons.</p>
+        <a href="join.html">Explore the Solidarity Café</a>
+        <p>Read about the collective’s purpose, teacher-led model and solidarity commitments on our About page.</p>
+        <a href="about.html">About Najma</a>
+      </div>
+      <figure class="cta-art" aria-hidden="true">
+        <img src="assets/stock/web/illustrations/folded-possibilities--XJaPfJz7xW8-1920.webp" srcset="assets/stock/web/illustrations/folded-possibilities--XJaPfJz7xW8-960.webp 960w, assets/stock/web/illustrations/folded-possibilities--XJaPfJz7xW8-1920.webp 1920w, assets/stock/web/illustrations/folded-possibilities--XJaPfJz7xW8-2560.webp 2560w" sizes="(min-width: 1440px) 1240px, (min-width: 1200px) 96vw, (min-width: 1024px) 106vw, (min-width: 600px) 93vw, 95vw" width="1920" height="1080" alt="" loading="lazy" decoding="async" style="--focus: 62% 50%">
+      </figure>
     </section>
     <section id="cancellations">
-      <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">help</span>Practical questions</h2>
-      <div class="faq">
-        <section>
-          <h3>How do I book a lesson?</h3>
-          <p>Choose a teacher, open their available appointments and select the lesson you want. The booking page will show the teacher’s name, the duration and the price before you pay. Your lesson is confirmed when payment is received.</p>
-        </section>
-        <md-divider></md-divider>
-        <section>
-          <h3>Where do lessons take place?</h3>
-          <p>Lessons take place online. Your booking confirmation tells you which meeting platform the teacher uses and gives you the joining link.</p>
-        </section>
-        <md-divider></md-divider>
-        <section>
-          <h3>How can I check my English level?</h3>
-          <p>The British Council’s free online level test gives an approximate guide to your English through grammar and vocabulary questions. You need a free LearnEnglish account to take it. Your teacher can discuss the result with you when you begin.</p>
-        </section>
-        <md-divider></md-divider>
-        <section>
-          <h3>What happens if I need to cancel?</h3>
-          <p>For private lessons, you can choose a full refund or one transfer to another available lesson if you give at least 24 hours’ notice. With less notice, the fee remains payable. Your teacher may offer extra flexibility in exceptional circumstances. If your teacher cancels, you can choose a full refund or a transfer.</p>
-        </section>
-        <md-divider></md-divider>
-        <section>
-          <h3>Can I change teachers?</h3>
-          <p>Yes. You can continue with the same teacher or book another available Najma teacher. Your new teacher can use your learning record to build on your earlier lessons.</p>
-        </section>
-        <md-divider></md-divider>
-        <section>
-          <h3>Who can see my learning record?</h3>
-          <p>Access is limited to people who need the record for teaching or learner support, including booking administration. Email info@najmacollective.org to ask about your information or request a correction or a restriction on access.</p>
-        </section>
-        <md-divider></md-divider>
-        <section>
-          <h3>How can I ask a question or give feedback?</h3>
-          <p>Email info@najmacollective.org for help with lessons or booking. You can use the same address to share feedback or raise a concern.</p>
-        </section>
-        <md-divider></md-divider>
+      <div class="section-head">
+        <h2 class="icon-heading"><span class="decorative-icon material-symbols-outlined" aria-hidden="true">help</span>Practical questions</h2>
+      </div>
+      <div class="section-body">
+        <div class="faq">
+          <section>
+            <h3>How do I book a lesson?</h3>
+            <p>Choose a teacher, open their available appointments and select the lesson you want. The booking page will show the teacher’s name, the duration and the price before you pay. Your lesson is confirmed when payment is received.</p>
+          </section>
+          <md-divider></md-divider>
+          <section>
+            <h3>Where do lessons take place?</h3>
+            <p>Lessons take place online. Your booking confirmation tells you which meeting platform the teacher uses and gives you the joining link.</p>
+          </section>
+          <md-divider></md-divider>
+          <section>
+            <h3>How can I check my English level?</h3>
+            <p>The British Council’s free online level test gives an approximate guide to your English through grammar and vocabulary questions. You need a free LearnEnglish account to take it. Your teacher can discuss the result with you when you begin.</p>
+          </section>
+          <md-divider></md-divider>
+          <section>
+            <h3>What happens if I need to cancel?</h3>
+            <p>For private lessons, you can choose a full refund or one transfer to another available lesson if you give at least 24 hours’ notice. With less notice, the fee remains payable. Your teacher may offer extra flexibility in exceptional circumstances. If your teacher cancels, you can choose a full refund or a transfer.</p>
+          </section>
+          <md-divider></md-divider>
+          <section>
+            <h3>Can I change teachers?</h3>
+            <p>Yes. You can continue with the same teacher or book another available Najma teacher. Your new teacher can use your learning record to build on your earlier lessons.</p>
+          </section>
+          <md-divider></md-divider>
+          <section>
+            <h3>Who can see my learning record?</h3>
+            <p>Access is limited to people who need the record for teaching or learner support, including booking administration. Email info@najmacollective.org to ask about your information or request a correction or a restriction on access.</p>
+          </section>
+          <md-divider></md-divider>
+          <section>
+            <h3>How can I ask a question or give feedback?</h3>
+            <p>Email info@najmacollective.org for help with lessons or booking. You can use the same address to share feedback or raise a concern.</p>
+          </section>
+          <md-divider></md-divider>
+        </div>
       </div>
     </section>
   </main>

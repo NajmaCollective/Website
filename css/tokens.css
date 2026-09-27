@@ -26,6 +26,7 @@
   --md-sys-color-surface-container-highest: #e0e3d9;
   --md-sys-color-on-surface: #202720;
   --md-sys-color-on-surface-variant: #50594f;
+  --najma-on-surface-variant: #50594f; /* light-surface value, restored inside white cards on tonal bands */
   --md-sys-color-inverse-surface: #203e32;
   --md-sys-color-inverse-on-surface: #f0f6eb;
   --md-sys-color-inverse-primary: #b0d9bd;
@@ -62,6 +63,7 @@
   --md-sys-motion-effects-default: 200ms cubic-bezier(.34, .80, .34, 1);
   --md-sys-motion-effects-slow: 300ms cubic-bezier(.34, .88, .34, 1);
   --md-sys-motion-easing-emphasized-decelerate: cubic-bezier(.05, .7, .1, 1);
+  --md-sys-motion-easing-emphasized: cubic-bezier(.2, 0, 0, 1);
 
   /* Elevation */
   --shadow-color: 24 46 32;
@@ -73,13 +75,13 @@
   --content-width: 1320px;
   --gutter: clamp(20px, 4vw, 56px);
   --group-gap: clamp(12px, 1.4vw, 20px);
+  --section-space: clamp(4.5rem, 8.5vw, 8rem);
+  --sticky-top: 7.5rem;
   --radius: var(--md-sys-shape-corner-extra-large);
   --radius-small: var(--md-sys-shape-corner-large);
+  --media-radius: var(--md-sys-shape-corner-extra-extra-large);
 
-  /* Kept for older rules that still reference them */
-  --ambient-peach: var(--md-sys-color-tertiary-container);
-  --ambient-gold: var(--md-sys-color-secondary-container);
-  --ambient-rose: var(--md-sys-color-primary-container);
-  --shadow-1: var(--md-sys-elevation-1);
-  --shadow-2: var(--md-sys-elevation-2);
+  /* The Najma star, used beside eyebrow labels (same point count as the logo's star) */
+  --shape-star: polygon(50% 0%,52.2% 0.4%,54.2% 1.6%,56% 4.2%,57.6% 7.2%,58.9% 9.8%,60.1% 12.2%,61.2% 14.3%,62.3% 16.3%,63.5% 17.5%,65.2% 17.5%,67.3% 16.8%,69.6% 16.1%,72.1% 15.3%,74.9% 14.4%,78.1% 13.4%,81.2% 12.8%,83.6% 13.4%,85.4% 14.6%,86.6% 16.4%,87.2% 18.8%,86.6% 21.9%,85.6% 25.1%,84.7% 27.9%,83.9% 30.4%,83.2% 32.7%,82.5% 34.8%,82.5% 36.5%,83.7% 37.7%,85.7% 38.8%,87.8% 39.9%,90.2% 41.1%,92.8% 42.4%,95.8% 44%,98.4% 45.8%,99.6% 47.8%,100% 50%,99.6% 52.2%,98.4% 54.2%,95.8% 56%,92.8% 57.6%,90.2% 58.9%,87.8% 60.1%,85.7% 61.2%,83.7% 62.3%,82.5% 63.5%,82.5% 65.2%,83.2% 67.3%,83.9% 69.6%,84.7% 72.1%,85.6% 74.9%,86.6% 78.1%,87.2% 81.2%,86.6% 83.6%,85.4% 85.4%,83.6% 86.6%,81.2% 87.2%,78.1% 86.6%,74.9% 85.6%,72.1% 84.7%,69.6% 83.9%,67.3% 83.2%,65.2% 82.5%,63.5% 82.5%,62.3% 83.7%,61.2% 85.7%,60.1% 87.8%,58.9% 90.2%,57.6% 92.8%,56% 95.8%,54.2% 98.4%,52.2% 99.6%,50% 100%,47.8% 99.6%,45.8% 98.4%,44% 95.8%,42.4% 92.8%,41.1% 90.2%,39.9% 87.8%,38.8% 85.7%,37.7% 83.7%,36.5% 82.5%,34.8% 82.5%,32.7% 83.2%,30.4% 83.9%,27.9% 84.7%,25.1% 85.6%,21.9% 86.6%,18.8% 87.2%,16.4% 86.6%,14.6% 85.4%,13.4% 83.6%,12.8% 81.2%,13.4% 78.1%,14.4% 74.9%,15.3% 72.1%,16.1% 69.6%,16.8% 67.3%,17.5% 65.2%,17.5% 63.5%,16.3% 62.3%,14.3% 61.2%,12.2% 60.1%,9.8% 58.9%,7.2% 57.6%,4.2% 56%,1.6% 54.2%,0.4% 52.2%,0% 50%,0.4% 47.8%,1.6% 45.8%,4.2% 44%,7.2% 42.4%,9.8% 41.1%,12.2% 39.9%,14.3% 38.8%,16.3% 37.7%,17.5% 36.5%,17.5% 34.8%,16.8% 32.7%,16.1% 30.4%,15.3% 27.9%,14.4% 25.1%,13.4% 21.9%,12.8% 18.8%,13.4% 16.4%,14.6% 14.6%,16.4% 13.4%,18.8% 12.8%,21.9% 13.4%,25.1% 14.4%,27.9% 15.3%,30.4% 16.1%,32.7% 16.8%,34.8% 17.5%,36.5% 17.5%,37.7% 16.3%,38.8% 14.3%,39.9% 12.2%,41.1% 9.8%,42.4% 7.2%,44% 4.2%,45.8% 1.6%,47.8% 0.4%);
+
 }
