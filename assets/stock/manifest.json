@@ -1,0 +1,2539 @@
+{
+  "schema_version": 1,
+  "created": "2026-09-25",
+  "scope": "Najma website editorial asset collection",
+  "summary": {
+    "unique_assets": 50,
+    "photographs": 40,
+    "illustrations": 10,
+    "master_long_edge_min": 3360,
+    "master_long_edge_max": 4000,
+    "master_short_edge_min": 2100,
+    "asset_files": 150,
+    "total_asset_bytes": 108460477
+  },
+  "assets": [
+    {
+      "id": "hCb3lIB8L8E",
+      "title": "Ideas around the table",
+      "kind": "photograph",
+      "category": "collaboration",
+      "priority": "primary",
+      "alt": "Adults exchange ideas around a wooden table with laptops.",
+      "suggested_pages": [
+        "Organisations",
+        "About"
+      ],
+      "placement_notes": "A complementary angle to QckxruozjRg. Choose one lead image per page.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Annie Spratt",
+        "page_url": "https://unsplash.com/photos/hCb3lIB8L8E",
+        "image_url": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?fm=jpg&q=95&cs=srgb",
+        "published": null,
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 7678,
+        "native_height": 5038
+      },
+      "master": {
+        "path": "assets/stock/masters/collaboration/ideas-around-the-table--hCb3lIB8L8E.jpg",
+        "width": 4000,
+        "height": 2625,
+        "bytes": 4193048,
+        "sha256": "f7ed8c5ee578d3e7633deb94d068aab60d6daf084396fc1fcefdd2d13bd511b6"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/collaboration/ideas-around-the-table--hCb3lIB8L8E-960.webp",
+          "width": 960,
+          "height": 630,
+          "bytes": 65406,
+          "sha256": "6a7efcd43236ca0b4486a3629f905c1a3d5fb598a24a85ee09b36940812d4c92"
+        },
+        {
+          "path": "assets/stock/web/collaboration/ideas-around-the-table--hCb3lIB8L8E-1920.webp",
+          "width": 1920,
+          "height": 1260,
+          "bytes": 387862,
+          "sha256": "5d11b0e5d83074000cac6d6f3342910a7dc05aa9f23c34b688ae9825f4c7eaf3"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "s2DbUV-yx2A",
+      "title": "Learning side by side",
+      "kind": "photograph",
+      "category": "collaboration",
+      "priority": "primary",
+      "alt": "Two women sit together with a laptop beside a bright window.",
+      "suggested_pages": [
+        "Lessons",
+        "About"
+      ],
+      "placement_notes": "Generous pale space suits an editorial composition. Keep both people.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Mimi Thian",
+        "page_url": "https://unsplash.com/photos/two-women-facing-silver-macbook-sitting-on-parquet-floor-s2DbUV-yx2A",
+        "image_url": "https://images.unsplash.com/photo-1531536241097-b5c69a099e79?fm=jpg&q=95&cs=srgb",
+        "published": "July 14, 2018",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 5184,
+        "native_height": 3888
+      },
+      "master": {
+        "path": "assets/stock/masters/collaboration/learning-side-by-side--s2DbUV-yx2A.jpg",
+        "width": 4000,
+        "height": 3000,
+        "bytes": 1831136,
+        "sha256": "7d179f55e7b7c47e6a3ba0ee4c9d006ae06c082e22ef4c1dd372762de209892c"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/collaboration/learning-side-by-side--s2DbUV-yx2A-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 49612,
+          "sha256": "697e568f326d5a17817801407a27e2548c7bb73a71f359186c88f155a7b57811"
+        },
+        {
+          "path": "assets/stock/web/collaboration/learning-side-by-side--s2DbUV-yx2A-1920.webp",
+          "width": 1920,
+          "height": 1440,
+          "bytes": 140294,
+          "sha256": "028397d5f9e8ef6bd4cca456dfc732cccc2e281011c63041bd8ba9c8de8b14e3"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "PSksbOVDhWk",
+      "title": "Sharing a plan",
+      "kind": "photograph",
+      "category": "collaboration",
+      "priority": "primary",
+      "alt": "Three adults discuss papers beside a chalkboard in a shared workspace.",
+      "suggested_pages": [
+        "Organisations",
+        "About"
+      ],
+      "placement_notes": "Allow space for the papers and gestures. Avoid overlaying text on faces.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Vitaly Gariev",
+        "page_url": "https://unsplash.com/photos/diverse-team-collaborating-on-a-project-in-an-office-PSksbOVDhWk",
+        "image_url": "https://images.unsplash.com/photo-1758873269811-4e62e346b4b7?fm=jpg&q=95&cs=srgb",
+        "published": "September 26, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3840,
+        "native_height": 2160
+      },
+      "master": {
+        "path": "assets/stock/masters/collaboration/sharing-a-plan--PSksbOVDhWk.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 1412388,
+        "sha256": "f8421d36247510c94b738b5a1381b33d846190bb0953a3a02f462a9e8c59e818"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/collaboration/sharing-a-plan--PSksbOVDhWk-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 74518,
+          "sha256": "492869dd1d8d8911778c001da32a0728fc0df10d2bd541c5b62eb5400036d68e"
+        },
+        {
+          "path": "assets/stock/web/collaboration/sharing-a-plan--PSksbOVDhWk-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 184226,
+          "sha256": "042121d4e30a58f417d308e4abb1db1a4787f8567d277c37d0c0fdb86a815d75"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1920,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "QckxruozjRg",
+      "title": "Team around a shared table",
+      "kind": "photograph",
+      "category": "collaboration",
+      "priority": "primary",
+      "alt": "Several adults work together with laptops around a wooden table.",
+      "suggested_pages": [
+        "Organisations",
+        "About"
+      ],
+      "placement_notes": "Keep the full group visible. Place headings beside the photograph.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Annie Spratt",
+        "page_url": "https://unsplash.com/photos/QckxruozjRg",
+        "image_url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?fm=jpg&q=95&cs=srgb",
+        "published": "March 26, 2018",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 7952,
+        "native_height": 5304
+      },
+      "master": {
+        "path": "assets/stock/masters/collaboration/team-around-a-shared-table--QckxruozjRg.jpg",
+        "width": 4000,
+        "height": 2668,
+        "bytes": 3626811,
+        "sha256": "9cee4aa855fae5360837791d9801ae497f2d56b7e1f10f136768a031789208e0"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/collaboration/team-around-a-shared-table--QckxruozjRg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 76200,
+          "sha256": "9485a42f5322e706ff9ba0b37d4ce45bf17c2a1897dfc01eb8e4e2f74cf7d6c8"
+        },
+        {
+          "path": "assets/stock/web/collaboration/team-around-a-shared-table--QckxruozjRg-1920.webp",
+          "width": 1920,
+          "height": 1281,
+          "bytes": 262986,
+          "sha256": "52598bfcffb44109cf0ff49b001f65b1aaf22ac7597335e312719cbf95a53926"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "YDWdxElP3XI",
+      "title": "Working through an idea",
+      "kind": "photograph",
+      "category": "collaboration",
+      "priority": "primary",
+      "alt": "Three colleagues gather around a laptop in a bright workspace.",
+      "suggested_pages": [
+        "Organisations"
+      ],
+      "placement_notes": "Keep the shared screen and all three people in the crop.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Vitaly Gariev",
+        "page_url": "https://unsplash.com/photos/two-colleagues-collaborating-on-a-laptop-in-office-YDWdxElP3XI",
+        "image_url": "https://images.unsplash.com/photo-1758691737083-0e7fdbde0f05?fm=jpg&q=95&cs=srgb",
+        "published": "September 24, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3840,
+        "native_height": 2160
+      },
+      "master": {
+        "path": "assets/stock/masters/collaboration/working-through-an-idea--YDWdxElP3XI.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 1189424,
+        "sha256": "4caf45ab2119450ccdf757c30f4c5df6f597519262fb4da3d9c2524f41cafd59"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/collaboration/working-through-an-idea--YDWdxElP3XI-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 57066,
+          "sha256": "c5bd47c61f3e1995baf4813095390197601d1bb671ef35f300381220e4a73b5e"
+        },
+        {
+          "path": "assets/stock/web/collaboration/working-through-an-idea--YDWdxElP3XI-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 141594,
+          "sha256": "a0f56e2e900fba601ff08bb8a47e3ac9cf28c4ba223d974a0bf1ac3f5e53e051"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1920,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "LVooQvKjLjw",
+      "title": "A thoughtful exchange",
+      "kind": "photograph",
+      "category": "collaboration",
+      "priority": "secondary",
+      "alt": "Colleagues talk across a table with open laptops.",
+      "suggested_pages": [
+        "Organisations"
+      ],
+      "placement_notes": "Keep the exchange between faces visible. A laptop sticker is present.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Mimi Thian",
+        "page_url": "https://unsplash.com/photos/woman-sitting-in-front-of-laptop-LVooQvKjLjw",
+        "image_url": "https://images.unsplash.com/photo-1531539134685-27d854339120?fm=jpg&q=95&cs=srgb",
+        "published": "July 14, 2018",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 5184,
+        "native_height": 3888
+      },
+      "master": {
+        "path": "assets/stock/masters/collaboration/a-thoughtful-exchange--LVooQvKjLjw.jpg",
+        "width": 4000,
+        "height": 3000,
+        "bytes": 1991106,
+        "sha256": "1c6abd773658abadbcccbe67b014c014597eb5eeb4abd1a5684a6ea028de8fd8"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/collaboration/a-thoughtful-exchange--LVooQvKjLjw-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 54042,
+          "sha256": "d4be86227d4e586d5106282442f8f6c028d5503adc25ccd364527477f6ddb984"
+        },
+        {
+          "path": "assets/stock/web/collaboration/a-thoughtful-exchange--LVooQvKjLjw-1920.webp",
+          "width": 1920,
+          "height": 1440,
+          "bytes": 148604,
+          "sha256": "7f5852c39f58369495060beadfe654ca799c4fcac8d2c708b514de1c64af856f"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "rMILC1PIwM0",
+      "title": "A shared discovery",
+      "kind": "photograph",
+      "category": "collaboration",
+      "priority": "reserve",
+      "alt": "A small team gathers around a laptop at a meeting table.",
+      "suggested_pages": [
+        "Organisations"
+      ],
+      "placement_notes": "Visible workplace branding makes this a secondary editorial choice.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Cherrydeck",
+        "page_url": "https://unsplash.com/photos/rMILC1PIwM0",
+        "image_url": "https://images.unsplash.com/photo-1603201667141-5a2d4c673378?fm=jpg&q=95&cs=srgb",
+        "published": null,
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 4880,
+        "native_height": 3160
+      },
+      "master": {
+        "path": "assets/stock/masters/collaboration/a-shared-discovery--rMILC1PIwM0.jpg",
+        "width": 4000,
+        "height": 2590,
+        "bytes": 2048906,
+        "sha256": "aefc00ebaab77b2ee4214c4cdf74a0b79137d6c785a1e4977dead3c7b153deb0"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/collaboration/a-shared-discovery--rMILC1PIwM0-960.webp",
+          "width": 960,
+          "height": 622,
+          "bytes": 57338,
+          "sha256": "89b831366423d147d23c9495b0565457c4a875ba86908ad0ac900fe03b31bf9c"
+        },
+        {
+          "path": "assets/stock/web/collaboration/a-shared-discovery--rMILC1PIwM0-1920.webp",
+          "width": 1920,
+          "height": 1243,
+          "bytes": 163940,
+          "sha256": "361fe80c4e941da0ff644a59303f9fbd517244228c2157cfb28a92e0055dcac6"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "t1bz9XpJ2-Y",
+      "title": "Working through a question",
+      "kind": "photograph",
+      "category": "collaboration",
+      "priority": "reserve",
+      "alt": "Three people concentrate on a computer together.",
+      "suggested_pages": [
+        "Organisations"
+      ],
+      "placement_notes": "Visible clothing branding makes this a secondary choice.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Mimi Thian",
+        "page_url": "https://unsplash.com/photos/woman-using-computer-t1bz9XpJ2-Y",
+        "image_url": "https://images.unsplash.com/photo-1531496681078-27dc2277e898?fm=jpg&q=95&cs=srgb",
+        "published": "July 13, 2018",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 5184,
+        "native_height": 3888
+      },
+      "master": {
+        "path": "assets/stock/masters/collaboration/working-through-a-question--t1bz9XpJ2-Y.jpg",
+        "width": 4000,
+        "height": 3000,
+        "bytes": 2758789,
+        "sha256": "7d8462f7a888a1fea9d34ec315e90fc67096b6b6feb0c4f7ac9d2abfa639a257"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/collaboration/working-through-a-question--t1bz9XpJ2-Y-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 61536,
+          "sha256": "134554f6ce27a19160e4d179a5634ed043614cbeabf9a9475cad1a8d1f3b9376"
+        },
+        {
+          "path": "assets/stock/web/collaboration/working-through-a-question--t1bz9XpJ2-Y-1920.webp",
+          "width": 1920,
+          "height": 1440,
+          "bytes": 220358,
+          "sha256": "82222c31a36d9f0e6569ace2b98848b938eccbe503711d0b2212dffcbc68e06a"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "g86airJZ4Gs",
+      "title": "Coffee and conversation",
+      "kind": "photograph",
+      "category": "conversation",
+      "priority": "primary",
+      "alt": "Two people hold coffee cups across a warm wooden table.",
+      "suggested_pages": [
+        "Solidarity Cafe"
+      ],
+      "placement_notes": "Use beside discussion copy. The Cafe itself meets online.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Priscilla Du Preez",
+        "page_url": "https://unsplash.com/photos/g86airJZ4Gs",
+        "image_url": "https://images.unsplash.com/photo-1542338332-76971ae8c292?fm=jpg&q=95&cs=srgb",
+        "published": null,
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 5472,
+        "native_height": 3648
+      },
+      "master": {
+        "path": "assets/stock/masters/conversation/coffee-and-conversation--g86airJZ4Gs.jpg",
+        "width": 4000,
+        "height": 2667,
+        "bytes": 3231664,
+        "sha256": "28da1a4a98849854ebd3c392086adf4bb88874bdbffb9dcf2259b3aa2025915f"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/conversation/coffee-and-conversation--g86airJZ4Gs-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 66824,
+          "sha256": "71338bef521a9eab850de049cb8a1e5991d446cb23fccd2190c842629972c0d6"
+        },
+        {
+          "path": "assets/stock/web/conversation/coffee-and-conversation--g86airJZ4Gs-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 337658,
+          "sha256": "0482577c9277976b6d6c84eb4a512df691d12c4942e7716cb222528917324481"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "K8XYGbw4Ahg",
+      "title": "Space for a conversation",
+      "kind": "photograph",
+      "category": "conversation",
+      "priority": "primary",
+      "alt": "People hold ceramic mugs around a small white table.",
+      "suggested_pages": [
+        "Solidarity Cafe"
+      ],
+      "placement_notes": "An intimate detail with broad cropping flexibility.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Priscilla Du Preez",
+        "page_url": "https://unsplash.com/photos/K8XYGbw4Ahg",
+        "image_url": "https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?fm=jpg&q=95&cs=srgb",
+        "published": null,
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 5345,
+        "native_height": 3563
+      },
+      "master": {
+        "path": "assets/stock/masters/conversation/space-for-a-conversation--K8XYGbw4Ahg.jpg",
+        "width": 4000,
+        "height": 2666,
+        "bytes": 1773763,
+        "sha256": "39f1cd4a59edafb5531d80b82601f9bfc445f2859fec8b2f5b1c1e4820a67216"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/conversation/space-for-a-conversation--K8XYGbw4Ahg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 29032,
+          "sha256": "ca80e604bb8db67fe37824375ebd67aaa69c92c192c1a88817178d97eeef6839"
+        },
+        {
+          "path": "assets/stock/web/conversation/space-for-a-conversation--K8XYGbw4Ahg-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 91760,
+          "sha256": "34bbfb922ae737c863951ed18797606ef3541be2cf929a489da743e7ae722209"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "gRmyW5p_4lQ",
+      "title": "Time to connect",
+      "kind": "photograph",
+      "category": "conversation",
+      "priority": "primary",
+      "alt": "Two women talk over coffee at an outdoor cafe.",
+      "suggested_pages": [
+        "Solidarity Cafe"
+      ],
+      "placement_notes": "Useful for an editorial conversation panel. The Cafe itself meets online.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Vitaly Gariev",
+        "page_url": "https://unsplash.com/photos/two-women-talking-at-a-cafe-table-gRmyW5p_4lQ",
+        "image_url": "https://images.unsplash.com/photo-1758525225828-c8b79730d435?fm=jpg&q=95&cs=srgb",
+        "published": "September 22, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3840,
+        "native_height": 2160
+      },
+      "master": {
+        "path": "assets/stock/masters/conversation/time-to-connect--gRmyW5p_4lQ.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 1110297,
+        "sha256": "db6c1328b80ea5f9abb8dc6f404f8adc448a6093c78343a1a8c94420ed2e20d3"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/conversation/time-to-connect--gRmyW5p_4lQ-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 38884,
+          "sha256": "97881c3ec82960ab3b2b1cb98d3f429e0b22dc82bee2504ef106832fda2d26f9"
+        },
+        {
+          "path": "assets/stock/web/conversation/time-to-connect--gRmyW5p_4lQ-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 96104,
+          "sha256": "f3a67d41e9e1cb38082c7a25083a01f7d1b03420e51b740c2c96b3687a70b724"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1920,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "tQSDhftdKOc",
+      "title": "A relaxed exchange",
+      "kind": "photograph",
+      "category": "conversation",
+      "priority": "secondary",
+      "alt": "Two women enjoy a conversation at an outdoor cafe table.",
+      "suggested_pages": [
+        "Solidarity Cafe"
+      ],
+      "placement_notes": "An alternate frame from the same session as gRmyW5p_4lQ; choose one per page.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Vitaly Gariev",
+        "page_url": "https://unsplash.com/photos/two-women-talking-at-a-cafe-with-coffee-tQSDhftdKOc",
+        "image_url": "https://images.unsplash.com/photo-1758525225745-51d91973c881?fm=jpg&q=95&cs=srgb",
+        "published": "September 22, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3840,
+        "native_height": 2160
+      },
+      "master": {
+        "path": "assets/stock/masters/conversation/a-relaxed-exchange--tQSDhftdKOc.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 1075129,
+        "sha256": "46c75d6eebe5236a034ffcfce87555ef174666f12e289b14d844a80058ec0b6b"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/conversation/a-relaxed-exchange--tQSDhftdKOc-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 37398,
+          "sha256": "85e1a3e16d0d9c3d276e5c26ed1b97dd89ce5f7f504eb466074fd2f63314beb0"
+        },
+        {
+          "path": "assets/stock/web/conversation/a-relaxed-exchange--tQSDhftdKOc-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 92800,
+          "sha256": "74c72ffea4c2c75000c6e3b07100e7e717e24160887516bed067889843af6ea3"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1920,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "snX7WwHs_1s",
+      "title": "An informal meeting",
+      "kind": "photograph",
+      "category": "conversation",
+      "priority": "secondary",
+      "alt": "Two men talk over coffee in a cafe.",
+      "suggested_pages": [
+        "Organisations",
+        "Solidarity Cafe"
+      ],
+      "placement_notes": "A professional-conversation option. Retain both speakers.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Vitaly Gariev",
+        "page_url": "https://unsplash.com/photos/two-men-in-suits-talking-at-a-cafe-snX7WwHs_1s",
+        "image_url": "https://images.unsplash.com/photo-1758519289587-addc908423e9?fm=jpg&q=95&cs=srgb",
+        "published": "September 22, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3800,
+        "native_height": 2138
+      },
+      "master": {
+        "path": "assets/stock/masters/conversation/an-informal-meeting--snX7WwHs_1s.jpg",
+        "width": 3800,
+        "height": 2138,
+        "bytes": 1231041,
+        "sha256": "b0922e37c3a07ce8f615c662709433ec33a560fecd6a8fc87138f3fed7ceb735"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/conversation/an-informal-meeting--snX7WwHs_1s-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 47716,
+          "sha256": "c7c88d0a88b6a5efeda1d13eef7d048c16acf3c1b567056c4ad1b8cbbe3d3911"
+        },
+        {
+          "path": "assets/stock/web/conversation/an-informal-meeting--snX7WwHs_1s-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 114526,
+          "sha256": "1f56e631fa7fb0ba91042946b2480e0f8ca2a125853c7e58b571c6bd367622aa"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1900,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "tSyU-mWc010",
+      "title": "Listening together",
+      "kind": "photograph",
+      "category": "conversation",
+      "priority": "secondary",
+      "alt": "Two women sit and talk at a cafe table near a brick wall.",
+      "suggested_pages": [
+        "Solidarity Cafe"
+      ],
+      "placement_notes": "A wide scene with warm tones. Preserve both faces.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Brooke Cagle",
+        "page_url": "https://unsplash.com/photos/tSyU-mWc010",
+        "image_url": "https://images.unsplash.com/photo-1653762378429-8030175fda56?fm=jpg&q=95&cs=srgb",
+        "published": null,
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 6580,
+        "native_height": 4387
+      },
+      "master": {
+        "path": "assets/stock/masters/conversation/listening-together--tSyU-mWc010.jpg",
+        "width": 4000,
+        "height": 2667,
+        "bytes": 2652133,
+        "sha256": "47370a67134c2c8536f4b10734c18e3ad3f756c23a4a8c431689c54fd6d05db2"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/conversation/listening-together--tSyU-mWc010-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 95702,
+          "sha256": "9837f3e55e99db31828e2d8285284057f0ce903fc8535ecb541bd7dce8e27307"
+        },
+        {
+          "path": "assets/stock/web/conversation/listening-together--tSyU-mWc010-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 260966,
+          "sha256": "175197a5e14587360c99b7b1e72d4d067b7ec0730959ec412c8f96cc406796b1"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "PCCpwQWoCL4",
+      "title": "Sharing something new",
+      "kind": "photograph",
+      "category": "conversation",
+      "priority": "secondary",
+      "alt": "Two women look at a phone together over coffee.",
+      "suggested_pages": [
+        "Solidarity Cafe"
+      ],
+      "placement_notes": "An alternate action from the same cafe series as tSyU-mWc010.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Brooke Cagle",
+        "page_url": "https://unsplash.com/photos/two-women-sitting-at-a-table-looking-at-a-cell-phone-PCCpwQWoCL4",
+        "image_url": "https://images.unsplash.com/photo-1653762378336-4ff600604792?fm=jpg&q=95&cs=srgb",
+        "published": "May 28, 2022",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 6571,
+        "native_height": 4381
+      },
+      "master": {
+        "path": "assets/stock/masters/conversation/sharing-something-new--PCCpwQWoCL4.jpg",
+        "width": 4000,
+        "height": 2667,
+        "bytes": 2917910,
+        "sha256": "d200171ad4dd5cd9f08f1fb1649b9e65d132fa13732cff3f6c96707d794fe2f3"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/conversation/sharing-something-new--PCCpwQWoCL4-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 111312,
+          "sha256": "667c449b3145b0fa7ff49f960a897b4758447c06cd83bceaefde4bea8898e3ec"
+        },
+        {
+          "path": "assets/stock/web/conversation/sharing-something-new--PCCpwQWoCL4-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 319406,
+          "sha256": "8911d363cb5fefb7c4db8bbf50af03dd0c29ef0ff75ca128d24825dbc653b1f3"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "BVr3XaBiWLU",
+      "title": "Looking at a shared screen",
+      "kind": "photograph",
+      "category": "creative-work",
+      "priority": "reserve",
+      "alt": "People examine a laptop screen together in a workspace.",
+      "suggested_pages": [
+        "Organisations"
+      ],
+      "placement_notes": "The screen shows code. Reserve for an explicitly technology-related context.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Desola Lanre-Ologun (profile currently displayed as X)",
+        "page_url": "https://unsplash.com/photos/woman-using-laptop-computer-beside-person-wearing-hat-BVr3XaBiWLU",
+        "image_url": "https://images.unsplash.com/photo-1526253038957-bce54e05968e?fm=jpg&q=95&cs=srgb",
+        "published": "May 13, 2018",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 6720,
+        "native_height": 4480
+      },
+      "master": {
+        "path": "assets/stock/masters/creative-work/looking-at-a-shared-screen--BVr3XaBiWLU.jpg",
+        "width": 4000,
+        "height": 2667,
+        "bytes": 2082824,
+        "sha256": "cb4f87439140e46db9e1e9135d547a1b66ac34653d1823204e5c86aba7b91134"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/creative-work/looking-at-a-shared-screen--BVr3XaBiWLU-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 50058,
+          "sha256": "3e63b7d3511b6f737feadac4efe407d3f806f7e777f16850198a59e535585f32"
+        },
+        {
+          "path": "assets/stock/web/creative-work/looking-at-a-shared-screen--BVr3XaBiWLU-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 171228,
+          "sha256": "276e72277d746357226df53df0f1bd903df8add990ee0a7d891d3ffb73988bb8"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "kwzWjTnDPLk",
+      "title": "Working side by side",
+      "kind": "photograph",
+      "category": "creative-work",
+      "priority": "reserve",
+      "alt": "Two people concentrate on a laptop together in a shared workspace.",
+      "suggested_pages": [
+        "Organisations"
+      ],
+      "placement_notes": "The screen shows code. Reserve for an explicitly technology-related context.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Desola Lanre-Ologun (profile currently displayed as X)",
+        "page_url": "https://unsplash.com/photos/man-using-black-laptop-computer-kwzWjTnDPLk",
+        "image_url": "https://images.unsplash.com/photo-1528901166007-3784c7dd3653?fm=jpg&q=95&cs=srgb",
+        "published": "June 13, 2018",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 6720,
+        "native_height": 4480
+      },
+      "master": {
+        "path": "assets/stock/masters/creative-work/working-side-by-side--kwzWjTnDPLk.jpg",
+        "width": 4000,
+        "height": 2667,
+        "bytes": 2315936,
+        "sha256": "ff7a4636c0bf65357eb0470a3bc194b527794ba022d2f56df849267ad6a95e1b"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/creative-work/working-side-by-side--kwzWjTnDPLk-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 86152,
+          "sha256": "fbb9a8e69b35a7a1ba7041ea3b44b6f57b3430ccee30ec6f9ee8935da04e5d1c"
+        },
+        {
+          "path": "assets/stock/web/creative-work/working-side-by-side--kwzWjTnDPLk-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 226780,
+          "sha256": "b9b5ec4526f872234185e9396e60666c716d9eb17645db46ef9c5fed56ae0ee6"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "acYStw5H-kc",
+      "title": "An olive canopy",
+      "kind": "photograph",
+      "category": "details",
+      "priority": "secondary",
+      "alt": "Sunlight falls through dark green olive leaves.",
+      "suggested_pages": [
+        "About"
+      ],
+      "placement_notes": "Photographed in Italy. Useful as botanical atmosphere with accurate context.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Andreas Haubold",
+        "page_url": "https://unsplash.com/photos/an-olive-tree-with-lots-of-green-leaves-acYStw5H-kc",
+        "image_url": "https://images.unsplash.com/photo-1688293686997-57bdc0cc2688?fm=jpg&q=95&cs=srgb",
+        "published": "July 2, 2023",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 6000,
+        "native_height": 4000
+      },
+      "master": {
+        "path": "assets/stock/masters/details/an-olive-canopy--acYStw5H-kc.jpg",
+        "width": 4000,
+        "height": 2667,
+        "bytes": 1974827,
+        "sha256": "b5346f49c1ae4f6c9f2052043f2320bd4b2c3d16c3e62ad67b23b33b4c43ddb9"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/details/an-olive-canopy--acYStw5H-kc-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 62164,
+          "sha256": "aff0530d4cadbd49cf876530b0a77d3c9227396193574024011abf768bdfe32c"
+        },
+        {
+          "path": "assets/stock/web/details/an-olive-canopy--acYStw5H-kc-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 155822,
+          "sha256": "02bbe776ec194aa982d8d6f1665dc971cfc8346f20fdf996261ea1ef13873f0c"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "5HROr67iRXI",
+      "title": "Handmade paper",
+      "kind": "photograph",
+      "category": "details",
+      "priority": "secondary",
+      "alt": "A small sheet of textured handmade paper rests on a pale surface.",
+      "suggested_pages": [
+        "Decorative background"
+      ],
+      "placement_notes": "A quiet material accent. Keep the paper edges visible.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Annie Spratt",
+        "page_url": "https://unsplash.com/photos/a-piece-of-paper-with-a-white-background-5HROr67iRXI",
+        "image_url": "https://images.unsplash.com/photo-1740324974135-72f7de2f5937?fm=jpg&q=95&cs=srgb",
+        "published": "February 23, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 7064,
+        "native_height": 4691
+      },
+      "master": {
+        "path": "assets/stock/masters/details/handmade-paper--5HROr67iRXI.jpg",
+        "width": 4000,
+        "height": 2656,
+        "bytes": 1851290,
+        "sha256": "5731f8683b6c7910fd754ec1bcab93c082c821e6e90bf194cf5ac0f05ec85989"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/details/handmade-paper--5HROr67iRXI-960.webp",
+          "width": 960,
+          "height": 637,
+          "bytes": 18216,
+          "sha256": "bcbe6b6afdf199f944fa98e3703bd2ef16915cdd338658796a63600c42b6b755"
+        },
+        {
+          "path": "assets/stock/web/details/handmade-paper--5HROr67iRXI-1920.webp",
+          "width": 1920,
+          "height": 1275,
+          "bytes": 78552,
+          "sha256": "803c7e519c7cd9ec5bff4177ebe5da2a05afb945779c61809af6dc6ba69318dd"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "zMcBf-n6qrs",
+      "title": "Hands at the keyboard",
+      "kind": "photograph",
+      "category": "details",
+      "priority": "secondary",
+      "alt": "Hands type on a laptop keyboard at a desk.",
+      "suggested_pages": [
+        "Lessons",
+        "Organisations"
+      ],
+      "placement_notes": "A flexible close-up for a process section.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Mimi Thian",
+        "page_url": "https://unsplash.com/photos/person-using-gray-laptop-computer-zMcBf-n6qrs",
+        "image_url": "https://images.unsplash.com/photo-1531405140001-afced33aabe5?fm=jpg&q=95&cs=srgb",
+        "published": "July 12, 2018",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 5184,
+        "native_height": 2916
+      },
+      "master": {
+        "path": "assets/stock/masters/details/hands-at-the-keyboard--zMcBf-n6qrs.jpg",
+        "width": 4000,
+        "height": 2250,
+        "bytes": 1139347,
+        "sha256": "7100343c6122bd6031a51a41e2bfd46cb7091bdea7ffbb16d89da0bdc679782b"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/details/hands-at-the-keyboard--zMcBf-n6qrs-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 30024,
+          "sha256": "d82d7b36ad71031d7830e38b24cb2cb542f9563e7c294302e3015274eb09ae9f"
+        },
+        {
+          "path": "assets/stock/web/details/hands-at-the-keyboard--zMcBf-n6qrs-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 75522,
+          "sha256": "2ed3167b3c4ac7d5a3b7a54ac30d508ca46788a0c34905568b61679adb6d7118"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "NHdIIaU3mDE",
+      "title": "Olives in the light",
+      "kind": "photograph",
+      "category": "details",
+      "priority": "secondary",
+      "alt": "An olive branch catches sunlight against a softly blurred background.",
+      "suggested_pages": [
+        "About"
+      ],
+      "placement_notes": "Photographed in Greece. Use as botanical symbolism with accurate context.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Marc Snailum",
+        "page_url": "https://unsplash.com/photos/olive-tree-branch-with-ripening-olives-against-a-blurred-background-NHdIIaU3mDE",
+        "image_url": "https://images.unsplash.com/photo-1761047726992-4e47b1dda7a3?fm=jpg&q=95&cs=srgb",
+        "published": "October 21, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 5184,
+        "native_height": 3456
+      },
+      "master": {
+        "path": "assets/stock/masters/details/olives-in-the-light--NHdIIaU3mDE.jpg",
+        "width": 4000,
+        "height": 2667,
+        "bytes": 2360333,
+        "sha256": "0ce999909197a86ab331f15f0a9d3377db0bad9e44fdc2cfe6422235b9ab3337"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/details/olives-in-the-light--NHdIIaU3mDE-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 83912,
+          "sha256": "fc72f9a55c3765e7786258cc753b8d565bdfb663def02cd5d1b4700d042be723"
+        },
+        {
+          "path": "assets/stock/web/details/olives-in-the-light--NHdIIaU3mDE-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 213672,
+          "sha256": "3f8700a1def6be1d21725187690b24ef435ce77c7041b32af4451ab4a5e85119"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "SYb4Db6789Q",
+      "title": "Colour through glass",
+      "kind": "photograph",
+      "category": "details",
+      "priority": "reserve",
+      "alt": "A transparent sphere catches small points of coloured light.",
+      "suggested_pages": [
+        "Decorative background"
+      ],
+      "placement_notes": "Abstract photography. Use sparingly for a creative accent.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Girl with red hat",
+        "page_url": "https://unsplash.com/photos/blue-green-and-red-ball-SYb4Db6789Q",
+        "image_url": "https://images.unsplash.com/photo-1616041452577-1bb802c12fca?fm=jpg&q=95&cs=srgb",
+        "published": "March 18, 2021",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 5184,
+        "native_height": 3456
+      },
+      "master": {
+        "path": "assets/stock/masters/details/colour-through-glass--SYb4Db6789Q.jpg",
+        "width": 4000,
+        "height": 2667,
+        "bytes": 3930495,
+        "sha256": "226f6c256daadf846d3eda5395e7763a904b739985be9641d30240bba8627a65"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/details/colour-through-glass--SYb4Db6789Q-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 41356,
+          "sha256": "f92d0e4e085fefae96f6bc8cfe4302f6c0de5aae80aac11ee06c678fcd44c77c"
+        },
+        {
+          "path": "assets/stock/web/details/colour-through-glass--SYb4Db6789Q-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 279458,
+          "sha256": "66b63a75791148d680477bd68671ffd7dd00fc91eec6bd62424fa74c6c43c07e"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "PACWvLRNzj8",
+      "title": "An open doorway",
+      "kind": "illustration",
+      "category": "illustrations",
+      "priority": "primary",
+      "alt": "A softly lit three-dimensional arch stands among pale spheres.",
+      "suggested_pages": [
+        "Home",
+        "About"
+      ],
+      "placement_notes": "A calm conceptual illustration. Keep the complete arch visible.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Shubham Dhage",
+        "page_url": "https://unsplash.com/photos/a-group-of-white-balls-sitting-next-to-a-white-arch-PACWvLRNzj8",
+        "image_url": "https://images.unsplash.com/photo-1632292220916-e9c34dd75db2?fm=jpg&q=95&cs=srgb",
+        "published": "September 22, 2021",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3840,
+        "native_height": 2160
+      },
+      "master": {
+        "path": "assets/stock/masters/illustrations/an-open-doorway--PACWvLRNzj8.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 496107,
+        "sha256": "56516af2921c09cf8865319ee465c5357e85c72cc4140d807f5295385a5c16b1"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/illustrations/an-open-doorway--PACWvLRNzj8-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 17574,
+          "sha256": "8397fe65ca3db0f38d705c811688aca7daca7462092e99f8ed7038ef309f2498"
+        },
+        {
+          "path": "assets/stock/web/illustrations/an-open-doorway--PACWvLRNzj8-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 45908,
+          "sha256": "910dbd5697f2622cd8ddad2174231e5595142e93de753728b54cc0a9cf260a85"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1920,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "n6aIqCWqADI",
+      "title": "Translucent folds",
+      "kind": "illustration",
+      "category": "illustrations",
+      "priority": "primary",
+      "alt": "Translucent pale sheets curve above an orange surface.",
+      "suggested_pages": [
+        "Decorative background"
+      ],
+      "placement_notes": "A warm abstract render for an expansive accent area.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Milad Fakurian",
+        "page_url": "https://unsplash.com/photos/sheets-of-translucent-material-and-orange-paper-n6aIqCWqADI",
+        "image_url": "https://images.unsplash.com/photo-1751517298174-a13aca66d165?fm=jpg&q=95&cs=srgb",
+        "published": "July 3, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 7680,
+        "native_height": 4320
+      },
+      "master": {
+        "path": "assets/stock/masters/illustrations/translucent-folds--n6aIqCWqADI.jpg",
+        "width": 4000,
+        "height": 2250,
+        "bytes": 804298,
+        "sha256": "4ff12b874586d12691e00c8da55f214b944ed14aef58050b112079329a46764e"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/illustrations/translucent-folds--n6aIqCWqADI-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 18396,
+          "sha256": "e9cc0276f4e5f97fac898710aefee6ca3fb449fa1aa1594c57a511cb951ef222"
+        },
+        {
+          "path": "assets/stock/web/illustrations/translucent-folds--n6aIqCWqADI-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 42798,
+          "sha256": "443bf0fa42d59429a287b5d4bfdb88753e33eb019982563f0bb3a81c8621bb39"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "qCYKtOov--s",
+      "title": "Warm light on dark teal",
+      "kind": "illustration",
+      "category": "illustrations",
+      "priority": "primary",
+      "alt": "Curved dark forms meet a glowing orange edge and a deep teal surface.",
+      "suggested_pages": [
+        "About",
+        "Decorative background"
+      ],
+      "placement_notes": "Pairs with Najma's deep green and warm accents. Strong dark-section option.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Milad Fakurian",
+        "page_url": "https://unsplash.com/photos/orange-and-teal-abstract-wallpaper-qCYKtOov--s",
+        "image_url": "https://images.unsplash.com/photo-1668450433152-e56d7e8fe4ee?fm=jpg&q=95&cs=srgb",
+        "published": "November 14, 2022",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 6000,
+        "native_height": 4558
+      },
+      "master": {
+        "path": "assets/stock/masters/illustrations/warm-light-on-dark-teal--qCYKtOov--s.jpg",
+        "width": 4000,
+        "height": 3039,
+        "bytes": 684498,
+        "sha256": "712e57e31bc8bcbef60e85b0cff7444b4a27b27b4cabe1fe8c658760d7462392"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/illustrations/warm-light-on-dark-teal--qCYKtOov--s-960.webp",
+          "width": 960,
+          "height": 729,
+          "bytes": 15140,
+          "sha256": "b008b8e627fde34e74cc95e983966760b11987ebd0d12cdf56095978172f1d05"
+        },
+        {
+          "path": "assets/stock/web/illustrations/warm-light-on-dark-teal--qCYKtOov--s-1920.webp",
+          "width": 1920,
+          "height": 1459,
+          "bytes": 38748,
+          "sha256": "8a66ba553c9c982d74764de422247dfdb40ea23fb8845378b823b021311f4faf"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "PjG_SXDkpwQ",
+      "title": "A continuous thread",
+      "kind": "illustration",
+      "category": "illustrations",
+      "priority": "secondary",
+      "alt": "A twisting blue and green ribbon crosses a turquoise background.",
+      "suggested_pages": [
+        "Decorative background"
+      ],
+      "placement_notes": "A flowing abstract image for a generous editorial panel.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Milad Fakurian",
+        "page_url": "https://unsplash.com/photos/pink-green-and-blue-spiral-illustration-PjG_SXDkpwQ",
+        "image_url": "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?fm=jpg&q=95&cs=srgb",
+        "published": "April 11, 2021",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 4096,
+        "native_height": 3112
+      },
+      "master": {
+        "path": "assets/stock/masters/illustrations/a-continuous-thread--PjG_SXDkpwQ.jpg",
+        "width": 4000,
+        "height": 3039,
+        "bytes": 3024937,
+        "sha256": "3fbd478a38a5db0b8a9c1df545ea23a7477e48ef0ca41180efaae6f48bc1fb2a"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/illustrations/a-continuous-thread--PjG_SXDkpwQ-960.webp",
+          "width": 960,
+          "height": 729,
+          "bytes": 29072,
+          "sha256": "5fb9e41db36d9544d852b536f978689f47bcf99d5977382fe212974195801480"
+        },
+        {
+          "path": "assets/stock/web/illustrations/a-continuous-thread--PjG_SXDkpwQ-1920.webp",
+          "width": 1920,
+          "height": 1459,
+          "bytes": 97258,
+          "sha256": "d835c7a0684dd3c7af31d59ee8328ba6cb292a797a2d88b11c4a4e718a9eb90f"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "G0qTNcwmCaQ",
+      "title": "A small beginning",
+      "kind": "illustration",
+      "category": "illustrations",
+      "priority": "secondary",
+      "alt": "A stylised three-dimensional tree stands in a softly lit space.",
+      "suggested_pages": [
+        "About"
+      ],
+      "placement_notes": "A conceptual growth illustration. Keep the whole tree visible.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Shubham Dhage",
+        "page_url": "https://unsplash.com/photos/a-small-green-tree-with-two-leaves-on-top-of-it-G0qTNcwmCaQ",
+        "image_url": "https://images.unsplash.com/photo-1632295151535-0393793fdf69?fm=jpg&q=95&cs=srgb",
+        "published": "September 22, 2021",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3840,
+        "native_height": 2160
+      },
+      "master": {
+        "path": "assets/stock/masters/illustrations/a-small-beginning--G0qTNcwmCaQ.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 381771,
+        "sha256": "51fb8e07034d1397c8859fa6e1247411d22fbcb721f8181edbc5c81615e93a91"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/illustrations/a-small-beginning--G0qTNcwmCaQ-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 11548,
+          "sha256": "03a8144c7092d881018509432475a44e2e890dbf2aadf1fee8032cac24a74517"
+        },
+        {
+          "path": "assets/stock/web/illustrations/a-small-beginning--G0qTNcwmCaQ-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 34982,
+          "sha256": "94d8217ac3ef9fa1f957b1090a4ac2da9f8d2164f58568dc1c5646419762af53"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1920,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "XJaPfJz7xW8",
+      "title": "Folded possibilities",
+      "kind": "illustration",
+      "category": "illustrations",
+      "priority": "secondary",
+      "alt": "A layered golden and blue geometric form floats against black.",
+      "suggested_pages": [
+        "About",
+        "Decorative background"
+      ],
+      "placement_notes": "Keep the complete sculpture. A standalone editorial accent.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Shubham Dhage",
+        "page_url": "https://unsplash.com/photos/a-bunch-of-different-colored-papers-on-a-black-background-XJaPfJz7xW8",
+        "image_url": "https://images.unsplash.com/photo-1631727498457-617d1d6178d4?fm=jpg&q=95&cs=srgb",
+        "published": "September 15, 2021",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3840,
+        "native_height": 2160
+      },
+      "master": {
+        "path": "assets/stock/masters/illustrations/folded-possibilities--XJaPfJz7xW8.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 393280,
+        "sha256": "170dfa0700500ed45f1cff80b351b7f4fb074173d2e24cab72a8f7ab805c14ed"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/illustrations/folded-possibilities--XJaPfJz7xW8-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 17986,
+          "sha256": "ecdfa2cfd66c7438ac2fbfa3a0ed910bc986212a3c843803e268ee2b07406ace"
+        },
+        {
+          "path": "assets/stock/web/illustrations/folded-possibilities--XJaPfJz7xW8-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 45184,
+          "sha256": "be546678d8235d8f38689ede760d48464bf957664b3e6732aed952faa60546fa"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1920,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "UYgrVfIhBec",
+      "title": "Rhythm in motion",
+      "kind": "illustration",
+      "category": "illustrations",
+      "priority": "secondary",
+      "alt": "A curved sequence of blue and violet ribbons crosses a soft background.",
+      "suggested_pages": [
+        "Decorative background"
+      ],
+      "placement_notes": "An optional bolder colour direction. Keep behind empty space or beside copy.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Milad Fakurian",
+        "page_url": "https://unsplash.com/photos/pink-green-and-blue-abstract-painting-UYgrVfIhBec",
+        "image_url": "https://images.unsplash.com/photo-1617791160505-6f00504e3519?fm=jpg&q=95&cs=srgb",
+        "published": "April 7, 2021",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3360,
+        "native_height": 2100
+      },
+      "master": {
+        "path": "assets/stock/masters/illustrations/rhythm-in-motion--UYgrVfIhBec.jpg",
+        "width": 3360,
+        "height": 2100,
+        "bytes": 1292106,
+        "sha256": "11e276e7d0dffce36f8c866c8334ba3595154f8b2f5ec317cef81e4a7c2ae807"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/illustrations/rhythm-in-motion--UYgrVfIhBec-960.webp",
+          "width": 960,
+          "height": 600,
+          "bytes": 39436,
+          "sha256": "797b9b135d00adbe24e099924faf100fd20b2635d66f6e1c928ae09af07ebee7"
+        },
+        {
+          "path": "assets/stock/web/illustrations/rhythm-in-motion--UYgrVfIhBec-1920.webp",
+          "width": 1920,
+          "height": 1200,
+          "bytes": 102088,
+          "sha256": "63a43aa83bea077bdd0a3b9e8534bcd08c34b1e19f1742874cb913c1979b84cc"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1680,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "iFu2HILEng8",
+      "title": "Soft colour field",
+      "kind": "illustration",
+      "category": "illustrations",
+      "priority": "secondary",
+      "alt": "A smooth abstract gradient shifts through blue and violet.",
+      "suggested_pages": [
+        "Decorative background"
+      ],
+      "placement_notes": "Use as a restrained accent layer. Validate text contrast separately.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Milad Fakurian",
+        "page_url": "https://unsplash.com/photos/purple-and-green-light-gradient-iFu2HILEng8",
+        "image_url": "https://images.unsplash.com/photo-1618397746666-63405ce5d015?fm=jpg&q=95&cs=srgb",
+        "published": "April 14, 2021",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 4000,
+        "native_height": 3000
+      },
+      "master": {
+        "path": "assets/stock/masters/illustrations/soft-colour-field--iFu2HILEng8.jpg",
+        "width": 4000,
+        "height": 3000,
+        "bytes": 2168425,
+        "sha256": "a5debadf5bbf4e82d1274e9906711670238a0655134f21ddd5cfec83f66c172c"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/illustrations/soft-colour-field--iFu2HILEng8-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 11238,
+          "sha256": "fbd1c3b6e974bfedce21d2f06dc451ef619ee247d4c347729bd9a9bf721b7489"
+        },
+        {
+          "path": "assets/stock/web/illustrations/soft-colour-field--iFu2HILEng8-1920.webp",
+          "width": 1920,
+          "height": 1440,
+          "bytes": 36974,
+          "sha256": "d543ce1e61dd00d9649f5426db1b491f74d7140b07420c72bc62925e8e77d70b"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "8UP_QbfMfPM",
+      "title": "An unfolding form",
+      "kind": "illustration",
+      "category": "illustrations",
+      "priority": "reserve",
+      "alt": "A sculptural abstract flower glows in violet and warm red against black.",
+      "suggested_pages": [
+        "Decorative background"
+      ],
+      "placement_notes": "A dramatic alternate direction for a single accent section.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Shubham Dhage",
+        "page_url": "https://unsplash.com/photos/a-computer-generated-image-of-an-abstract-flower-8UP_QbfMfPM",
+        "image_url": "https://images.unsplash.com/photo-1632373564014-5d6b90fd8f80?fm=jpg&q=95&cs=srgb",
+        "published": "September 23, 2021",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3840,
+        "native_height": 2160
+      },
+      "master": {
+        "path": "assets/stock/masters/illustrations/an-unfolding-form--8UP_QbfMfPM.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 452417,
+        "sha256": "d33f9cf7a55f42b059fe39c5c0f402418533cfc9bfe4948e27c3b2e2e04f1c68"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/illustrations/an-unfolding-form--8UP_QbfMfPM-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 16236,
+          "sha256": "76df9a5e634b0618589e2744f9494099db678bba2e3702109b8e89341cb1f9e2"
+        },
+        {
+          "path": "assets/stock/web/illustrations/an-unfolding-form--8UP_QbfMfPM-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 39394,
+          "sha256": "a80d995c0e45e07d0703d116279b7f7d6c4d6bd5863d00d8fb61331aa801b863"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1920,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "LP1_iwrHTrE",
+      "title": "Building a rhythm",
+      "kind": "illustration",
+      "category": "illustrations",
+      "priority": "reserve",
+      "alt": "A sequence of pale rings rises into a sculptural cone against black.",
+      "suggested_pages": [
+        "Decorative background"
+      ],
+      "placement_notes": "A monochrome alternative for a single dark panel.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Shubham Dhage",
+        "page_url": "https://unsplash.com/photos/a-black-and-white-photo-of-a-very-tall-cone-LP1_iwrHTrE",
+        "image_url": "https://images.unsplash.com/photo-1632243359674-b252eb4a5e65?fm=jpg&q=95&cs=srgb",
+        "published": "September 21, 2021",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 7680,
+        "native_height": 4320
+      },
+      "master": {
+        "path": "assets/stock/masters/illustrations/building-a-rhythm--LP1_iwrHTrE.jpg",
+        "width": 4000,
+        "height": 2250,
+        "bytes": 405654,
+        "sha256": "44e073a5f36b9ca7b76b079939c042d27f6cc0acb13966393c5e40149c42789c"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/illustrations/building-a-rhythm--LP1_iwrHTrE-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 12196,
+          "sha256": "c0c0e2a2ada95130559feec3d9ab9ffd447f46f45fc727b78f9a5e006414aaeb"
+        },
+        {
+          "path": "assets/stock/web/illustrations/building-a-rhythm--LP1_iwrHTrE-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 28530,
+          "sha256": "6fbe963492810c164155e13b57998d47d32383873296cb9cf7888ea53551d466"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "dKBTFoarrOU",
+      "title": "A conversation on the sofa",
+      "kind": "photograph",
+      "category": "mentoring",
+      "priority": "primary",
+      "alt": "Two women review a laptop together on a sofa beside a bright window.",
+      "suggested_pages": [
+        "Lessons",
+        "About"
+      ],
+      "placement_notes": "Retain both people and the laptop. A generous landscape panel suits this scene.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Christina @ wocintechchat.com M",
+        "page_url": "https://unsplash.com/photos/two-woman-siting-on-sofa-inside-room-dKBTFoarrOU",
+        "image_url": "https://images.unsplash.com/photo-1573496782646-e8d943a4bdd1?fm=jpg&q=95&cs=srgb",
+        "published": "November 11, 2019",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 6016,
+        "native_height": 4016
+      },
+      "master": {
+        "path": "assets/stock/masters/mentoring/a-conversation-on-the-sofa--dKBTFoarrOU.jpg",
+        "width": 4000,
+        "height": 2670,
+        "bytes": 2890632,
+        "sha256": "6c9573cf2ec40c41f046b5b6a0738dd8815f37a59d128d638c92b9a8cc34dc22"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/mentoring/a-conversation-on-the-sofa--dKBTFoarrOU-960.webp",
+          "width": 960,
+          "height": 641,
+          "bytes": 98114,
+          "sha256": "16318c694019c8381b7e2e43c7231b72cde65b7b1b44297d6659f8044689f1e9"
+        },
+        {
+          "path": "assets/stock/web/mentoring/a-conversation-on-the-sofa--dKBTFoarrOU-1920.webp",
+          "width": 1920,
+          "height": 1282,
+          "bytes": 323832,
+          "sha256": "729e6f1ad20c9efb040dd43aa8cd11e7bb057fd67183ccb3c221682caa454c80"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "LQ1t-8Ms5PY",
+      "title": "Learning through conversation",
+      "kind": "photograph",
+      "category": "mentoring",
+      "priority": "primary",
+      "alt": "Two women talk across a small table in a bright room.",
+      "suggested_pages": [
+        "Lessons",
+        "About"
+      ],
+      "placement_notes": "Retain both faces. The window supplies natural breathing space.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Christina @ wocintechchat.com M",
+        "page_url": "https://unsplash.com/photos/two-women-sitting-beside-table-and-talking-LQ1t-8Ms5PY",
+        "image_url": "https://images.unsplash.com/photo-1573497491208-6b1acb260507?fm=jpg&q=95&cs=srgb",
+        "published": "November 11, 2019",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 5760,
+        "native_height": 3840
+      },
+      "master": {
+        "path": "assets/stock/masters/mentoring/learning-through-conversation--LQ1t-8Ms5PY.jpg",
+        "width": 4000,
+        "height": 2667,
+        "bytes": 2041594,
+        "sha256": "fb569acd8d6ca7d8c0e7a767eca454ee206e4ae8ae442f05fcd396f7f31750a1"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/mentoring/learning-through-conversation--LQ1t-8Ms5PY-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 55628,
+          "sha256": "523c1e490845bd98439f53f7155f6a21625942aeb312c6b1a00b5c11f7936142"
+        },
+        {
+          "path": "assets/stock/web/mentoring/learning-through-conversation--LQ1t-8Ms5PY-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 148622,
+          "sha256": "c921897ae482e986e39cf90ba36bab5ea93ff171220e05d998edacd9848dac2c"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "4PU-OC8sW98",
+      "title": "Planning the next step",
+      "kind": "photograph",
+      "category": "mentoring",
+      "priority": "primary",
+      "alt": "Two women talk and take notes across a white table.",
+      "suggested_pages": [
+        "Lessons",
+        "Organisations"
+      ],
+      "placement_notes": "Use the open tabletop for a gentle crop. Keep both faces unobscured.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Christina @ wocintechchat.com M",
+        "page_url": "https://unsplash.com/photos/two-women-taking-to-each-other-while-holding-pens-4PU-OC8sW98",
+        "image_url": "https://images.unsplash.com/photo-1573496267526-08a69e46a409?fm=jpg&q=95&cs=srgb",
+        "published": "November 11, 2019",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 5855,
+        "native_height": 3909
+      },
+      "master": {
+        "path": "assets/stock/masters/mentoring/planning-the-next-step--4PU-OC8sW98.jpg",
+        "width": 4000,
+        "height": 2671,
+        "bytes": 2202474,
+        "sha256": "24175716d6e237406cfccc7aae1e50412269f82297070667074b72be807e9a9f"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/mentoring/planning-the-next-step--4PU-OC8sW98-960.webp",
+          "width": 960,
+          "height": 641,
+          "bytes": 52380,
+          "sha256": "b6edf89ce5be0c8cb0fee646e0ff9686bd3b819d317d0f980923d503699dac37"
+        },
+        {
+          "path": "assets/stock/web/mentoring/planning-the-next-step--4PU-OC8sW98-1920.webp",
+          "width": 1920,
+          "height": 1282,
+          "bytes": 156564,
+          "sha256": "02ef88e97a12868af4c0f6399e8c0aaf8f9225fac3fceeaf8fcf256e7ded88c8"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "PviMD8jDeYE",
+      "title": "Thinking at the whiteboard",
+      "kind": "photograph",
+      "category": "mentoring",
+      "priority": "secondary",
+      "alt": "Two adults discuss a plan beside a whiteboard.",
+      "suggested_pages": [
+        "Organisations"
+      ],
+      "placement_notes": "Retain both people and some of the board. Text belongs in the page layout.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Christina @ wocintechchat.com M",
+        "page_url": "https://unsplash.com/photos/man-and-woman-standing-in-front-of-whiteboard-PviMD8jDeYE",
+        "image_url": "https://images.unsplash.com/photo-1573166826272-5acd0ef8f650?fm=jpg&q=95&cs=srgb",
+        "published": "November 7, 2019",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 6016,
+        "native_height": 4016
+      },
+      "master": {
+        "path": "assets/stock/masters/mentoring/thinking-at-the-whiteboard--PviMD8jDeYE.jpg",
+        "width": 4000,
+        "height": 2670,
+        "bytes": 2051951,
+        "sha256": "e6ff96107a788bfc2ac7d3489d068b500a95b2758e6aab10dbe18d83f19c9ca7"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/mentoring/thinking-at-the-whiteboard--PviMD8jDeYE-960.webp",
+          "width": 960,
+          "height": 641,
+          "bytes": 62372,
+          "sha256": "f21dca4485f0500cd1fea041cda602db618a51f93f3f9881056a22a7cc35e6f8"
+        },
+        {
+          "path": "assets/stock/web/mentoring/thinking-at-the-whiteboard--PviMD8jDeYE-1920.webp",
+          "width": 1920,
+          "height": 1282,
+          "bytes": 204402,
+          "sha256": "7f5f5bf88cc72680bcab555c5bf0d20c6bf44d0ac7de66fc7e91035977fba285"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "j0dCClyasFk",
+      "title": "A lively online conversation",
+      "kind": "photograph",
+      "category": "online-learning",
+      "priority": "primary",
+      "alt": "A woman wearing headphones talks at a laptop beside a large window.",
+      "suggested_pages": [
+        "Home",
+        "Lessons"
+      ],
+      "placement_notes": "Keep the gestures and laptop visible. Strong landscape hero option.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Julio Lopez",
+        "page_url": "https://unsplash.com/photos/woman-wearing-headphones-talks-at-laptop-by-window-j0dCClyasFk",
+        "image_url": "https://images.unsplash.com/photo-1759984782076-2909625b0aa8?fm=jpg&q=95&cs=srgb",
+        "published": "October 9, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 6458,
+        "native_height": 4305
+      },
+      "master": {
+        "path": "assets/stock/masters/online-learning/a-lively-online-conversation--j0dCClyasFk.jpg",
+        "width": 4000,
+        "height": 2666,
+        "bytes": 2147953,
+        "sha256": "a194907bd3febcfd7f7ab48f8abb77c9a3f739efd621d66332e141f32bad023e"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/online-learning/a-lively-online-conversation--j0dCClyasFk-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 50052,
+          "sha256": "099b4850d221b3b0f6c245509a5d66d9a5a8c51c592616939c6d52315a6bfc2f"
+        },
+        {
+          "path": "assets/stock/web/online-learning/a-lively-online-conversation--j0dCClyasFk-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 141052,
+          "sha256": "457ebdff83f2d6bdaeec4539ef90ee229342e46fa852dacc1797c47e84669527"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "s2uH89aClpE",
+      "title": "A welcoming video call",
+      "kind": "photograph",
+      "category": "online-learning",
+      "priority": "primary",
+      "alt": "A woman smiles and waves at her laptop from a desk with an open notebook.",
+      "suggested_pages": [
+        "Home",
+        "Lessons",
+        "Solidarity Cafe"
+      ],
+      "placement_notes": "Retain the hand and notebook. Suitable for a broad hero panel.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Vitaly Gariev",
+        "page_url": "https://unsplash.com/photos/woman-waving-hello-during-a-video-call-at-desk-s2uH89aClpE",
+        "image_url": "https://images.unsplash.com/photo-1758876020337-2501eeb1ede5?fm=jpg&q=95&cs=srgb",
+        "published": "September 26, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3840,
+        "native_height": 2160
+      },
+      "master": {
+        "path": "assets/stock/masters/online-learning/a-welcoming-video-call--s2uH89aClpE.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 1233291,
+        "sha256": "78b4b553ccdf718d4de48d2bd965d59d58e544a28ddc0c7a2d2666eabed381a8"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/online-learning/a-welcoming-video-call--s2uH89aClpE-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 53528,
+          "sha256": "128fd4183467278689212269eaaa799f8886e3da1ee796b14287a8554a3f8394"
+        },
+        {
+          "path": "assets/stock/web/online-learning/a-welcoming-video-call--s2uH89aClpE-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 131250,
+          "sha256": "30d959fb1b73178bdef2936c859fb5fa7083e3ec558d23c8ef00cee6b8103c0f"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1920,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "CPz2KWjCwDQ",
+      "title": "Comfortable with learning",
+      "kind": "photograph",
+      "category": "online-learning",
+      "priority": "primary",
+      "alt": "A woman in a blue headscarf smiles while using a laptop on a sofa.",
+      "suggested_pages": [
+        "Home",
+        "Lessons"
+      ],
+      "placement_notes": "A warm independent-learning image. Preserve the expression and laptop.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Adeniji Abdullahi A",
+        "page_url": "https://unsplash.com/photos/a-person-wearing-a-blue-head-scarf-and-sitting-on-a-couch-CPz2KWjCwDQ",
+        "image_url": "https://images.unsplash.com/photo-1662962066559-f9d257775a27?fm=jpg&q=95&cs=srgb",
+        "published": "September 12, 2022",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 4463,
+        "native_height": 3264
+      },
+      "master": {
+        "path": "assets/stock/masters/online-learning/comfortable-with-learning--CPz2KWjCwDQ.jpg",
+        "width": 4000,
+        "height": 2925,
+        "bytes": 2025098,
+        "sha256": "d658441c2cc1592d122b462164bdc81f36d7a35cbc3c833348253ccbb3717120"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/online-learning/comfortable-with-learning--CPz2KWjCwDQ-960.webp",
+          "width": 960,
+          "height": 702,
+          "bytes": 48938,
+          "sha256": "0c6da9118a3addda448f2b090886a83edc3e9dca824c0e18f701af4be086681f"
+        },
+        {
+          "path": "assets/stock/web/online-learning/comfortable-with-learning--CPz2KWjCwDQ-1920.webp",
+          "width": 1920,
+          "height": 1404,
+          "bytes": 151892,
+          "sha256": "49af28a242b1ba4e17fa4488ee725774d3e1527e7ae681f3893c4ae5f978c241"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "F4AS3X2swic",
+      "title": "Hello from home",
+      "kind": "photograph",
+      "category": "online-learning",
+      "priority": "primary",
+      "alt": "A man smiles and waves during a video call on a tablet.",
+      "suggested_pages": [
+        "Home",
+        "Solidarity Cafe"
+      ],
+      "placement_notes": "Preserve the raised hand. The bright wall can balance nearby copy.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Vitaly Gariev",
+        "page_url": "https://unsplash.com/photos/man-waving-hello-on-a-video-call-F4AS3X2swic",
+        "image_url": "https://images.unsplash.com/photo-1758523668846-62e58f0c62b4?fm=jpg&q=95&cs=srgb",
+        "published": "September 22, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3840,
+        "native_height": 2160
+      },
+      "master": {
+        "path": "assets/stock/masters/online-learning/hello-from-home--F4AS3X2swic.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 1138532,
+        "sha256": "7b6890dd81c47628037e54cb6267068eb697e9aa4b47c3085efbc61ed9a4aa47"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/online-learning/hello-from-home--F4AS3X2swic-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 39706,
+          "sha256": "fd8f671d12e60fd3ff0efe09ee2d53ba00147ae488348d02c795bfc33ecf81b2"
+        },
+        {
+          "path": "assets/stock/web/online-learning/hello-from-home--F4AS3X2swic-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 107496,
+          "sha256": "291f7828e6cd2f8753e8eb74e2122d48baa79e467fdf80aa8951155b241a2b06"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1920,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "bwcO8pN7MS8",
+      "title": "Notes beside the laptop",
+      "kind": "photograph",
+      "category": "online-learning",
+      "priority": "primary",
+      "alt": "A woman wearing headphones writes in a notebook beside her laptop.",
+      "suggested_pages": [
+        "Lessons"
+      ],
+      "placement_notes": "Keep the notebook in frame. Useful for a learning-process section.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Julio Lopez",
+        "page_url": "https://unsplash.com/photos/woman-wearing-headphones-studies-at-a-desk-bwcO8pN7MS8",
+        "image_url": "https://images.unsplash.com/photo-1759984782555-dd51d7eca012?fm=jpg&q=95&cs=srgb",
+        "published": "October 9, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 6492,
+        "native_height": 4328
+      },
+      "master": {
+        "path": "assets/stock/masters/online-learning/notes-beside-the-laptop--bwcO8pN7MS8.jpg",
+        "width": 4000,
+        "height": 2667,
+        "bytes": 3015391,
+        "sha256": "21679a070d427c3ef1f2af37a4910865d96ac42b7823fa8bd155f1a421eff601"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/online-learning/notes-beside-the-laptop--bwcO8pN7MS8-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 55172,
+          "sha256": "c702aac962e6616397a31923bfe0fecfc76d75e7fe88c7c749d8021ea304e9f7"
+        },
+        {
+          "path": "assets/stock/web/online-learning/notes-beside-the-laptop--bwcO8pN7MS8-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 182170,
+          "sha256": "9bf15f60d7814d33219b546484e108856a077fb9a8a3a6c334df704eb287b7cd"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "12OZwblVQUg",
+      "title": "Study in your own space",
+      "kind": "photograph",
+      "category": "online-learning",
+      "priority": "primary",
+      "alt": "A woman writes beside an open laptop and books at home.",
+      "suggested_pages": [
+        "Home",
+        "Lessons"
+      ],
+      "placement_notes": "A wide home-study composition. Preserve the books and natural setting.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Windows",
+        "page_url": "https://unsplash.com/photos/woman-in-black-hijab-sitting-on-bed-using-laptop-12OZwblVQUg",
+        "image_url": "https://images.unsplash.com/photo-1600195075976-6c1d19c956d5?fm=jpg&q=95&cs=srgb",
+        "published": "September 15, 2020",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 6000,
+        "native_height": 4002
+      },
+      "master": {
+        "path": "assets/stock/masters/online-learning/study-in-your-own-space--12OZwblVQUg.jpg",
+        "width": 4000,
+        "height": 2668,
+        "bytes": 2343427,
+        "sha256": "14d56b28e89b23b35aa328adc64ef45f117a0953885230650bc214400f404ece"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/online-learning/study-in-your-own-space--12OZwblVQUg-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 37260,
+          "sha256": "59b94ac751c4cc4fcf26a249ba89e31c6c7e13a6f1b52d0907013794b9be7974"
+        },
+        {
+          "path": "assets/stock/web/online-learning/study-in-your-own-space--12OZwblVQUg-1920.webp",
+          "width": 1920,
+          "height": 1281,
+          "bytes": 107534,
+          "sha256": "78ece88b2bbe3886098cba4e2cb623a52af247e8dc251fc85cce5f60bfd6543e"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "D8NwgmdkgOY",
+      "title": "A conversation across screens",
+      "kind": "photograph",
+      "category": "online-learning",
+      "priority": "secondary",
+      "alt": "A man makes a video call from a laptop at home.",
+      "suggested_pages": [
+        "Solidarity Cafe",
+        "Lessons"
+      ],
+      "placement_notes": "Keep the screen visible. Use as a contextual remote-conversation image.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Vitaly Gariev",
+        "page_url": "https://unsplash.com/photos/man-video-calling-two-smiling-women-on-laptop-D8NwgmdkgOY",
+        "image_url": "https://images.unsplash.com/photo-1758874573113-aa93077f421f?fm=jpg&q=95&cs=srgb",
+        "published": "September 26, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3840,
+        "native_height": 2160
+      },
+      "master": {
+        "path": "assets/stock/masters/online-learning/a-conversation-across-screens--D8NwgmdkgOY.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 1230160,
+        "sha256": "f5b6ed69d4775cbdb6385d79616099952b10f0c0b679dbf7397fb863b9c9cea3"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/online-learning/a-conversation-across-screens--D8NwgmdkgOY-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 66578,
+          "sha256": "41b0bcb8786533cdd9a56038064d621a4ee5c10513f85f932b6736cc8e4e0d84"
+        },
+        {
+          "path": "assets/stock/web/online-learning/a-conversation-across-screens--D8NwgmdkgOY-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 151870,
+          "sha256": "5f38202247a4a3dce66c61d6846b4d93efe09ea2ac77414739a35ddfb10b3761"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1920,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "pLybV75vkP4",
+      "title": "A moment of concentration",
+      "kind": "photograph",
+      "category": "online-learning",
+      "priority": "secondary",
+      "alt": "A person types at a laptop in a softly lit workspace.",
+      "suggested_pages": [
+        "Lessons"
+      ],
+      "placement_notes": "Portrait composition. Use in a tall panel rather than a wide hero crop.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Hasnain Ayaz",
+        "page_url": "https://unsplash.com/photos/person-is-working-on-a-laptop-computer-pLybV75vkP4",
+        "image_url": "https://images.unsplash.com/photo-1753613648120-d2c8d1d49002?fm=jpg&q=95&cs=srgb",
+        "published": "July 27, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 4000,
+        "native_height": 6000
+      },
+      "master": {
+        "path": "assets/stock/masters/online-learning/a-moment-of-concentration--pLybV75vkP4.jpg",
+        "width": 2667,
+        "height": 4000,
+        "bytes": 1118397,
+        "sha256": "3692b0737078c60cdc61d30b02cc9403b43ae7c779f41b0d1fa0e2fd24ce24a3"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/online-learning/a-moment-of-concentration--pLybV75vkP4-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 38108,
+          "sha256": "a7b3a98841ca90524881b2c5aebb8c3f5bd24ccb9f2c872690a4e530f53d1af3"
+        },
+        {
+          "path": "assets/stock/web/online-learning/a-moment-of-concentration--pLybV75vkP4-1920.webp",
+          "width": 1920,
+          "height": 2880,
+          "bytes": 142402,
+          "sha256": "15be764cccc6bf77ee654b2d6a1984b2c4e8115711e4fd4c96f5d5404a678ee5"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1333,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "C3V88BOoRoM",
+      "title": "A quiet place to study",
+      "kind": "photograph",
+      "category": "online-learning",
+      "priority": "secondary",
+      "alt": "A person works at a laptop beside a bright cafe window.",
+      "suggested_pages": [
+        "Lessons"
+      ],
+      "placement_notes": "Retain the laptop and warm window light. Works as a landscape detail.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Bench Accounting",
+        "page_url": "https://unsplash.com/photos/C3V88BOoRoM",
+        "image_url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?fm=jpg&q=95&cs=srgb",
+        "published": null,
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3500,
+        "native_height": 2338
+      },
+      "master": {
+        "path": "assets/stock/masters/online-learning/a-quiet-place-to-study--C3V88BOoRoM.jpg",
+        "width": 3500,
+        "height": 2338,
+        "bytes": 1248664,
+        "sha256": "f4148f3b7b8ed315ce9d71274271c6b34b39ed8403c86e7578cd978b170593e8"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/online-learning/a-quiet-place-to-study--C3V88BOoRoM-960.webp",
+          "width": 960,
+          "height": 641,
+          "bytes": 64746,
+          "sha256": "facb3ccc43aa3f6d10294b9615f7d376a86eddb555bd83f33b50f1cf84c7c265"
+        },
+        {
+          "path": "assets/stock/web/online-learning/a-quiet-place-to-study--C3V88BOoRoM-1920.webp",
+          "width": 1920,
+          "height": 1283,
+          "bytes": 172428,
+          "sha256": "1d37cab2aedc89ccb7841f0cab60e0f67aca919f3215b00253c02fdb49f5a68b"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1750,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "659kXp4SQ4g",
+      "title": "Connection at every age",
+      "kind": "photograph",
+      "category": "online-learning",
+      "priority": "secondary",
+      "alt": "An older couple joins a video call together at home.",
+      "suggested_pages": [
+        "Solidarity Cafe",
+        "About"
+      ],
+      "placement_notes": "The source depicts a family call. Use as general remote connection imagery.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Vitaly Gariev",
+        "page_url": "https://unsplash.com/photos/elderly-couple-video-calling-with-family-at-home-659kXp4SQ4g",
+        "image_url": "https://images.unsplash.com/photo-1758686254457-6aaca1ca78e0?fm=jpg&q=95&cs=srgb",
+        "published": "September 24, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3840,
+        "native_height": 2160
+      },
+      "master": {
+        "path": "assets/stock/masters/online-learning/connection-at-every-age--659kXp4SQ4g.jpg",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 1257618,
+        "sha256": "193e461cff65d2a172e5fce0b67022e8990d44b445055e351eb2a467a15b0610"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/online-learning/connection-at-every-age--659kXp4SQ4g-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 64914,
+          "sha256": "26fac04e8ead1867bb0f1b5ad24b8920312ecadc8f3be2ae5c34858fd7eafa1c"
+        },
+        {
+          "path": "assets/stock/web/online-learning/connection-at-every-age--659kXp4SQ4g-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 147478,
+          "sha256": "baf82010d3963d61a0184d38c4b6c86300474e8eaa8623610344765b164b4353"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1920,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "NLuDzsdyQ6M",
+      "title": "Focus by the window",
+      "kind": "photograph",
+      "category": "online-learning",
+      "priority": "secondary",
+      "alt": "A woman wearing headphones works at a laptop on a window ledge.",
+      "suggested_pages": [
+        "Home",
+        "Lessons"
+      ],
+      "placement_notes": "A side portrait with space around the device. Test a 4:3 crop.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Julio Lopez",
+        "page_url": "https://unsplash.com/photos/woman-wearing-headphones-works-on-a-laptop-by-window-NLuDzsdyQ6M",
+        "image_url": "https://images.unsplash.com/photo-1759903553692-8220b95cabbd?fm=jpg&q=95&cs=srgb",
+        "published": "October 8, 2025",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 6558,
+        "native_height": 4372
+      },
+      "master": {
+        "path": "assets/stock/masters/online-learning/focus-by-the-window--NLuDzsdyQ6M.jpg",
+        "width": 4000,
+        "height": 2667,
+        "bytes": 2891831,
+        "sha256": "53bbcfe8548b463baea4a7fba67aeaf2778ecba4a4899dc49ac9940e7c4dcc18"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/online-learning/focus-by-the-window--NLuDzsdyQ6M-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 46684,
+          "sha256": "1a40b7eabacca7064d04ea108e9aba6c14cde6366a083857e4b9c83b6cce4b4f"
+        },
+        {
+          "path": "assets/stock/web/online-learning/focus-by-the-window--NLuDzsdyQ6M-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 146446,
+          "sha256": "045732bc613d03c7b2172b436f4218fbb6c7329ffa4564abef02c01aa8a3047e"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "GpbEuMKFQew",
+      "title": "Time for a chapter",
+      "kind": "photograph",
+      "category": "reading",
+      "priority": "primary",
+      "alt": "A woman reads a book at a wooden table beside a mug.",
+      "suggested_pages": [
+        "Lessons"
+      ],
+      "placement_notes": "Warm natural texture. Keep the hands and book in frame.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Priscilla Du Preez 🇨🇦",
+        "page_url": "https://unsplash.com/photos/a-woman-sitting-at-a-table-reading-a-book-GpbEuMKFQew",
+        "image_url": "https://images.unsplash.com/photo-1725582205921-7d681ebca2a7?fm=jpg&q=95&cs=srgb",
+        "published": "September 6, 2024",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 5472,
+        "native_height": 3648
+      },
+      "master": {
+        "path": "assets/stock/masters/reading/time-for-a-chapter--GpbEuMKFQew.jpg",
+        "width": 4000,
+        "height": 2667,
+        "bytes": 4224535,
+        "sha256": "bb3e5b1d2889e79266f93fa7e30e6614db09dcbb788ddecfa5c83d1355c32623"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/reading/time-for-a-chapter--GpbEuMKFQew-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 101998,
+          "sha256": "a2e1b12dd4ed296deb105365671510f7f549666a99df04d60abb0ee257524ee0"
+        },
+        {
+          "path": "assets/stock/web/reading/time-for-a-chapter--GpbEuMKFQew-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 397822,
+          "sha256": "01e9820dcb1d6372440236ec519206c9e2b0076663705b75da79f10986129466"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "hANJmBwxKn0",
+      "title": "A lifelong reader",
+      "kind": "photograph",
+      "category": "reading",
+      "priority": "secondary",
+      "alt": "An older adult holds an open book during a reading activity.",
+      "suggested_pages": [
+        "Lessons",
+        "About"
+      ],
+      "placement_notes": "A close view of reading. Avoid a crop that removes the book.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Age Cymru",
+        "page_url": "https://unsplash.com/photos/a-man-reading-a-book-in-a-library-hANJmBwxKn0",
+        "image_url": "https://images.unsplash.com/photo-1685609240025-b73cac7f3e5e?fm=jpg&q=95&cs=srgb",
+        "published": "June 1, 2023",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 7591,
+        "native_height": 5061
+      },
+      "master": {
+        "path": "assets/stock/masters/reading/a-lifelong-reader--hANJmBwxKn0.jpg",
+        "width": 4000,
+        "height": 2667,
+        "bytes": 2705180,
+        "sha256": "5145165c59f01dfe0d0cde101fba75154349c92dddfec828bf5d37964bbc86cd"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/reading/a-lifelong-reader--hANJmBwxKn0-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 21334,
+          "sha256": "b72f35e9bc87b45f8761c8c1249a6b37850cbb630e46d9d66960cd09149a319c"
+        },
+        {
+          "path": "assets/stock/web/reading/a-lifelong-reader--hANJmBwxKn0-1920.webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 107182,
+          "sha256": "b7e5adc5102fa13120cc6f53a6af1fefad3dfb2f087ce0d332b4e60dc535bc6b"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 2000,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    },
+    {
+      "id": "-8XKPC-lLHU",
+      "title": "Reading by the window",
+      "kind": "photograph",
+      "category": "reading",
+      "priority": "secondary",
+      "alt": "A person holds an open book beside a bright window.",
+      "suggested_pages": [
+        "Lessons"
+      ],
+      "placement_notes": "Portrait detail. Suitable for a tall editorial panel.",
+      "source": {
+        "provider": "Unsplash",
+        "creator": "Priscilla Du Preez 🇨🇦",
+        "page_url": "https://unsplash.com/photos/a-person-reading-a-book-in-front-of-a-window--8XKPC-lLHU",
+        "image_url": "https://images.unsplash.com/photo-1725582204815-83c4e3464489?fm=jpg&q=95&cs=srgb",
+        "published": "September 6, 2024",
+        "license": "Unsplash License",
+        "license_url": "https://unsplash.com/license",
+        "checked": "2026-09-25",
+        "native_width": 3648,
+        "native_height": 5472
+      },
+      "master": {
+        "path": "assets/stock/masters/reading/reading-by-the-window---8XKPC-lLHU.jpg",
+        "width": 2667,
+        "height": 4000,
+        "bytes": 2886545,
+        "sha256": "b5a784196d34a3e40114a526fd72c527f0ec2872d267437a47e0ba7dd8facfce"
+      },
+      "web": [
+        {
+          "path": "assets/stock/web/reading/reading-by-the-window---8XKPC-lLHU-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 124040,
+          "sha256": "6980e50ca55dadf5e5988d5fde6ac30527db5b90ca2f2b00a772d4eaacc73e40"
+        },
+        {
+          "path": "assets/stock/web/reading/reading-by-the-window---8XKPC-lLHU-1920.webp",
+          "width": 1920,
+          "height": 2880,
+          "bytes": 843848,
+          "sha256": "789b4b85c3ecb4974674c0ed682ac87feee5a170f9d758a5a508fc03523c78d6"
+        }
+      ],
+      "initial_object_position": "50% 50%",
+      "maximum_uncropped_css_width_at_2x": 1333,
+      "processing": "Original aspect ratio preserved. Downsampled only when longer edge exceeded 4000 px. JPEG quality 93, full chroma; WebP quality 88. No enlargement."
+    }
+  ]
+}
