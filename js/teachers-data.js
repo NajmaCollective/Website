@@ -63,5 +63,27 @@ window.NAJMA_TEACHERS = [
       'Programmes for organisations · from £40 per 55-minute group session'
     ],
     booking: 'https://calendly.com/hannahcfenzi/30min'
+  },
+  {
+    id: 'melanie-ferreira',
+    name: 'Melanie Ferreira',
+    headline: 'Academic English and communication skills tutor with over 25 years’ experience',
+    location: 'Cambridgeshire, UK',
+    photo: null,
+    areas: ['general', 'academic', 'professional'],
+    about: 'I enjoy supporting adults with their communication skills in English. I have been teaching for over 25 years and specialise in Academic English. I have long been interested in language from a sociolinguistic perspective, including the role of English as a lingua franca globally.',
+    qualifications: ['CELTA', 'DELTA', 'MA TESOL specialising in English for Academic Purposes (EAP)'],
+    experience: 'Over 25 years teaching English for Academic Purposes and General English to adults.',
+    help: ['Conversation and speaking', 'Academic English', 'Intercultural communication', 'English as a lingua franca', 'Communication skills', 'Developing fluency'],
+    highlights: ['Academic English', 'Communication skills', 'English as a lingua franca'],
+    teaching: 'My lessons are student-focused and engaging. Together we explore your communication needs, identify areas to develop and work towards language and communication goals. Sessions are relaxed and friendly, with an emphasis on developing confidence in communicating in English.',
+    languages: 'English — native; Italian — advanced; French — intermediate; Spanish — pre-intermediate.',
+    services: [
+      'Private lesson · 55 minutes · £20',
+      'Short private lesson · 25 minutes · £10',
+      'Free needs analysis · 20 minutes',
+      'Programmes for organisations · from £40 per 55-minute group session'
+    ],
+    booking: 'https://calendly.com/hannah-ahmed/english'
   }
 ];
