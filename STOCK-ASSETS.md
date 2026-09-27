@@ -6,4 +6,4 @@ Start with the [visual catalogue](assets/stock/catalogue.html) or the [contact s
 
 There are 40 photographs and 10 abstract illustrations. Each has a large JPEG master plus 960 px and 1920 px WebP variants. All masters are at least 3,360 pixels on their longest edge.
 
-Preserve the existing web copy during implementation. Keep the Google Material 3 system and Google Material Symbols for the interface. Read the [sizing guide and suggested placements](assets/stock/README.md) before choosing image crops.
+Wording on the site follows [VOICE.md](VOICE.md). Keep the Google Material 3 system and Google Material Symbols for the interface. Read the [sizing guide and suggested placements](assets/stock/README.md) before choosing image crops.
