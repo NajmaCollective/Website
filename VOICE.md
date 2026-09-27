@@ -16,7 +16,7 @@ Confident, clear, friendly and straightforward, in the words of the British Coun
 - **Say what will happen.** Prefer “you’ll practise” and “your teacher will” to “you can practise” and “your teacher can help you”. Keep “can” and “may” for real choices and real uncertainty.
 - **Lead with the reader’s goal.** Start with what someone wants to do (speak up in meetings, pass IELTS, explain a campaign), then tell them how we help.
 - **Be concrete.** Name the situation: a job interview, a seminar, an email to a partner, a campaign briefing. A broad phrase such as “build confidence” always comes with an example.
-- **Show solidarity through facts.** Teachers keep 80% of what learners pay, each has a vote, and the collective grew from Palestinian education. State these plainly and let them speak for themselves.
+- **Show solidarity through facts.** Teachers keep 85% of what learners pay, every member has an equal stake, and the collective grew from Palestinian education. State these plainly and let them speak for themselves.
 
 ## Two registers
 
@@ -30,10 +30,10 @@ Confident, clear, friendly and straightforward, in the words of the British Coun
 - **Contractions** (we’re, you’ll, don’t) are normal everywhere except in the fixed statements below.
 - **Plain negatives are fine and often kinder**: “We don’t record sessions”, “You don’t need to book a lesson first”.
 - **Never use contrastive antithesis**: no “Not X but Y” and no “X, not Y”. Say the positive thing directly.
+- **People do things.** Make a person the subject: you, your teacher, we. Profiles, proposals, pages, lessons and fees don’t tell, show, describe, confirm, give or keep things running, so write “Learn about each teacher’s experience”, “You’ll see the price before you pay” and “Your teacher will recommend a course length”.
+- **Say less.** Each message has one home page; elsewhere, summarise it in a line and link to it. Cut any sentence that repeats what the reader has just read or explains how to read the page.
 - **Lists.** When the content is a list, write a list, in a sentence or as bullets. Avoid slogan-style triads written for rhythm alone.
-- **Rhythm.** Most sentences run 8–20 words. Follow two long sentences with a short one. Avoid starting consecutive sentences the same way.
-- **Linking.** One idea per sentence. Avoid tacking a second idea onto the end with “, with…” or “, as well as…”; give it its own sentence.
-- **Say it once.** Each message has one home page. Elsewhere, summarise it in a line and link to it.
+- **Rhythm and linking.** Read it aloud and write it the way a teacher would say it. Join ideas that belong together with ordinary words (and, so, when); a second idea tacked on with “, with…” usually reads better as its own sentence.
 
 ## Words
 
@@ -49,7 +49,7 @@ Use these terms, and only these, for the things we offer:
 | the Solidarity Café, then the Café; session; facilitator | event, meetup |
 | teacher | tutor, provider |
 | the pilot | the trial |
-| Al Manar Society for Culture & Creativity, then Al Manar | Al Manar Society (except in the fee summary) |
+| Al Manar Society for Culture & Creativity at the first mention on a page, linked to almanar-society.org; then Al Manar | Al Manar Society |
 
 Teaching areas are always General English; Business and professional English; Academic English; IELTS preparation; English for advocacy and organising.
 
@@ -58,7 +58,7 @@ Leave out management language (revenue, delivering the work, role-holders, stake
 ## Numbers and style
 
 - Prices: “£20 for 55 minutes”. Ranges take an en dash: “55–75 minutes”.
-- Percentages take the symbol: “80%”. It is clearer for international readers than “per cent”.
+- Percentages take the symbol: “85%”. It is clearer for international readers than “per cent”.
 - Levels: “intermediate English (around B1) or above”, or “B1 or above” where space is short.
 - Headings and buttons are in sentence case. Buttons start with a verb and say what happens next: “Find a teacher”, “Arrange a free consultation”, “Ask about the next Café”.
 - British spelling throughout (practise as a verb, practice as a noun; programme; organisation).
@@ -71,9 +71,9 @@ These carry commitments to learners and, for Al Manar, the terms of a charitable
 
 **Organisations.** Group sessions: £10 per learner for 55 minutes, for groups of four or more. Private lessons: £20 per learner for 55 minutes. (In running prose: “Group sessions cost £10 per learner…”.)
 
-**Fee summary** (Home, Lessons; on Organisations “your lead teacher”). During the pilot, your teacher receives 80% of what you pay. The other 20% covers the work we share, such as bookings and the Solidarity Café, and a proposed 5% contribution to Al Manar Society. That contribution will begin once Al Manar has approved it.
+**Fee summary** (Home, Lessons; on Organisations “your lead teacher”). During the pilot, your teacher receives 85% of what you pay. The other 15% covers shared work, such as bookings and the Solidarity Café, and includes a proposed 5% contribution to Al Manar Society for Culture & Creativity. That contribution will begin once Al Manar has approved it.
 
-**Full breakdown** (About only). During the pilot, 80% of the income from every paid lesson and programme goes to the teacher, or lead teacher, who teaches it. The remaining 20% is split into four equal shares of 5%. We calculate these shares after any refunds and before payment-processing fees. Those fees are paid by the person whose account receives the payment.
+**Full breakdown** (About only). During the pilot, teachers receive 85% of the fee for every lesson and programme they teach. The other 15% is split equally three ways: 5% for operations, 5% for Solidarity Café facilitation and 5% as a proposed contribution to Al Manar Society for Culture & Creativity. We calculate these shares after any refunds and before payment-processing fees, which are paid by whoever receives the payment.
 
 **Al Manar** (About only). During the pilot, we propose to give 5% of the income from paid lessons and programmes to Al Manar. Both the contribution and our public relationship with Al Manar will begin once Al Manar has approved the arrangement.
 
@@ -95,4 +95,4 @@ Profiles are in each teacher’s own voice and belong to them. Keep the factual 
 1. Read every paragraph aloud.
 2. Check each price, duration and service against the fixed statements, the teacher profiles and the booking calendars.
 3. Search the page for “not”, “load bearing” and “clean”, and check each result against the rules above.
-4. If you rename a heading in a section that shows teacher previews, update `js/utils.js` (see `DESIGN.md`).
+4. When a teacher joins, add them to `js/teachers-data.js` and to the preview list in `js/utils.js` (see `DESIGN.md`).

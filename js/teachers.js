@@ -45,7 +45,7 @@
             ${list(teacher.qualifications)}
             <h4>Teaching experience</h4>
             <p>${escapeHtml(teacher.experience)}</p>
-            <h4>What lessons with me are like</h4>
+            <h4>What my lessons are like</h4>
             <p>${escapeHtml(teacher.teaching)}</p>
             <h4>Languages</h4>
             <p>${escapeHtml(teacher.languages)}</p>
