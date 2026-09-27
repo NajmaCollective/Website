@@ -144,6 +144,7 @@ main > section.tonal + section, main > section + section.tonal { border-top: 0; 
 .grid, .cards { display: grid; gap: var(--group-gap); }
 .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .cards.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.cards.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 .grid article, .cards article {
   --icon-fill: 0;
@@ -261,7 +262,7 @@ md-filled-button .material-symbols-outlined[slot="icon"], md-outlined-button .ma
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 699px) {
-  .cards.three { grid-template-columns: 1fr; }
+  .cards.three, .cards.two { grid-template-columns: 1fr; }
 }
 @media (max-width: 599px) {
   body { font-size: 1rem; }

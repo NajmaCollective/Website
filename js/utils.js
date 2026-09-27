@@ -7,7 +7,8 @@
   const teacherPreviews = [
     { id: 'mondher-yousfi', name: 'Mondher Yousfi', location: 'Sfax, Tunisia', headline: 'English teacher specialising in General English and language test preparation', photo: 'assets/teachers/mondher-yousfi.jpg', alt: 'Portrait of Mondher Yousfi' },
     { id: 'amina', name: 'Amina', location: 'Algeria', headline: 'Trained English teacher specialising in academic English, General English and conversation', photo: null },
-    { id: 'hannah-copeland', name: 'Hannah Copeland', location: 'Bordeaux, France', headline: 'Teacher and educator specialising in academic, professional and functional English', photo: 'assets/teachers/hannah-copeland.jpg', alt: 'Portrait of Hannah Copeland' }
+    { id: 'hannah-copeland', name: 'Hannah Copeland', location: 'Bordeaux, France', headline: 'Teacher and educator specialising in academic, professional and functional English', photo: 'assets/teachers/hannah-copeland.jpg', alt: 'Portrait of Hannah Copeland' },
+    { id: 'melanie-ferreira', name: 'Melanie Ferreira', location: 'Cambridgeshire, UK', headline: 'Academic English and communication skills tutor with over 25 years’ experience', photo: 'assets/teachers/melanie-ferreira.jpg', alt: 'Portrait of Melanie Ferreira' }
   ];
 
   const monogram = teacher => {

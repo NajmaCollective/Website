@@ -30,7 +30,6 @@ The logo pairs Najma's eight-pointed star, set inside a twelve-lobed Material "c
 | | Learning with your organisation | `LVooQvKjLjw` A thoughtful exchange |
 | | Join us at the Solidarity Café | `XJaPfJz7xW8` Folded possibilities (render) |
 | Teachers | Hero | `-8XKPC-lLHU` Reading by the window |
-| | Choosing a teacher | `NLuDzsdyQ6M` Focus by the window |
 | | Meet a teacher before you book | `s2uH89aClpE` A welcoming video call |
 | | Book your lesson | `LP1_iwrHTrE` Building a rhythm (render) |
 | For organisations | Hero | `PSksbOVDhWk` Sharing a plan |
@@ -45,8 +44,7 @@ The logo pairs Najma's eight-pointed star, set inside a twelve-lobed Material "c
 | | Join the next Café | `XJaPfJz7xW8` Folded possibilities (render) |
 | About | Hero | `s2DbUV-yx2A` Learning side by side |
 | | Where Najma came from | `NHdIIaU3mDE` Olives in the light |
-| | A collective shaped by its teachers | `dKBTFoarrOU` A conversation on the sofa |
-| | Starting small | `G0qTNcwmCaQ` A small beginning (render) |
+| | Owned and run by our members | `dKBTFoarrOU` A conversation on the sofa |
 | | Where would you like to start? | `8UP_QbfMfPM` An unfolding form (render) |
 
 No photograph appears twice. The Café's closing render, Folded possibilities, repeats on the Lessons page's Café band so the Café keeps one visual signature. The café scenes illustrate conversation, following the stock notes: the Café itself meets online, which the video-call photographs on the home page and in "What happens in a session?" show. Photographs carry the alt text from `assets/stock/manifest.json`; renders are decorative and take `alt=""`.
@@ -62,7 +60,7 @@ No photograph appears twice. The Café's closing render, Folded possibilities, r
 
 The teachers page renders every record in `js/teachers-data.js`. Area filter chips narrow the list, announce the number shown to screen readers and keep the choice in the URL (`?area=`), so links can arrive with a filter applied. Each profile expands in place. The mobile navigation is a Material menu, which closes on Escape or an outside click.
 
-`js/utils.js` renders the teacher previews on the Home, Lessons, For organisations and About pages. Each page marks the spot with an empty `<div data-teacher-previews-slot>`, which the script replaces with the preview cards; add `data-heading-level="h4"` when the slot sits under an h3. Without JavaScript the slot stays empty and the link to the Teachers page beside it still works. Headings can be reworded freely. The Home page's teaching-area links use the area values the Teachers page filters on: `general`, `professional`, `academic`, `exam` and `advocacy`.
+`js/utils.js` renders the teacher previews on the Home, Lessons, For organisations and About pages from its own short list, so a new teacher needs adding there as well as to `js/teachers-data.js`. Each page marks the spot with an empty `<div data-teacher-previews-slot>`, which the script replaces with the preview cards; add `data-heading-level="h4"` when the slot sits under an h3. Without JavaScript the slot stays empty and the link to the Teachers page beside it still works. Headings can be reworded freely. The Home page's teaching-area links use the area values the Teachers page filters on: `general`, `professional`, `academic`, `exam` and `advocacy`.
 
 All text meets WCAG AA contrast: the colour roles were checked analytically, and text in the closing bands was measured against the rendered artwork behind it at 390, 768, 1024 and 1440px. Forced-colour outlines and a reduced-transparency fallback for the header are included.
 
@@ -75,5 +73,7 @@ The redesign was reviewed in Chromium at widths from 320 to 2560px on all six pa
 ## Copy
 
 In September 2026 the copy on all six pages was rewritten to the standard in `VOICE.md`, which is now the reference for any wording on the site. The rewrite kept every price, duration and commitment, merged the Lessons page's duplicate sections (lesson continuity, fees and the level test), moved the full fee breakdown to About (`about.html#income`), replaced unconfirmed Café and facilitator placeholders with an accurate status, and left the photography, layout and components unchanged. It was checked in Chromium at 390, 768, 1024 and 1440px for overflow, a single H1, unique IDs, filled teacher previews, resolving links and fragments, working teacher filters and a clear console.
+
+A second pass later that month made the copy more natural and cut about 15% of it. Sentences now make a person the subject wherever a profile, proposal or page used to do the telling. The fee split changed to 85% for the teacher and three 5% shares (operations, Café facilitation and the proposed Al Manar contribution); the allocation bar and legend on About follow it, and the About page's shared roles now sit in their own section as two cards coloured to match their shares in the bar. The Starting small section on About and the Choosing a teacher section on Teachers were removed, Al Manar is linked to almanar-society.org, and the fourth teacher now appears in the previews.
 
 Design references: https://m3.material.io/ and https://github.com/material-components/material-web
