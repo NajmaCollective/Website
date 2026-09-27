@@ -189,6 +189,7 @@ main > section.tonal + section, main > section + section.tonal { border-top: 0; 
 .faq > section:first-child { padding-top: 0; }
 .faq h3 { max-width: none; margin-bottom: .5rem; font-size: 1.15rem; }
 .faq p { margin-bottom: 0; }
+.faq ul { display: grid; gap: .5rem; margin: .75rem 0 0; padding-left: 1.25rem; }
 .faq md-divider { --md-divider-color: var(--md-sys-color-outline-variant); }
 
 /* ---------- Details list ---------- */

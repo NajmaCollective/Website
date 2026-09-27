@@ -22,13 +22,13 @@ The logo pairs Najma's eight-pointed star, set inside a twelve-lobed Material "c
 | Home | Hero | `j0dCClyasFk` A lively online conversation |
 | | Meet Najma at the Solidarity Café | `F4AS3X2swic` Hello from home |
 | | What would you like to study? | `hANJmBwxKn0` A lifelong reader |
-| | Keep learning with Najma | `12OZwblVQUg` Study in your own space |
+| | Every lesson builds on the last | `12OZwblVQUg` Study in your own space |
 | | English for your organisation | `YDWdxElP3XI` Working through an idea |
 | Lessons | Hero | `CPz2KWjCwDQ` Comfortable with learning |
 | | What would you like to study? | `GpbEuMKFQew` Time for a chapter |
 | | How lessons develop | `LQ1t-8Ms5PY` Learning through conversation |
 | | Learning with your organisation | `LVooQvKjLjw` A thoughtful exchange |
-| | Meet Najma at the Solidarity Café | `XJaPfJz7xW8` Folded possibilities (render) |
+| | Join us at the Solidarity Café | `XJaPfJz7xW8` Folded possibilities (render) |
 | Teachers | Hero | `-8XKPC-lLHU` Reading by the window |
 | | Choosing a teacher | `NLuDzsdyQ6M` Focus by the window |
 | | Meet a teacher before you book | `s2uH89aClpE` A welcoming video call |
@@ -37,7 +37,7 @@ The logo pairs Najma's eight-pointed star, set inside a twelve-lobed Material "c
 | | What could your group work on? | `n6aIqCWqADI` Translucent folds (render) |
 | | Example programme | `4PU-OC8sW98` Planning the next step |
 | | Who we work with | `PviMD8jDeYE` Thinking at the whiteboard |
-| | Discuss a programme for your organisation | `qCYKtOov--s` Warm light on dark teal (render) |
+| | Talk to us about a programme | `qCYKtOov--s` Warm light on dark teal (render) |
 | Solidarity Café | Hero | `gRmyW5p_4lQ` Time to connect |
 | | The next Solidarity Café | `g86airJZ4Gs` Coffee and conversation |
 | | What happens in a session? | `D8NwgmdkgOY` A conversation across screens |
@@ -47,7 +47,7 @@ The logo pairs Najma's eight-pointed star, set inside a twelve-lobed Material "c
 | | Where Najma came from | `NHdIIaU3mDE` Olives in the light |
 | | A collective shaped by its teachers | `dKBTFoarrOU` A conversation on the sofa |
 | | Starting small | `G0qTNcwmCaQ` A small beginning (render) |
-| | Find your place in Najma | `8UP_QbfMfPM` An unfolding form (render) |
+| | Where would you like to start? | `8UP_QbfMfPM` An unfolding form (render) |
 
 No photograph appears twice. The Café's closing render, Folded possibilities, repeats on the Lessons page's Café band so the Café keeps one visual signature. The café scenes illustrate conversation, following the stock notes: the Café itself meets online, which the video-call photographs on the home page and in "What happens in a session?" show. Photographs carry the alt text from `assets/stock/manifest.json`; renders are decorative and take `alt=""`.
 
@@ -62,7 +62,7 @@ No photograph appears twice. The Café's closing render, Folded possibilities, r
 
 The teachers page renders every record in `js/teachers-data.js`. Area filter chips narrow the list, announce the number shown to screen readers and keep the choice in the URL (`?area=`), so links can arrive with a filter applied. Each profile expands in place. The mobile navigation is a Material menu, which closes on Escape or an outside click.
 
-`js/utils.js` renders the teacher previews on the Home, Lessons, For organisations and About pages. It finds each section by its heading's visible text, ignoring the decorative Material Symbols ligature, and replaces the bracketed placeholder paragraphs in that section. If you rename one of those headings, update its entry in `js/utils.js` to match.
+`js/utils.js` renders the teacher previews on the Home, Lessons, For organisations and About pages. Each page marks the spot with an empty `<div data-teacher-previews-slot>`, which the script replaces with the preview cards; add `data-heading-level="h4"` when the slot sits under an h3. Without JavaScript the slot stays empty and the link to the Teachers page beside it still works. Headings can be reworded freely. The Home page's teaching-area links use the area values the Teachers page filters on: `general`, `professional`, `academic`, `exam` and `advocacy`.
 
 All text meets WCAG AA contrast: the colour roles were checked analytically, and text in the closing bands was measured against the rendered artwork behind it at 390, 768, 1024 and 1440px. Forced-colour outlines and a reduced-transparency fallback for the header are included.
 
@@ -70,6 +70,10 @@ All text meets WCAG AA contrast: the colour roles were checked analytically, and
 
 Run `node --check js/utils.js` and `node --check js/teachers.js` for syntax checks, and `python3 tools/validate_stock_assets.py` for the image files. `node tests/interactions.cjs` fails with the same error before and after the photography redesign: its fixtures expect a confirmed-profile flag, a service filter and a carousel that the current pages do not have.
 
-The redesign was reviewed in Chromium at widths from 320 to 2560px on all six pages, with and without reduced motion. The checks confirmed that there is no horizontal overflow, that sticky headings never leave their section or overlap other content, that every link, fragment and image path resolves, that each page has one H1 and unique IDs, that the teacher filters, profile toggles and mobile menu work, that everything in the reading zone of the screen is fully revealed while motion is on, and that every photograph loads a source at least 1.97 times its drawn width on 2× screens. A text comparison confirmed that every rendered text run and every label and aria-label value is unchanged; the only additions are the photographs' alt text.
+The redesign was reviewed in Chromium at widths from 320 to 2560px on all six pages, with and without reduced motion. The checks confirmed that there is no horizontal overflow, that sticky headings never leave their section or overlap other content, that every link, fragment and image path resolves, that each page has one H1 and unique IDs, that the teacher filters, profile toggles and mobile menu work, that everything in the reading zone of the screen is fully revealed while motion is on, and that every photograph loads a source at least 1.97 times its drawn width on 2× screens. A text comparison confirmed that every rendered text run and every label and aria-label value was unchanged by the redesign; the only additions were the photographs' alt text.
+
+## Copy
+
+In September 2026 the copy on all six pages was rewritten to the standard in `VOICE.md`, which is now the reference for any wording on the site. The rewrite kept every price, duration and commitment, merged the Lessons page's duplicate sections (lesson continuity, fees and the level test), moved the full fee breakdown to About (`about.html#income`), replaced unconfirmed Café and facilitator placeholders with an accurate status, and left the photography, layout and components unchanged. It was checked in Chromium at 390, 768, 1024 and 1440px for overflow, a single H1, unique IDs, filled teacher previews, resolving links and fragments, working teacher filters and a clear console.
 
 Design references: https://m3.material.io/ and https://github.com/material-components/material-web

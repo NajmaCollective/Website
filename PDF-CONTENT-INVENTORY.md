@@ -1,5 +1,7 @@
 # PDF transcription and classification checklist
 
+> **Status, September 2026.** The page copy transcribed below has been rewritten to the standard in [`VOICE.md`](VOICE.md), which also replaces the “Editorial standard for Najma public copy” on physical pages 9–10. Treat the COPY items as the historical source: the pages themselves and `VOICE.md` are now the reference for wording. The design annotations and publication directions still apply.
+
 > Source inventory: **48 physical PDF pages**. The supplied file contains six website drafts plus shared directions and publication notes. Each extracted text block is preserved below as a verbatim checklist item. Line wrapping introduced by the PDF is normalized to spaces; punctuation, accents, capitalization, contractions, and British spelling are unchanged.
 
 ## Classification key

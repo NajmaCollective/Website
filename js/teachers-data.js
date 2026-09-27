@@ -16,8 +16,8 @@ window.NAJMA_TEACHERS = [
     services: [
       'Private lesson · 55 minutes · £20',
       'Short private lesson · 25 minutes · £10',
-      'Free individual needs analysis · 20 minutes',
-      'Bespoke programmes for organisations · from £40 per 55-minute group session'
+      'Free introductory call · 20 minutes',
+      'Programmes for organisations · from £40 per 55-minute group session'
     ],
     booking: 'https://calendly.com/mondher-elyoussefi-univgb'
   },
@@ -38,8 +38,8 @@ window.NAJMA_TEACHERS = [
     services: [
       'Private lesson · 55 minutes · £20',
       'Short private lesson · 25 minutes · £10',
-      'Free individual needs analysis · 20 minutes',
-      'Bespoke programmes for organisations · from £40 per 55-minute group session'
+      'Free introductory call · 20 minutes',
+      'Programmes for organisations · from £40 per 55-minute group session'
     ],
     booking: 'https://calendar.app.google/ZymdzetiFMDiavQT8'
   },
@@ -59,8 +59,8 @@ window.NAJMA_TEACHERS = [
     languages: 'English — native; French — fluent; Italian — B2; Spanish — B1; German — A2; Arabic — beginner.',
     services: [
       'Private lesson · 55 minutes · £20',
-      'Free individual needs analysis · 20 minutes',
-      'Bespoke programmes for organisations · from £40 per 55-minute group session'
+      'Free introductory call · 20 minutes',
+      'Programmes for organisations · from £40 per 55-minute group session'
     ],
     booking: 'https://calendly.com/hannahcfenzi/30min'
   }

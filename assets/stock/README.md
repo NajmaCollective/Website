@@ -23,7 +23,7 @@ Najma's forest green works particularly well beside natural wood and pale backgr
 
 Let the photograph occupy a substantial editorial area. Place headings and reading copy beside it where possible. Use Material 3 shape and colour roles already present in the repository. Keep interface icons within the existing Google Material Symbols system.
 
-Preserve all existing website copy. This addition supplies assets for a subsequent design pass. Every existing HTML, CSS and JavaScript file remains intact.
+This addition supplied assets for a design pass that kept the website copy as it was. The copy has since been rewritten to the standard in `VOICE.md` at the repository root.
 
 ## Suggested first choices
 

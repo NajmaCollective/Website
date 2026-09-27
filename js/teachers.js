@@ -49,7 +49,7 @@
             <p>${escapeHtml(teacher.teaching)}</p>
             <h4>Languages</h4>
             <p>${escapeHtml(teacher.languages)}</p>
-            <h4>Services I offer</h4>
+            <h4>Lessons I offer</h4>
             ${list(teacher.services)}
           </div>
           <div class="actions teacher-actions">
