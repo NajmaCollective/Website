@@ -1,7 +1,12 @@
 (() => {
   const button = document.querySelector('#menu-button');
   const menu = document.querySelector('#mobile-menu');
-  if (button && menu) button.addEventListener('click', () => { menu.open = !menu.open; });
+  if (button && menu) {
+    button.addEventListener('click', () => { menu.open = !menu.open; });
+    // Screen readers hear whether the menu is open.
+    menu.addEventListener('opened', () => button.setAttribute('aria-expanded', 'true'));
+    menu.addEventListener('closed', () => button.setAttribute('aria-expanded', 'false'));
+  }
 
   // Teachers without an approved photograph are shown with a Material monogram avatar.
   const teacherPreviews = [
