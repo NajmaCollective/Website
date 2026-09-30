@@ -172,16 +172,16 @@
   background: var(--md-sys-color-surface-container-low); color: var(--md-sys-color-on-surface);
   transition: background-color var(--md-sys-motion-effects-default), border-radius var(--md-sys-motion-spatial-default);
 }
-.teacher-preview-card:is(:hover, :focus-within) { background: var(--md-sys-color-surface-container); border-radius: var(--md-sys-shape-corner-extra-extra-large); }
+.teacher-preview-card:has(:focus-visible) { background: var(--md-sys-color-surface-container); border-radius: var(--md-sys-shape-corner-extra-extra-large); }
 .teacher-preview-body > :last-child { margin-bottom: 0; }
 .teacher-preview-body h3, .teacher-preview-body h4 { margin: 0 0 .35rem; font-size: 1.25rem; }
 .teacher-preview-body p { margin-bottom: .6rem; font-size: 1rem; line-height: 1.55; }
-.teacher-preview-body a { display: inline-flex; align-items: center; min-height: 40px; margin: 0 0 -.4rem -.85rem; padding: 0 .85rem; border-radius: var(--md-sys-shape-corner-full); text-decoration: none; }
+.teacher-preview-body a { display: inline-flex; align-items: center; min-height: 48px; margin: -.25rem 0 -.65rem -.85rem; padding: 0 .85rem; border-radius: var(--md-sys-shape-corner-full); text-decoration: none; }
 .teacher-preview-body a:hover { background: color-mix(in srgb, currentColor 9%, transparent); }
 .teacher-preview-body .teacher-preview-location { display: flex; align-items: center; gap: .3rem; margin-bottom: .35rem; color: var(--md-sys-color-primary); font-size: .88rem; font-weight: 600; }
 .teacher-preview-location .material-symbols-outlined { font-size: 1.05rem; font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20; }
 .tone-inverse .teacher-preview-card { background: color-mix(in srgb, var(--md-sys-color-inverse-on-surface) 7%, transparent); }
-.tone-inverse .teacher-preview-card:is(:hover, :focus-within) { background: color-mix(in srgb, var(--md-sys-color-inverse-on-surface) 12%, transparent); }
+.tone-inverse .teacher-preview-card:has(:focus-visible) { background: color-mix(in srgb, var(--md-sys-color-inverse-on-surface) 12%, transparent); }
 
 /* Circular avatars: the teacher's own photograph, or a Material monogram while one is pending */
 .teacher-avatar {
@@ -254,9 +254,21 @@
   .cta-art > img { -webkit-mask-image: linear-gradient(180deg, #000 45%, transparent 100%); mask-image: linear-gradient(180deg, #000 45%, transparent 100%); }
 }
 @media (max-width: 599px) {
+  /* On phones the first screen carries the headline, a one-line introduction, the
+     price and the main button. The photograph and the longer copy follow. */
+  .hero .hero-copy > :is(.price, .actions),
+  .hero .hero-copy > :is(h1, .hero-subtitle) + p:not(.price, .lede) { order: 1; }
+  .hero .hero-copy > h1 { max-width: none; font-size: clamp(2.125rem, 9.4vw, 2.5rem); line-height: 1.04; }
+  .hero .hero-copy > .actions { margin-block: .5rem .25rem; }
   .hero-copy > p:not(.price, .lede, .eyebrow) { font-size: 1.0625rem; }
   .grid > .grid-media { min-height: 0; aspect-ratio: 4 / 3; }
   .programme-facts, .programme-sessions { grid-template-columns: minmax(0, 1fr); }
   .teacher-preview-card { column-gap: 1rem; padding: 1.15rem 1.2rem; }
   .teacher-avatar { width: 3.75rem; font-size: 1.5rem; }
+}
+
+/* Cards change shape on hover only where a pointer can hover, so the shape doesn't stay behind after a tap on a touch screen. Keyboard focus still shows it; a tap, which focuses without :focus-visible, doesn’t. */
+@media (hover: hover) {
+  .teacher-preview-card:hover { background: var(--md-sys-color-surface-container); border-radius: var(--md-sys-shape-corner-extra-extra-large); }
+  .tone-inverse .teacher-preview-card:hover { background: color-mix(in srgb, var(--md-sys-color-inverse-on-surface) 12%, transparent); }
 }
