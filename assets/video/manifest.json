@@ -1,0 +1,511 @@
+{
+  "about": "Source and licence records for every video on the site. tools/validate_video_assets.py --write adds each file's size and checksum to manifest.json; run it after re-encoding.",
+  "assets": [
+    {
+      "id": "home-video-call",
+      "title": "A video call at the laptop",
+      "kind": "stock video",
+      "used_on": [
+        "Home: hero"
+      ],
+      "alt": "A woman smiles as she talks and types at her laptop.",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Young female employee having a video call with a client",
+        "page_url": "https://mixkit.co/free-stock-video/young-female-employee-having-a-video-call-with-a-client-4844/",
+        "file_url": "https://assets.mixkit.co/videos/4844/4844-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 4844-1080.mp4 0 7.5 1 home-video-call.mkv",
+      "notes": "Illustrative model. Never present as a Najma learner, teacher or partner.",
+      "files": [
+        {
+          "path": "assets/video/home-video-call-720.av1.mp4",
+          "bytes": 411577,
+          "sha256": "c4030e3b02393ec9244e07e6bf2eb77cf818dcce2dd3a46face748b9652db64b",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 7.5
+        },
+        {
+          "path": "assets/video/home-video-call-720.h264.mp4",
+          "bytes": 441158,
+          "sha256": "0fd9514f4d87d5c6c531e147e4ad1587a60dac96d158d8fc9ad48a6b46cc5d7a",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 7.5
+        },
+        {
+          "path": "assets/video/home-video-call-1080.av1.mp4",
+          "bytes": 572773,
+          "sha256": "c368e0a16b4901c39c424e9391bd6be3db4d9d6a2ee7d5f643d90ba92c322aba",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 7.5
+        },
+        {
+          "path": "assets/video/home-video-call-1080.h264.mp4",
+          "bytes": 590565,
+          "sha256": "aa5a8bb988ae6ee6392b7b8b2d9951e16ae6e0950b8a61d8749f4950aaad49c1",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 7.5
+        },
+        {
+          "path": "assets/video/home-video-call-poster.webp",
+          "bytes": 85538,
+          "sha256": "54bdb137b40e4effbde96dce479212925228e9a351037bf5374dbf0f0f2b5939",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/home-video-call-poster-960.webp",
+          "bytes": 34376,
+          "sha256": "8678c1bc0fa0c186f3f75f860a77b59a531d2f4c0cdd0b1316c6718ad7b4b8e4",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    },
+    {
+      "id": "cafe-greeting",
+      "title": "Waving to someone on a call",
+      "kind": "stock video",
+      "used_on": [
+        "Solidarity Café: hero"
+      ],
+      "alt": "Two friends smile and wave at someone on a video call.",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Man and woman outdoors during a video call",
+        "page_url": "https://mixkit.co/free-stock-video/man-and-woman-outdoors-during-a-video-call-39783/",
+        "file_url": "https://assets.mixkit.co/videos/39783/39783-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 39783-1080.mp4 0.5 9 1.2 cafe-greeting.mkv",
+      "notes": "Illustrative models. Never present as Café participants.",
+      "files": [
+        {
+          "path": "assets/video/cafe-greeting-720.av1.mp4",
+          "bytes": 393552,
+          "sha256": "d6399724d3a06fc52bfd8e75e73720488499eefa16b65ab488ee7cf7c47004cf",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 9.0
+        },
+        {
+          "path": "assets/video/cafe-greeting-720.h264.mp4",
+          "bytes": 505979,
+          "sha256": "9ab4c54d674e469478e302e895acb134c4ef5f82091734db0fc58f6d93b7a657",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 9.0
+        },
+        {
+          "path": "assets/video/cafe-greeting-1080.av1.mp4",
+          "bytes": 568003,
+          "sha256": "500e235a6a0b93291690cf43d71c2529ec75412c50184a196d1e46f64cc1a039",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 9.0
+        },
+        {
+          "path": "assets/video/cafe-greeting-1080.h264.mp4",
+          "bytes": 749914,
+          "sha256": "11cd7aa8fc5065469e0db0bb156e2a14dbb15fed63fd9b3aafd2be470d2cad95",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 9.0
+        },
+        {
+          "path": "assets/video/cafe-greeting-poster.webp",
+          "bytes": 54056,
+          "sha256": "552ef834eb26839339015482c90f7d67fb89949f0a6fadcbc24fec1986b1fa0a",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/cafe-greeting-poster-960.webp",
+          "bytes": 19714,
+          "sha256": "230c01c6ad0c5041b71a69e2487f061651355eb69a71d706a770037dfeeedc05",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    },
+    {
+      "id": "constellation",
+      "title": "Constellation",
+      "kind": "generated loop",
+      "used_on": [
+        "Lessons: Join us at the Solidarity Café",
+        "Solidarity Café: Join the next Café"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Najma Collective",
+        "creator": "Najma Collective",
+        "license": "Najma Collective",
+        "made_from": "tools/loops/art.js"
+      },
+      "loop": "node tools/render_loops.cjs OUT constellation",
+      "notes": "Small stars drift and glimmer around one large star. Najma means star.",
+      "files": [
+        {
+          "path": "assets/video/constellation-720.av1.mp4",
+          "bytes": 253933,
+          "sha256": "569ea6f2fa7cbefb44042453803cae2df3bfe7abbbbf938ea22769c69329b9ef",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/constellation-720.h264.mp4",
+          "bytes": 331021,
+          "sha256": "ba1e38074eb7bed0355b2428270c8d73fea67c7d92c06a481b70a9eb26a86bf6",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/constellation-1080.av1.mp4",
+          "bytes": 421978,
+          "sha256": "0c45b660a55a9548b8b30ef3b03f8cf90751ba5596daa3d6644a91b291df0c81",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/constellation-1080.h264.mp4",
+          "bytes": 530228,
+          "sha256": "42faac222d645b19266c820761ad582eafee018b84293617245abbf576d5be9c",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/constellation-poster.webp",
+          "bytes": 30596,
+          "sha256": "32f7315d947a502026b2d55ffaa41d8faf7ba983370615bdecc7738f41e5cb0f",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/constellation-poster-960.webp",
+          "bytes": 12816,
+          "sha256": "462655fc66697636e2fc4af0ffb3aef39cabb24ea21ccfa4f48cfe1d6269eb9b",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    },
+    {
+      "id": "rhythm",
+      "title": "Rhythm",
+      "kind": "generated loop",
+      "used_on": [
+        "Teachers: Book your lesson"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Najma Collective",
+        "creator": "Najma Collective",
+        "license": "Najma Collective",
+        "made_from": "tools/loops/art.js"
+      },
+      "loop": "node tools/render_loops.cjs OUT rhythm",
+      "notes": "Scalloped rings travel outward from a small star like a steady pulse.",
+      "files": [
+        {
+          "path": "assets/video/rhythm-720.av1.mp4",
+          "bytes": 413974,
+          "sha256": "5fa0bf047cba9e24bcb76264a18c72e5554ce01bbd076587b24f17369be1ecb0",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/rhythm-720.h264.mp4",
+          "bytes": 783878,
+          "sha256": "4b4bb6904639747e181d38260b1f01ace64ffd70a8bbaf3cd28a5b1e519e42fa",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/rhythm-1080.av1.mp4",
+          "bytes": 813779,
+          "sha256": "8fc3a9d542fe307bc0daedce107bf5c8b7c8cca2317ad1f97d050cdc5305c8be",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/rhythm-1080.h264.mp4",
+          "bytes": 1283111,
+          "sha256": "5635c5a4520e39d61b9606b64eb88ae2c20c3e22b05d1c1d6f43f95c7396c090",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/rhythm-poster.webp",
+          "bytes": 80936,
+          "sha256": "97a0ecd75e36c6c39930e74764b17b3c1f13f41c1e82c07d607ececa76f763e8",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/rhythm-poster-960.webp",
+          "bytes": 34060,
+          "sha256": "50a9ebb42f506ac87d3b357395b8c5a2ab8a170b32999ee092bfbc96c492717a",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    },
+    {
+      "id": "woven",
+      "title": "Woven",
+      "kind": "generated loop",
+      "used_on": [
+        "For organisations: Talk to us about a programme"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Najma Collective",
+        "creator": "Najma Collective",
+        "license": "Najma Collective",
+        "made_from": "tools/loops/art.js"
+      },
+      "loop": "node tools/render_loops.cjs OUT woven",
+      "notes": "Two stars turn in opposite directions inside the scallop; light gathers where they cross.",
+      "files": [
+        {
+          "path": "assets/video/woven-720.av1.mp4",
+          "bytes": 297930,
+          "sha256": "2be7a074871325bed78699b8d1fb424dd938f7d031a8863f07386b4bbb5b190e",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/woven-720.h264.mp4",
+          "bytes": 403997,
+          "sha256": "468734c2caa26c15c084b469961ae14a6fcc5a3cf260d64a02fb0d2d962fcb34",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/woven-1080.av1.mp4",
+          "bytes": 468890,
+          "sha256": "91d0461a8d50688e69f7671be85f826821544a0d21123ccc91ce66a33d736996",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/woven-1080.h264.mp4",
+          "bytes": 629556,
+          "sha256": "02233512d306a98e20e93af103ede384482b557f02edb99f07d23aedc4089139",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/woven-poster.webp",
+          "bytes": 30610,
+          "sha256": "1b166e978a9740af08c025fe0711bb71730ead4f14437c55f93d419a9736e8a6",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/woven-poster-960.webp",
+          "bytes": 12370,
+          "sha256": "2406c32b5e79fea2bf988e1fdcf8673600c449c01aedb11742d2df336e7a8616",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    },
+    {
+      "id": "voices",
+      "title": "Voices",
+      "kind": "generated loop",
+      "used_on": [
+        "For organisations: What could your group work on?"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Najma Collective",
+        "creator": "Najma Collective",
+        "license": "Najma Collective",
+        "made_from": "tools/loops/art.js"
+      },
+      "loop": "node tools/render_loops.cjs OUT voices",
+      "notes": "Translucent stars of different sizes and colours keep meeting and overlapping. Carries its own green ground.",
+      "files": [
+        {
+          "path": "assets/video/voices-720.av1.mp4",
+          "bytes": 582298,
+          "sha256": "7edff33cc016504b761a13d86a41de9be532fbc6d0c57f38c0ad77d473ad45f8",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/voices-720.h264.mp4",
+          "bytes": 701849,
+          "sha256": "71152bc80ac899c0ba1f68f47e2b7b4b1c9d75d9a7c0d7814c328cb0203d6d61",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/voices-1080.av1.mp4",
+          "bytes": 985510,
+          "sha256": "0941ace57e25e39d5d9f0212b115c568890165f76cc6c1dcc3c9d5dda292a36a",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/voices-1080.h264.mp4",
+          "bytes": 1052935,
+          "sha256": "b067948ed01e9c0e22c1d1eb3c8dffc9824c7c107bd61111936ff926c0ae2f98",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/voices-poster.webp",
+          "bytes": 40456,
+          "sha256": "c1e65e2f2ce2c7192a6f10def4eef8cac2e741d0ab38c7ebac5f02e55ce079f4",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/voices-poster-960.webp",
+          "bytes": 16282,
+          "sha256": "8c3dbd56e4497490444010c4a119731bbf1c2149c64fd8cb6f4960fd03d065cf",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    },
+    {
+      "id": "unfolding",
+      "title": "Unfolding",
+      "kind": "generated loop",
+      "used_on": [
+        "About: Where would you like to start?"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Najma Collective",
+        "creator": "Najma Collective",
+        "license": "Najma Collective",
+        "made_from": "tools/loops/art.js"
+      },
+      "loop": "node tools/render_loops.cjs OUT unfolding",
+      "notes": "Nested stars turn against each other, so the figure opens out and folds back.",
+      "files": [
+        {
+          "path": "assets/video/unfolding-720.av1.mp4",
+          "bytes": 284322,
+          "sha256": "68ba664a73fb16f18dcc43f86f5881d6ae390d4ec3fdf0335dc014f2c000b1ad",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/unfolding-720.h264.mp4",
+          "bytes": 405316,
+          "sha256": "1fdbef7e22ce0574d95806969e28ed1b2427564b9fe54a10e80aa396ac5d9a5a",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/unfolding-1080.av1.mp4",
+          "bytes": 439664,
+          "sha256": "d3859fa199e6735e6c8cdd314f1af8338fc3fffbe81da18ec7003424e19f6dc1",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/unfolding-1080.h264.mp4",
+          "bytes": 615958,
+          "sha256": "d36ebcd69c005e38a48bf6180fcde8e731c8e6e21079f3facbc93805be651165",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 12.0
+        },
+        {
+          "path": "assets/video/unfolding-poster.webp",
+          "bytes": 29664,
+          "sha256": "3e2cdc3e366b0f6b6f76a3fb92d171234326e64fedc08a78092ee8434a8ee04c",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/unfolding-poster-960.webp",
+          "bytes": 11556,
+          "sha256": "3a871e4a8731412bc8843ad3151f23924196c5e24c839492fa0b478961038efd",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    }
+  ]
+}

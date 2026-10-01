@@ -4,6 +4,8 @@
 
 [Open the visual catalogue](catalogue.html) after opening the repository locally. It works offline. Use the search field to find a scene or a suggested page. GitHub displays the HTML source; the contact sheets below provide previews directly in GitHub.
 
+> **October 2026:** the website no longer uses the ten abstract illustrations. Najma's own star artwork and two stock video loops in `assets/video/` replaced them; see DESIGN.md. The illustrations stay here for reference.
+
 ## Start here
 
 | Resource | Purpose |

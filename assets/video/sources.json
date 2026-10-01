@@ -1,0 +1,93 @@
+{
+  "about": "Source and licence records for every video on the site. tools/validate_video_assets.py --write adds each file's size and checksum to manifest.json; run it after re-encoding.",
+  "assets": [
+    {
+      "id": "home-video-call",
+      "title": "A video call at the laptop",
+      "kind": "stock video",
+      "used_on": ["Home: hero"],
+      "alt": "A woman smiles as she talks and types at her laptop.",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Young female employee having a video call with a client",
+        "page_url": "https://mixkit.co/free-stock-video/young-female-employee-having-a-video-call-with-a-client-4844/",
+        "file_url": "https://assets.mixkit.co/videos/4844/4844-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 4844-1080.mp4 0 7.5 1 home-video-call.mkv",
+      "notes": "Illustrative model. Never present as a Najma learner, teacher or partner."
+    },
+    {
+      "id": "cafe-greeting",
+      "title": "Waving to someone on a call",
+      "kind": "stock video",
+      "used_on": ["Solidarity Café: hero"],
+      "alt": "Two friends smile and wave at someone on a video call.",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Man and woman outdoors during a video call",
+        "page_url": "https://mixkit.co/free-stock-video/man-and-woman-outdoors-during-a-video-call-39783/",
+        "file_url": "https://assets.mixkit.co/videos/39783/39783-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 39783-1080.mp4 0.5 9 1.2 cafe-greeting.mkv",
+      "notes": "Illustrative models. Never present as Café participants."
+    },
+    {
+      "id": "constellation",
+      "title": "Constellation",
+      "kind": "generated loop",
+      "used_on": ["Lessons: Join us at the Solidarity Café", "Solidarity Café: Join the next Café"],
+      "alt": "",
+      "source": { "provider": "Najma Collective", "creator": "Najma Collective", "license": "Najma Collective", "made_from": "tools/loops/art.js" },
+      "loop": "node tools/render_loops.cjs OUT constellation",
+      "notes": "Small stars drift and glimmer around one large star. Najma means star."
+    },
+    {
+      "id": "rhythm",
+      "title": "Rhythm",
+      "kind": "generated loop",
+      "used_on": ["Teachers: Book your lesson"],
+      "alt": "",
+      "source": { "provider": "Najma Collective", "creator": "Najma Collective", "license": "Najma Collective", "made_from": "tools/loops/art.js" },
+      "loop": "node tools/render_loops.cjs OUT rhythm",
+      "notes": "Scalloped rings travel outward from a small star like a steady pulse."
+    },
+    {
+      "id": "woven",
+      "title": "Woven",
+      "kind": "generated loop",
+      "used_on": ["For organisations: Talk to us about a programme"],
+      "alt": "",
+      "source": { "provider": "Najma Collective", "creator": "Najma Collective", "license": "Najma Collective", "made_from": "tools/loops/art.js" },
+      "loop": "node tools/render_loops.cjs OUT woven",
+      "notes": "Two stars turn in opposite directions inside the scallop; light gathers where they cross."
+    },
+    {
+      "id": "voices",
+      "title": "Voices",
+      "kind": "generated loop",
+      "used_on": ["For organisations: What could your group work on?"],
+      "alt": "",
+      "source": { "provider": "Najma Collective", "creator": "Najma Collective", "license": "Najma Collective", "made_from": "tools/loops/art.js" },
+      "loop": "node tools/render_loops.cjs OUT voices",
+      "notes": "Translucent stars of different sizes and colours keep meeting and overlapping. Carries its own green ground."
+    },
+    {
+      "id": "unfolding",
+      "title": "Unfolding",
+      "kind": "generated loop",
+      "used_on": ["About: Where would you like to start?"],
+      "alt": "",
+      "source": { "provider": "Najma Collective", "creator": "Najma Collective", "license": "Najma Collective", "made_from": "tools/loops/art.js" },
+      "loop": "node tools/render_loops.cjs OUT unfolding",
+      "notes": "Nested stars turn against each other, so the figure opens out and folds back."
+    }
+  ]
+}

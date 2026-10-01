@@ -1,6 +1,6 @@
 # Najma · Material 3 design
 
-The site uses Google Material Web 2.4.1 as its only UI component library and Google Material Symbols Outlined for every icon. Material 3 supplies the colour roles, type scale, corner scale and motion curves. Photography and abstract renders from `assets/stock/` carry the imagery. No other visual framework, icon library or custom artwork is used.
+The site uses Google Material Web 2.4.1 as its only UI component library and Google Material Symbols Outlined for every icon. Material 3 supplies the colour roles, type scale, corner scale and motion curves. Photography from `assets/stock/`, two stock video loops and Najma's own animated artwork in `assets/video/` carry the imagery. The artwork is drawn only from the logo's two shapes. No other visual framework, icon library or custom artwork is used.
 
 ## Identity
 
@@ -10,7 +10,7 @@ The logo pairs Najma's eight-pointed star, set inside a twelve-lobed Material "c
 
 - **Colour.** Material 3 colour roles in `css/tokens.css`. Forest green anchors the identity, with mint, sage and peach containers. Tonal bands take `.tone-primary`, `.tone-secondary`, `.tone-tertiary` or `.tone-inverse`, and each re-scopes the colour roles it needs: the peach band switches the primary role to terracotta, and the dark band re-scopes every role, so Material buttons, links and icons inside a band follow it automatically.
 - **Type.** Roboto Flex throughout, the variable member of Material's Roboto family. Display and headline styles use heavier weights and a slightly wider setting.
-- **Imagery.** Every picture is a photograph or render from `assets/stock/`, set in a Material extra-large rounded container (`.media`, `.hero-media`). Pages use five patterns: a portrait hero photograph beside the headline; feature bands, where a tonal band is half photograph; split sections, where a photograph sits beside the copy; a photograph tile that completes a card grid; and closing bands, where an abstract render is screened onto the dark green so only its light shows. Named teachers appear only in their own approved photographs, shown as circular avatars because the originals are small. A teacher without a photograph gets a Material monogram.
+- **Imagery.** Every picture is a photograph from `assets/stock/` or a video loop from `assets/video/`, set in a Material extra-large rounded container (`.media`, `.hero-media`). Pages use five patterns: a portrait hero photograph or video beside the headline; feature bands, where a tonal band is half photograph; split sections, where a photograph sits beside the copy; a photograph or artwork tile that completes a card grid; and closing bands, where an animated piece of Najma's star artwork is screened onto the dark green so only its light shows. Named teachers appear only in their own approved photographs, shown as circular avatars because the originals are small. A teacher without a photograph gets a Material monogram.
 - **Icons.** Material Symbols sit directly on the surface in a colour role, at optical sizes matched to their role: light-weight 44px symbols above section headings (36px on phones), 40px in cards and steps, 28px beside sub-headings. Card symbols fill on hover. Icons carry no containers or frames.
 - **Motion.** On load the hero photograph opens out to its frame and settles from a slight zoom while the copy rises in. As the page scrolls, the hero photograph drifts, each photograph opens out and settles as it enters, section symbols draw in, cards rise in sequence, the steps rail fills, the programme's session bars draw across and the closing renders drift. Buttons tighten their corners on press. Every scroll-linked effect is progressive: browsers without scroll timelines show the finished state. `prefers-reduced-motion` removes all movement.
 - **Layout.** From 1024px, each section's heading takes the left column and its reading copy the right. In reading sections with a single heading, the heading stays in view while the copy scrolls. Card grids, option cards and teacher cards run the full width. Feature bands sit side by side from 1200px and stack, photograph first, below that. The example programme's sessions run four across from 1200px and two across below. Below 1024px the hero reads headline, photograph, then detail.
@@ -19,7 +19,7 @@ The logo pairs Najma's eight-pointed star, set inside a twelve-lobed Material "c
 
 | Page | Section | Asset |
 | --- | --- | --- |
-| Home | Hero | `j0dCClyasFk` A lively online conversation |
+| Home | Hero | Video: `home-video-call` A video call at the laptop (Mixkit) |
 | | Meet Najma at the Solidarity Café | `F4AS3X2swic` Hello from home |
 | | What would you like to study? | `hANJmBwxKn0` A lifelong reader |
 | | Every lesson builds on the last | `12OZwblVQUg` Study in your own space |
@@ -28,26 +28,26 @@ The logo pairs Najma's eight-pointed star, set inside a twelve-lobed Material "c
 | | What would you like to study? | `GpbEuMKFQew` Time for a chapter |
 | | How lessons develop | `LQ1t-8Ms5PY` Learning through conversation |
 | | Learning with your organisation | `LVooQvKjLjw` A thoughtful exchange |
-| | Join us at the Solidarity Café | `XJaPfJz7xW8` Folded possibilities (render) |
+| | Join us at the Solidarity Café | Artwork: Constellation |
 | Teachers | Hero | `-8XKPC-lLHU` Reading by the window |
 | | Meet a teacher before you book | `s2uH89aClpE` A welcoming video call |
-| | Book your lesson | `LP1_iwrHTrE` Building a rhythm (render) |
+| | Book your lesson | Artwork: Rhythm |
 | For organisations | Hero | `PSksbOVDhWk` Sharing a plan |
-| | What could your group work on? | `n6aIqCWqADI` Translucent folds (render) |
+| | What could your group work on? | Artwork: Voices |
 | | Example programme | `4PU-OC8sW98` Planning the next step |
 | | Who we work with | `PviMD8jDeYE` Thinking at the whiteboard |
-| | Talk to us about a programme | `qCYKtOov--s` Warm light on dark teal (render) |
-| Solidarity Café | Hero | `gRmyW5p_4lQ` Time to connect |
+| | Talk to us about a programme | Artwork: Woven |
+| Solidarity Café | Hero | Video: `cafe-greeting` Waving to someone on a call (Mixkit) |
 | | The next Solidarity Café | `g86airJZ4Gs` Coffee and conversation |
 | | What happens in a session? | `D8NwgmdkgOY` A conversation across screens |
 | | English in the Café | `tSyU-mWc010` Listening together |
-| | Join the next Café | `XJaPfJz7xW8` Folded possibilities (render) |
+| | Join the next Café | Artwork: Constellation |
 | About | Hero | `s2DbUV-yx2A` Learning side by side |
 | | Where Najma came from | `NHdIIaU3mDE` Olives in the light |
 | | Owned and run by our members | `dKBTFoarrOU` A conversation on the sofa |
-| | Where would you like to start? | `8UP_QbfMfPM` An unfolding form (render) |
+| | Where would you like to start? | Artwork: Unfolding |
 
-No photograph appears twice. The Café's closing render, Folded possibilities, repeats on the Lessons page's Café band so the Café keeps one visual signature. The café scenes illustrate conversation, following the stock notes: the Café itself meets online, which the video-call photographs on the home page and in "What happens in a session?" show. Photographs carry the alt text from `assets/stock/manifest.json`; renders are decorative and take `alt=""`.
+No photograph appears twice. The Café's closing artwork, Constellation, repeats on the Lessons page's Café band so the Café keeps one visual signature. The café scenes illustrate conversation, following the stock notes: the Café itself meets online, which the Café hero video, the video-call photograph on the home page and "What happens in a session?" show. Photographs carry the alt text from `assets/stock/manifest.json` and video posters the alt text from `assets/video/manifest.json`; the artwork is decorative and takes `alt=""`. The ten abstract renders in `assets/stock/web/illustrations/` are no longer used.
 
 ## Maintenance notes
 
@@ -55,6 +55,17 @@ No photograph appears twice. The Café's closing render, Folded possibilities, r
 - **Larger exports.** Photographs drawn wider than 960 CSS pixels need exports above 1920px to stay sharp on 2× screens. `python3 tools/export_stock_sizes.py ID:2560` creates them from the masters with the collection's settings and records them in the manifest. `python3 tools/validate_stock_assets.py` then checks every file's size and checksum.
 - **Icons.** The Material Symbols stylesheet is subset with `icon_names=` to the icons the site uses, which keeps the font small. When you add an icon anywhere (HTML or JavaScript), add its name to that list in every page's `<head>`, keeping the list in alphabetical order, or the icon will show as its name in plain text.
 - **Section structure.** A section's heading sits in `.section-head` and its reading copy in `.section-body`. Card sets and `.section-foot` follow them and span both columns. Browsers constrain a sticky grid item by the whole section, so a heading sticks only when it is the section's only heading and no full-width content follows it; otherwise it would slide over the content below.
+
+## Video and artwork
+
+Two kinds of loop live in `assets/video/`, each as AV1 and H.264 at 720p (phones) and 1080p (from 1024px), with a WebP poster at 960 and 1920px:
+
+- **Star artwork.** Five original pieces drawn in code from the logo's eight-pointed star and twelve-lobed scallop, in the site's mint, sage, peach and clay: Constellation (the Café), Rhythm (Teachers), Woven and Voices (For organisations) and Unfolding (About). `tools/loops/art.js` holds them; open `tools/loops/` through a local server to watch them live. `node tools/render_loops.cjs OUT [piece]` renders masters and `tools/encode_video.sh MASTER assets/video/NAME` makes the site's files. Every motion is a whole turn of the shape's symmetry, so the loops have no seam. The pieces use the star as Najma's own mark and avoid tessellated star patterns: the eight-pointed star also belongs to Palestinian embroidery (tatreez) and Arab geometric art, so any pattern work in that tradition should be designed with Palestinian collaborators and credited.
+- **Stock video.** The Home and Café heroes use clips under the Mixkit Stock Video Free License, which allows commercial use without attribution. `tools/make_loop.sh` turns a still-camera stretch of a clip into a seamless loop by dissolving its end into its start. As with the photographs, the people are illustrative models and are never presented as Najma learners, teachers or Café participants. Use only clips marked Free on Mixkit: its Restricted licence doesn't cover this kind of use.
+
+`assets/video/sources.json` records each loop's source, licence and how it was made; `python3 tools/validate_video_assets.py --write` adds sizes and checksums to `manifest.json`, and without `--write` checks them, the size budgets (720p up to 1 MB, 1080p up to 2.5 MB) and every page reference. Masters stay out of git: the artwork can be re-rendered, and the stock sources are linked.
+
+`js/video.js` plays a loop only while at least half of it is on screen, and only the one most in view. The poster image sits underneath and stays whenever the video can't or shouldn't play. Nothing downloads or plays by itself for visitors who prefer reduced motion, have data saving on, or are on a 2G or 3G connection; each loop has a pause button (WCAG 2.2.2), and the visitor's choice applies to every loop and is remembered across pages.
 
 ## Behaviour and accessibility
 
