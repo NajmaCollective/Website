@@ -58,7 +58,9 @@ No photograph appears twice. The Café's closing render, Folded possibilities, r
 
 ## Behaviour and accessibility
 
-The teachers page renders every record in `js/teachers-data.js`. Area filter chips narrow the list, announce the number shown to screen readers and keep the choice in the URL (`?area=`), so links can arrive with a filter applied. Each profile expands in place. The mobile navigation is a Material menu, which closes on Escape or an outside click.
+The teachers page renders every record in `js/teachers-data.js`. Area filter chips and lesson-type chips narrow the list, announce the number shown to screen readers and keep the choice in the URL (`?area=` and `?service=short` or `?service=intro`), so links can arrive with a filter applied. The lesson-type filter reads each teacher's `offers` list, which must match the services shown in their profile. Each profile expands in place. The mobile navigation is a Material menu, which closes on Escape or an outside click; its button reports whether the menu is open (`aria-expanded`).
+
+Until Material Web has loaded, `nav.css` hides the menu and holds the menu button at its final size, and `base.css` gives buttons and chips roughly their final size, so the page doesn't jump when the components arrive. On phones (below 600px) the hero shows the headline, a one-line introduction, the price and the main button before the photograph. Cards change shape on hover only on devices that can hover, and on keyboard focus.
 
 `js/utils.js` renders the teacher previews on the Home, Lessons, For organisations and About pages from its own short list, so a new teacher needs adding there as well as to `js/teachers-data.js`. Each page marks the spot with an empty `<div data-teacher-previews-slot>`, which the script replaces with the preview cards; add `data-heading-level="h4"` when the slot sits under an h3. Without JavaScript the slot stays empty and the link to the Teachers page beside it still works. Headings can be reworded freely. The Home page's teaching-area links use the area values the Teachers page filters on: `general`, `professional`, `academic`, `exam` and `advocacy`.
 
@@ -66,7 +68,7 @@ All text meets WCAG AA contrast: the colour roles were checked analytically, and
 
 ## Validation
 
-Run `node --check js/utils.js` and `node --check js/teachers.js` for syntax checks, and `python3 tools/validate_stock_assets.py` for the image files. `node tests/interactions.cjs` fails with the same error before and after the photography redesign: its fixtures expect a confirmed-profile flag, a service filter and a carousel that the current pages do not have.
+Run `node --check js/utils.js` and `node --check js/teachers.js` for syntax checks, and `python3 tools/validate_stock_assets.py` for the image files. `node tests/interactions.cjs` fails: it was written for an earlier design, and its fixtures expect a confirmed-profile flag and a carousel that the current pages don't have. It needs replacing.
 
 The redesign was reviewed in Chromium at widths from 320 to 2560px on all six pages, with and without reduced motion. The checks confirmed that there is no horizontal overflow, that sticky headings never leave their section or overlap other content, that every link, fragment and image path resolves, that each page has one H1 and unique IDs, that the teacher filters, profile toggles and mobile menu work, that everything in the reading zone of the screen is fully revealed while motion is on, and that every photograph loads a source at least 1.97 times its drawn width on 2× screens. A text comparison confirmed that every rendered text run and every label and aria-label value was unchanged by the redesign; the only additions were the photographs' alt text.
 
@@ -77,3 +79,16 @@ In September 2026 the copy on all six pages was rewritten to the standard in `VO
 A second pass later that month made the copy more natural and cut about 15% of it. Sentences now make a person the subject wherever a profile, proposal or page used to do the telling. The fee split changed to 85% for the teacher and three 5% shares (operations, Café facilitation and the proposed Al Manar contribution); the allocation bar and legend on About follow it, and the About page's shared roles now sit in their own section as two cards coloured to match their shares in the bar. The Starting small section on About and the Choosing a teacher section on Teachers were removed, Al Manar is linked to almanar-society.org, and the fourth teacher now appears in the previews.
 
 Design references: https://m3.material.io/ and https://github.com/material-components/material-web
+
+## Publishing and search
+
+GitHub Pages publishes the `main` branch at https://najmacollective.github.io/Website/. `_config.yml` keeps the working documents, the draft PDF, `tools/`, `tests/` and the stock masters, previews and catalogue off the public site; add any new internal file to its `exclude` list. The repository itself stays public, so keep anything confidential out of it.
+
+Every page carries a canonical link, share tags with `assets/brand/share-card.jpg` (1200 × 630, regenerated from `tools/share-card.html` with `node tools/render_share_card.cjs`), `lang="en-GB"` and structured data describing Najma. `sitemap.xml` lists the six pages and `404.html` is the not-found page.
+
+najmacollective.org currently points at an expired Squarespace site. To move the website there:
+
+1. At the domain registrar, point the apex domain at GitHub Pages (A records 185.199.108.153, 185.199.109.153, 185.199.110.153 and 185.199.111.153) and `www` at `najmacollective.github.io` (CNAME). Keep the email (MX) records unchanged.
+2. In the repository's Settings → Pages, set the custom domain to `najmacollective.org` and turn on Enforce HTTPS. GitHub adds a `CNAME` file and redirects the github.io address to the new domain.
+3. Replace `https://najmacollective.github.io/Website/` with `https://najmacollective.org/` in every page's head, `sitemap.xml` and `robots.txt`, and `/Website/` with `/` in `404.html`.
+4. Verify the domain in Google Search Console and Bing Webmaster Tools and submit `sitemap.xml`.

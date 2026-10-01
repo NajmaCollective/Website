@@ -1,0 +1,6 @@
+# Search engines read this file only at the root of a domain. It takes effect
+# once the site moves to its own domain (see "Publishing and search" in DESIGN.md).
+User-agent: *
+Allow: /
+
+Sitemap: https://najmacollective.github.io/Website/sitemap.xml

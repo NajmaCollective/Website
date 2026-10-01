@@ -40,6 +40,10 @@
 md-menu { --md-menu-container-color: var(--md-sys-color-surface-container-low); --md-menu-container-shape: var(--md-sys-shape-corner-large); }
 md-menu-item { --md-menu-item-label-text-font: var(--md-ref-typeface-plain); --md-menu-item-label-text-weight: 560; white-space: nowrap; min-width: 13rem; }
 md-menu-item[aria-current=page] { background: var(--md-sys-color-secondary-container); }
+/* Until Material Web has loaded, the menu stays hidden and the menu button holds
+   its final 40px size, so the header keeps its height and the page doesn't jump. */
+md-menu:not(:defined) { display: none; }
+.mobile-nav md-icon-button:not(:defined) { display: inline-grid; place-items: center; width: 40px; height: 40px; overflow: hidden; color: var(--md-sys-color-on-surface); }
 @media (max-width: 1060px) { .desktop-nav { display: none; } .mobile-nav { display: block; } }
 @media (max-width: 599px) { .nav-wrap { min-height: 68px; } .brand-logo { height: 36px; } }
 @media (prefers-reduced-transparency: reduce) { .site-header { background: var(--md-sys-color-surface); backdrop-filter: none; } }

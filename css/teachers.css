@@ -19,7 +19,7 @@
 }
 .teacher-card:nth-child(3n+2) { --avatar-bg: var(--md-sys-color-tertiary-container); --avatar-on: var(--md-sys-color-on-tertiary-container); }
 .teacher-card:nth-child(3n+3) { --avatar-bg: var(--md-sys-color-secondary-container); --avatar-on: var(--md-sys-color-on-secondary-container); }
-.teacher-card:is(:hover, :focus-within) { border-radius: var(--md-sys-shape-corner-extra-extra-large); background: var(--md-sys-color-surface-container); }
+.teacher-card:has(:focus-visible) { border-radius: var(--md-sys-shape-corner-extra-extra-large); background: var(--md-sys-color-surface-container); }
 
 /* Header: a circular portrait beside the name. Teachers' own photographs are
    small originals, so they are shown at avatar size to stay sharp. */
@@ -53,4 +53,12 @@
   .portrait { width: 5.25rem; }
   .portrait-fallback { font-size: 2rem; }
   .teacher-actions md-filled-button, .teacher-actions md-outlined-button { width: 100%; }
+}
+.chips + .chips { margin-top: .75rem; }
+.teacher-empty { grid-column: 1 / -1; }
+.link-button { padding: 0; border: 0; background: none; color: var(--md-sys-color-primary); font: inherit; font-weight: 580; text-decoration: underline; text-underline-offset: .22em; cursor: pointer; }
+
+/* Cards change shape on hover only where a pointer can hover, so the shape doesn't stay behind after a tap on a touch screen. Keyboard focus still shows it; a tap, which focuses without :focus-visible, doesn’t. */
+@media (hover: hover) {
+  .teacher-card:hover { border-radius: var(--md-sys-shape-corner-extra-extra-large); background: var(--md-sys-color-surface-container); }
 }

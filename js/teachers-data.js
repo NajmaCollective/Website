@@ -1,3 +1,7 @@
+// offers lists the lessons each teacher takes bookings for, and drives the
+// lesson-type filters on the Teachers page: 'private' (55 minutes, £20),
+// 'short' (25 minutes, £10), 'intro' (free 20-minute introductory call) and
+// 'organisations'. Keep it in step with the teacher's services list below.
 window.NAJMA_TEACHERS = [
   {
     id: 'mondher-yousfi',
@@ -13,6 +17,7 @@ window.NAJMA_TEACHERS = [
     highlights: ['Academic English', 'English for Specific Purposes', 'Exam preparation'],
     teaching: 'My lessons are interactive, with deliberate room for students to receive, digest and produce language to express themselves. I treat fluency and accuracy as connected parts of communication. I suggest topics at the beginning of sessions to engage learners and prepare them for the linguistic and communicative focus, building knowledge proactively and consistently through a long-term approach to language acquisition.',
     languages: 'Arabic — native; English — near-native; French and German — B1.',
+    offers: ['private', 'short', 'intro', 'organisations'],
     services: [
       'Private lesson · 55 minutes · £20',
       'Short private lesson · 25 minutes · £10',
@@ -35,6 +40,7 @@ window.NAJMA_TEACHERS = [
     highlights: ['Academic English', 'Reading and writing', 'Conversation'],
     teaching: 'My approach to teaching is founded on openness and collaboration. We develop our lessons together based on your needs and learning preferences, then adapt them according to your progress. If there are particular skills or language that you need, we can incorporate these into our lessons. The lessons are relaxed and focused. We work through things together and can redirect as needed. I provide clear, targeted feedback that you can use to build your language and skills with confidence and consistency.',
     languages: 'English — proficient; Arabic — intermediate; French — fluent; Mandarin — basic.',
+    offers: ['private', 'short', 'intro', 'organisations'],
     services: [
       'Private lesson · 55 minutes · £20',
       'Short private lesson · 25 minutes · £10',
@@ -57,6 +63,7 @@ window.NAJMA_TEACHERS = [
     highlights: ['Academic English', 'Conversation', 'Presentations'],
     teaching: 'My lessons are relaxed and engaging. We begin by identifying your learning goals and needs, then design the lessons around them. We can work on an upcoming presentation or exam, or practise discussions to develop your fluency. I give clear, informative feedback and we discuss points to work on next. We can also design lessons backwards from your longer-term objectives and work through the steps needed to get there.',
     languages: 'English — native; French — fluent; Italian — B2; Spanish — B1; German — A2; Arabic — beginner.',
+    offers: ['private', 'intro', 'organisations'],
     services: [
       'Private lesson · 55 minutes · £20',
       'Free introductory call · 20 minutes',
@@ -78,12 +85,15 @@ window.NAJMA_TEACHERS = [
     highlights: ['Academic English', 'Communication skills', 'English as a lingua franca'],
     teaching: 'My lessons are student-focused and engaging. Together we explore your communication needs, identify areas to develop and work towards language and communication goals. Sessions are relaxed and friendly, with an emphasis on developing confidence in communicating in English.',
     languages: 'English — native; Italian — advanced; French — intermediate; Spanish — pre-intermediate.',
+    offers: ['private', 'short', 'intro', 'organisations'],
     services: [
       'Private lesson · 55 minutes · £20',
       'Short private lesson · 25 minutes · £10',
-      'Free needs analysis · 20 minutes',
+      'Free introductory call · 20 minutes',
       'Programmes for organisations · from £40 per 55-minute group session'
     ],
-    booking: 'https://calendly.com/hannah-ahmed/english'
+    // The previous link (calendly.com/hannah-ahmed/english) returned a Calendly 404 in
+    // September 2026. Until Melanie confirms her calendar link, learners book by email.
+    booking: null
   }
 ];

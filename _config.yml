@@ -1,0 +1,22 @@
+# GitHub Pages settings. Pages builds this repository with Jekyll, which would
+# otherwise publish every file, including internal drafts and working notes.
+# Everything listed here stays in the repository and off the public site.
+exclude:
+  - README.md
+  - CLAUDE.md
+  - DESIGN.md
+  - VOICE.md
+  - STOCK-ASSETS.md
+  - PDF-CONTENT-INVENTORY.md
+  - "Navigation_*.pdf"
+  - tools
+  - tests
+  - node_modules
+  - package.json
+  - package-lock.json
+  - assets/stock/masters
+  - assets/stock/previews
+  - assets/stock/catalogue.html
+  - assets/stock/manifest.json
+  - assets/stock/README.md
+  - assets/stock/PEXELS-SHORTLIST.md
