@@ -7,8 +7,8 @@
 
 Each asset in assets/video/sources.json must have four encodes (AV1 and H.264
 at 720p and 1080p) and two posters. The check confirms each file's size and
-checksum, the size budgets (720p up to 1 MB, 1080p up to 2.5 MB), that stock
-footage carries a licence that allows commercial use, and that every file the
+checksum, the size budgets (720p up to 1 MB, 1080p up to 2.5 MB), that every
+video is stock footage under a licence that allows commercial use, and that every file the
 pages reference exists. Needs ffprobe for --write.
 """
 import hashlib
@@ -61,10 +61,13 @@ ids = [a['id'] for a in sources['assets']]
 assert [a['id'] for a in manifest['assets']] == ids, 'manifest.json is out of date: run with --write'
 checked = 0
 for asset in manifest['assets']:
-    if asset['kind'] == 'stock video':
-        assert asset['source']['license'] in ALLOWED_STOCK_LICENCES, f"{asset['id']}: licence"
-        assert asset['source']['page_url'].startswith('https://'), asset['id']
-        assert asset['alt'], f"{asset['id']}: stock video needs alt text for its poster"
+    # Every video is stock footage: the site uses no artwork of its own.
+    assert asset['kind'] == 'stock video', f"{asset['id']}: only stock footage is allowed"
+    assert asset['source']['license'] in ALLOWED_STOCK_LICENCES, f"{asset['id']}: licence"
+    assert asset['source']['page_url'].startswith('https://'), asset['id']
+    # Loops in heroes describe their poster; decorative loops in bands and tiles take alt="".
+    if any('hero' in place for place in asset['used_on']):
+        assert asset['alt'], f"{asset['id']}: a hero video needs alt text for its poster"
     for f in asset['files']:
         path = root / f['path']
         data = path.read_bytes()

@@ -213,6 +213,8 @@
    the blend doesn't wash it out. It takes the band's top corner, clear of the
    rounded edge, where the artwork sits on every screen size. */
 .cta-band > .loop-toggle { top: 24px; right: 24px; bottom: auto; background: color-mix(in srgb, #000 30%, transparent); }
+/* The Organisations hero's price card covers the photograph's lower edge, so its button goes to the top corner. */
+.hero-visual .hero-media > .loop-toggle { top: 16px; bottom: auto; }
 .cta-band > .loop-toggle:hover { background: color-mix(in srgb, #000 45%, transparent); }
 @media (prefers-reduced-transparency: reduce) { .loop-toggle, .cta-band > .loop-toggle { background: var(--md-sys-color-inverse-surface); backdrop-filter: none; } }
 
