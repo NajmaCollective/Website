@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- Live preview of the closing-band loops. Serve the repository root over HTTP
+     (for example `python3 -m http.server`) and open /tools/loops/. Add
+     ?piece=rhythm to show one piece. tools/render_loops.cjs uses this page to
+     render the frames. -->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Najma loops</title>
+<style>
+  body { margin: 0; padding: 24px; background: #203e32; color: #f0f6eb; font: 15px/1.4 system-ui, sans-serif; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 560px), 1fr)); gap: 24px; }
+  figure { margin: 0; }
+  canvas { display: block; width: 100%; height: auto; border-radius: 24px; mix-blend-mode: screen; }
+  canvas[data-ground] { mix-blend-mode: normal; }
+  figcaption { margin-top: 8px; }
+  body.capture { padding: 0; }
+  body.capture canvas { width: 1920px; border-radius: 0; mix-blend-mode: normal; }
+</style>
+</head>
+<body>
+<div class="grid" id="grid"></div>
+<script type="module">
+  import { PIECES, W, H, render } from './art.js';
+  const params = new URLSearchParams(location.search);
+  const only = params.get('piece');
+  const LOOP_SECONDS = 12;
+  const canvases = Object.keys(PIECES).filter(name => !only || name === only).map(name => {
+    const figure = document.createElement('figure');
+    const canvas = Object.assign(document.createElement('canvas'), { width: W, height: H });
+    if (PIECES[name].ground) canvas.dataset.ground = '';
+    const caption = document.createElement('figcaption');
+    caption.textContent = PIECES[name].title;
+    figure.append(canvas, caption);
+    document.getElementById('grid').append(figure);
+    return [name, canvas];
+  });
+  // Capture mode: the renderer calls window.frame(t) and screenshots the canvas.
+  if (params.has('capture')) {
+    document.body.classList.add('capture');
+    window.frame = t => canvases.forEach(([name, canvas]) => render(canvas, name, t));
+    window.frame(0);
+    window.ready = true;
+  } else {
+    const tick = now => {
+      const t = (now / 1000 / LOOP_SECONDS) % 1;
+      canvases.forEach(([name, canvas]) => render(canvas, name, t));
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+</script>
+</body>
+</html>
