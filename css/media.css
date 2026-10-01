@@ -7,13 +7,13 @@
    --focus sets the crop's focal point; --zoom tightens a crop around it. */
 .media, .hero-media { position: relative; overflow: clip; background: var(--md-sys-color-surface-container); }
 .media { border-radius: var(--media-radius); }
-:is(.media, .hero-media) > img {
+:is(.media, .hero-media) > :is(img, video) {
   position: absolute; inset: 0; display: block; width: 100%; height: 100%;
   object-fit: cover; object-position: var(--focus, 50% 50%);
   transform: scale(var(--zoom, 1)); transform-origin: var(--focus, 50% 50%);
 }
 /* The hero photograph is slightly taller than its frame so it can drift with the page. */
-.hero-media > img { inset: -5% 0; height: 110%; }
+.hero-media > :is(img, video) { inset: -5% 0; height: 110%; }
 /* A hairline inner edge keeps bright photographs defined against the page surface. */
 :is(.hero-media, .split-media > .media, .section-media, .grid-media)::after {
   content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
@@ -158,7 +158,7 @@
   margin: calc(-1 * var(--band-pad-y)) calc(-1 * var(--band-pad-x)) calc(-1 * var(--band-pad-y)) 0;
   mix-blend-mode: screen;
 }
-.cta-art > img {
+.cta-art > :is(img, video) {
   position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--focus, 50% 50%);
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 40%);
   mask-image: linear-gradient(90deg, transparent 0%, #000 40%);
@@ -191,6 +191,33 @@
 }
 .teacher-avatar img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
+/* ---------- Looping video (js/video.js) ----------
+   A silent loop sits over its poster photograph and fades in once it plays, so
+   the poster shows while it loads and whenever motion is off. */
+:is(.media, .hero-media, .cta-art) > video { opacity: 0; transition: opacity 600ms var(--md-sys-motion-easing-emphasized-decelerate); }
+:is(.media, .hero-media, .cta-art) > video.is-playing { opacity: 1; }
+.loop-toggle {
+  position: absolute; z-index: 2; right: 16px; bottom: 16px;
+  display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 0; border-radius: 50%;
+  background: color-mix(in srgb, var(--md-sys-color-inverse-surface) 62%, transparent); color: var(--md-sys-color-inverse-on-surface);
+  backdrop-filter: blur(8px); cursor: pointer;
+  transition: background-color var(--md-sys-motion-effects-fast), border-radius var(--md-sys-motion-spatial-fast);
+}
+/* A 48px touch area around the 40px button */
+.loop-toggle::before { content: ""; position: absolute; inset: -4px; }
+.loop-toggle:hover { background: color-mix(in srgb, var(--md-sys-color-inverse-surface) 82%, transparent); }
+.loop-toggle:active { border-radius: var(--md-sys-shape-corner-medium); }
+.loop-toggle:focus-visible { outline: 3px solid var(--md-sys-color-primary); outline-offset: 2px; border-radius: 50%; }
+.loop-toggle .material-symbols-outlined { font-size: 22px; font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24; }
+/* In a closing band the button sits beside the screened artwork, outside it, so
+   the blend doesn't wash it out. It takes the band's top corner, clear of the
+   rounded edge, where the artwork sits on every screen size. */
+.cta-band > .loop-toggle { top: 24px; right: 24px; bottom: auto; background: color-mix(in srgb, #000 30%, transparent); }
+/* The Organisations hero's price card covers the photograph's lower edge, so its button goes to the top corner. */
+.hero-visual .hero-media > .loop-toggle { top: 16px; bottom: auto; }
+.cta-band > .loop-toggle:hover { background: color-mix(in srgb, #000 45%, transparent); }
+@media (prefers-reduced-transparency: reduce) { .loop-toggle, .cta-band > .loop-toggle { background: var(--md-sys-color-inverse-surface); backdrop-filter: none; } }
+
 /* ---------- Motion ---------- */
 @keyframes hero-reveal { from { clip-path: inset(9% 8% 9% 8% round 8rem); } to { clip-path: inset(0 round var(--media-radius)); } }
 @keyframes hero-settle { from { scale: 1.16; } to { scale: 1; } }
@@ -204,7 +231,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .hero-media { animation: hero-reveal 1400ms cubic-bezier(.2, .8, .2, 1) 60ms both; }
-  .hero-media > img { animation: hero-settle 2400ms cubic-bezier(.16, .84, .24, 1) both; }
+  .hero-media > :is(img, video) { animation: hero-settle 2400ms cubic-bezier(.16, .84, .24, 1) both; }
   .hero-copy > * { animation: copy-in 900ms cubic-bezier(.2, .8, .2, 1) both; }
   .hero-copy > :nth-child(2) { animation-delay: 70ms; }
   .hero-copy > :nth-child(3) { animation-delay: 140ms; }
@@ -215,11 +242,11 @@
 }
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
-    .hero-media > img { animation: hero-settle 2400ms cubic-bezier(.16, .84, .24, 1) both, hero-drift linear both; animation-timeline: auto, scroll(root); animation-range: normal, 0 100vh; }
+    .hero-media > :is(img, video) { animation: hero-settle 2400ms cubic-bezier(.16, .84, .24, 1) both, hero-drift linear both; animation-timeline: auto, scroll(root); animation-range: normal, 0 100vh; }
     .media { animation: media-reveal linear both; animation-timeline: view(); animation-range: entry 0% entry 85%; }
     /* Photographs settle to their natural crop by the time they reach mid-screen. */
-    .media > img { animation: media-settle linear both; animation-timeline: view(); animation-range: entry 0% cover 50%; }
-    .cta-art > img { animation: art-drift linear both; animation-timeline: view(); animation-range: entry 0% exit 100%; }
+    .media > :is(img, video) { animation: media-settle linear both; animation-timeline: view(); animation-range: entry 0% cover 50%; }
+    .cta-art > :is(img, video) { animation: art-drift linear both; animation-timeline: view(); animation-range: entry 0% exit 100%; }
     .programme-sessions > li::before { animation: bar-draw linear both; animation-timeline: view(); animation-range: entry 60% cover 50%; }
     .programme-sessions > li:nth-child(2)::before { animation-range: entry 80% cover 55%; }
     .programme-sessions > li:nth-child(3)::before { animation-range: entry 100% cover 60%; }
@@ -251,7 +278,7 @@
   .cta-band { grid-template-columns: minmax(0, 1fr); min-height: 0; }
   .cta-art { grid-column: 1; grid-row: 1; height: clamp(12rem, 46vw, 19rem); margin: calc(-1 * var(--band-pad-y)) calc(-1 * var(--band-pad-x)) 0; }
   .cta-content { grid-row: 2; }
-  .cta-art > img { -webkit-mask-image: linear-gradient(180deg, #000 45%, transparent 100%); mask-image: linear-gradient(180deg, #000 45%, transparent 100%); }
+  .cta-art > :is(img, video) { -webkit-mask-image: linear-gradient(180deg, #000 45%, transparent 100%); mask-image: linear-gradient(180deg, #000 45%, transparent 100%); }
 }
 @media (max-width: 599px) {
   /* On phones the first screen carries the headline, a one-line introduction, the

@@ -1,0 +1,177 @@
+{
+  "about": "Source and licence records for every video on the site. Every video is stock footage from a stock video library under a licence that allows commercial use; the site uses no artwork of its own. tools/validate_video_assets.py --write adds each file's size and checksum to manifest.json; run it after re-encoding.",
+  "assets": [
+    {
+      "id": "home-video-call",
+      "title": "A video call at the laptop",
+      "kind": "stock video",
+      "used_on": [
+        "Home: hero"
+      ],
+      "alt": "A woman smiles as she talks and types at her laptop.",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Young female employee having a video call with a client",
+        "page_url": "https://mixkit.co/free-stock-video/young-female-employee-having-a-video-call-with-a-client-4844/",
+        "file_url": "https://assets.mixkit.co/videos/4844/4844-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 4844-1080.mp4 0 7.5 1 home-video-call.mkv",
+      "notes": "Illustrative model. Never present as a Najma learner, teacher or partner."
+    },
+    {
+      "id": "cafe-greeting",
+      "title": "Waving to someone on a call",
+      "kind": "stock video",
+      "used_on": [
+        "Solidarity Café: hero"
+      ],
+      "alt": "Two friends smile and wave at someone on a video call.",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Man and woman outdoors during a video call",
+        "page_url": "https://mixkit.co/free-stock-video/man-and-woman-outdoors-during-a-video-call-39783/",
+        "file_url": "https://assets.mixkit.co/videos/39783/39783-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 39783-1080.mp4 0.5 9 1.2 cafe-greeting.mkv",
+      "notes": "Illustrative models. Never present as Café participants."
+    },
+    {
+      "id": "org-group",
+      "title": "Talking round a table",
+      "kind": "stock video",
+      "used_on": [
+        "For organisations: hero"
+      ],
+      "alt": "Five people talk and point at papers around a table with cups of tea.",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Students in a cafeteria discussing an assignment",
+        "page_url": "https://mixkit.co/free-stock-video/students-in-a-cafeteria-discussing-an-assignment-4794/",
+        "file_url": "https://assets.mixkit.co/videos/4794/4794-2160.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "ffmpeg -i 4794-2160.mp4 -vf \"crop=2600:1462:960:280,scale=1920:1080\" 4794-crop.mp4, then tools/make_loop.sh 4794-crop.mp4 5 6.3 1 org-group.mkv",
+      "notes": "Illustrative models. Never present as a partner organisation or its members. The crop keeps the out-of-focus logo posters on the wall behind them out of frame; keep it that way."
+    },
+    {
+      "id": "night-sky",
+      "title": "Night sky",
+      "kind": "stock video",
+      "used_on": [
+        "Lessons: Join us at the Solidarity Café",
+        "Solidarity Café: Join the next Café"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Many stars in the night sky",
+        "page_url": "https://mixkit.co/free-stock-video/many-stars-in-the-night-sky-4124/",
+        "file_url": "https://assets.mixkit.co/videos/4124/4124-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 4124-1080.mp4 0.5 10 1.5 night-sky.mkv",
+      "notes": "Time-lapse of the Milky Way above a mountain ridge. Najma means star. Screened onto the dark band.",
+      "encode": "X264_CRF_720=28 tools/encode_video.sh night-sky.mkv assets/video/night-sky, then the 1920px poster re-saved at WebP quality 62 (the star field is heavy)"
+    },
+    {
+      "id": "sea-light",
+      "title": "Light on the water",
+      "kind": "stock video",
+      "used_on": [
+        "Teachers: Book your lesson"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Defocused view of the sunset reflection in the sea",
+        "page_url": "https://mixkit.co/free-stock-video/defocused-view-of-the-sunset-reflection-in-the-sea-34363/",
+        "file_url": "https://assets.mixkit.co/videos/34363/34363-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 34363-1080.mp4 0.5 10 1.5 sea-light.mkv",
+      "notes": "Out-of-focus sunset glints on the sea. Screened onto the dark band.",
+      "encode": "X264_CRF_720=35 X264_CRF_1080=31 tools/encode_video.sh sea-light.mkv assets/video/sea-light"
+    },
+    {
+      "id": "teal-water",
+      "title": "Teal water",
+      "kind": "stock video",
+      "used_on": [
+        "For organisations: What could your group work on?"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Motion of a liquid out of focus, extreme close up",
+        "page_url": "https://mixkit.co/free-stock-video/motion-of-a-liquid-out-of-focus-extreme-close-up-3887/",
+        "file_url": "https://assets.mixkit.co/videos/3887/3887-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 3887-1080.mp4 1 10 1.5 teal-water.mkv",
+      "notes": "Extreme close-up of moving liquid in teal and mint. Decorative tile in the card grid."
+    },
+    {
+      "id": "ink",
+      "title": "Ink in water",
+      "kind": "stock video",
+      "used_on": [
+        "For organisations: Talk to us about a programme"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Exploding Ink underwater",
+        "page_url": "https://mixkit.co/free-stock-video/exploding-ink-underwater-105/",
+        "file_url": "https://assets.mixkit.co/videos/105/105-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 105-1080.mp4 2 10 2 ink.mkv",
+      "notes": "Pink and yellow ink blooming underwater on black. Screened onto the dark band."
+    },
+    {
+      "id": "smoke",
+      "title": "A trail of smoke",
+      "kind": "stock video",
+      "used_on": [
+        "About: Where would you like to start?"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "A trail of smoke rapidly twirls over a dark background",
+        "page_url": "https://mixkit.co/free-stock-video/a-trail-of-smoke-rapidly-twirls-over-a-dark-background-50951/",
+        "file_url": "https://assets.mixkit.co/videos/50951/50951-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 50951-1080.mp4 1 10 1.5 smoke.mkv",
+      "notes": "White smoke turning over a dark background. Screened onto the dark band.",
+      "encode": "X264_CRF_720=35 X264_CRF_1080=30 tools/encode_video.sh smoke.mkv assets/video/smoke"
+    }
+  ]
+}

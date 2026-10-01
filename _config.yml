@@ -20,3 +20,5 @@ exclude:
   - assets/stock/manifest.json
   - assets/stock/README.md
   - assets/stock/PEXELS-SHORTLIST.md
+  - assets/video/sources.json
+  - assets/video/manifest.json

@@ -1,0 +1,609 @@
+{
+  "about": "Source and licence records for every video on the site. Every video is stock footage from a stock video library under a licence that allows commercial use; the site uses no artwork of its own. tools/validate_video_assets.py --write adds each file's size and checksum to manifest.json; run it after re-encoding.",
+  "assets": [
+    {
+      "id": "home-video-call",
+      "title": "A video call at the laptop",
+      "kind": "stock video",
+      "used_on": [
+        "Home: hero"
+      ],
+      "alt": "A woman smiles as she talks and types at her laptop.",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Young female employee having a video call with a client",
+        "page_url": "https://mixkit.co/free-stock-video/young-female-employee-having-a-video-call-with-a-client-4844/",
+        "file_url": "https://assets.mixkit.co/videos/4844/4844-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 4844-1080.mp4 0 7.5 1 home-video-call.mkv",
+      "notes": "Illustrative model. Never present as a Najma learner, teacher or partner.",
+      "files": [
+        {
+          "path": "assets/video/home-video-call-720.av1.mp4",
+          "bytes": 411577,
+          "sha256": "c4030e3b02393ec9244e07e6bf2eb77cf818dcce2dd3a46face748b9652db64b",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 7.5
+        },
+        {
+          "path": "assets/video/home-video-call-720.h264.mp4",
+          "bytes": 441158,
+          "sha256": "0fd9514f4d87d5c6c531e147e4ad1587a60dac96d158d8fc9ad48a6b46cc5d7a",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 7.5
+        },
+        {
+          "path": "assets/video/home-video-call-1080.av1.mp4",
+          "bytes": 572773,
+          "sha256": "c368e0a16b4901c39c424e9391bd6be3db4d9d6a2ee7d5f643d90ba92c322aba",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 7.5
+        },
+        {
+          "path": "assets/video/home-video-call-1080.h264.mp4",
+          "bytes": 590565,
+          "sha256": "aa5a8bb988ae6ee6392b7b8b2d9951e16ae6e0950b8a61d8749f4950aaad49c1",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 7.5
+        },
+        {
+          "path": "assets/video/home-video-call-poster.webp",
+          "bytes": 85538,
+          "sha256": "54bdb137b40e4effbde96dce479212925228e9a351037bf5374dbf0f0f2b5939",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/home-video-call-poster-960.webp",
+          "bytes": 34376,
+          "sha256": "8678c1bc0fa0c186f3f75f860a77b59a531d2f4c0cdd0b1316c6718ad7b4b8e4",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    },
+    {
+      "id": "cafe-greeting",
+      "title": "Waving to someone on a call",
+      "kind": "stock video",
+      "used_on": [
+        "Solidarity Café: hero"
+      ],
+      "alt": "Two friends smile and wave at someone on a video call.",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Man and woman outdoors during a video call",
+        "page_url": "https://mixkit.co/free-stock-video/man-and-woman-outdoors-during-a-video-call-39783/",
+        "file_url": "https://assets.mixkit.co/videos/39783/39783-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 39783-1080.mp4 0.5 9 1.2 cafe-greeting.mkv",
+      "notes": "Illustrative models. Never present as Café participants.",
+      "files": [
+        {
+          "path": "assets/video/cafe-greeting-720.av1.mp4",
+          "bytes": 393552,
+          "sha256": "d6399724d3a06fc52bfd8e75e73720488499eefa16b65ab488ee7cf7c47004cf",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 9.0
+        },
+        {
+          "path": "assets/video/cafe-greeting-720.h264.mp4",
+          "bytes": 505979,
+          "sha256": "9ab4c54d674e469478e302e895acb134c4ef5f82091734db0fc58f6d93b7a657",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 9.0
+        },
+        {
+          "path": "assets/video/cafe-greeting-1080.av1.mp4",
+          "bytes": 568003,
+          "sha256": "500e235a6a0b93291690cf43d71c2529ec75412c50184a196d1e46f64cc1a039",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 9.0
+        },
+        {
+          "path": "assets/video/cafe-greeting-1080.h264.mp4",
+          "bytes": 749914,
+          "sha256": "11cd7aa8fc5065469e0db0bb156e2a14dbb15fed63fd9b3aafd2be470d2cad95",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 9.0
+        },
+        {
+          "path": "assets/video/cafe-greeting-poster.webp",
+          "bytes": 54056,
+          "sha256": "552ef834eb26839339015482c90f7d67fb89949f0a6fadcbc24fec1986b1fa0a",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/cafe-greeting-poster-960.webp",
+          "bytes": 19714,
+          "sha256": "230c01c6ad0c5041b71a69e2487f061651355eb69a71d706a770037dfeeedc05",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    },
+    {
+      "id": "org-group",
+      "title": "Talking round a table",
+      "kind": "stock video",
+      "used_on": [
+        "For organisations: hero"
+      ],
+      "alt": "Five people talk and point at papers around a table with cups of tea.",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Students in a cafeteria discussing an assignment",
+        "page_url": "https://mixkit.co/free-stock-video/students-in-a-cafeteria-discussing-an-assignment-4794/",
+        "file_url": "https://assets.mixkit.co/videos/4794/4794-2160.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "ffmpeg -i 4794-2160.mp4 -vf \"crop=2600:1462:960:280,scale=1920:1080\" 4794-crop.mp4, then tools/make_loop.sh 4794-crop.mp4 5 6.3 1 org-group.mkv",
+      "notes": "Illustrative models. Never present as a partner organisation or its members. The crop keeps the out-of-focus logo posters on the wall behind them out of frame; keep it that way.",
+      "files": [
+        {
+          "path": "assets/video/org-group-720.av1.mp4",
+          "bytes": 684042,
+          "sha256": "b34f61704864921af9de152a0103e6753b34fcc87297470787a7bcc9f0fe5839",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 6.29
+        },
+        {
+          "path": "assets/video/org-group-720.h264.mp4",
+          "bytes": 869740,
+          "sha256": "5e7598cb883c0ba793f30cc87a89233dac13611cfeda3210968542f5d5484f12",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 6.29
+        },
+        {
+          "path": "assets/video/org-group-1080.av1.mp4",
+          "bytes": 955053,
+          "sha256": "8a4c1ae84002c99f27f1bf9a3d370c0d95626e9c7645f49e61c8d58d9d412e48",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 6.29
+        },
+        {
+          "path": "assets/video/org-group-1080.h264.mp4",
+          "bytes": 1230101,
+          "sha256": "f8a9bd77e4b005329e443fe3387a681c7724e0b7b9332781052f5d6216b09884",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 6.29
+        },
+        {
+          "path": "assets/video/org-group-poster.webp",
+          "bytes": 80952,
+          "sha256": "85322c8b10abe3cb08e9cc187552189596645e5bcbe9184a215b4c9af4ad41e8",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/org-group-poster-960.webp",
+          "bytes": 32664,
+          "sha256": "f25e3c22c15e83934486edfcf509e213f1f551e57c6bba6527eafb6e44926bd1",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    },
+    {
+      "id": "night-sky",
+      "title": "Night sky",
+      "kind": "stock video",
+      "used_on": [
+        "Lessons: Join us at the Solidarity Café",
+        "Solidarity Café: Join the next Café"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Many stars in the night sky",
+        "page_url": "https://mixkit.co/free-stock-video/many-stars-in-the-night-sky-4124/",
+        "file_url": "https://assets.mixkit.co/videos/4124/4124-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 4124-1080.mp4 0.5 10 1.5 night-sky.mkv",
+      "notes": "Time-lapse of the Milky Way above a mountain ridge. Najma means star. Screened onto the dark band.",
+      "encode": "X264_CRF_720=28 tools/encode_video.sh night-sky.mkv assets/video/night-sky, then the 1920px poster re-saved at WebP quality 62 (the star field is heavy)",
+      "files": [
+        {
+          "path": "assets/video/night-sky-720.av1.mp4",
+          "bytes": 913912,
+          "sha256": "b3636e842825bae4c3adf984d95ca00f16af3dc8577205cd0c49700b4bd8e99b",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/night-sky-720.h264.mp4",
+          "bytes": 808296,
+          "sha256": "4762c10ea282ebc31030f57a8ff985678627ecaa70294da5f3027d23d0fcc6ff",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/night-sky-1080.av1.mp4",
+          "bytes": 1798851,
+          "sha256": "a38070c86a4d519f3fc6ea2ef439c00fcd0b9bd121966fbca76c0d33c8c3ed5e",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/night-sky-1080.h264.mp4",
+          "bytes": 1572510,
+          "sha256": "c11cf2e368dbe06a1db4c85f2b480b9ecb49771e26fa56057167c1fb76db4969",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/night-sky-poster.webp",
+          "bytes": 242190,
+          "sha256": "c344a21651ea2c8e2c5081523c36e3bb5cfc7fc9ced81f2f22006a1a6612139d",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/night-sky-poster-960.webp",
+          "bytes": 58162,
+          "sha256": "1f3f346f2c8bda82ce273598071b186368539d041e6e418cbc3c1ff328387a0b",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    },
+    {
+      "id": "sea-light",
+      "title": "Light on the water",
+      "kind": "stock video",
+      "used_on": [
+        "Teachers: Book your lesson"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Defocused view of the sunset reflection in the sea",
+        "page_url": "https://mixkit.co/free-stock-video/defocused-view-of-the-sunset-reflection-in-the-sea-34363/",
+        "file_url": "https://assets.mixkit.co/videos/34363/34363-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 34363-1080.mp4 0.5 10 1.5 sea-light.mkv",
+      "notes": "Out-of-focus sunset glints on the sea. Screened onto the dark band.",
+      "encode": "X264_CRF_720=35 X264_CRF_1080=31 tools/encode_video.sh sea-light.mkv assets/video/sea-light",
+      "files": [
+        {
+          "path": "assets/video/sea-light-720.av1.mp4",
+          "bytes": 933024,
+          "sha256": "f420f517817cd1554c2b45679cd65a8fc06224ad956f2a7e2210519da5d8918b",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/sea-light-720.h264.mp4",
+          "bytes": 889871,
+          "sha256": "51ecfc38ad2d2d5b089b523d1b08361d38a2c74d0f15e4d8c6d33651a338a455",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/sea-light-1080.av1.mp4",
+          "bytes": 1286443,
+          "sha256": "fbc50baa45def0057d965855b4aa8123b9c6c84da410f95f17f89a64dba6953a",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/sea-light-1080.h264.mp4",
+          "bytes": 2412879,
+          "sha256": "b2a204135b9dc9d05a566c73d1cfb031b2782e38039362b3c3892f9e46b13f8c",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/sea-light-poster.webp",
+          "bytes": 36950,
+          "sha256": "cc43234f1a8283bf0900efe81ab0330d6eebf10eba0923574c88c7904afa7379",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/sea-light-poster-960.webp",
+          "bytes": 15912,
+          "sha256": "19fad0c315632165ee4aa6403ed9065b56dd815d91f3e62b9dabf9040a78716d",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    },
+    {
+      "id": "teal-water",
+      "title": "Teal water",
+      "kind": "stock video",
+      "used_on": [
+        "For organisations: What could your group work on?"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Motion of a liquid out of focus, extreme close up",
+        "page_url": "https://mixkit.co/free-stock-video/motion-of-a-liquid-out-of-focus-extreme-close-up-3887/",
+        "file_url": "https://assets.mixkit.co/videos/3887/3887-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 3887-1080.mp4 1 10 1.5 teal-water.mkv",
+      "notes": "Extreme close-up of moving liquid in teal and mint. Decorative tile in the card grid.",
+      "files": [
+        {
+          "path": "assets/video/teal-water-720.av1.mp4",
+          "bytes": 266085,
+          "sha256": "1936de68225666672c27868a4c2d5f22f96c66362147a30412204cab4b33727c",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/teal-water-720.h264.mp4",
+          "bytes": 746878,
+          "sha256": "83f9477d95910b187a4f532468da00b67a7ce6d36d3c374ab4b0d661b97b5573",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/teal-water-1080.av1.mp4",
+          "bytes": 403166,
+          "sha256": "534038558e0ccac6cc4e7bf4290af74d0876a242ae47b97fd9d17c4e11b81fab",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/teal-water-1080.h264.mp4",
+          "bytes": 1190344,
+          "sha256": "5b2cfe180568a5e650195f8fd60d92053c12441ebb489599d572f8bef403e088",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/teal-water-poster.webp",
+          "bytes": 20090,
+          "sha256": "d487761617c45fe6f386ec9f94919018d520c1251097788b41caf49a79f208e4",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/teal-water-poster-960.webp",
+          "bytes": 6916,
+          "sha256": "f135264ca905da9cb83d196159bb72a7f750558fbc0e8ca5638735928e5c1f0f",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    },
+    {
+      "id": "ink",
+      "title": "Ink in water",
+      "kind": "stock video",
+      "used_on": [
+        "For organisations: Talk to us about a programme"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "Exploding Ink underwater",
+        "page_url": "https://mixkit.co/free-stock-video/exploding-ink-underwater-105/",
+        "file_url": "https://assets.mixkit.co/videos/105/105-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 105-1080.mp4 2 10 2 ink.mkv",
+      "notes": "Pink and yellow ink blooming underwater on black. Screened onto the dark band.",
+      "files": [
+        {
+          "path": "assets/video/ink-720.av1.mp4",
+          "bytes": 416519,
+          "sha256": "eb0e1815a8d7bb6d2697e90e6e74590b7d440d6c44135aca4c8d4800cde6a792",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/ink-720.h264.mp4",
+          "bytes": 605813,
+          "sha256": "add9fcd85ff65c2681df5a83c5e8a303fb5ffe4368a2e60246944f5361813c46",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/ink-1080.av1.mp4",
+          "bytes": 660941,
+          "sha256": "b92d45284f3f3d21ed2e4f09e45c8c4cb81a47ca220d385d2da396ef75591914",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/ink-1080.h264.mp4",
+          "bytes": 970849,
+          "sha256": "57d5a911fecc1b7167e2ecd02b65c7aa94bd470a225a11657c71a00e93817e08",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/ink-poster.webp",
+          "bytes": 82168,
+          "sha256": "79951f5af159277d81a8e6d4573be7ee9f8141ba277b15a311923629dec3ce11",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/ink-poster-960.webp",
+          "bytes": 28862,
+          "sha256": "63e6c2eaca7092b29f4cdc91b3bced55826403cb59588eb592248292c4b4286d",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    },
+    {
+      "id": "smoke",
+      "title": "A trail of smoke",
+      "kind": "stock video",
+      "used_on": [
+        "About: Where would you like to start?"
+      ],
+      "alt": "",
+      "source": {
+        "provider": "Mixkit",
+        "creator": "Mixkit",
+        "title": "A trail of smoke rapidly twirls over a dark background",
+        "page_url": "https://mixkit.co/free-stock-video/a-trail-of-smoke-rapidly-twirls-over-a-dark-background-50951/",
+        "file_url": "https://assets.mixkit.co/videos/50951/50951-1080.mp4",
+        "license": "Mixkit Stock Video Free License",
+        "license_url": "https://mixkit.co/license/#videoFree",
+        "checked": "2026-10-01"
+      },
+      "loop": "tools/make_loop.sh 50951-1080.mp4 1 10 1.5 smoke.mkv",
+      "notes": "White smoke turning over a dark background. Screened onto the dark band.",
+      "encode": "X264_CRF_720=35 X264_CRF_1080=30 tools/encode_video.sh smoke.mkv assets/video/smoke",
+      "files": [
+        {
+          "path": "assets/video/smoke-720.av1.mp4",
+          "bytes": 867665,
+          "sha256": "e7ddc8f020f91fe5e62daa52fc0d367467fab68af7fb44250acacac0d7afa92b",
+          "width": 1280,
+          "height": 720,
+          "codec": "av1",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/smoke-720.h264.mp4",
+          "bytes": 838911,
+          "sha256": "259ee18817604bf56409f8060a3a7d9f8273e564d7e96c0d74f5874a63016069",
+          "width": 1280,
+          "height": 720,
+          "codec": "h264",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/smoke-1080.av1.mp4",
+          "bytes": 1165918,
+          "sha256": "365aa86633e0ba8f0dccb11e44c4a6168ef48a52080782b7f6e6e8529522006c",
+          "width": 1920,
+          "height": 1080,
+          "codec": "av1",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/smoke-1080.h264.mp4",
+          "bytes": 2362620,
+          "sha256": "6e193c7eaa97fce3b74946338daa78b8efb40fb6427afc233d0e9d14caae3e1e",
+          "width": 1920,
+          "height": 1080,
+          "codec": "h264",
+          "seconds": 10.0
+        },
+        {
+          "path": "assets/video/smoke-poster.webp",
+          "bytes": 43730,
+          "sha256": "c44870d7f129e8cc90a00bba1b398b0f0884a092104efcb06f910e6975d21497",
+          "width": 1920,
+          "height": 1080,
+          "codec": "webp"
+        },
+        {
+          "path": "assets/video/smoke-poster-960.webp",
+          "bytes": 14506,
+          "sha256": "d2f5e94ac84b0aa883fb95f02adeb46a3324785aca2eab43252befdc2e55390b",
+          "width": 960,
+          "height": 540,
+          "codec": "webp"
+        }
+      ]
+    }
+  ]
+}
