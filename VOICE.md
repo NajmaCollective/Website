@@ -86,9 +86,9 @@ These carry commitments to learners and, for Al Manar, the terms of a charitable
 
 **Learning records** (Lessons). Only the people who need it to teach you, support your learning or manage your bookings. To ask what information we hold, or to request a correction or a limit on who can see it, email info@najmacollective.org.
 
-## Teacher profiles
+## Teacher and facilitator profiles
 
-Profiles are in each teacher’s own voice and belong to them. Keep the factual fields the same across profiles so learners can compare. Edit lightly: correct clear errors and remove repetition, keep the teacher’s own vocabulary, and send every change back to the teacher for approval before it goes live.
+Profiles are in each teacher’s own voice and belong to them. Keep the factual fields the same across profiles so learners can compare. Edit lightly: correct clear errors and remove repetition, keep the teacher’s own vocabulary, and send every change back to the teacher for approval before it goes live. The Café facilitator’s profile on the Café page follows the same rules.
 
 ## Before publishing
 

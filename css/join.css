@@ -1,3 +1,16 @@
 /* Solidarity Café */
 .hero .lede { max-width: 26ch; }
 .hero-copy > .price { font-size: .98rem; }
+
+/* The facilitator's profile. Her approved photograph goes in the circular avatar
+   (see DESIGN.md); until then it shows a Material monogram, as teachers' do. */
+.facilitator { display: flex; align-items: center; gap: 1.35rem; margin-bottom: 1.75rem; }
+.facilitator .teacher-avatar { flex: none; width: 6.75rem; font-size: 2.5rem; }
+.facilitator h3 { margin: 0 0 .3rem; font-size: clamp(1.4rem, 2vw, 1.7rem); }
+.facilitator-location { display: flex; align-items: center; gap: .3rem; margin-bottom: .35rem; color: var(--md-sys-color-primary); font-size: .88rem; font-weight: 600; }
+.facilitator-location .material-symbols-outlined { font-size: 1.05rem; font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20; }
+.facilitator .facilitator-role { margin: 0; color: var(--md-sys-color-primary); font-weight: 580; line-height: 1.45; }
+@media (max-width: 599px) {
+  .facilitator { gap: 1rem; }
+  .facilitator .teacher-avatar { width: 5.25rem; font-size: 2rem; }
+}

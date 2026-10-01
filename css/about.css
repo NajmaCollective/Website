@@ -22,6 +22,7 @@
 .cards.roles > article.tonal:nth-child(2) { background: var(--md-sys-color-tertiary-container); color: var(--md-sys-color-on-tertiary-container); --icon-color: var(--md-sys-color-tertiary); }
 .cards.roles > article.tonal:nth-child(1) .price { color: var(--md-sys-color-secondary); }
 .cards.roles > article.tonal:nth-child(2) .price { color: var(--md-sys-color-tertiary); }
+.cards.roles > article.tonal:nth-child(2) a { color: var(--md-sys-color-tertiary); }
 .cards.roles .price { margin-bottom: .75rem; font-size: 1.1rem; }
 @keyframes allocation-fill { from { clip-path: inset(0 100% 0 0 round 999px); } }
 @supports (animation-timeline: view()) {
