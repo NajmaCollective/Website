@@ -530,8 +530,8 @@
       ]
     },
     {
-      "id": "smoke",
-      "title": "A trail of smoke",
+      "id": "leaf-light",
+      "title": "Sunlight through leaves",
       "kind": "stock video",
       "used_on": [
         "About: Where would you like to start?"
@@ -540,65 +540,64 @@
       "source": {
         "provider": "Mixkit",
         "creator": "Mixkit",
-        "title": "A trail of smoke rapidly twirls over a dark background",
-        "page_url": "https://mixkit.co/free-stock-video/a-trail-of-smoke-rapidly-twirls-over-a-dark-background-50951/",
-        "file_url": "https://assets.mixkit.co/videos/50951/50951-1080.mp4",
+        "title": "Sunlight passing through the leaves of a tree",
+        "page_url": "https://mixkit.co/free-stock-video/sunlight-passing-through-the-leaves-of-a-tree-34371/",
+        "file_url": "https://assets.mixkit.co/videos/34371/34371-1080.mp4",
         "license": "Mixkit Stock Video Free License",
         "license_url": "https://mixkit.co/license/#videoFree",
         "checked": "2026-10-01"
       },
-      "loop": "tools/make_loop.sh 50951-1080.mp4 1 10 1.5 smoke.mkv",
-      "notes": "White smoke turning over a dark background. Screened onto the dark band.",
-      "encode": "X264_CRF_720=35 X264_CRF_1080=30 tools/encode_video.sh smoke.mkv assets/video/smoke",
+      "loop": "tools/make_loop.sh 34371-1080.mp4 0.2 5.2 1.2 leaf-light.mkv",
+      "notes": "Sun breaking through the leaves of a tree. Screened onto the dark band, the leaves take on its green and only the light shows.",
       "files": [
         {
-          "path": "assets/video/smoke-720.av1.mp4",
-          "bytes": 867665,
-          "sha256": "e7ddc8f020f91fe5e62daa52fc0d367467fab68af7fb44250acacac0d7afa92b",
+          "path": "assets/video/leaf-light-720.av1.mp4",
+          "bytes": 367440,
+          "sha256": "d6e9b98d4d660143ebe708cc2d1d634ba4604d56f05afb0f6d2949110b3da1cf",
           "width": 1280,
           "height": 720,
           "codec": "av1",
-          "seconds": 10.0
+          "seconds": 5.21
         },
         {
-          "path": "assets/video/smoke-720.h264.mp4",
-          "bytes": 838911,
-          "sha256": "259ee18817604bf56409f8060a3a7d9f8273e564d7e96c0d74f5874a63016069",
+          "path": "assets/video/leaf-light-720.h264.mp4",
+          "bytes": 492188,
+          "sha256": "4582c582f87800f9b0fd047505abfe702834fcfcb085746f3f3613ce4105ab10",
           "width": 1280,
           "height": 720,
           "codec": "h264",
-          "seconds": 10.0
+          "seconds": 5.21
         },
         {
-          "path": "assets/video/smoke-1080.av1.mp4",
-          "bytes": 1165918,
-          "sha256": "365aa86633e0ba8f0dccb11e44c4a6168ef48a52080782b7f6e6e8529522006c",
+          "path": "assets/video/leaf-light-1080.av1.mp4",
+          "bytes": 519782,
+          "sha256": "7b715200d9a9e65c78186d1e553249c399f5fd2143a36c830cc1a617a678fe92",
           "width": 1920,
           "height": 1080,
           "codec": "av1",
-          "seconds": 10.0
+          "seconds": 5.21
         },
         {
-          "path": "assets/video/smoke-1080.h264.mp4",
-          "bytes": 2362620,
-          "sha256": "6e193c7eaa97fce3b74946338daa78b8efb40fb6427afc233d0e9d14caae3e1e",
+          "path": "assets/video/leaf-light-1080.h264.mp4",
+          "bytes": 718908,
+          "sha256": "7ef5268c5ddf986326b294cdc81eb3587770fd66568fd555eabb764a026398c4",
           "width": 1920,
           "height": 1080,
           "codec": "h264",
-          "seconds": 10.0
+          "seconds": 5.21
         },
         {
-          "path": "assets/video/smoke-poster.webp",
-          "bytes": 43730,
-          "sha256": "c44870d7f129e8cc90a00bba1b398b0f0884a092104efcb06f910e6975d21497",
+          "path": "assets/video/leaf-light-poster.webp",
+          "bytes": 83258,
+          "sha256": "cb809a8e792a5cec31d41734dd0f7ba3c3b55d9bdb79b937e452642fce267ec9",
           "width": 1920,
           "height": 1080,
           "codec": "webp"
         },
         {
-          "path": "assets/video/smoke-poster-960.webp",
-          "bytes": 14506,
-          "sha256": "d2f5e94ac84b0aa883fb95f02adeb46a3324785aca2eab43252befdc2e55390b",
+          "path": "assets/video/leaf-light-poster-960.webp",
+          "bytes": 34580,
+          "sha256": "9e809854eff815f3129b0995bd68a7f2bd774cf682f79d9315a96a1f932ea344",
           "width": 960,
           "height": 540,
           "codec": "webp"

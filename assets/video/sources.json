@@ -152,8 +152,8 @@
       "notes": "Pink and yellow ink blooming underwater on black. Screened onto the dark band."
     },
     {
-      "id": "smoke",
-      "title": "A trail of smoke",
+      "id": "leaf-light",
+      "title": "Sunlight through leaves",
       "kind": "stock video",
       "used_on": [
         "About: Where would you like to start?"
@@ -162,16 +162,15 @@
       "source": {
         "provider": "Mixkit",
         "creator": "Mixkit",
-        "title": "A trail of smoke rapidly twirls over a dark background",
-        "page_url": "https://mixkit.co/free-stock-video/a-trail-of-smoke-rapidly-twirls-over-a-dark-background-50951/",
-        "file_url": "https://assets.mixkit.co/videos/50951/50951-1080.mp4",
+        "title": "Sunlight passing through the leaves of a tree",
+        "page_url": "https://mixkit.co/free-stock-video/sunlight-passing-through-the-leaves-of-a-tree-34371/",
+        "file_url": "https://assets.mixkit.co/videos/34371/34371-1080.mp4",
         "license": "Mixkit Stock Video Free License",
         "license_url": "https://mixkit.co/license/#videoFree",
         "checked": "2026-10-01"
       },
-      "loop": "tools/make_loop.sh 50951-1080.mp4 1 10 1.5 smoke.mkv",
-      "notes": "White smoke turning over a dark background. Screened onto the dark band.",
-      "encode": "X264_CRF_720=35 X264_CRF_1080=30 tools/encode_video.sh smoke.mkv assets/video/smoke"
+      "loop": "tools/make_loop.sh 34371-1080.mp4 0.2 5.2 1.2 leaf-light.mkv",
+      "notes": "Sun breaking through the leaves of a tree. Screened onto the dark band, the leaves take on its green and only the light shows."
     }
   ]
 }
